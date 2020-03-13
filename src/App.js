@@ -6,7 +6,7 @@ import SignUpUser from './containers/SignUpUser'
 import Home from './containers/Home'   
 
 import Profile from './components/Profile'
-
+import ContactUs from './containers/ContactUs'
 
 import fetchAllUsers from './actions/fetchAllUsers'
 import reAuth from './actions/reAuth'
@@ -30,6 +30,7 @@ class App extends React.Component {
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
             <Route exact path='/signin-user' component={SignIn} />
+            <Route exact path='/contact-us' component={ContactUs} />
             { Object.keys(this.props.currentUser).length > 0 ?
             <>
               <Switch>
