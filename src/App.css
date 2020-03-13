@@ -162,3 +162,45 @@ color: black;
   margin-left: 20px;
   float: right;
 }
+
+.btnleft {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btnright{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #5EA5B0;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tagline {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+
+}
