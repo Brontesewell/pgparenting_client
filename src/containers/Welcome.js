@@ -14,8 +14,8 @@ class Welcome extends Component {
                     
                        <div>
                         <img id="welcome-image" alt="welcome-image" src="https://images.unsplash.com/photo-1547948577-438c80482068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
-                            <h2 className="tagline">"Better Parenting for a Better World"</h2>
-                            <button className="btnleft">Join Now</button>
+                            <h2 className="tagline"><strong>Better Parenting for a Better World</strong></h2>
+                            <a href="/signup-user"><button className="btnleft">Join Now</button></a>
                             <button className="btnright">Learn More</button>
                             </div>
                     </div>

@@ -45,25 +45,13 @@ body {
 
 #welcome-image {
   float: top;
+  width: 100%; /* width of container */
+  height: 700px; /* height of container */
+  object-fit: cover;
 }
 
 
 
-/* .left-side {
-  left: 0;
-  width: 75%;
-  background-image: url('./1.jpeg');
-  background-size:     cover;
-  background-repeat:   no-repeat;
-  background-position: center center;   
-} */
-/* 
-/* .right {
-  right: 0;
-  width: 25%;
-  background-color: white;
-  box-shadow: 0 0 30px 0 rgb(0, 0, 0);
-} */ */
 #sing_in {
   margin-top: 100px;
 }
@@ -149,48 +137,61 @@ h2 {
 .logo{
 color: black;
     float: left;
+    margin-left: -50px;
     margin-top: 15px;
 }
 
 
 #wecome-navbar {
-  background-color: antiquewhite;
+  background-color: white;
+  height: 86px;
 }
 
 .nav-links {
-  color: black;
-  margin-left: 20px;
+  color: #6B6b69;
+  margin-left: 40px;
   float: right;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-right: -10px;
 }
 
 .btnleft {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 30%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #555;
+  background-color: #8597C5;
   color: white;
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 25px;
+  padding: 17px 50px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+.btnleft:focus {     
+  background-color:#3b4b75;    
 }
 
 .btnright{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 70%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #5EA5B0;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
+  background-color: #FDEAE3;
+  color: #6B6b69;
+  font-size: 25px;
+  padding: 17px 45px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+.btnright:focus {     
+  background-color:white;    
 }
 
 .tagline {
@@ -201,6 +202,4 @@ color: black;
   -ms-transform: translate(-30%, -30%);
   color: white;
   font-size: 50px;
-  font-weight: bolder;
-
 }
