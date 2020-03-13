@@ -17,9 +17,9 @@ class WelcomeNav extends Component {
                     {/* <img src='pgparentinglogo.png' /> */}
                     {/* <a href="/"><img class="img-responsive2" src="../pgparentinglogo.png"></a> */}
 
+                    <Link to='/contact-us' className="nav-links" >Contact Us</Link>
                       <Link to='/signup-user' className="nav-links" >Join Now</Link>
                         <Link to='/signin-user' className="nav-links">Login</Link>
-                    <Link to='/contact-us' className="nav-links" >Contact Us</Link>
                 
                 </div>
             </nav>

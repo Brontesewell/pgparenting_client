@@ -15,9 +15,9 @@ class ContactUs extends Component {
                 </div>
 
         
-                {/* <div >
-                    <h1>Hello!!!!!!!!</h1>
-                </div> */}
+                <div >
+                    <h1>CONTACT USSS!!!!!!!!</h1>
+                </div>
             </div>
         )
     }
