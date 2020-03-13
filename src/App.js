@@ -35,6 +35,7 @@ class App extends React.Component {
               <Switch>
                 <Route exact path='/home' component={Home}/>
                 <Route exact path='/profile' component={Profile}/>
+                
               
               </Switch>
             </> : 

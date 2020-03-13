@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+
 class WelcomeNav extends Component {
 
     render() {
         return (
-            <nav className="nav-wrapper teal">
+            <nav id="wecome-navbar">
+              
+               
                 <div className="container">
-                    <a href="/home"><h1 className ='logo'>PG <b>PARENTING</b></h1></a>
-                    <ul id="nav-mobile" className="right">
-                       <li><Link to='/signup-user'><i className="material-icons">Sign Up</i>Sign Up</Link></li>
-                        <li><Link to='/signin-user'><i className="material-icons">Sign In</i>Sign In</Link></li>
-                    </ul>
+                  
+            
+
+                    <a href="/"><h4 className ='logo'>PG <b>PARENTING</b></h4></a>
+                    {/* <img src='pgparentinglogo.png' /> */}
+                    {/* <a href="/"><img class="img-responsive2" src="../pgparentinglogo.png"></a> */}
+
+                      <Link to='/signup-user' className="nav-links" >Join Now</Link>
+                        <Link to='/signin-user' className="nav-links">Login</Link>
+                    <Link to='/contact-us' className="nav-links" >Contact Us</Link>
+                
                 </div>
             </nav>
         );
@@ -20,3 +29,4 @@ class WelcomeNav extends Component {
 }
 
 export default WelcomeNav;
+

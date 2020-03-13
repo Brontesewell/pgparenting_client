@@ -48,6 +48,7 @@ body {
 }
 
 
+
 /* .left-side {
   left: 0;
   width: 75%;
@@ -57,15 +58,17 @@ body {
   background-position: center center;   
 } */
 /* 
-.right-side {
+/* .right {
   right: 0;
   width: 25%;
   background-color: white;
   box-shadow: 0 0 30px 0 rgb(0, 0, 0);
-} */
+} */ */
 #sing_in {
   margin-top: 100px;
 }
+
+
 
 .pink-text {
 margin-top: 100px;
@@ -144,8 +147,18 @@ h2 {
 
 
 .logo{
-  font-weight: 100;
-    font-size: 30px;
+color: black;
     float: left;
     margin-top: 15px;
+}
+
+
+#wecome-navbar {
+  background-color: antiquewhite;
+}
+
+.nav-links {
+  color: black;
+  margin-left: 20px;
+  float: right;
 }

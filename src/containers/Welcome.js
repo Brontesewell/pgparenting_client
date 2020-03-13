@@ -9,11 +9,12 @@ class Welcome extends Component {
         return (
             <div>
                 <div className="split left-side">
-                    <div className="centered">
+                    
                         <WelcomeNav />
-                    </div>
                     <img id="welcome-image" alt="welcome-image" src="https://images.unsplash.com/photo-1547948577-438c80482068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
-                </div>
+                    </div>
+
+                
                 
             </div>
                 
