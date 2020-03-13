@@ -9,14 +9,15 @@ const signUpUser = (e, state, history) => {
             headers: {
                 "Authorization": `${localStorage.getItem('jwt')}`,
                 "Content-type": "application/json",
-                "Accept": "application/json"
+                "Accept": "application/json; odata=verbose"
+
             },
             body: JSON.stringify({
                 user: {
                     first_name: firstName,
                     last_name: lastName,
-                    email,
-                    password 
+                    email: email,
+                    password: password,
                 }
             })
         })
@@ -25,7 +26,7 @@ const signUpUser = (e, state, history) => {
             dispatch({ type: "SET_CURRENT_USER", user: data.user })
             dispatch({ type: "ADD_USER", user: data.user })
             localStorage.setItem('jwt', data.jwt)
-            history.push('/add-address')
+            history.push('/profile')
         })
     }
 

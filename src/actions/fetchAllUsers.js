@@ -4,7 +4,10 @@ const fetchAllUsers= () => {
             method: "GET",
             headers: {
               "Authorization": `${localStorage.getItem('jwt')}`,
-              "Accept": "application/json"
+                'Content-Type': 'application/json',
+                "Accept": "application/json; odata=verbose"
+
+               
             }
         })
         .then(res => res.json())

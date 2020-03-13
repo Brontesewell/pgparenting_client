@@ -6,11 +6,12 @@ import SignUpUser from './containers/SignUpUser'
 import Home from './containers/Home'   
 
 import Profile from './components/Profile'
-import EditProfile from './containers/EditProfile'
+
 
 import fetchAllUsers from './actions/fetchAllUsers'
 import reAuth from './actions/reAuth'
 import './App.css';
+import SignIn from './containers/SignIn';
 
 
 class App extends React.Component {
@@ -28,13 +29,13 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
-            
+            <Route exact path='/signin-user' component={SignIn} />
             { Object.keys(this.props.currentUser).length > 0 ?
             <>
               <Switch>
                 <Route exact path='/home' component={Home}/>
                 <Route exact path='/profile' component={Profile}/>
-                <Route exact path='/edit-profile' component={EditProfile}/>
+              
               </Switch>
             </> : 
             <h6>Please Sign In</h6>

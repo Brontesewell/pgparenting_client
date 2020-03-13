@@ -6,7 +6,8 @@ const reAuth = () => {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `${localStorage.getItem('jwt')}`,
-                    'Accept': 'application/json'
+                    "Accept": "application/json; odata=verbose"
+
                 }
             })
             .then(resp => resp.json())

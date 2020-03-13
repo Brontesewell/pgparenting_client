@@ -13,7 +13,7 @@ class Navbar extends Component {
         return (
             <nav className="nav-wrapper teal">
                 <div className="container">
-                    <a href="/home"><h1 className ='logo'>N O <b>W A S T E</b></h1></a>
+                    <a href="/home"><h1 className ='logo'>PG <b>PARENTING</b></h1></a>
                     <ul id="nav-mobile" className="right">
                        <li><Link to = '/home'><i className="material-icons">home</i>Home</Link></li>
                         <li><Link to = '/profile'><i className="material-icons">account_circle</i>Profile</Link></li>

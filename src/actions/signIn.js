@@ -5,10 +5,11 @@ const signIn = (e, state, history ) => {
         
         fetch('http://localhost:3000/login', {
             method: "POST",
-            headers: {
-                "Content-type": "application/json",
-                "Accept": "application/json"
-            },
+            headers : { 
+                'Content-Type': 'application/json',
+                "Accept": "application/json; odata=verbose"
+
+               },
             body: JSON.stringify({
                 user: {
                     email: state.email, 
@@ -20,7 +21,7 @@ const signIn = (e, state, history ) => {
         .then(data => {
                 dispatch({ type: "SET_CURRENT_USER", user: data.user })
                 localStorage.setItem('jwt', data.jwt)
-                history.push('/home')
+                history.push('/profile')
         })
         
     }

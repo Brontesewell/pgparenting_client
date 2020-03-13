@@ -4,7 +4,7 @@ import Navbar from '../containers/Navbar'
 
 const Profile = (props) => {
 
-    const {id, first_name, last_name, email} = props.currentUser
+    const {first_name, last_name, email} = props.currentUser
 
     return (
         <div>
@@ -16,13 +16,8 @@ const Profile = (props) => {
                 <h3 className="pink-text text-accent-3">{first_name + ' ' + last_name}</h3>
                 <h6><strong>Email: </strong>{email}</h6>
                </div>
-            
-            <div className = 'row '>
-                <div className = 'divider container'></div>
-                <h4>Your Listings:</h4>
-                <div className = 'divider container'></div>
-            </div>
-        </div> 
+        
+        </div>
     )
 }
 
