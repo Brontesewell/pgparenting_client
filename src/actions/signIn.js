@@ -21,7 +21,7 @@ const signIn = (e, state, history ) => {
         .then(data => {
                 dispatch({ type: "SET_CURRENT_USER", user: data.user })
                 localStorage.setItem('jwt', data.jwt)
-                history.push('/profile')
+                history.push('/home')
         })
         
     }

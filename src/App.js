@@ -4,10 +4,13 @@ import { connect } from 'react-redux'
 import Welcome from './containers/Welcome'
 import SignUpUser from './containers/SignUpUser'
 import Home from './containers/Home'   
-
+import EditProfile from './containers/EditProfile'
 import Profile from './components/Profile'
 import ContactUs from './containers/ContactUs'
-
+import ParentingCourses from './components/ParentingCourses'
+import ParentingTips from './components/ParentingTips'
+import CoParents from './components/CoParents'
+import fetchAllCourses from './actions/fetchAllCourses'
 import fetchAllUsers from './actions/fetchAllUsers'
 import reAuth from './actions/reAuth'
 import './App.css';
@@ -19,6 +22,7 @@ class App extends React.Component {
   componentDidMount () {
       this.props.reAuth()
       this.props.fetchAllUsers()
+      this.props.fetchAllCourses()
   }
 
 
@@ -36,8 +40,13 @@ class App extends React.Component {
               <Switch>
                 <Route exact path='/home' component={Home}/>
                 <Route exact path='/profile' component={Profile}/>
-                
+                <Route exact path='/edit-profile' component={EditProfile}/>
+                <Route exact path='/parenting-courses' component={ParentingCourses}/>
+                <Route exact path='/parenting-tips' component={ParentingTips}/>
+                <Route exact path='/co-parents' component={CoParents}/>
               
+
+
               </Switch>
             </> : 
             <h6>Please Sign In</h6>
@@ -61,6 +70,7 @@ const mapsToDispatchProps = dispatch => {
   return{
     reAuth: () => dispatch(reAuth()),
     fetchAllUsers: ()=> dispatch(fetchAllUsers()),
+    fetchAllCourses: ()=> dispatch(fetchAllCourses())
   }
 }
   

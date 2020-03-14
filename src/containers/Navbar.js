@@ -1,29 +1,91 @@
+import {connect} from 'react-redux'
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
+import Logo from '../Logo.jpg'
+import ParentingNav from '../components/ParentingNav'
+
 
 class Navbar extends Component {
-    
+ 
+
+    container = React.createRef();
+    state = {
+      open: false,
+      firstName: this.props.currentUser.first_name,
+    };
+
+    componentDidMount() {
+      document.addEventListener("mousedown", this.handleClickOutside);
+    }
+
+    componentWillUnmount() {
+      document.removeEventListener("mousedown", this.handleClickOutside);
+    }
+
+    handleClickOutside = event => {
+      if (this.container.current && !this.container.current.contains(event.target)) {
+        this.setState({
+          open: false,
+        });
+      }
+    };
+
+    handleButtonClick = () => {
+      this.setState(state => {
+        return {
+          open: !state.open,
+        };
+      });
+    };
+
     handleSignOut = e => {
         localStorage.clear()
         this.props.clearCurrentUser()
     }
 
     render() {
+      const {firstName} = this.state
         return (
-            <nav className="nav-wrapper teal">
-                <div className="container">
-                    <a href="/home"><h1 className ='logo'>PG <b>PARENTING</b></h1></a>
-                    <ul id="nav-mobile" className="right">
-                       <li><Link to = '/home'><i className="material-icons">home</i>Home</Link></li>
-                        <li><Link to = '/profile'><i className="material-icons">account_circle</i>Profile</Link></li>
-                        <li><Link to = '/' onClick={this.handleSignOut}>SIGN OUT</Link></li>
-                    </ul>
-                </div>
-            </nav>
+            <div>
+       
+
+            <div className="container">
+                <a href="/home"><img className ='logo-home' alt="Logo" src={Logo}/></a>
+        <h3 id="welcome-user-nav" >Welcome, {firstName}</h3>
+                        <div className="App">
+                    <div className="container-nav" id="overlay" ref={this.container}>
+                      <button type="button" class="button" onClick={this.handleButtonClick}>
+                        ☰
+                      </button>
+                      {this.state.open && (
+                        <div class="container">
+                          <ul>
+                            <li><Link to = '/home' >Home</Link></li>
+                            <li>Our Mission</li>
+                            <li><Link to = '/profile' >My Family</Link></li>
+                            <li>Chatroom</li>
+                            <li>Shop</li>
+                            <li>Contact Us</li>
+                            <li><Link to = '/' onClick={this.handleSignOut}>Sign Out</Link></li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div> 
+
+                <ParentingNav/>
+            
+            </div>
         );
     }
 
+}
+
+const mapStateToProps = state => {
+  return {
+      currentUser: state.currentUser
+  }
 }
 
 const mapDispatchToProps = dispatch => {
@@ -32,4 +94,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(Navbar);
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

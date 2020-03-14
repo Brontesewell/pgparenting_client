@@ -141,6 +141,12 @@ color: black;
     margin-top: 15px;
 }
 
+.logo-home{
+  color: black;
+      float: center;
+      margin-top: 29px;
+  }
+
 
 #wecome-navbar {
   background-color: white;
@@ -202,4 +208,94 @@ color: black;
   -ms-transform: translate(-30%, -30%);
   color: white;
   font-size: 50px;
+}
+
+#welcome-user-nav {
+  float: right;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 50px;
+  color: #8597C5;
+  margin-right: -90px;
+
+}
+
+.container-nav {
+  float: left;
+  display: inline-block;
+  margin-top: -55px;
+  margin-left: -150px;
+  background-color: pink;
+}
+
+.button {
+  padding: 0;
+  width: 100px;
+  border: 0;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+  font-size: 40px;
+  float: left;
+  overflow-x: hidden;
+}
+
+.button:focus {     
+  background-color:white;  
+  overflow-x: hidden;  
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+  overflow-x: hidden;
+}
+
+ul {
+  /* overflow-x: hidden; */
+  list-style: none;
+  text-align: left;
+}
+li {
+  /* overflow-x: hidden; */
+  text-align: left;
+  padding: 8px 12px;
+  color: black;
+  width: 200px;
+}
+
+li:hover {
+  /* overflow-x: hidden; */
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+
+
+.parenting-links {
+  color: #6B6b69;
+  /* margin-left: 20px; */
+  margin-right: 65px;
+  font-size: 22px;
+
+}
+
+
+.container-parenting {
+  background-color: white;
+  width: 700px;
+margin-left: 22%;
+margin-right: 40%;
+margin-top: 40px;
+}
+
+
+.line-row {
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  border-width: thin;
 }

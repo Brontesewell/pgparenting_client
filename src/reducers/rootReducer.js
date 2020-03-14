@@ -2,6 +2,7 @@ const initialState = {
     currentUser: {},
     users: [],
     kids: [],
+    courses: [],
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -20,7 +21,8 @@ const rootReducer = (state = initialState, action) => {
             const deletedArray = state.users.filter(user => user.id !== action.user.id)
             return {...state, users: deletedArray}
           
-    
+        case 'GET_ALL_COURSES':
+                return {...state, courses: action.courses }
 
         default:
             return state

@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import Navbar from './Navbar'
 
+import Dropdown, { DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
+
 class Home extends Component {
 
 
@@ -12,13 +14,13 @@ class Home extends Component {
             <div>
                 <div className = 'row'>
                     {<Navbar/>}
+                    
                 </div>
 
-                <div className="container row divider"></div>
-                <div className ='container row'>
-                    <h1>Hello!!!!!!!!</h1>
+             
+                    
                 </div>
-            </div>
+         
         )
     }
 }

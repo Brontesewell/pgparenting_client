@@ -15,7 +15,6 @@ import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
 
 
-
 const persistConfig = {
   key: 'root',
   storage: storage,
@@ -36,10 +35,8 @@ const persistor = persistStore(store);
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
-      
+    <PersistGate loading={null} persistor={persistor}>  
         <App />
-  
     </PersistGate>
   </Provider>
   , document.getElementById('root')
