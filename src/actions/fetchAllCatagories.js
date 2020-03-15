@@ -1,7 +1,7 @@
-const fetchAllCourses= () => {
+const fetchAllCatagories= () => {
     return (dispatch) => {
-        dispatch({type: 'GETTING_COURSES'})
-        return fetch('http://localhost:3000/courses', {
+        dispatch({type: 'GETTING_CATAGORIES'})
+        return fetch('http://localhost:3000/catagories', {
             method: "GET",
             headers: {
               "Authorization": `${localStorage.getItem('jwt')}`,
@@ -12,9 +12,9 @@ const fetchAllCourses= () => {
         })
         .then(res => res.json())
         .then(data => {
-            dispatch({ type: "GET_ALL_COURSES", courses: data})
+            dispatch({ type: "GET_ALL_CATAGORIES", catagories: data})
         })
     }
 }
 
-export default fetchAllCourses
+export default fetchAllCatagories

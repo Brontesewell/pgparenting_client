@@ -242,13 +242,12 @@ color: black;
   overflow-x: hidden;
 }
 
-.button:focus {     
+.button:focus {  
   background-color:white;  
   overflow-x: hidden;  
 }
 
 .dropdown {
-  position: absolute;
   top: 100%;
   left: 0;
   z-index: 2;
@@ -282,7 +281,6 @@ li:hover {
   /* margin-left: 20px; */
   margin-right: 65px;
   font-size: 22px;
-
 }
 
 
@@ -305,5 +303,71 @@ margin-top: 40px;
   position: relative;
   display: inline-block;
 }
+
+
+
+
+div.menu-container {
+	width: 800px;
+	margin: 45px auto 0 auto;
+}
+
+.menu-item {
+	width: 33.33%;
+	float: left;
+    position: relative;
+}
+
+.menu-item a {
+	text-align: center;
+	padding: 5px 0 5px 0;
+	font-size: 25px;
+	text-decoration: none;
+  border-radius: 15px;
+  background-color: white;
+	margin: 0 15px 0 15px;
+	display: block;
+}
+
+.menu-item a:link, .menu-item a:visited {
+	color: #6B6b69;
+	background: WhiteSmoke;
+	
+}
+
+.menu-item a:hover, .menu-item a:active {
+	color: #8597C5;
+	background: Gainsboro;
+}
+
+.menu-item ul {
+	margin-top: 2px;
+	list-style-type: none;
+	height: 0px;
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+	
+	-webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+}
+
+.menu-item:hover ul {
+	height: 615px;
+}
+
+.menu-item ul li a {
+	font-size: 20px;
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border-radius: 5px;
+	margin-top: 0px;
+}
+
 
 

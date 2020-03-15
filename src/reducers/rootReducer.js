@@ -2,8 +2,8 @@ const initialState = {
     currentUser: {},
     users: [],
     kids: [],
-    courses: [],
-    displayCourses: [],
+    catagories: [],
+    displayCatagories: [],
     loading: false
 }
 
@@ -24,10 +24,10 @@ const rootReducer = (state = initialState, action) => {
             return {...state, users: deletedArray}
 
 
-      case 'GETTING_COURSES':
+      case 'GETTING_CATAGORIES':
                     return {...state, loading: true}
-        case 'GET_ALL_COURSES':
-                return {...state, courses: action.courses, displayCourses: action.courses, loading: true }
+        case 'GET_ALL_CATAGORIES':
+                return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
 
         default:
             return state

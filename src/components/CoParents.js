@@ -13,10 +13,14 @@ class CoParents extends Component {
                     
                        <div>
                         <h1>Co Parenting</h1>
+
                     </div>
 
                 
                     </div>
+
+
+
             </div>
                 
         );

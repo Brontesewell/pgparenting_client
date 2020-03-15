@@ -10,7 +10,7 @@ import ContactUs from './containers/ContactUs'
 import ParentingCourses from './components/ParentingCourses'
 import ParentingTips from './components/ParentingTips'
 import CoParents from './components/CoParents'
-import fetchAllCourses from './actions/fetchAllCourses'
+import fetchAllCatagories from './actions/fetchAllCatagories'
 import fetchAllUsers from './actions/fetchAllUsers'
 import reAuth from './actions/reAuth'
 import './App.css';
@@ -22,7 +22,7 @@ class App extends React.Component {
   componentDidMount () {
       this.props.reAuth()
       this.props.fetchAllUsers()
-      this.props.fetchAllCourses()
+      this.props.fetchAllCatagories()
   }
 
 
@@ -70,7 +70,7 @@ const mapsToDispatchProps = dispatch => {
   return{
     reAuth: () => dispatch(reAuth()),
     fetchAllUsers: ()=> dispatch(fetchAllUsers()),
-    fetchAllCourses: ()=> dispatch(fetchAllCourses())
+    fetchAllCatagories: ()=> dispatch(fetchAllCatagories())
   }
 }
   

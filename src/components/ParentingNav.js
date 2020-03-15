@@ -10,9 +10,21 @@ render() {
     return (
   <div>
       <div className="container-parenting">
-              <Link to = '/parenting-courses' className="parenting-links">Parenting Courses</Link>
               <Link to = '/parenting-tips' className="parenting-links">Parenting Tips</Link>
               <Link to = '/co-parents' className="parenting-links">Co-Parenting</Link>
+	<div class="menu-item">
+  <Link to = '/parenting-courses' className="parenting-links">Parenting Courses</Link>
+		<ul>
+			<li><a href="">photos</a></li>
+			<li><a href="">drawings</a></li>
+			<li><a href="">videos</a></li>
+            <li><a href="">videos</a></li>
+            <li><a href="">videos</a></li>
+            <li><a href="">videos</a></li>
+		</ul>
+	</div>
+</div>
+              <div class="menu-container">
       </div>
       <div class="line-row"></div>
       </div>

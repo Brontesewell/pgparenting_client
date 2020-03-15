@@ -2,32 +2,32 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
-import fetchAllCourses from '../actions/fetchAllCourses'
+import fetchAllCatagories from '../actions/fetchAllCatagories'
 import ParentingTips from './ParentingTips'
 import CoursesContainer from './CoursesContainer'
 
 class ParentingCourses extends Component {
 
     state = {
-        courses: this.props.courses,
+        catagories: this.props.catagories,
     }
 
     componentDidMount () {
       
-       this.props.fetchAllCourses()
+       this.props.fetchAllCatagories()
     }
 
 
     
     render() {
-            //    console.log(fetchAllCourses)
-            //    console.log(this.props.courses)
-            //    console.log(this.state.courses)
+            //    console.log(fetchAllCatagories)
+            //    console.log(this.props.catagories)
+            //    console.log(this.state.catagories)
         return (
             <div>
               <div><Navbar/></div>
               <h1><strong>Parenting Tips</strong></h1>
-        {this.props.courses.map(course => <CoursesContainer course={course}/>)}
+        {this.props.catagories.map(catagories => <CoursesContainer catagories={catagories}/>)}
         
             </div>
                 
@@ -36,14 +36,14 @@ class ParentingCourses extends Component {
 }
 const mapStateToProps = state => {
     return {
-      courses: state.courses,
-      displayCourses: state.displayCourses
+      catagories: state.catagories,
+      displayCatagories: state.displayCatagories
     }
   }
-// ?? map over items () of fetchallcourses
+// ?? map over items () of fetchAllCatagories
 const mapsToDispatchProps = dispatch => {
     return {
-        fetchAllCourses: ()=> dispatch(fetchAllCourses())
+        fetchAllCatagories: ()=> dispatch(fetchAllCatagories())
     }
 }
   
