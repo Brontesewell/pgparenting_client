@@ -78,41 +78,7 @@ class ParentingCourses extends Component {
               <h1><strong>Parenting Course</strong></h1>
         
 
-              {/* {this.state.catagories.map(catagories => 
-                catagories.id === 1 ? 
-                <Baby catagories={catagories}/> :
-                )}
-        {/* // catagories.id === 1 ? 
-        // <Baby catagories={catagories}/> : 
-        // catagories.id === 2 ? 
-        // <Toddler catagories={catagories}/> : 
-        // catagories.id === 3 ?
-        // <Pre_school catagories={catagories}/>
-        // : "hehehe" */} */}
-        
-        {/* {if(catagories.id === 1) {
-        return <Baby catagories={catagories}/> }
-        else if (catagories.id === 2 ) {
-            return  <Toddler catagories={catagories}/> 
-        }  
-        else if  (catagories.id === 3 ) {
-            return <Pre_school catagories={catagories}/>
-        }
-            //      
-         else if  (catagories.id === 4 ) {
-             return <Primary_school catagories={catagories}/> 
-         }
-        else if ( catagories.id === 5) {
-            return <Preteen catagories={catagories}/>
-        }
-        else if ( catagories.id === 6) {
-            return <Teen catagories={catagories}/>
-        }
-        else {return <Young_Adults catagories={catagories}/> }
-                 
-        })} */}
-
-        {/* <CoursesContainer catagories={catagories}/> */}
+             
             </div>
                 
         );
