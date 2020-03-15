@@ -10,20 +10,37 @@ render() {
     return (
   <div>
       <div className="container-parenting">
-              <Link to = '/parenting-tips' className="parenting-links">Parenting Tips</Link>
-              <Link to = '/co-parents' className="parenting-links">Co-Parenting</Link>
-	<div class="menu-item">
-  <Link to = '/parenting-courses' className="parenting-links">Parenting Courses</Link>
-		<ul>
-			<li><a href="">photos</a></li>
-			<li><a href="">drawings</a></li>
-			<li><a href="">videos</a></li>
-            <li><a href="">videos</a></li>
-            <li><a href="">videos</a></li>
-            <li><a href="">videos</a></li>
-		</ul>
-	</div>
-</div>
+      <div class="menu-item">
+      <Link to = '/parenting-tips' className="parenting-links">Parenting Tips</Link>
+                   <ul>
+                        <li><a href="">0-12mths</a></li>
+                       <li><a href="">1-2yrs</a></li>
+                        <li><a href=""> 3-5yrs</a></li>
+                        <li><a href=""> 6-10yrs</a></li>
+                         <li><a href="">11-12yrs</a></li>
+                        <li><a href="">13-18yrs</a></li>
+                        <li><a href="">19-25yrs</a></li>
+                   </ul>
+        </div>
+        
+       
+               <Link to = '/co-parents' className="parenting-links">Co-Parenting</Link>
+      
+              
+       <div class="menu-item">
+                <Link to = '/parenting-courses' className="parenting-links">Parenting Courses</Link>
+                   <ul>
+                       <li><a href="">0-12mths</a></li>
+                       <li><a href="">1-2yrs</a></li>
+                        <li><a href=""> 3-5yrs</a></li>
+                        <li><a href=""> 6-10yrs</a></li>
+                         <li><a href="">11-12yrs</a></li>
+                        <li><a href="">13-18yrs</a></li>
+                        <li><a href="">19-25yrs</a></li>
+                   </ul>
+        </div>
+      
+      </div>
               <div class="menu-container">
       </div>
       <div class="line-row"></div>
