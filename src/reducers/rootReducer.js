@@ -3,6 +3,13 @@ const initialState = {
     users: [],
     kids: [],
     catagories: [],
+    babies: [],
+    toddlers: [],
+    pre_schools: [],
+    primary_schools: [],
+    preteens: [],
+    teens: [],
+    young_adults: [],
     displayCatagories: [],
     loading: false
 }
@@ -24,10 +31,24 @@ const rootReducer = (state = initialState, action) => {
             return {...state, users: deletedArray}
 
 
-      case 'GETTING_CATAGORIES':
+        case 'GETTING_CATAGORIES':
                     return {...state, loading: true}
         case 'GET_ALL_CATAGORIES':
                 return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
+        case 'GET_ALL_BABYS':
+                return {...state, babies: action.babies, loading:true }
+        case 'GET_ALL_TODDLERS':
+                return {...state, toddlers: action.toddlers, loading:true }
+        case 'GET_ALL_PRE_SCHOOLS':
+                 return {...state, pre_schools: action.pre_schools, loading:true }
+        case 'GET_ALL_PRIMARY_SCHOOLS':
+                return {...state, primary_schools: action.primary_schools, loading:true }
+        case 'GET_ALL_PRETEENS':
+                  return {...state, preteens: action.preteens, loading:true }
+        case 'GET_ALL_TEENS':
+                   return {...state, teens: action.teens, loading:true }
+        case 'GET_ALL_YOUNG_ADULTS':
+                    return {...state, young_adults: action.young_adults, loading:true }
 
         default:
             return state

@@ -18,3 +18,5 @@ const fetchAllUsers= () => {
 }
 
 export default fetchAllUsers
+
+

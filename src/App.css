@@ -280,7 +280,13 @@ li:hover {
   color: #6B6b69;
   /* margin-left: 20px; */
   margin-right: 65px;
-  font-size: 22px;
+  font-size: 25px;
+}
+
+.parenting-co {
+  color: #6B6b69;
+margin-left: -95px;
+  font-size: 25px;
 }
 
 
@@ -297,6 +303,7 @@ margin-top: 40px;
   border-bottom-style: solid;
   border-bottom-color: #6B6b69;
   border-width: thin;
+  margin-top: 20px;
 }
 
 .dropdown {
@@ -323,9 +330,9 @@ div.menu-container {
 	padding: 5px 0 5px 0;
 	font-size: 25px;
 	text-decoration: none;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: white;
-	margin: 0 15px 0 15px;
+	margin: 0 10px 0 10px;
 	display: block;
 }
 
