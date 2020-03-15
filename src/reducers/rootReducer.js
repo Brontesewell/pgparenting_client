@@ -3,6 +3,8 @@ const initialState = {
     users: [],
     kids: [],
     courses: [],
+    displayCourses: [],
+    loading: false
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -20,9 +22,12 @@ const rootReducer = (state = initialState, action) => {
         case 'DELETE_USER':
             const deletedArray = state.users.filter(user => user.id !== action.user.id)
             return {...state, users: deletedArray}
-          
+
+
+      case 'GETTING_COURSES':
+                    return {...state, loading: true}
         case 'GET_ALL_COURSES':
-                return {...state, courses: action.courses }
+                return {...state, courses: action.courses, displayCourses: action.courses, loading: true }
 
         default:
             return state

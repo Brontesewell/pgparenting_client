@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
+import ParentingCourses from './ParentingCourses'
 import fetchAllCourses from '../actions/fetchAllCourses'
 
 class CoursesContainer extends Component {
 
+  
     componentDidMount () {
+        fetchAllCourses()
         this.props.fetchAllCourses()
-    }
-
+     }
 
     render() {
-      console.log(courses)
-
         return (
             <div>
                 <Navbar/>
@@ -21,8 +21,10 @@ class CoursesContainer extends Component {
                     
                        <div>
                         <h1> Parenting Courses</h1>
-                        {courses.map(course => <ParentingCourses key={Math.Random()} course={course}/>)}
 
+
+                        {this.props.courses.map(course => <ParentingCourses course={course}/>)}
+                
                     </div>
 
                 </div>
@@ -34,15 +36,16 @@ class CoursesContainer extends Component {
 }
 
 const mapStateToProps = state => {
-  return {
-    courses: state.courses
+    return {
+      courses: state.courses,
+      displayCourses: state.displayCourses
+    }
   }
-}
-
+// ?? map over items () of fetchallcourses
 const mapsToDispatchProps = dispatch => {
-  return{
-    fetchAllCourses: ()=> dispatch(fetchAllCourses()),
-  }
+    return {
+        fetchAllCourses: ()=> dispatch(fetchAllCourses())
+    }
 }
   
 export default connect(mapStateToProps, mapsToDispatchProps)(CoursesContainer);

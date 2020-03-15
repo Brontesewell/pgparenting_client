@@ -18,6 +18,8 @@ class ParentingTips extends Component {
                     </div>
 
                 </div>
+        <h1>{this.props.course.title}</h1>
+        
                 
             </div>
                 
