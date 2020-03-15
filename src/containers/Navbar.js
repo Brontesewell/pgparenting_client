@@ -62,7 +62,7 @@ class Navbar extends Component {
                           <ul>
                       <br></br>
                       <br></br>
-                            <li><Link to = '/home' id="home-nav-drop">Home</Link></li>
+                            <li><Link to = '/home'>Home</Link></li>
                             <li>Our Mission</li>
                             <li><Link to = '/profile' >My Family</Link></li>
                             <li>Chatroom</li>

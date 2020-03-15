@@ -225,7 +225,8 @@ color: black;
   display: inline-block;
   margin-top: -55px;
   margin-left: -150px;
-  background-color: pink;
+  background-color: #8597C5;
+  width: 240px;
 }
 
 .button {
@@ -265,7 +266,7 @@ li {
   /* overflow-x: hidden; */
   text-align: left;
   padding: 8px 12px;
-  color: black;
+  color: white;
   width: 200px;
 }
 
@@ -306,6 +307,3 @@ margin-top: 40px;
 }
 
 
-#home-nav-drop {
-  margin-top: 200px;
-}

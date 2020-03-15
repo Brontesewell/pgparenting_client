@@ -3,31 +3,19 @@ import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
 import ParentingCourses from './ParentingCourses'
-import fetchAllCourses from '../actions/fetchAllCourses'
 
 class CoursesContainer extends Component {
 
-  
-    componentDidMount () {
-        fetchAllCourses()
-        this.props.fetchAllCourses()
-     }
 
     render() {
+        // console.log(this.props.course.sub_catagory)
         return (
             <div>
-                <Navbar/>
-                <div className="split left-side">
-                    
-                       <div>
-                        <h1> Parenting Courses</h1>
+    <h1>{this.props.course.sub_catagory.title}</h1>
+    <h1>{this.props.course.title}</h1>
+    <h3>{this.props.course.content}</h3>
+    <h4>{this.props.course.quote}</h4>
 
-
-                        {this.props.courses.map(course => <ParentingCourses course={course}/>)}
-                
-                    </div>
-
-                </div>
                 
             </div>
                 
@@ -35,17 +23,5 @@ class CoursesContainer extends Component {
     }
 }
 
-const mapStateToProps = state => {
-    return {
-      courses: state.courses,
-      displayCourses: state.displayCourses
-    }
-  }
-// ?? map over items () of fetchallcourses
-const mapsToDispatchProps = dispatch => {
-    return {
-        fetchAllCourses: ()=> dispatch(fetchAllCourses())
-    }
-}
   
-export default connect(mapStateToProps, mapsToDispatchProps)(CoursesContainer);
+export default CoursesContainer;

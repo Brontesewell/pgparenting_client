@@ -8,20 +8,27 @@ import CoursesContainer from './CoursesContainer'
 
 class ParentingCourses extends Component {
 
+    state = {
+        courses: this.props.courses,
+    }
 
     componentDidMount () {
       
        this.props.fetchAllCourses()
     }
+
+
     
     render() {
-               console.log(fetchAllCourses)
-               console.log(this.props.courses)
+            //    console.log(fetchAllCourses)
+            //    console.log(this.props.courses)
+               console.log(this.state.courses)
         return (
             <div>
-              
-            {this.props.courses.map(course => <ParentingTips course={course}/>)}
-                
+              <div><Navbar/></div>
+              <h1><strong>Parenting Course</strong></h1>
+        {this.props.courses.map(course => <CoursesContainer course={course}/>)}
+        
             </div>
                 
         );
