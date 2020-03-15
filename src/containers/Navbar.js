@@ -60,7 +60,9 @@ class Navbar extends Component {
                       {this.state.open && (
                         <div class="container">
                           <ul>
-                            <li><Link to = '/home' >Home</Link></li>
+                      <br></br>
+                      <br></br>
+                            <li><Link to = '/home' id="home-nav-drop">Home</Link></li>
                             <li>Our Mission</li>
                             <li><Link to = '/profile' >My Family</Link></li>
                             <li>Chatroom</li>
