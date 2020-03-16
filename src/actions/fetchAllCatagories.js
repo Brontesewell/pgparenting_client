@@ -13,9 +13,9 @@ const fetchAllCatagories= () => {
         .then(res => res.json())
         .then(data => {
             dispatch({ type: "GET_ALL_CATAGORIES", catagories: data})
+            // dispatch({ type: "GET_ALL_BABYS", babies: data})
 
             // data.map(catagories => catagories.id === 1 ?
-                dispatch({ type: "GET_ALL_BABYS", babies: data})
             //     catagories.id === 2 ?
             //     dispatch({ type: "GET_ALL_TODDLERS", toddlers: data}) :
             //     catagories.id === 3 ?

@@ -32,7 +32,8 @@ componentDidMount (){
         return (
             <div>
               <div><Navbar/></div>
-              <h1><strong>pre_school</strong></h1>
+              <h1 className="Catagory">Pre-School (3 - 5 yrs old)</h1>
+        <div className="line-catagory"></div>
         
              
             </div>

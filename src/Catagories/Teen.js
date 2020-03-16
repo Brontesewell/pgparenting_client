@@ -32,7 +32,8 @@ componentDidMount (){
         return (
             <div>
               <div><Navbar/></div>
-              <h1><strong>Teen</strong></h1>
+              <h1 className="Catagory">Teen (13 - 18 yrs old)</h1>
+        <div className="line-catagory"></div>
         
              
             </div>

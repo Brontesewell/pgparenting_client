@@ -35,7 +35,7 @@ class ParentingCourses extends Component {
          this.state.catagories.map(catagories => catagories.id === 1 ?
             this.setState({
                 Baby: catagories
-            }) :
+            }) : 
             catagories.id === 2 ?
             this.setState({
                 Toddler: catagories

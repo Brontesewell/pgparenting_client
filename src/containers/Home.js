@@ -16,7 +16,6 @@ class Home extends Component {
                     {<Navbar/>}
                     
                 </div>
-
              
                     
                 </div>

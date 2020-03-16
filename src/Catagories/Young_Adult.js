@@ -24,6 +24,7 @@ componentDidMount (){
       })
       .then(res => res.json())
       .then(data => {
+      
          this.setState({
                 young_adult: data
              }) 
@@ -42,8 +43,10 @@ componentDidMount (){
        
       return (
             <div>
-
-             <Young_Adult_Container young_adult={this.state.young_adult}/>
+              <div><Navbar/></div>
+              <h1 className="Catagory">Young Adult (19 - 25 yrs old)</h1>
+                 <div className="line-catagory"></div>
+             <Young_Adult_Container young_adult={this.state.young_adult} young_adults_courses={this.state.young_adults_courses}  young_adults_cats={this.state.young_adults_cats}/>
             </div>
                 
         );
