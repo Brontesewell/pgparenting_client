@@ -3,54 +3,37 @@ import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
 import fetchAllCatagories from '../actions/fetchAllCatagories';
-import Young_Adult_Container from './Young_Adult_Container';
+import Baby_Container from './Baby_Container';
+import Pre_school from './Pre_school';
+import Primary_School from './Primary_School';
+import Toddler from './Toddler';
+import Preteen from './Preteen';
+import {createBabyHash} from "../utilities/helpers"
+
 
 class Baby extends Component {
 
 state = {
-  babies: this.props.babies,
+  babies: [],
   catagories: this.props.catagories
 }
 
 
   componentDidMount (){
-    this.props.fetchAllCatagories()
-       
-    {this.props.catagories.map(c => console.log(c))}
-        // c.id 
-        // !== 1 ? null : this.setState({
-        //   ...this.state,
-        //   babies: babies.concat(c) 
 
-        // })
+      this.props.fetchAllCatagories()
         
         }
 
 
-    //        const newArray = state.catagories.map(c => c.id === 1 ? {...state,
-    //     babies: [...state.babies action.c]} : null )
-    //         return {...state, babies: action.babies}
-
-   /* {this.props.catagories.map(c => c.id === 1 ? <h1>{c.catagory_title}</h1> : null)} */
-
-//             case ADD_ITEM :
-// return { 
-//     ...state,
-//     arr: [...state.arr, action.newItem]
-
-
     render() {
-      console.log(this.props.babies)
-      console.log(this.props.babies)
+  
         return (
             <div>
-              <div><Navbar/></div>
-              <h1 className="Catagory">Baby (0 - 12 mo)</h1>
-        <div className="line-catagory"></div>
+             
        
-       {/* {this.props.catagories.map(c => c.id === 1 ? <h1>{c.catagory_title}</h1> : null)} */}
-       
-        
+       {this.props.catagories.filter(baby => baby.id === 1).map(b => <Baby_Container baby={createBabyHash(b)}/>)}
+  
              
             </div>
                 

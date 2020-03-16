@@ -38,6 +38,8 @@ const rootReducer = (state = initialState, action) => {
                 return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
        
        
+
+                
         case 'GET_ALL_BABYS':
                 // const newArray = state.babies.filter(catagories => catagories.id == 1)
                 return {...state, babies: action.babies}

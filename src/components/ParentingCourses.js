@@ -17,7 +17,7 @@ class ParentingCourses extends Component {
 
     state = {
         catagories: this.props.catagories,
-        Baby: [],
+        baby: [],
         Toddler: [],
         Pre_school: [],
         Primary_School: [],
@@ -34,7 +34,7 @@ class ParentingCourses extends Component {
     componentDidMount() {
          this.state.catagories.map(catagories => catagories.id === 1 ?
             this.setState({
-                Baby: catagories
+            baby: catagories
             }) : 
             catagories.id === 2 ?
             this.setState({
@@ -77,7 +77,7 @@ class ParentingCourses extends Component {
               <div><Navbar/></div>
               <h1><strong>Parenting Course</strong></h1>
 
-             
+              {this.props.catagories.map(c => c.id === 1 ? <h1>{c.catagory_title}</h1> : null)}
             </div>
                 
         );
