@@ -3,29 +3,42 @@ import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
 
+
 class Pre_school extends Component {
 
+state = {
+    pre_school: ''
+}
+
+
+componentDidMount (){
+      return fetch('http://localhost:3000/catagories/3', {
+          method: "GET",
+          headers: {
+            "Authorization": `${localStorage.getItem('jwt')}`,
+            'Content-Type': 'application/json',
+              "Accept": "application/json"
+          }
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+             this.setState({
+               pre_school: data
+             }) 
+      })
+}
     render() {
         return (
             <div>
-                <Navbar/>
-                <div className="split left-side">
-                    
-                       <div>
-                        <h1>Pre_school</h1>
-
-                    </div>
-
-                
-                    </div>
-
-
-
+              <div><Navbar/></div>
+              <h1><strong>pre_school</strong></h1>
+        
+             
             </div>
                 
         );
     }
-}
-
+  }
 export default Pre_school;
 

@@ -17,13 +17,13 @@ class ParentingCourses extends Component {
 
     state = {
         catagories: this.props.catagories,
-        Baby: "",
-        Toddler: "",
-        Pre_school: "",
-        Primary_School: "",
-        Preteen: "",
-        Teen: "",
-        Young_Adult: "",
+        Baby: [],
+        Toddler: [],
+        Pre_school: [],
+        Primary_School: [],
+        Preteen: [],
+        Teen: [],
+        Young_Adult: [],
     }
 
     componentDidMount () {
@@ -76,7 +76,6 @@ class ParentingCourses extends Component {
             <div>
               <div><Navbar/></div>
               <h1><strong>Parenting Course</strong></h1>
-        
 
              
             </div>

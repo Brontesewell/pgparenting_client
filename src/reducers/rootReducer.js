@@ -3,7 +3,7 @@ const initialState = {
     users: [],
     kids: [],
     catagories: [],
-    babies: [],
+    babies: "",
     toddlers: [],
     pre_schools: [],
     primary_schools: [],
@@ -32,13 +32,21 @@ const rootReducer = (state = initialState, action) => {
 
 
         case 'GETTING_CATAGORIES':
+
                     return {...state, loading: true}
         case 'GET_ALL_CATAGORIES':
                 return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
+       
+       
         case 'GET_ALL_BABYS':
-                return {...state, babies: action.babies, loading:true }
+                return {...state, babies: action.babies}
+                
+
+
         case 'GET_ALL_TODDLERS':
                 return {...state, toddlers: action.toddlers, loading:true }
+
+
         case 'GET_ALL_PRE_SCHOOLS':
                  return {...state, pre_schools: action.pre_schools, loading:true }
         case 'GET_ALL_PRIMARY_SCHOOLS':
@@ -49,6 +57,8 @@ const rootReducer = (state = initialState, action) => {
                    return {...state, teens: action.teens, loading:true }
         case 'GET_ALL_YOUNG_ADULTS':
                     return {...state, young_adults: action.young_adults, loading:true }
+
+
 
         default:
             return state
