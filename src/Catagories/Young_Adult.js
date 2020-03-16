@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
-
+import Young_Adult_Container from './Young_Adult_Container'
 
 class Young_Adult extends Component {
 
 state = {
-    young_adult: ''
+    young_adult: '',
+    young_adults_courses: '',
+    young_adults_cats: ''
 }
 
 
@@ -22,21 +24,26 @@ componentDidMount (){
       })
       .then(res => res.json())
       .then(data => {
-        console.log(data)
-             this.setState({
+         this.setState({
                 young_adult: data
              }) 
+      data.courses.map(c => {this.setState({
+        young_adults_courses: c
+      })})
+      data.sub_catagories.map(sc => {this.setState({
+        young_adults_cats: sc
+      })})
+          
       })
 }
     render() {
 
-        
-        return (
+        // console.log(this.state.young_adults_courses)
+       
+      return (
             <div>
-              <div><Navbar/></div>
-              <h1><strong>young_adult</strong></h1>
-             {/* <h1>{this.state.young_adult.courses.map(co => console.log(co))}</h1>  */}
-             {/* render a new component and try there */}
+
+             <Young_Adult_Container young_adult={this.state.young_adult}/>
             </div>
                 
         );

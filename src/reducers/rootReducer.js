@@ -3,7 +3,7 @@ const initialState = {
     users: [],
     kids: [],
     catagories: [],
-    babies: "",
+    babies: [],
     toddlers: [],
     pre_schools: [],
     primary_schools: [],
@@ -39,9 +39,9 @@ const rootReducer = (state = initialState, action) => {
        
        
         case 'GET_ALL_BABYS':
-                return {...state, babies: action.babies}
+                const newArray = state.babies.filter(catagories => catagories.id == 1)
+                return {...state, babies: newArray}
                 
-
 
         case 'GET_ALL_TODDLERS':
                 return {...state, toddlers: action.toddlers, loading:true }
