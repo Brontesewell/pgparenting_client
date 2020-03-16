@@ -16,8 +16,8 @@ import reAuth from './actions/reAuth'
 import './App.css';
 import SignIn from './containers/SignIn';
 
-import Baby from './Catagories/Baby'
-import Toddler from './Catagories/Toddler'
+import Baby from './Catagories/Baby/Baby'
+import Toddler from './Catagories/Teen'
 import Pre_school from './Catagories/Pre_school';
 import Primary_school from './Catagories/Primary_School';
 import Preteen from './Catagories/Preteen';

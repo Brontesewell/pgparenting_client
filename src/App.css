@@ -377,6 +377,7 @@ div.menu-container {
   float:left;
   font-size: 40px;
   margin-left: 100px;
+  margin-right: 80%;
 }
 
 .Catagory{
@@ -399,15 +400,26 @@ div.menu-container {
   margin-left: 40px;
   
 }
-/* 
-float: top;
-width: 100%; 
-height: 700px; 
-object-fit: cover; */
+
 
 .images{
-  border-radius: 15px;
+  border-radius: 10px;
 }
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 #sign-in-button {
   background-color: #8597C5;

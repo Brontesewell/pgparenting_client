@@ -3,12 +3,12 @@ import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
 import ParentingCourses from './ParentingCourses'
-import Baby from '../Catagories/Baby'
-import Toddler from '../Catagories/Toddler'
+import Baby from '../Catagories/Baby/Baby'
+import Toddler from '../Catagories/Teen'
 import Pre_school from '../Catagories/Pre_school';
 import Primary_school from '../Catagories/Primary_School';
 import Preteen from '../Catagories/Preteen';
-import Teen from '../Catagories/Teen';
+import Teen from '../Catagories/Toddler';
 import Young_Adults from '../Catagories/Young_Adult';
 
 class CoursesContainer extends Component {

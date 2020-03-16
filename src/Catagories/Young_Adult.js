@@ -1,56 +1,55 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
+import fetchAllCatagories from '../actions/fetchAllCatagories';
+import Toddler_Container from './Toddler/Toddler_Container';
+import {createBabyHash} from "../utilities/helpers"
 import Navbar from '../containers/Navbar'
-import {Link} from 'react-router-dom'
-import Young_Adult_Container from './Young_Adult_Container'
+import Baby_Container from './Baby/Baby_Container';
 
 class Young_Adult extends Component {
 
 state = {
-    young_adult: '',
-    young_adults_courses: '',
-    young_adults_cats: ''
+  babies: [],
+  catagories: this.props.catagories
 }
 
 
-componentDidMount (){
-      return fetch('http://localhost:3000/catagories/11', {
-          method: "GET",
-          headers: {
-            "Authorization": `${localStorage.getItem('jwt')}`,
-            'Content-Type': 'application/json',
-              "Accept": "application/json"
-          }
-      })
-      .then(res => res.json())
-      .then(data => {
-      
-         this.setState({
-                young_adult: data
-             }) 
-      data.courses.map(c => {this.setState({
-        young_adults_courses: c
-      })})
-      data.sub_catagories.map(sc => {this.setState({
-        young_adults_cats: sc
-      })})
-          
-      })
-}
+  componentDidMount (){
+
+      this.props.fetchAllCatagories()
+        
+        }
+
+
     render() {
-
-        // console.log(this.state.young_adults_courses)
-       
-      return (
+  
+        return (
             <div>
-              <div><Navbar/></div>
-              <h1 className="Catagory">Young Adult (19 - 25 yrs old)</h1>
-                 <div className="line-catagory"></div>
-             <Young_Adult_Container young_adult={this.state.young_adult} young_adults_courses={this.state.young_adults_courses}  young_adults_cats={this.state.young_adults_cats}/>
+               <div><Navbar/></div>
+              <h1 className="Catagory">Young Adults (19 - 25 yrs old)</h1>
+        <div className="line-catagory"></div>
+       
+       {this.props.catagories.filter(baby => baby.id === 7).map(b => <Baby_Container baby={createBabyHash(b)}/>)}
+  
+             
             </div>
                 
         );
     }
   }
-export default Young_Adult;
+  const mapStateToProps = state => {
+    return {
+      babies: state.babies,
+      catagories: state.catagories
+    }
+  }
+
+  const mapsToDispatchProps = dispatch => {
+    return {
+        fetchAllCatagories: ()=> dispatch(fetchAllCatagories())
+    }
+}
+  
+export default connect(mapStateToProps, mapsToDispatchProps)(Young_Adult);
+
 
