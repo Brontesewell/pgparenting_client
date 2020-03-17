@@ -17,7 +17,7 @@ import './App.css';
 import SignIn from './containers/SignIn';
 
 import Baby from './Catagories/Baby/Baby'
-import Toddler from './Catagories/Teen'
+import Toddler from './Catagories/Toddler'
 import Pre_school from './Catagories/Pre_school';
 import Primary_school from './Catagories/Primary_School';
 import Preteen from './Catagories/Preteen';
@@ -37,13 +37,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <Switch>
-            <Route exact path='/' component ={Welcome}/>
-            <Route exact path='/signup-user' component={SignUpUser}/>
-            <Route exact path='/signin-user' component={SignIn} />
-            <Route exact path='/contact-us' component={ContactUs} />
-            { Object.keys(this.props.currentUser).length > 0 ?
-            <>
+            { this.props.currentUser ? (
+           
               <Switch>
                 <Route exact path='/home' component={Home}/>
                 <Route exact path='/profile' component={Profile}/>
@@ -61,11 +56,16 @@ class App extends React.Component {
                 <Route exact path='/young_adults' component={Young_Adults}/>
 
               </Switch>
-            </> : 
-            <h6>Please Sign In</h6>
-            }
-
+            ) : (
+              <Switch>
+            <Route exact path='/' component ={Welcome}/>
+            <Route exact path='/signup-user' component={SignUpUser}/>
+            <Route exact path='/signin-user' component={SignIn} />
+            <Route exact path='/contact-us' component={ContactUs} />
           </Switch>
+          )}
+        
+
         </Router>
       </div>
     );

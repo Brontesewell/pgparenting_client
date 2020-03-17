@@ -10,33 +10,33 @@ class Navbar extends Component {
 
     container = React.createRef();
     state = {
-      open: false,
+      // open: false,
       firstName: this.props.currentUser.first_name,
     };
 
-    componentDidMount() {
-      document.addEventListener("mousedown", this.handleClickOutside);
-    }
+    // componentDidMount() {
+    //   document.addEventListener("mousedown", this.handleClickOutside);
+    // }
 
-    componentWillUnmount() {
-      document.removeEventListener("mousedown", this.handleClickOutside);
-    }
+    // componentWillUnmount() {
+    //   document.removeEventListener("mousedown", this.handleClickOutside);
+    // }
 
-    handleClickOutside = event => {
-      if (this.container.current && !this.container.current.contains(event.target)) {
-        this.setState({
-          open: false,
-        });
-      }
-    };
+    // handleClickOutside = event => {
+    //   if (this.container.current && !this.container.current.contains(event.target)) {
+    //     this.setState({
+    //       open: false,
+    //     });
+    //   }
+    // };
 
-    handleButtonClick = () => {
-      this.setState(state => {
-        return {
-          open: !state.open,
-        };
-      });
-    };
+    // handleButtonClick = () => {
+    //   this.setState(state => {
+    //     return {
+    //       open: !state.open,
+    //     };
+    //   });
+    // };
 
     handleSignOut = e => {
         localStorage.clear()
@@ -52,8 +52,29 @@ class Navbar extends Component {
             <div className="container">
                 <a href="/home"><img className ='logo-home' alt="Logo" src={Logo}/></a>
         <h3 id="welcome-user-nav" >Welcome, {firstName}</h3>
-                        <div className="App">
-                    <div className="container-nav" id="overlay" ref={this.container}>
+ 
+        <div class="menu-item-nav">
+                    
+                    <button type="button" class="button">☰</button>
+                    <div class="container">
+                   <ul>
+          
+                           <li><Link to = '/home'>Home</Link></li>
+                            <li><Link>Our Mission</Link></li>
+                            <li><Link to = '/profile' >My Family</Link></li>
+                            <li><Link>Chatroom</Link></li>
+                            <li><Link>Shop</Link></li>
+                            <li><Link>Contact Us</Link></li>
+                            <li><Link to = '/' onClick={this.handleSignOut}>Sign Out</Link></li>
+                         
+                   </ul> 
+                   </div>     
+                   
+              </div>
+
+                        
+                        
+                    {/* <div className="container-nav" id="overlay" ref={this.container}>
                       <button type="button" class="button" onClick={this.handleButtonClick}>
                         ☰
                       </button>
@@ -72,8 +93,9 @@ class Navbar extends Component {
                           </ul>
                         </div>
                       )}
-                    </div>
-                  </div>
+                    </div> */}
+                 
+                  
                 </div> 
 
                 <ParentingNav/>

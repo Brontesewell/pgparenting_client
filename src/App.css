@@ -288,7 +288,7 @@ margin-left: -95px;
 .container-parenting {
   background-color: white;
   width: 700px;
-margin-left: 22%;
+margin-left: 18%;
 margin-right: 40%;
 margin-top: 40px;
 }
@@ -298,7 +298,8 @@ margin-top: 40px;
   border-bottom-style: solid;
   border-bottom-color: #6B6b69;
   border-width: thin;
-  margin-top: 20px;
+  margin-top: 35px;
+
 }
 
 .dropdown {
@@ -349,7 +350,8 @@ div.menu-container {
     position: absolute;
     left: 0;
     top: 100%;
-    width: 100%;
+    width: 86%;
+  margin-left: 13px;
 	
 	-webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -359,7 +361,8 @@ div.menu-container {
 }
 
 .menu-item:hover ul {
-	height: 410px;
+  height: 390px;
+  background-color: #8597C5;
 }
 
 .menu-item ul li a {
@@ -371,18 +374,18 @@ div.menu-container {
 }
 
 
-
 .sub_cats {
   color: #6B6b69;
   float:left;
   font-size: 40px;
-  margin-left: 100px;
-  margin-right: 80%;
+  margin-left: 50px;
+  margin-right: 70%;
+  margin-top: 0px;
 }
 
 .Catagory{
- font-size: 30px;
- color:#8597C5
+  font-size: 30px;
+  color:#8597C5
 }
 
 .line-catagory{
@@ -408,7 +411,7 @@ div.menu-container {
 
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 5px;
   margin-left: 20px;
 }
@@ -454,4 +457,65 @@ div.menu-container {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+
+
+
+.menu-item-nav{
+	width: 23%;
+	float: left;
+    position: relative;
+    margin-top: 42px;
+    margin-left: -100px;
+}
+
+.menu-item-nav a {
+	padding: 5px 0 5px 0;
+	font-size: 25px;
+	text-decoration: none;
+  border-radius: 5px;
+  color: white;
+	margin: 0 10px 0 10px;
+  display: block;
+}
+
+.menu-item-nav a:link, .menu-item-nava:visited {
+	color: #6B6b69;
+}
+
+.menu-item-nav a:hover, .menu-item-nav a:active {
+	color: #8597C5;
+
+}
+
+.menu-item-nav ul {
+  margin-top: 2px;
+  background-color: white;
+	list-style-type: none;
+	height: 0px;
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 86%;
+	
+	-webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+}
+
+.menu-item-nav:hover ul {
+  height: 370px;
+  background-color: #8597C5;
+}
+
+.menu-item-nav ul li a {
+	font-size: 20px;
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border-radius: 0px;
+	margin-top: -5px;
 }

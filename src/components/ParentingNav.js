@@ -43,11 +43,13 @@ render() {
 
 
         </div>
+        <div class="menu-item">
+               <Link to = '/co-parents' className="parenting-links">Co-Parenting</Link>
+      
+               </div>
         </div>
-
-               <Link to = '/co-parents' className="parenting-co">Co-Parenting</Link>
-      
-      
+        <br></br>
+   
       
       <div class="line-row"></div>
       </div>
