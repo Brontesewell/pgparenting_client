@@ -13,7 +13,8 @@ const Profile = (props) => {
                {<Navbar/>} 
             </div>
             <div className = 'row'>
-                <i className="material-icons large">Profile</i>
+            <h1 className="Catagory">My Family</h1>
+             <div className="line-catagory"></div>
                 <h3 className="pink-text text-accent-3">{first_name + ' ' + last_name}</h3>
                 <h6><strong>Email: </strong>{email}</h6>
                </div>

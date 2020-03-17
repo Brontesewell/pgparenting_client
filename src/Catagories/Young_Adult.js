@@ -4,7 +4,7 @@ import fetchAllCatagories from '../actions/fetchAllCatagories';
 import Toddler_Container from './Toddler/Toddler_Container';
 import {createBabyHash} from "../utilities/helpers"
 import Navbar from '../containers/Navbar'
-import Baby_Container from './Baby/Baby_Container';
+import Container from './Layout/Container';
 
 class Young_Adult extends Component {
 
@@ -29,7 +29,7 @@ state = {
               <h1 className="Catagory">Young Adults (19 - 25 yrs old)</h1>
         <div className="line-catagory"></div>
        
-       {this.props.catagories.filter(baby => baby.id === 7).map(b => <Baby_Container baby={createBabyHash(b)}/>)}
+       {this.props.catagories.filter(baby => baby.id === 7).map(b => <Container baby={createBabyHash(b)}/>)}
   
              
             </div>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import fetchAllCatagories from '../../actions/fetchAllCatagories';
-import Baby_Container from './Baby_Container';
-import {createBabyHash} from "../../utilities/helpers"
-import Navbar from '../../containers/Navbar'
+import fetchAllCatagories from '../actions/fetchAllCatagories';
+import Container from './Layout/Container';
+import {createBabyHash} from "../utilities/helpers"
+import Navbar from '../containers/Navbar'
 
 class Baby extends Component {
 
@@ -28,7 +28,7 @@ state = {
              <div><Navbar/></div>
               <h1 className="Catagory">Baby (0 - 12 mo)</h1>
         <div className="line-catagory"></div>
-       {this.props.catagories.filter(baby => baby.id === 1).map(b => <Baby_Container baby={createBabyHash(b)}/>)}
+       {this.props.catagories.filter(baby => baby.id === 1).map(b => <Container baby={createBabyHash(b)}/>)}
   
              
             </div>

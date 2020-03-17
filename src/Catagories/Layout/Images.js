@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
 
-class Toddler_images extends Component {
+class Images extends Component {
 
 
 
     render() {
+          
         return (
             <div>
-
-            <div className="column">
+                {/* <h1 className="sub_cats"> {this.props.sub.sub_title}</h1> */}
+            <div className="column" onClick={() => this.props.handleCourseClick(this.props.course)}>
             <img className="images" src={this.props.course.course_image}/>
             <h5>{this.props.course.title}</h5>
            </div>
@@ -21,6 +22,6 @@ class Toddler_images extends Component {
   }
 
   
-export default Toddler_images;
+export default Images;
 
 

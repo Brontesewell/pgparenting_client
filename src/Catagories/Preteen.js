@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import fetchAllCatagories from '../actions/fetchAllCatagories';
 import {createBabyHash} from "../utilities/helpers"
 import Navbar from '../containers/Navbar'
-import Baby_Container from './Baby/Baby_Container';
+import Container from './Layout/Container';
 
 class Preteen extends Component {
 
@@ -28,7 +28,7 @@ state = {
               <h1 className="Catagory">Preteen (11 - 12 yrs old)</h1>
         <div className="line-catagory"></div>
        
-       {this.props.catagories.filter(baby => baby.id === 5).map(b => <Baby_Container baby={createBabyHash(b)}/>)}
+       {this.props.catagories.filter(baby => baby.id === 5).map(b => <Container baby={createBabyHash(b)}/>)}
   
              
             </div>

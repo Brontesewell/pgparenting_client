@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Toddler_Card from './Toddler_Card';
+import Card from './Card';
 
-class Toddler_Container extends Component {
+class Container extends Component {
 
 
 
@@ -12,7 +12,7 @@ class Toddler_Container extends Component {
         return (
             <div>
 
-    {this.props.toddler.catagory.sub_catagories.map(sub => <Toddler_Card sub={sub} />)}
+    {this.props.baby.catagory.sub_catagories.map(sub => <Card sub={sub} />)}
              
             </div>
                 
@@ -21,6 +21,6 @@ class Toddler_Container extends Component {
   }
 
   
-export default Toddler_Container;
+export default Container;
 
 

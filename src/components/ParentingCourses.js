@@ -4,8 +4,7 @@ import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
 import fetchAllCatagories from '../actions/fetchAllCatagories'
 import ParentingTips from './ParentingTips'
-import CoursesContainer from './CoursesContainer'
-import Baby from '../Catagories/Baby/Baby'
+import Baby from '../Catagories/Baby'
 import Toddler from '../Catagories/Teen'
 import Pre_school from '../Catagories/Pre_school';
 import Primary_school from '../Catagories/Primary_School';

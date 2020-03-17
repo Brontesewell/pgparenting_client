@@ -10,7 +10,6 @@ class Navbar extends Component {
 
     container = React.createRef();
     state = {
-      // open: false,
       firstName: this.props.currentUser.first_name,
     };
 

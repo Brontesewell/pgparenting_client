@@ -16,13 +16,14 @@ import reAuth from './actions/reAuth'
 import './App.css';
 import SignIn from './containers/SignIn';
 
-import Baby from './Catagories/Baby/Baby'
+import Baby from './Catagories/Baby'
 import Toddler from './Catagories/Toddler'
 import Pre_school from './Catagories/Pre_school';
 import Primary_school from './Catagories/Primary_School';
 import Preteen from './Catagories/Preteen';
 import Teen from './Catagories/Teen';
 import Young_Adults from './Catagories/Young_Adult';
+import CourseInfo from './Catagories/Layout/CourseInfo'
 
 class App extends React.Component {
 
@@ -54,7 +55,9 @@ class App extends React.Component {
                 <Route exact path='/preteen' component={Preteen}/>
                 <Route exact path='/teen' component={Teen}/>
                 <Route exact path='/young_adults' component={Young_Adults}/>
-
+               
+                <Route exact path='/course' component={CourseInfo} />
+              
               </Switch>
             ) : (
               <Switch>

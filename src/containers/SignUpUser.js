@@ -28,7 +28,7 @@ export class SignUpUser extends Component {
                 
                  <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a>
               
-                <h4 id="sign_in">Sign in</h4>
+                <h4 id="sign_in">Sign Up</h4>
                
                 <form onSubmit={(e) => this.props.signUpUser(e, this.state, history)}>
                    
