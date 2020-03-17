@@ -3,15 +3,16 @@ const initialState = {
     users: [],
     kids: [],
     catagories: [],
-    babies: [],
-    toddlers: [],
-    pre_schools: [],
-    primary_schools: [],
-    preteens: [],
-    teens: [],
-    young_adults: [],
+    // babies: [],
+    // toddlers: [],
+    // pre_schools: [],
+    // primary_schools: [],
+    // preteens: [],
+    // teens: [],
+    // young_adults: [],
     displayCatagories: [],
-    loading: false
+    loading: false,
+    selectedKid: {},
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -38,6 +39,28 @@ const rootReducer = (state = initialState, action) => {
                 return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
        
        
+        case 'SET_ALL_KIDS':
+                return {...state, kids: action.kids }
+        case 'SET_SELECTED_KID':
+            return {...state, selectedKid: action.kid}     
+        case 'EDIT_KID':
+                const newArray = state.kids.filter(kid => kid.id !== action.kid.id)
+                newArray.push(action.kid)
+                console.log(newArray)
+                return {...state, kids: newArray, currentUser: {...state.currentUser, kids: newArray}}
+
+
+        case 'DELETE_KID':
+                  const filteredArray = state.kids.filter(kid => kid.id !== action.kid.id)
+             return {...state, kids: filteredArray}
+
+
+
+
+
+
+
+
 
 
         case 'GET_ALL_BABYS':

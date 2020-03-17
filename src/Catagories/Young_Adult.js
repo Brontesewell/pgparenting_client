@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import fetchAllCatagories from '../actions/fetchAllCatagories';
-import Toddler_Container from './Toddler/Toddler_Container';
 import {createBabyHash} from "../utilities/helpers"
 import Navbar from '../containers/Navbar'
 import Container from './Layout/Container';

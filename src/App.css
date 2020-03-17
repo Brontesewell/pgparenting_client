@@ -392,7 +392,7 @@ div.menu-container {
   border-bottom-style: solid;
   border-bottom-color: #6B6b69;
   width: 250px;
-  margin-left: 40%;
+  margin-left: 38%;
   margin-right: 40%;
   margin-bottom: 20px;
 }
@@ -518,4 +518,71 @@ div.menu-container {
 	margin: 0 auto 0 auto;
 	border-radius: 0px;
 	margin-top: -5px;
+}
+
+
+
+#leftbox { 
+  float:left;  
+  border-style: solid;
+  border-width: thin;
+  border-color: #8597C5;
+  width:48.5%; 
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+} 
+#middlebox{ 
+  float:left;  
+  border-style: solid;
+  border-width: thin;
+  border-color: #8597C5;
+  width:48.5%; 
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+} 
+
+/* .children-div {
+  border-style: solid;
+  border-width: thin;
+  border-color: #8597C5;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+} */
+
+#edit-child-button {
+  background-color: #8597C5;
+  float: center;
+  margin-bottom: 20px;
+}
+
+#child-name {
+  float:left;  
+  border-style: solid;
+  border-width: thin;
+  border-color: #8597C5;
+  width:26.5%; 
+  height: 70px
+
+}
+
+#child-info{
+  float:left;  
+  border-style: solid;
+  border-width: thin;
+  border-color: #8597C5;
+  width:48.5%; 
+height: 70px
+}
+
+#child-edit-b{
+  float:right;  
+  border-style: solid;
+  border-width: thin;
+  border-color: #8597C5;
+  width:25%; 
+height: 70px
 }

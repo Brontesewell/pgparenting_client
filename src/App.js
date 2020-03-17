@@ -5,6 +5,7 @@ import Welcome from './containers/Welcome'
 import SignUpUser from './containers/SignUpUser'
 import Home from './containers/Home'   
 import EditProfile from './containers/EditProfile'
+import EditKid from './containers/EditKid'
 import Profile from './components/Profile'
 import ContactUs from './containers/ContactUs'
 import ParentingCourses from './components/ParentingCourses'
@@ -12,6 +13,7 @@ import ParentingTips from './components/ParentingTips'
 import CoParents from './components/CoParents'
 import fetchAllCatagories from './actions/fetchAllCatagories'
 import fetchAllUsers from './actions/fetchAllUsers'
+import fetchAllKids from './actions/fetchAllKids'
 import reAuth from './actions/reAuth'
 import './App.css';
 import SignIn from './containers/SignIn';
@@ -31,6 +33,7 @@ class App extends React.Component {
       this.props.reAuth()
       this.props.fetchAllUsers()
       this.props.fetchAllCatagories()
+      this.props.fetchAllKids()
   }
 
 
@@ -55,7 +58,7 @@ class App extends React.Component {
                 <Route exact path='/preteen' component={Preteen}/>
                 <Route exact path='/teen' component={Teen}/>
                 <Route exact path='/young_adults' component={Young_Adults}/>
-               
+                <Route exact path='/edit-kid' component={EditKid}/>
                 <Route exact path='/course' component={CourseInfo} />
               
               </Switch>
@@ -86,7 +89,8 @@ const mapsToDispatchProps = dispatch => {
   return{
     reAuth: () => dispatch(reAuth()),
     fetchAllUsers: ()=> dispatch(fetchAllUsers()),
-    fetchAllCatagories: ()=> dispatch(fetchAllCatagories())
+    fetchAllCatagories: ()=> dispatch(fetchAllCatagories()),
+    fetchAllKids: ()=> dispatch(fetchAllKids())
   }
 }
   
