@@ -44,10 +44,12 @@ const rootReducer = (state = initialState, action) => {
         case 'SET_SELECTED_KID':
             return {...state, selectedKid: action.kid}     
         case 'EDIT_KID':
-                const newArray = state.kids.filter(kid => kid.id !== action.kid.id)
+            console.log(state.kids)
+                const newArray = state.currentUser.kids.filter(kid =>  kid.id !== action.kid.id )
                 newArray.push(action.kid)
                 console.log(newArray)
-                return {...state, kids: newArray, currentUser: {...state.currentUser, kids: newArray}}
+               
+                return {...state, currentUser: {...state.currentUser, kids: newArray}}
 
 
         case 'DELETE_KID':
