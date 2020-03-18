@@ -28,6 +28,7 @@ import Preteen from './Catagories/Preteen';
 import Teen from './Catagories/Teen';
 import Young_Adults from './Catagories/Young_Adult';
 import CourseInfo from './Catagories/Layout/CourseInfo'
+import AddKid from './containers/AddKid'
 
 class App extends React.Component {
 
@@ -55,6 +56,7 @@ class App extends React.Component {
                 <Route exact path='/parenting-courses' component={ParentingCourses}/>
                 <Route exact path='/parenting-tips' component={ParentingTips}/>
                 <Route exact path='/co-parents' component={CoParents}/>
+                <Route exact path='/add-child' component={AddKid}/>
 
                 <Route exact path='/baby' component={Baby}/>
                 <Route exact path='/toddler' component={Toddler}/>
