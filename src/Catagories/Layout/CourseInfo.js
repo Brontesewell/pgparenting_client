@@ -10,10 +10,14 @@ class CourseInfo extends Component {
         return (
             <div>
 
-              <div className="column">
+              <div >
                    <h1>{this.props.clickedcourse.title}</h1>
                    <h4><i>{this.props.clickedcourse.quote}</i></h4>
-                   <p>{this.props.clickedcourse.content}</p>
+                   <br></br>
+                   <img id="course-image" src={this.props.clickedcourse.course_image}/>
+                   <p id="course-content">{this.props.clickedcourse.content}</p>
+                   <br></br>
+                   <br></br>
                    <button className="btn btn-secondary btn-lg" onClick={() => this.props.handleBackButton()}>Back</button>
              </div>
              

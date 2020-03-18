@@ -587,3 +587,44 @@ height: 70px
   width:25%; 
 height: 70px
 }
+
+#course-image {
+  width:30%;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+#course-content{
+  margin-right: 20px;
+}
+
+#shop{
+  float: left;
+  margin: 10px;
+  margin-left: 20px;
+  width: 90px;
+}
+
+#imgshop {
+  height: 15rem;
+  margin-left: 11%;
+}
+
+#title-product-shop {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+#shop-button {
+  margin-left: 39%;
+  margin-right: 35%;
+  margin-bottom: 10px;
+  background-color: #8597C5;
+}
+
+.text-shop {
+  text-align: center;
+}

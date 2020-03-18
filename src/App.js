@@ -16,7 +16,9 @@ import fetchAllUsers from './actions/fetchAllUsers'
 import fetchAllKids from './actions/fetchAllKids'
 import reAuth from './actions/reAuth'
 import './App.css';
-import SignIn from './containers/SignIn';
+import SignIn from './containers/SignIn'
+import AboutUs from './containers/AboutUs'
+import ShopList from './containers/ShopList'
 
 import Baby from './Catagories/Baby'
 import Toddler from './Catagories/Toddler'
@@ -45,6 +47,9 @@ class App extends React.Component {
            
               <Switch>
                 <Route exact path='/home' component={Home}/>
+                <Route exact path='/contact-us' component={ContactUs} />
+                <Route exact path='/about-us' component={AboutUs} />
+                <Route exact path='/shop' component={ShopList}/>
                 <Route exact path='/profile' component={Profile}/>
                 <Route exact path='/edit-profile' component={EditProfile}/>
                 <Route exact path='/parenting-courses' component={ParentingCourses}/>
@@ -60,14 +65,20 @@ class App extends React.Component {
                 <Route exact path='/young_adults' component={Young_Adults}/>
                 <Route exact path='/edit-kid' component={EditKid}/>
                 <Route exact path='/course' component={CourseInfo} />
-              
-              </Switch>
-            ) : (
-              <Switch>
-            <Route exact path='/' component ={Welcome}/>
+
+
+                <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
             <Route exact path='/signin-user' component={SignIn} />
             <Route exact path='/contact-us' component={ContactUs} />
+              </Switch>
+              
+            ) : (
+              <Switch>
+            {/* <Route exact path='/' component ={Welcome}/>
+            <Route exact path='/signup-user' component={SignUpUser}/>
+            <Route exact path='/signin-user' component={SignIn} />
+            <Route exact path='/contact-us' component={ContactUs} /> */}
           </Switch>
           )}
         
