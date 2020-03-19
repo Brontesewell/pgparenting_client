@@ -7,7 +7,7 @@ class CourseCollection extends Component {
 
 render() {
     return (
-<h6>{this.props.course.title}</h6>
+<h5>{this.props.course.title}</h5>
     );
 }
 }

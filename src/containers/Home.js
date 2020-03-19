@@ -17,6 +17,10 @@ class Home extends Component {
                     
                 </div>
              <h1>Home</h1>
+             <h5>- Tip of the week</h5>
+             <h5>- Our vision ?</h5>
+             <h5>- link to some courses</h5>
+             <h5>- photos in google doc</h5>
                     
                 </div>
          

@@ -29,7 +29,9 @@ console.log(props.currentUser.kids)
             <div id = "boxes"> 
             <div id = "leftbox"> 
                 <h3>Children</h3> 
-                <Link to='/add-child'><button id="sign-in-button" className="btn">Add another Child</button></Link>
+                {/* <Link to='/add-child'> */}
+                    <button id="sign-in-button" className="btn">Add another Child</button>
+                    {/* </Link> */}
                 
                 <br></br>
                 <br></br>

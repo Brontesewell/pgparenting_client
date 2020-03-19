@@ -1,7 +1,7 @@
 const addKid = (e, state, history) => {
     e.preventDefault();
 
-    const {name, birthday, gender} = state
+    const {name, birthday, gender, user_id} = state
 
     return (dispatch) => {
         fetch('http://localhost:3000/kids',{
@@ -15,6 +15,7 @@ const addKid = (e, state, history) => {
             body: JSON.stringify({
                 name: name,
                 birthday: birthday,
+                user_id: user_id,
                 gender: gender
             })
         })
