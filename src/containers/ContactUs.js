@@ -19,7 +19,7 @@ class ContactUs extends Component {
                    
                     <div className="contact-us-div">
                     <form action="action_page.php">
-                        <h1>Contact Us</h1>
+                        <h1 id="contact-us-title">Contact Us</h1>
 
                     <label for="fname">First Name</label>
 <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
