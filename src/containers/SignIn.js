@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import signIn from '../actions/signIn'
 import Logo from '../Logo.jpg'
+import { Link } from "react-router-dom";
 
 class SignIn extends Component {
 
@@ -23,7 +24,7 @@ class SignIn extends Component {
         return (
             <div className="container-signin">
                  <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a>
-                <h4 id="sign_in">Sign in</h4>
+                <h4 id="sign_in">Login</h4>
                 <form onSubmit={(e) => this.props.signIn(e, this.state, this.props.history)}>
 
                     <div className="input-field col s12">
@@ -38,7 +39,9 @@ class SignIn extends Component {
                         <input className = 'validate' id='icon_lock' type='password' name="password" value={password} onChange={this.handleChange}/>
                     </div>
                     
-                    <button id="sign-in-button" className="btn-large" type="submit">Sign In</button>
+                    <button id="sign-in-button" className="btn-large" type="submit">Next</button>
+               <br></br>
+                <Link to='/signup-user' className="links-signup-signin" >Or Sign Up</Link>
                 </form>
             </div>
         );

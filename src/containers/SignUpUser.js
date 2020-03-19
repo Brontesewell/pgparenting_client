@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import signUpUser from '../actions/signUpUser'
 import Logo from '../Logo.jpg'
+import { Link } from "react-router-dom";
 
 export class SignUpUser extends Component {
 
@@ -46,8 +47,10 @@ export class SignUpUser extends Component {
                         <input type='password' name="password" placeholder="Password" value={password} onChange={this.handleChange}/>
                     
 
-                    <button  id="sign-in-button" className="btn-large" type="submit">NEXT</button>
-
+                    <button  id="sign-in-button" className="btn-large" type="submit">Next</button>
+                    <br></br>
+                <Link to='/signin-user' className="links-signup-signin" >Or Login</Link>
+                
                 </form>
 
             </div>

@@ -46,8 +46,10 @@ body {
 #welcome-image {
   float: top;
   width: 100%; /* width of container */
-  height: 700px; /* height of container */
+  height: 600px; /* height of container */
   object-fit: cover;
+  position: center;
+  overflow: hidden;
 }
 
 
@@ -133,7 +135,7 @@ h2 {
 color: black;
     float: left;
     margin-left: -50px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .logo-home{
@@ -145,7 +147,7 @@ color: black;
 
 #wecome-navbar {
   background-color: white;
-  height: 89px;
+  height: 95px;
 }
 
 .nav-links {
@@ -153,7 +155,7 @@ color: black;
   margin-left: 40px;
   float: right;
   font-size: 24px;
-  margin-top: 15px;
+  margin-top: 18px;
   margin-right: -10px;
 }
 
@@ -192,7 +194,7 @@ color: black;
 }
 
 .btnright:focus {     
-  background-color:white;    
+  background-color:#FDEAE3;    
 }
 
 .tagline {
@@ -426,6 +428,8 @@ div.menu-container {
 
 #sign-in-button {
   background-color: #8597C5;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #sign_in {
@@ -680,4 +684,205 @@ input[type=submit]:hover {
 
 #contact-us-title {
   color: #8597C5;
+}
+
+#right-membership{
+ width:45%;
+ float: right;
+ margin-right: 5%;
+ padding-top: 2%;
+}
+
+#left-membership{
+  width:40%;
+  float: left;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 2%;
+ }
+
+ #membership-title {
+  color: #8597C5;
+  font-weight: 300;
+ }
+
+ #left-membership-head{ 
+   margin-bottom: 10px;
+   color: #2B2A2A;
+ }
+
+ .h5-left-membership {
+  font-weight: 300;
+  padding-bottom: 1%;
+  color: #6B6b69;
+ }
+
+ #bottom-div-welcome{
+  margin-top: 30%;
+  background-color: #FDEAE3;
+  height: 560px;
+ }
+
+ #left-welcome-bottom{
+  width:45%;
+  float: left;
+  text-align: left;
+  margin-left: 11%;
+  margin-right: 2%;
+  margin-top: 10%;
+ }
+
+
+
+
+.box {
+  width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  color: #6B6b69;
+  font-family: arial;
+  position: relative;
+}
+
+
+
+.sb3:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 30px solid #fff;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fff;
+  border-bottom: 30px solid transparent;
+  left: 14px;
+  bottom: -50px;
+}
+
+#right-welcome-bottom{
+  margin-top: 5%;
+  margin-left: 48%;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#right-top-text {
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 10px;
+
+}
+#right-bottom-text {
+  text-align: right;
+  font-weight: 200;
+  margin: 10px;
+}
+
+.btn-welcome-bottom{
+  position: absolute;
+  margin-top: 30%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #8597C5;
+  color: white;
+  font-size: 30px;
+  padding: 18px 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-welcome-bottom:focus {     
+  background-color:#3b4b75;    
+}
+
+.links-signup-signin{
+  color: #6B6b69;
+  margin-left: 40px;
+  float: center;
+  font-size: 20px;
+  margin-right: 40px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+#top-home-img {
+  object-fit: cover;
+  width: 90%;
+  height: 450px;
+  margin-top: -20px;
+}
+
+
+#from-the-blog{
+  word-spacing: 3px;
+  color: #8597C5;
+  float: left;
+  margin-left: 90px;
+  margin-top:40px;
+  margin-right: 50%;
+}
+#o {
+  color: #6B6b69;
+  margin: 10px;
+}
+
+.blog-images{
+  border-radius: 10px;
+}
+
+#blog-home-div{
+  float:center;
+  margin-left: 7%;
+  margin-right: 7%;
+
+}
+
+
+#left-blog{
+  margin-top: 20px;
+  float:left;  
+  width:30%; 
+  height:280px; 
+  color: #6B6b69
+}
+
+#right-blog{
+  margin-top: 20px;
+  margin-left: 5%;
+  float:right; 
+ width:30%; 
+ height:280px; 
+ color: #6B6b69
+}
+
+#center-blog{
+  margin-top: 20px;
+  margin-left: 5%;
+  float:left;  
+  width:30%; 
+  height:280px; 
+  color: #6B6b69
+}
+
+.links-blog{
+  color: #8597C5;
+}
+
+.links-blog:hover{
+  text-decoration: underline;
+}
+
+#about-home {
+  object-fit: cover;
+  margin-top: 90px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 500px;
 }
