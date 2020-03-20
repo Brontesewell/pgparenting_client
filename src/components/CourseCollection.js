@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-import findAndDestroyCollection from '../actions/findAndDestroyCollection'
+import deleteCollection from '../actions/deleteCollection'
 
 
 class CourseCollection extends Component {
@@ -9,11 +9,12 @@ class CourseCollection extends Component {
 render() {
     const {history, currentUser} = this.props
     const collection = {user_id: currentUser.id, course_id: this.props.course.id}
+    const {id} = collection
     console.log(collection)
     return (
         <div>
 <h5>{this.props.course.title}</h5>
-<br/><button className="btn" type="submit" onClick={(e) => findAndDestroyCollection(e, history, collection)}>Delete Course</button>
+<br/><button className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}>Delete Course</button>
 </div>
     );
 }
@@ -27,7 +28,9 @@ const mapStateToProps = state => {
 
 const mapsToDispatchProps = dispatch => {
     return {
-        findAndDestroyCollection: (e, history, collection) => dispatch(findAndDestroyCollection(e, history, collection))
+        deleteCollection: (e, collection, history) => dispatch(deleteCollection(e, collection, history))
+
+        // findAndDestroyCollection: (e, history, collection) => dispatch(findAndDestroyCollection(e, history, collection))
     }
 }
 
