@@ -3,14 +3,13 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import deleteCollection from '../actions/deleteCollection'
 
-
 class CourseCollection extends Component {
 
 render() {
     const {history, currentUser} = this.props
     const collection = {user_id: currentUser.id, course_id: this.props.course.id}
     const {id} = collection
-    console.log(collection)
+console.log(this.props)
     return (
         <div>
 <h5>{this.props.course.title}</h5>

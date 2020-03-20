@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import Children from './Children'
 import CourseCollection from './CourseCollection'
 
+
 const Profile = (props) => {
 console.log(props.currentUser.kids)
     const {first_name, last_name, email} = props.currentUser
