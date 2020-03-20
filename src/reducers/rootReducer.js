@@ -44,8 +44,10 @@ const rootReducer = (state = initialState, action) => {
        case 'DELETE_COLLECTION':
             const filteredCollection = state.collections.filter(collection => collection.id !== action.collection.id)
             return {...state, collections: filteredCollection} 
+        case 'ADDED_TO_FAVS':
+                return {...state, collections: action.collection, currentUser:{...state.currentUser, collections: [...state.currentUser.collections, action.collection]}}
 
-
+                
         case 'SET_ALL_KIDS':
                 return {...state, kids: action.kids }
         case 'SET_SELECTED_KID':
@@ -58,7 +60,6 @@ const rootReducer = (state = initialState, action) => {
         case 'DELETE_KID':
                 const filteredArray = state.kids.filter(kid => kid.id !== action.kid.id)
                 return {...state, kids: filteredArray}
-
 
          case 'ADD_KID':
                 return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}

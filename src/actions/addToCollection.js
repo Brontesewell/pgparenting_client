@@ -1,5 +1,5 @@
 
-const addToCollection = (event, state, order) => {
+const addToCollection = (e, state, history) => {
     e.preventDefault(); 
     const {course_id, user_id} = state
 
