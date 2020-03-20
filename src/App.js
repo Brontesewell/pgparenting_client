@@ -44,7 +44,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-            { this.props.currentUser ? (
+            {/* { this.props.currentUser ? ( */}
            
               <Switch>
                 <Route exact path='/home' component={Home}/>
@@ -69,20 +69,19 @@ class App extends React.Component {
                 <Route exact path='/course' component={CourseInfo} />
 
 
-                <Route exact path='/' component ={Welcome}/>
+            <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
             <Route exact path='/signin-user' component={SignIn} />
             <Route exact path='/contact-us' component={ContactUs} />
               </Switch>
               
-            ) : (
-              <Switch>
-            {/* <Route exact path='/' component ={Welcome}/>
-            <Route exact path='/signup-user' component={SignUpUser}/>
-            <Route exact path='/signin-user' component={SignIn} />
-            <Route exact path='/contact-us' component={ContactUs} /> */}
-          </Switch>
-          )}
+          {/* //   ) : (
+          //     <Switch>
+          //   {/* <Route exact path='/' component ={Welcome}/>
+          //   <Route exact path='/signup-user' component={SignUpUser}/>
+          //   <Route exact path='/signin-user' component={SignIn} />
+          //   <Route exact path='/contact-us' component={ContactUs} /> */}
+          {/* // </Switch> */}
         
 
         </Router>

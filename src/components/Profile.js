@@ -28,11 +28,9 @@ console.log(props.currentUser.kids)
 
             <div id = "boxes"> 
             <div id = "leftbox"> 
-                <h3>Children</h3> 
-                {/* <Link to='/add-child'> */}
-                    <button id="sign-in-button" className="btn">Add another Child</button>
-                    {/* </Link> */}
-                
+                <h3>Children</h3>  
+                        <Link to='/add-child'><button id="sign-in-button" className="btn">Add another Child</button></Link>
+               
                 <br></br>
                 <br></br>
                     {props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}

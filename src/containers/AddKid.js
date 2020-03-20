@@ -11,6 +11,7 @@ class AddKid extends Component {
         name: "",
         birthday: "",
         gender: "",
+        user_id: this.props.currentUser.id
     }
 
 
@@ -24,7 +25,7 @@ class AddKid extends Component {
     render() {
         
 
-        const {name, birthday, gender} = this.state
+        const {name, birthday, gender, user_id} = this.state
         const {history} = this.props
 
         return (
@@ -52,6 +53,12 @@ class AddKid extends Component {
         );
     }
 }
+const mapStateToProps = state => {
+    return {
+        currentUser: state.currentUser,
+    }
+}
+
 
 
 const mapsToDispatchProps = dispatch => {
@@ -60,4 +67,4 @@ const mapsToDispatchProps = dispatch => {
     }
 }
 
-export default connect(null, mapsToDispatchProps)(AddKid);
+export default connect(mapStateToProps, mapsToDispatchProps)(AddKid);

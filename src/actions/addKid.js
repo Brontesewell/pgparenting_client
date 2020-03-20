@@ -15,8 +15,8 @@ const addKid = (e, state, history) => {
             body: JSON.stringify({
                 name: name,
                 birthday: birthday,
-                user_id: user_id,
-                gender: gender
+                gender: gender,
+                user_id: user_id
             })
         })
         .then(resp => resp.json())

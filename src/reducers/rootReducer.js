@@ -3,6 +3,7 @@ const initialState = {
     users: [],
     kids: [],
     catagories: [],
+    collections: [],
     // babies: [],
     // toddlers: [],
     // pre_schools: [],
@@ -13,6 +14,7 @@ const initialState = {
     displayCatagories: [],
     loading: false,
     selectedKid: {},
+    selectedCourse: {},
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -37,26 +39,30 @@ const rootReducer = (state = initialState, action) => {
                     return {...state, loading: true}
         case 'GET_ALL_CATAGORIES':
                 return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
-       
-       
+       case 'GET_ALL_COLLECTIONS':
+            return {...state, collections: action.collection, loading: true }
+       case 'DELETE_COLLECTION':
+            const filteredCollection = state.collections.filter(collection => collection.id !== action.collection.id)
+            return {...state, collections: filteredCollection} 
+
+
         case 'SET_ALL_KIDS':
                 return {...state, kids: action.kids }
         case 'SET_SELECTED_KID':
-            return {...state, selectedKid: action.kid}     
+                return {...state, selectedKid: action.kid}     
         case 'EDIT_KID':
-            console.log(state.kids)
                 const newArray = state.currentUser.kids.filter(kid =>  kid.id !== action.kid.id )
                 newArray.push(action.kid)
-                console.log(newArray)
-               
                 return {...state, currentUser: {...state.currentUser, kids: newArray}}
 
-         case 'ADD_KID':
-                return {...state, currentUser: {...state.currentUser, kids: action.kid}}
-                
         case 'DELETE_KID':
-                  const filteredArray = state.kids.filter(kid => kid.id !== action.kid.id)
-             return {...state, kids: filteredArray}
+                const filteredArray = state.kids.filter(kid => kid.id !== action.kid.id)
+                return {...state, kids: filteredArray}
+
+
+         case 'ADD_KID':
+                return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}
+                
 
 
 
