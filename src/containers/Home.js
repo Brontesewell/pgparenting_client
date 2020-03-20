@@ -39,6 +39,17 @@ class Home extends Component {
                     </div>
 
                     </div>
+
+<div id="tip-home">
+<h1 id="tip-title">PG Parenting Tip of the week</h1>
+<div id="tip-left">
+<img id="tip-photo" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+</div>
+<div id="tip-right">
+    <p>jfhsdf jsdfk jsdhfkj skdh jksdhf ksdjhf ksdfh ksfhskdfh;rwo ;fqwofhw wo howf hwofhoefwfoh fhow efhfo howef ihfo</p>
+</div>
+</div>
+
 <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
                     
                    
