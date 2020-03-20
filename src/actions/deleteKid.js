@@ -2,7 +2,7 @@ const deleteKid = (e, kid, history) => {
     e.preventDefault();
 
     return (dispatch) => {
-        fetch(`http://localhost:3000/kid/${kid.id}`, {
+        fetch(`http://localhost:3000/kids/${kid.id}`, {
             method: "DELETE",
             headers: {
                 "Authorization": `${localStorage.getItem('jwt')}`,

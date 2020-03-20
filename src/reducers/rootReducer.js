@@ -58,8 +58,8 @@ const rootReducer = (state = initialState, action) => {
                 return {...state, currentUser: {...state.currentUser, kids: newArray}}
 
         case 'DELETE_KID':
-                const filteredArray = state.kids.filter(kid => kid.id !== action.kid.id)
-                return {...state, kids: filteredArray}
+                const filteredArray = state.currentUser.kids.filter(kid => kid.id !== action.kid.id)
+                return {...state, currentUser: {...state.currentUser, kids: filteredArray}}
 
          case 'ADD_KID':
                 return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}

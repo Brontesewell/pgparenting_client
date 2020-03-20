@@ -11,6 +11,7 @@ class EditKid extends Component {
         name: this.props.selectedKid.name,
         birthday: this.props.selectedKid.birthday,
         gender: this.props.selectedKid.gender,
+        user_id: this.props.currentUser.id
     }
 
     handleChange = (e) => {
@@ -24,7 +25,7 @@ class EditKid extends Component {
         
         console.log(this.props.selectedKid)
 
-        const {name, birthday, gender} = this.state
+        const {name, birthday, gender, user_id} = this.state
         const {editKid, deleteKid, history, selectedKid} = this.props
         const {id} = selectedKid
 
@@ -49,7 +50,7 @@ class EditKid extends Component {
                         <br></br>
                         <button className="waves-effect waves btn blue" type="submit" >Update</button>
                     </form>
-                    <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteKid(e, id, history)}>Delete Your Kid</button>
+                    <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteKid(e, selectedKid, history)}>Delete Your Kid</button>
                 </div>
             </div>
         );
@@ -59,7 +60,8 @@ class EditKid extends Component {
 const mapStateToProps = state => {
     return {
         selectedKid: state.selectedKid,
-        kids: state.kids
+        kids: state.kids,
+        currentUser: state.currentUser,
     }
 }
 
