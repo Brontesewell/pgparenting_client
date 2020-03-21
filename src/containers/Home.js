@@ -128,11 +128,9 @@ class Home extends Component {
 
 			<div class="footer-right">
 
-				<p class="footer-company-about">
-					<span id="span-footer">About the company</span>
-                    <br></br>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-				</p>
+					<p class="footer-company-about"><span id="span-footer">About the company</span></p>
+                  
+				<p id="about-footer-text"> Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. Lorem ipsum dolor sit amet, consectateur adispicing elit. Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit.</p>
 
 			
 
