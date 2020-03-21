@@ -3,6 +3,9 @@ import {connect} from 'react-redux'
 import Navbar from './Navbar'
 import { Link } from "react-router-dom";
 import Logo from '../Logo.jpg'
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 class Home extends Component {
 
@@ -22,6 +25,7 @@ class Home extends Component {
 
                 <div id="tip-home">
 <h2 id="tip-title">PG Parenting Tip of the week</h2>
+
 <div id="tip">
 <div id="tip-left">
 <img id="tip-photo" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
@@ -61,6 +65,7 @@ class Home extends Component {
 
                     <div id="line-home-2">
                         <div id="title-about"><h1 id="about-home">About Us</h1></div>
+                        
                         <div id="text-about"><h5 id="quote-about">We are all about “better parenting for a better world”</h5></div>
                         <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div>
                     </div>
@@ -99,32 +104,33 @@ class Home extends Component {
             <a href="/home"><img className ='logo-footer' alt="Logo" src={Logo}/></a>
 			
             <div class="footer-left">
-				<ul class="footer-links">
-					<li><a href="#" class="link-1">Home</a></li>
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
 					
-					<li><a href="#">Blog</a></li>
+					<a href="#">Blog</a>
 				
-					<li><a href="#">About</a></li>
+					<a href="#">About</a>
 					
-					<li><a href="#">Contact</a></li>
-				</ul>
+					<a href="#">Contact</a>
+				</p>
 
-				<p>PG Parenting © 2020</p>
+				<p id="year-footer">PG Parenting © 2020</p>
 			</div>
 
 			<div class="footer-center">
+                <h5 id="contact-footer">Connect with us</h5>
+               <p id="icons-footer"> <FontAwesomeIcon icon={faFacebook} className="icon-f"/><FontAwesomeIcon icon={faInstagram} className="icon-f"/><FontAwesomeIcon icon={faYoutube} /></p>
+                <p id="email-icon-footer"><FontAwesomeIcon icon={faEnvelope} id="email-footer" />pgparenting@gmail.com</p>
+				
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
-				</div>
 
 			</div>
 
 			<div class="footer-right">
 
 				<p class="footer-company-about">
-					<span>About the company</span>
+					<span id="span-footer">About the company</span>
+                    <br></br>
 					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
 				</p>
 

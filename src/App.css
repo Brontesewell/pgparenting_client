@@ -1047,7 +1047,7 @@ transform: translate(-50%, -50%);
 }
 
 #newsletter{
-  height: 340px;
+  height: 370px;
   margin-top: -23px;
 }
 
@@ -1062,33 +1062,102 @@ transform: translate(-50%, -50%);
 
 #footer{
   width: 100%;
-  height: 200px;
+  height: 250px;
   z-index: 1000;
   background-color: #FDEAE3;
 }
 
 .logo-footer{
-  margin-left: 10%;
-  margin-right: 80%
+  margin-left: 11%;
+  margin-right: 80%;
+  margin-top: 30px
 }
+
 
 .footer-left{
   width: 20%;
   float: left;
-  margin-top: 20px;
+  margin-left: 11%;
+}
+
+#year-footer{
+  color: #3b4b75;
 }
 
 .footer-center{
   float:left;
-  width: 50%;
+  width: 30%;
+  margin-top: -60px;
+  margin-left: 40px;
+}
+
+#icons-footer{
+  font-size: 30px;
+  color: #3b4b75;
+  margin-top: 0px;
+}
+
+#contact-footer{
+color: #3b4b75;
+}
+
+.icon-f{
+  margin-right: 10px;
+}
+
+#email-footer{
+  padding-right: 2px;
+  
+}
+
+#email-icon-footer{
+  font-size: 20px;
+  color: #3b4b75;
+  margin-top: -24px;
 }
 
 .footer-right{
   float: right;
-  width: 25%
+  width: 25%;
+  margin-right: 10%
 }
 
+#span-footer{
+  color: #3b4b75;
+  font-size: 19px;
+}
 
+.footer-company-about{
+  margin-top: -30px
+}
 
+.footer-links{
+	color:  #3b4b75;
+	margin: 20px 0 12px;
+  padding: 0;
+  font-size: 20px;
+}
 
+.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #3b4b75;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.footer-links .link-1:before {
+  content: none;
+}
 
