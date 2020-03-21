@@ -1184,7 +1184,7 @@ input[type=submit]:hover {
 #parents{
   float: left;
   width: 40%;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-top: 10px;
 }
 
@@ -1192,12 +1192,18 @@ input[type=submit]:hover {
   background-color: #FDEAE3;
 }
 
+#about-us-div{
+  background-color: #FDEAE3;
+  height: 550px;
+  margin-top: -36px
+}
+
 #about-us-text{
   float: right;
   width: 40%;
   margin-right: 10%;
-  margin-top: 10px;
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .about-text {
@@ -1207,6 +1213,7 @@ input[type=submit]:hover {
 #about-names{
   color: #8597C5;
   font-weight: 300;
+  padding-top: 30px
 }
 
 #quote-home-image{

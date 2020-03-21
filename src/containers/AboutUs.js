@@ -16,7 +16,7 @@ class AboutUs extends Component {
                 </div>
 
         
-                <div >
+                <div id="about-us-div">
                         <h2 id="about-names">Mark and Stephanie Sewell</h2>
 
                     <div id="parents"><img className ='parents-photo' alt="parents" src={Parents}/></div>
