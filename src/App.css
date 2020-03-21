@@ -898,27 +898,37 @@ input[type=submit]:hover {
 }
 
 #tip-right{
-  margin-top: 20px;
   margin-left: 5%;
   float:right; 
- width:40%; 
+ width:49%; 
  height:280px; 
  color: #6B6b69
 }
 
+#delete-course {
+  color: white
+}
+
 #tip-left{
   margin-top: 20px;
-  margin-left: 20px;
   float:left;  
-  width:40%; 
+  width:45%; 
   height:280px; 
   color: #6B6b69;
 }
 
 #tip-photo {
-  border-radius: 100px;
+  border-radius: 40px;
 }
 
-#delete-course {
-  color: white
+#tip {
+  float: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#tip-p {
+  font-size: 18px;
+  float: center;
+  text-align: center;
 }

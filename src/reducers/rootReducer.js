@@ -41,10 +41,10 @@ const rootReducer = (state = initialState, action) => {
                 return {...state, catagories: action.catagories, displayCatagories: action.catagories, loading: true }
        case 'GET_ALL_COLLECTIONS':
             return {...state, collections: action.collection, loading: true }
-       case 'DELETE_COLLECTION':
+       
+        case 'DELETE_COLLECTION':
             const filteredCollection = state.currentUser.collections.filter(collection => collection.id !== action.collection.id)
             return {...state, currentUser: {...state.currentUser, collections: filteredCollection}}
-            
         case 'ADDED_TO_FAVS':
                 return {...state, collections: action.collection, currentUser:{...state.currentUser, collections: [...state.currentUser.collections, action.collection]}}
 
