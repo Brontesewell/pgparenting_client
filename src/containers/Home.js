@@ -18,6 +18,24 @@ class Home extends Component {
 
                 <img id="top-home-img" src="https://images.unsplash.com/photo-1558056524-97698af21ff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
              
+
+                <div id="tip-home">
+<h2 id="tip-title">PG Parenting Tip of the week</h2>
+<div id="tip">
+<div id="tip-left">
+<img id="tip-photo" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+</div>
+<div id="tip-right">
+    <h4 id="tip-head">Turn responsibilities into a game</h4>
+    <h6 id="tip-cat">3-6 yrs old</h6>
+    <p id="tip-p">If your child refuses to do something, try turning it into a game. "Humor and games are two great tools that parents sometimes forget about in the heat of the moment," says Zebooker. When her own son, now 13, was in preschool, she used to persuade him to put his shoes on in the morning by playing shoe store. "I would say, 'Welcome to Miss Mommy's Shoe Store, I've got the perfect pair for you to try on today,' and I'd speak in a silly accent and he loved it."</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="line-home"></div>
                  <h5 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h5>
                     <div id="blog-home-div">
                     <div id="left-blog">
@@ -40,21 +58,9 @@ class Home extends Component {
 
                     </div>
 
-<div id="tip-home">
-<h1 id="tip-title">PG Parenting Tip of the week</h1>
-<div id="tip">
-<div id="tip-left">
-<img id="tip-photo" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
-</div>
-<div id="tip-right">
-    <h4>Turn responsibilities into a game</h4>
-    <h6>3-6 yrs old</h6>
-    <p id="tip-p">If your child refuses to do something, try turning it into a game. "Humor and games are two great tools that parents sometimes forget about in the heat of the moment," says Zebooker. When her own son, now 13, was in preschool, she used to persuade him to put his shoes on in the morning by playing shoe store. "I would say, 'Welcome to Miss Mommy's Shoe Store, I've got the perfect pair for you to try on today,' and I'd speak in a silly accent and he loved it."</p>
-</div>
-</div>
-</div>
 
-<img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+
+                <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
                     
                    <h1>Sign up for news pappers</h1>
                 </div>
