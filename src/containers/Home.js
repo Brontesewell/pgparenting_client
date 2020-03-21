@@ -64,8 +64,35 @@ class Home extends Component {
                         <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div>
                     </div>
 
+                <div id="newsletter">
                    <h4 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h4>
+                         <div class="row" id="newsletter-div">
+                             <form class="col s12">
+                                <div class="row">
+                                   <div class="input-field col s6">
+                                      <input id="first_name" type="text" class="validate"/>
+                                     <label for="first_name">First Name</label>
+                                   </div>
 
+                                  <div class="input-field col s6">
+                                       <input id="last_name" type="text" class="validate"/>
+                                       <label for="last_name">Last Name</label>
+                                  </div>
+
+                                  <div class="row">
+                                  <div class="input-field col s12">
+                                         <input id="email" type="email" class="validate"/>
+                                         <label id="emails" for="email">Email</label>
+                                 </div>
+                                 </div>
+                                 <button class="btn-newsletter" type="submit" name="action">Submit<i id="arrow-newsleeter" class="material-icons right"/> </button>
+                          </div>
+                        </form>
+                    </div>
+                    </div>
+
+
+        <div id="footer"><h1>Footer</h1></div>
                 {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
                     
                 </div>
