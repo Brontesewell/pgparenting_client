@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import Navbar from './Navbar'
 import { Link } from "react-router-dom";
+import Logo from '../Logo.jpg'
 
 class Home extends Component {
 
@@ -92,7 +93,47 @@ class Home extends Component {
                     </div>
 
 
-        <div id="footer"><h1>Footer</h1></div>
+        <div id="footer">
+        <footer class="footer-distributed">
+
+            <a href="/home"><img className ='logo-footer' alt="Logo" src={Logo}/></a>
+			
+            <div class="footer-left">
+				<ul class="footer-links">
+					<li><a href="#" class="link-1">Home</a></li>
+					
+					<li><a href="#">Blog</a></li>
+				
+					<li><a href="#">About</a></li>
+					
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<p>PG Parenting © 2020</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+			
+
+			</div>
+
+		</footer>
+        </div>
                 {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
                     
                 </div>
