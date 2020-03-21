@@ -613,6 +613,7 @@ height: 70px
   width: 90px;
 }
 
+
 #shop-title{
   text-align: center;
   font-weight: 300;
@@ -628,6 +629,7 @@ height: 70px
 #shop-div{
   float: center;
   margin: 25px;
+  background-color: #FDEAE3;
 }
 
 #imgshop {
@@ -1185,3 +1187,69 @@ color: #3b4b75;
   content: none;
 }
 
+
+.parents-photo{
+  width: 100%;
+}
+
+#parents{
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.about-us-page{
+  background-color: #FDEAE3;
+}
+
+#about-us-text{
+  float: right;
+  width: 40%;
+  margin-right: 10%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.about-text {
+  color: #3b4b75;
+}
+
+#about-names{
+  color: #8597C5;
+  font-weight: 300;
+}
+
+#quote-home-image{
+  color: #3b4b75;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+#quote-over-image{
+  position: absolute;
+  top: 45%;
+  right: -85px;
+  width: 400px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#quote-over-images{
+  position: absolute;
+  top: 45%;
+  right: -85px;
+  width: 400px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}

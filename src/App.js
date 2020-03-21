@@ -19,6 +19,7 @@ import './App.css';
 import SignIn from './containers/SignIn'
 import AboutUs from './containers/AboutUs'
 import ShopList from './containers/ShopList'
+import ContactUsHome from './containers/ContactUsHome'
 
 import Baby from './Catagories/Baby'
 import Toddler from './Catagories/Toddler'
@@ -48,7 +49,7 @@ class App extends React.Component {
            
               <Switch>
                 <Route exact path='/home' component={Home}/>
-                <Route exact path='/contact-us' component={ContactUs} />
+                <Route exact path='/contact_us' component={ContactUsHome} />
                 <Route exact path='/about-us' component={AboutUs} />
                 <Route exact path='/shop' component={ShopList}/>
                 <Route exact path='/profile' component={Profile}/>

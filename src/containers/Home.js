@@ -20,9 +20,11 @@ class Home extends Component {
                     
                 </div>
                 {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
-
-                <img id="top-home-img" src="https://images.unsplash.com/photo-1558056524-97698af21ff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
-                {/* <h6>We are all about “better parenting for a better world”</h6> */}
+                <div>  
+                  <img id="top-home-img" src="https://images.unsplash.com/photo-1558056524-97698af21ff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
+                <div id="quote-over-image"><h6 id="quote-home-image">We are all about “better parenting for a better world”</h6></div>
+                <div id="quote-over-images"><h6 id="quote-home-image">We are all about “better parenting for a better world”</h6></div>
+                </div>
 
                 <div id="tip-home">
 <h2 id="tip-title">PG Parenting Tip of the week</h2>

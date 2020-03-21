@@ -63,7 +63,7 @@ class Navbar extends Component {
                             <li><Link to = '/profile' >My Family</Link></li>
                             {/* <li><Link>Chatroom</Link></li> */}
                             <li><Link to = '/shop' >Shop</Link></li>
-                            <li><Link>Contact Us</Link></li>
+                            <li><Link to='/contact_us'>Contact Us</Link></li>
                             <li><Link to = '/' onClick={this.handleSignOut}>Sign Out</Link></li>
                          
                    </ul> 
