@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import Images from './Images';
 import CourseInfo from './CourseInfo'
-import { Route } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 class Card extends Component {
         state = {
@@ -34,7 +34,19 @@ class Card extends Component {
     <h1 className="sub_cats"> {this.props.sub.sub_title}</h1>
     {/* {this.props.sub.courses.map(course => < Images course={course}/>)} */}
      <div className='card-container' >
-     {this.state.clickedcourse ?  <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton}/> : this.props.sub.courses.map(course =>  < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/>)}
+     {this.state.clickedcourse ?  
+     <Switch>
+           <Redirect to={{
+                pathname: '/course',
+                state: { clickedcourse: this.state.clickedcourse.id, clickedcourse: this.state.clickedcourse}
+            }} />
+            <Route path='/course'>
+                <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton} />
+            </Route>
+      </Switch>
+     : 
+     
+     this.props.sub.courses.map(course =>  < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/>)}
         </div>              
         {/* <Route exact path="/course" render={(routerProps) => <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton}/>}/> */}
             

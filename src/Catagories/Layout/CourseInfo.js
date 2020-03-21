@@ -1,32 +1,47 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import addToCollection from '../../actions/addToCollection'
+import Navbar from '../../containers/Navbar'
 
 class CourseInfo extends Component {
 
   state = {
-    course_id: this.props.clickedcourse.id,
-    user_id: this.props.currentUser.id
+    course_id: this.props.location.state.clickedcourse.id,
+    user_id: this.props.currentUser.id,
+    course: this.props.location.state.clickedcourse
 }
 
 
     render() {
-        console.log(this.props.clickedcourse)
+
+        console.log(this.state.course_id)
+        console.log(this.state.course)
         const {course_id, user_id} = this.state
         const {history} = this.props
         return (
             <div>
-
+              <div className = 'row'>
+                    <Navbar />
+                </div>
               <div >
-                   <h1>{this.props.clickedcourse.title}</h1>
-                   <h4><i>{this.props.clickedcourse.quote}</i></h4>
+                   <h1 id="course-title">{this.state.course.title}</h1>
+                   <button id="course-favs-button" className="btn" onClick={(e) => this.props.addToCollection(e, this.state, history)}>Add To Favourites</button>
+                   <div id="course-quote-div"><h5><i>"{this.state.course.quote}"</i></h5></div>
                    <br></br>
-                   <img id="course-image" src={this.props.clickedcourse.course_image}/>
-                   <p id="course-content">{this.props.clickedcourse.content}</p>
+                   
+               <div id="image-and-content">
+                   <div>
+                   <img id="course-image" src={this.state.course.course_image}/>
+                   </div>
+
+                   <div>
+                   <p id="course-content">{this.state.course.content}</p>
+                   </div>
+               </div>
+
                    <br></br>
                    <br></br>
-                   <button className="btn btn-secondary btn-lg" onClick={() => this.props.handleBackButton()}>Back</button>
-                   <button className="btn btn-secondary btn-lg" onClick={(e) => this.props.addToCollection(e, this.state, history)}>Add To Favourites</button>
+                   <button id="course-button-back" className="btn" onClick={() => history.go(-1)}>Back</button>
              </div>
              
             </div>

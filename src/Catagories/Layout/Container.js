@@ -6,7 +6,6 @@ class Container extends Component {
 
 
     render() {
-      console.log(this.props.baby)
       
 
         return (

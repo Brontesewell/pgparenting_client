@@ -594,17 +594,6 @@ height: 70px
 height: 70px
 }
 
-#course-image {
-  width:30%;
-  margin-left: 20px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  float: left;
-}
-
-#course-content{
-  margin-right: 20px;
-}
 
 #shop{
   float: left;
@@ -707,8 +696,8 @@ input[type=submit]:hover {
 }
 
 #right-membership{
- width:45%;
- float: right;
+  width:45%;
+  float: right;
  margin-right: 5%;
  padding-top: 2%;
 }
@@ -720,13 +709,13 @@ input[type=submit]:hover {
   margin-left: 5%;
   margin-right: 2%;
  }
-
+ 
  #membership-title {
-  color: #8597C5;
-  font-weight: 300;
- }
-
- #left-membership-head{ 
+   color: #8597C5;
+   font-weight: 300;
+  }
+  
+  #left-membership-head{ 
    margin-bottom: 10px;
    color: #2B2A2A;
  }
@@ -736,7 +725,7 @@ input[type=submit]:hover {
   padding-bottom: 1%;
   color: #6B6b69;
  }
-
+ 
  #bottom-div-welcome{
   margin-top: 30%;
   background-color: #FDEAE3;
@@ -752,10 +741,10 @@ input[type=submit]:hover {
   margin-top: 10%;
  }
 
+ 
 
 
-
-.box {
+ .box {
   width: 500px;
   margin: 50px auto;
   background: white;
@@ -794,7 +783,7 @@ input[type=submit]:hover {
   font-weight: 300;
   line-height: 1.4;
   margin: 10px;
-
+  
 }
 #right-bottom-text {
   text-align: right;
@@ -861,7 +850,7 @@ input[type=submit]:hover {
   float:center;
   margin-left: 7%;
   margin-right: 7%;
-
+  
 }
 
 
@@ -877,9 +866,9 @@ input[type=submit]:hover {
   margin-top: 20px;
   margin-left: 5%;
   float:right; 
- width:30%; 
- height:280px; 
- color: #6B6b69
+  width:30%; 
+  height:280px; 
+  color: #6B6b69
 }
 
 #center-blog{
@@ -920,8 +909,8 @@ input[type=submit]:hover {
 #tip-right{
   margin-left: 5%;
   float:right; 
- width:49%; 
- height:280px; 
+  width:49%; 
+  height:280px; 
  color: #6B6b69
 }
 
@@ -1004,8 +993,8 @@ input[type=submit]:hover {
 }
 
 .btn-about{
-background-color: #3b4b75;
-transform: translate(-50%, -50%);
+  background-color: #3b4b75;
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
@@ -1117,7 +1106,7 @@ transform: translate(-50%, -50%);
 }
 
 #contact-footer{
-color: #3b4b75;
+  color: #3b4b75;
 }
 
 .icon-f{
@@ -1158,14 +1147,14 @@ color: #3b4b75;
 }
 
 .footer-links{
-	color:  #3b4b75;
+  color:  #3b4b75;
 	margin: 20px 0 12px;
   padding: 0;
   font-size: 20px;
 }
 
 .footer-links a{
-	display:inline-block;
+  display:inline-block;
 	line-height: 1.8;
   font-weight:400;
 	text-decoration: none;
@@ -1252,4 +1241,55 @@ color: #3b4b75;
   border: none;
   cursor: pointer;
   border-radius: 15px;
+}
+
+#course-title{
+  color: #8597C5;
+}
+
+#course-favs-button{
+  background-color: #8597C5;
+  color: white;
+  height: 37px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#course-button-back{
+  background-color: #8597C5;
+  color: white;
+  height: 37px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 50px;
+}
+
+#course-quote-div{
+  float: center;
+  width: 60%;
+  margin-left: 19%;
+  margin-right: 15%;
+  margin-top: 30px;
+}
+
+#course-image {
+  width:40%;
+  float: left;
+  margin-right: 30px;
+}
+
+#course-content{
+  margin-left: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#image-and-content{
+  float: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
