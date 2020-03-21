@@ -57,7 +57,7 @@ export class SignUpUser extends Component {
 
                     <button  id="sign-up-button" className="btn-large" type="submit">Next</button>
                     <br></br>
-                <Link to='/signin-user' className="links-signup-signin" >Or Login</Link>
+                <Link to='/signin-user' className="links-signup" >Or Login</Link>
                 
                 </form>
 

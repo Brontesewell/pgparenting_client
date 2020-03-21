@@ -445,6 +445,9 @@ div.menu-container {
 #sign_in {
   color: #3b4b75;
   margin-top: 40px;
+  margin-bottom: 34px;
+  font-weight: 300;
+  font-size: 50px;
 }
 
 .email-password{
@@ -466,7 +469,7 @@ div.menu-container {
   width: 600px;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 100px;
+  margin-top: 50px;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
@@ -820,7 +823,17 @@ input[type=submit]:hover {
   background-color:#3b4b75;    
 }
 
-.links-signup-signin{
+.links-signin{
+  color: #6B6b69;
+  margin-left: 80px;
+  float: center;
+  font-size: 20px;
+  margin-right: 40px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.links-signup{
   color: #6B6b69;
   margin-left: 40px;
   float: center;

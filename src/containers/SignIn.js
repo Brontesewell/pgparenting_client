@@ -22,8 +22,9 @@ class SignIn extends Component {
         const{email, password} = this.state
 
         return (
-            <div className="container-signin">
-                 <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a>
+            <div >
+                 {/* <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a> */}
+                <div className="container-signin">
                 <h4 id="sign_in">Login</h4>
                 <form onSubmit={(e) => this.props.signIn(e, this.state, this.props.history)}>
 
@@ -41,8 +42,9 @@ class SignIn extends Component {
                     
                     <button id="sign-in-button" className="btn-large" type="submit">Next</button>
                <br></br>
-                <Link to='/signup-user' className="links-signup-signin" >Or Sign Up</Link>
+                <Link to='/signup-user' className="links-signin" >Or Sign Up</Link>
                 </form>
+            </div>
             </div>
         );
     }  
