@@ -613,6 +613,23 @@ height: 70px
   width: 90px;
 }
 
+#shop-title{
+  text-align: center;
+  font-weight: 300;
+  color: #3b4b75;
+}
+
+#shop-line{
+  width: 100%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#shop-div{
+  float: center;
+  margin: 25px;
+}
+
 #imgshop {
   height: 15rem;
   margin-left: 11%;
