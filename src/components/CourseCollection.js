@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import deleteCollection from '../actions/deleteCollection'
 
+
 class CourseCollection extends Component {
 
 render() {
@@ -13,7 +14,7 @@ console.log(this.props)
     return (
         <div>
 <h5>{this.props.course.title}</h5>
-<br/><button className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}>Delete Course</button>
+<br/><button className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}><Link to='/profile' id="delete-course">Delete Course</Link></button>
 </div>
     );
 }

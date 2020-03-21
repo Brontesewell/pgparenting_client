@@ -918,3 +918,7 @@ input[type=submit]:hover {
 #tip-photo {
   border-radius: 100px;
 }
+
+#delete-course {
+  color: white
+}

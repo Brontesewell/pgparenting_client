@@ -28,7 +28,6 @@ class EditKid extends Component {
         const {name, birthday, gender, user_id} = this.state
         const {editKid, deleteKid, history, selectedKid} = this.props
         const {id} = selectedKid
-console.log(this.props)
         return (
             
             <div>
