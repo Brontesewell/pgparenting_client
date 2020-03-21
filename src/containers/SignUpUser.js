@@ -26,28 +26,36 @@ export class SignUpUser extends Component {
         return (
            
             <div className="container-signup">
-                
-                 <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a>
-              
                 <h4 id="sign_in">Sign Up</h4>
+                
+                 {/* <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a> */}
+              
                
                 <form onSubmit={(e) => this.props.signUpUser(e, this.state, history)}>
+                                <div class="row">
+                                   <div class="input-field col s6">
+                                   <label>First Name</label>
+                                    <input type="text" name="firstName" placeholder="First name" value={firstName} onChange={this.handleChange}/>
+                                   </div>
+
+                                  <div class="input-field col s6">
+                                  <label>Last Name</label>
+                                <input type="text" name="lastName" placeholder="Last name" value={lastName} onChange={this.handleChange}/>
+
+                                  </div>
+                        
                    
-                        <label>First Name</label>
-                        <input type="text" name="firstName" placeholder="First Name" value={firstName} onChange={this.handleChange}/>
-                   
-                        <label>Last Name</label>
-                        <input type="text" name="lastName" placeholder="Last Name" value={lastName} onChange={this.handleChange}/>
-                   
+                       <div className="email-password">
                         <label>Email</label>
                         <input type='email' name="email" placeholder="Email" value={email} onChange={this.handleChange}/>
                     
                     
                         <label>Password</label>
                         <input type='password' name="password" placeholder="Password" value={password} onChange={this.handleChange}/>
-                    
+                        </div>
+                                  </div>
 
-                    <button  id="sign-in-button" className="btn-large" type="submit">Next</button>
+                    <button  id="sign-up-button" className="btn-large" type="submit">Next</button>
                     <br></br>
                 <Link to='/signin-user' className="links-signup-signin" >Or Login</Link>
                 

@@ -430,20 +430,32 @@ div.menu-container {
   background-color: #8597C5;
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: 45px;
+  width: 522px;
 }
 
+#sign-up-button{
+  background-color: #8597C5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 540px;
+}
+
+
 #sign_in {
-  color: #6B6b69;
+  color: #3b4b75;
   margin-top: 40px;
 }
 
+.email-password{
+  width: 98%;
+  padding-left: 11px;
+}
 
 .container-signin {
-  width: 500px;
+  width: 600px;
   margin-left: 25%;
   margin-right: 25%;
-  border-style: solid;
-  border-width: thin;
   margin-top: 100px;
   padding-right: 35px;
   padding-top: 20px;
@@ -451,11 +463,9 @@ div.menu-container {
 }
 
 .container-signup{
-  width: 500px;
+  width: 600px;
   margin-left: 25%;
   margin-right: 25%;
-  border-style: solid;
-  border-width: thin;
   margin-top: 100px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1188,12 +1198,8 @@ input[type=submit]:hover {
   margin-top: 10px;
 }
 
-.about-us-page{
-  background-color: #FDEAE3;
-}
-
 #about-us-div{
-  background-color: #FDEAE3;
+  background-color: #fff4f0;
   height: 550px;
   margin-top: -36px
 }
