@@ -61,13 +61,13 @@ class Home extends Component {
                     <div id="line-home-2">
                         <div id="title-about"><h1 id="about-home">About Us</h1></div>
                         <div id="text-about"><h5 id="quote-about">We are all about “better parenting for a better world”</h5></div>
-                        <div id="button-about"><button className="btn-about">Learn More <i class="arrow right"/> </button></div>
+                        <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div>
                     </div>
 
+                   <h4 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h4>
 
-                <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+                {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
                     
-                   <h1>Sign up for news pappers</h1>
                 </div>
          
         )

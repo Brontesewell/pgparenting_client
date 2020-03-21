@@ -956,6 +956,7 @@ input[type=submit]:hover {
   color: white;
   text-align: left;
   font-weight: 300;
+  margin-bottom: -300px;
 }
 
 #title-about{
@@ -980,7 +981,7 @@ input[type=submit]:hover {
   margin-top: 90px;
   width: 20%;
   float: right;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 
 .btn-about{
@@ -1008,4 +1009,15 @@ transform: translate(-50%, -50%);
 #quote-about{
   color: #3b4b75;
   font-weight: 350;
+}
+
+#newsletter-title{
+  margin-top: 60px;
+  text-align: center;
+  color: #8597C5;
+  font-weight: 300;
+}
+
+#newsletter-logo{
+  color: #3b4b75;
 }
