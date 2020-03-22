@@ -541,14 +541,16 @@ div.menu-container {
 
 
 #leftbox { 
-  float:left;  
+  background-color: #fff;
+  border-radius: 15px;
+  float: right;  
   border-style: solid;
-  border-width: thin;
+  /* border-width: thin; */
   border-color: #8597C5;
   width:48.5%; 
-  margin-left: 10px;
+  margin-right: 10%;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px;
 } 
 #middlebox{ 
@@ -1092,6 +1094,49 @@ input[type=submit]:hover {
 }
 
 #footer{
+  width: 100%;
+  height: 250px;
+  z-index: 1000;
+  background-color: #FDEAE3;
+}
+
+.my-fam{
+  width: 30%;
+  float: left;
+  border-style: solid;
+  /* border-width: thin; */
+  border-color: #8597C5;
+  border-radius: 14px;
+  margin-left: 5%;
+  margin-top: 50px;
+  background-color: white;
+}
+
+#my-children{
+  color: #3b4b75;
+}
+
+#profiles{
+  height: 1000px;
+  background-color: #fff4f0;
+  margin-top: -19px
+}
+
+#edit-p {
+  background-color: #8597C5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.line-profile{
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  width: 250px;
+  margin-left: 18%;
+  margin-bottom: 20px;
+}
+
+.footer-distributed{
   width: 100%;
   height: 250px;
   z-index: 1000;
