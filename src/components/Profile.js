@@ -17,7 +17,7 @@ console.log(props.currentUser.kids)
             </div>
             <div id="profiles">
             <div className = "my-fam">
-            <h1 className="Catagory">My Profile</h1>
+            <h1 id="my-profile">My Profile</h1>
              <div className="line-profile"></div>
                 <h3 className="p">{first_name + ' ' + last_name}</h3>
                 <h6><strong>Email: </strong>{email}</h6>
@@ -33,7 +33,8 @@ console.log(props.currentUser.kids)
             <div id = "boxes"> 
             <div id = "leftbox"> 
                 <h3 id="my-children"> My Children</h3>  
-                        <Link to='/add-child'><button id="sign-in-button" className="btn">Add another Child</button></Link>
+                <div className="line-child"></div>
+                        <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
                
                 <br></br>
                 <br></br>
@@ -41,7 +42,8 @@ console.log(props.currentUser.kids)
             </div>
               
             <div id = "middlebox"> 
-                <h3>Favourite Courses</h3> 
+                <h3 id="my-children">Favourite Courses</h3> 
+                <div className="line-favs"></div>
                 <div className="">
                 {props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
                 </div>

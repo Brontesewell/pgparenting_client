@@ -540,30 +540,7 @@ div.menu-container {
 
 
 
-#leftbox { 
-  background-color: #fff;
-  border-radius: 15px;
-  float: right;  
-  border-style: solid;
-  /* border-width: thin; */
-  border-color: #8597C5;
-  width:48.5%; 
-  margin-right: 10%;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  padding: 10px;
-} 
-#middlebox{ 
-  float:left;  
-  border-style: solid;
-  border-width: thin;
-  border-color: #8597C5;
-  width:48.5%; 
-  margin-left: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding: 10px;
-} 
+
 
 /* .children-div {
   border-style: solid;
@@ -1100,8 +1077,34 @@ input[type=submit]:hover {
   background-color: #FDEAE3;
 }
 
+#leftbox { 
+  background-color: #fff;
+  border-radius: 15px;
+  float: right;  
+  border-style: solid;
+  /* border-width: thin; */
+  border-color: #8597C5;
+  width:53.5%; 
+  margin-right: 5%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  padding: 10px;
+} 
+
+#middlebox{ 
+  float:left;  
+  border-style: solid;
+  /* border-width: thin; */
+  border-color: #8597C5;
+  width: 35%;
+  border-radius: 14px;
+  margin-left: 5%;
+  margin-top: 25px;
+  background-color: white;
+} 
+
 .my-fam{
-  width: 30%;
+  width: 35%;
   float: left;
   border-style: solid;
   /* border-width: thin; */
@@ -1114,6 +1117,11 @@ input[type=submit]:hover {
 
 #my-children{
   color: #3b4b75;
+}
+
+#my-profile{
+  color: #3b4b75;
+  font-size: 45px;
 }
 
 #profiles{
@@ -1132,9 +1140,26 @@ input[type=submit]:hover {
   border-bottom-style: solid;
   border-bottom-color: #6B6b69;
   width: 250px;
-  margin-left: 18%;
+  margin-left: 22%;
   margin-bottom: 20px;
 }
+
+.line-child{
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  width: 250px;
+  margin-left: 31%;
+  margin-bottom: 20px;
+}
+
+.line-favs{
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  width: 250px;
+  margin-left: 22%;
+  margin-bottom: 20px;
+}
+
 
 .footer-distributed{
   width: 100%;
