@@ -1130,7 +1130,31 @@ input[type=submit]:hover {
   margin-top: -19px
 }
 
+#delete-fav {
+  background-color: #8597C5;
+  /* margin-bottom: 20px; */
+}
+
+#favs-box{
+  border-style: double;
+  border-color: #8597C5;
+  width: 42%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #2a4b91;
+}
+
+
 #edit-p {
+  background-color: #8597C5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-delete-favs{
   background-color: #8597C5;
   margin-top: 10px;
   margin-bottom: 20px;

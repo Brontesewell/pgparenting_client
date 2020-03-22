@@ -10,12 +10,17 @@ render() {
     const {history, currentUser} = this.props
     const collection = {user_id: currentUser.id, course_id: this.props.course.id}
     const {id} = collection
-console.log(this.props)
+// console.log(this.props)
+
+
     return (
         <div>
-<h5>{this.props.course.title}</h5>
-<br/><button className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}><Link to='/profile' id="delete-course">Delete Course</Link></button>
-</div>
+            <div id="favs-box">
+                    <h5>{this.props.course.title}</h5>
+                    <br/><button id="delete-fav" className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}><Link to='/profile' id="delete-course">Delete Course</Link></button>
+            </div>
+        </div>
+
     );
 }
 }
