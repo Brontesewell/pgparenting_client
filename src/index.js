@@ -13,6 +13,12 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import './index.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
+import actionCable from 'actioncable';
+
+const CableApp = {}
+
+CableApp.cable = actionCable.createConsumer('ws://localhost:3000/cable')
+// This readys a consumer (think of this as a browser window) that will connect against /cable on your backend server by default. In other words, the client (your front-end) is connecting to the cable - through a route you have defined on the backend.
 
 
 const persistConfig = {
@@ -36,7 +42,7 @@ const persistor = persistStore(store);
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>  
-        <App />
+         <App cableApp={CableApp} />
     </PersistGate>
   </Provider>
   , document.getElementById('root')

@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect, Switch, withRouter } from 'react-router-dom'
+
 import { connect } from 'react-redux'
 import Welcome from './containers/Welcome'
 import SignUpUser from './containers/SignUpUser'
@@ -31,17 +32,89 @@ import Young_Adults from './Catagories/Young_Adult';
 import CourseInfo from './Catagories/Layout/CourseInfo'
 import AddKid from './containers/AddKid'
 
+import Rooms from './messages/Rooms';
+import RoomShow from './messages/RoomShow';
+
 class App extends React.Component {
 
-  componentDidMount () {
-      this.props.reAuth()
-      this.props.fetchAllUsers()
-      this.props.fetchAllCatagories()
-      this.props.fetchAllKids()
+
+  state = {
+    currentUser: this.props.currentUser,
+    allRooms: [],
+    currentRoom: {
+      room: {}, 
+      users: [],
+      messages: []
+    }
   }
 
+  componentDidMount () {
+    this.props.reAuth()
+    this.props.fetchAllUsers()
+    this.props.fetchAllCatagories()
+    this.props.fetchAllKids()
+    
+    fetch('http://localhost:3000/rooms')
+    .then(resp => resp.json())
+    .then(result => {
+      this.setState({
+        allRooms: result.data
+      })
+    })
+  }
+
+  updateAppStateRoom = (newRoom) => {
+    this.setState({
+      currentRoom: {
+        room: newRoom.room.data,
+        users: newRoom.users,
+        messages: newRoom.messages
+      }
+    })
+  }
+
+  getRoomData = (id) => {
+    fetch(`http://localhost:3000/rooms/${id}`)
+    .then(response => response.json())
+    .then(result => {
+      this.setState({
+        currentRoom: {
+          room: result.data,
+          users: result.data.attributes.users,
+          messages: result.data.attributes.messages
+        }
+      })
+    })
+  }
+
+  subscribeToRoom = (event) => {
+    const room_id = event.target.id
+    this.state.currentUser ? (this.postFirstMessage(room_id)) : (alert('You must be logged in to subscribe to a room.'))
+  }
+
+  postFirstMessage = (roomId) => {
+    window.history.pushState(null, null, `/rooms/${roomId}`)
+    const message = {
+      content: `${this.state.currentUser.email} has joined this room!`,
+      user_id: this.state.currentUser.id,
+      room_id: roomId
+    }
+    fetch("http://localhost:3000/messages", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+        },
+        body: JSON.stringify({message: message})
+    })
+    .then(resp => resp.json())
+    .then(result => {
+        console.log(result)
+    })
+  }
 
   render(){
+    console.log(this.state.currentRoom)
     return (
       <div className="App">
         <Router>
@@ -69,6 +142,23 @@ class App extends React.Component {
                 <Route exact path='/edit-kid' component={EditKid}/>
                 <Route exact path='/course' component={CourseInfo} />
 
+              <Route exact path='/rooms' render={ (props) => 
+            <Rooms 
+              allRooms={this.state.allRooms}
+              currentUser={this.state.currentUser}
+              handleSubscribe={this.subscribeToRoom}
+            /> } />
+
+
+          <Route exact path='/rooms/:id' render={ (props) => 
+            <RoomShow
+              {...props}
+              cableApp={this.props.cableApp}
+              getRoomData={this.getRoomData}
+              updateApp={this.updateAppStateRoom}
+              roomData={this.state.currentRoom}
+              currentUser={this.state.currentUser}
+            />} />
 
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
