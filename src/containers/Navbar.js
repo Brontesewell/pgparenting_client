@@ -62,7 +62,7 @@ class Navbar extends Component {
                            <li><Link to = '/home'>Home</Link></li>
                             <li><Link to = '/about-us'>Our Mission</Link></li>
                             <li><Link to = '/profile' >My Family</Link></li>
-                            <li><Link to='/rooms'>Chatroom</Link></li>
+                            <li><Link >Chatroom</Link></li>
                             <li><Link to = '/shop' >Shop</Link></li>
                             <li><Link to='/contact_us'>Contact Us</Link></li>
                             <li><Link to = '/' onClick={this.handleSignOut}>Sign Out</Link></li>
