@@ -39,6 +39,7 @@ class RoomShow extends Component {
         fetch("http://localhost:3000/messages", {
             method: "POST",
             headers: {
+                "Authorization": `${localStorage.getItem('jwt')}`,
                 "Content-Type": "application/json",
                 Accept: "application/json"
             },
@@ -46,13 +47,14 @@ class RoomShow extends Component {
         })
         .then(resp => resp.json())
         .then(result => {
+            console.log(result)
             let messageDiv = document.getElementById('messages')
             messageDiv.scrollTop = messageDiv.scrollHeight
         })
     }
 
     render() {
-        console.log(this.props.roomData)
+        console.log(this.props.currentUser)
         
         return (
             <div>
