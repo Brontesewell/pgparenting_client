@@ -17,6 +17,7 @@
     "materialize-css": "^1.0.0",
     "muicss": "^0.10.1",
     "react": "^16.13.0",
+    "react-actioncable-provider": "^2.0.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-dom": "^16.13.0",

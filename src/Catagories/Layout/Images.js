@@ -12,7 +12,7 @@ class Images extends Component {
                 {/* <h1 className="sub_cats"> {this.props.sub.sub_title}</h1> */}
             <div className="column" onClick={() => this.props.handleCourseClick(this.props.course)}>
             <img className="images" src={this.props.course.course_image}/>
-            <h5>{this.props.course.title}</h5>
+            <h5 id="title-image-course">{this.props.course.title}</h5>
            </div>
              
             </div>

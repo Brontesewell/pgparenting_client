@@ -46,7 +46,8 @@ class Card extends Component {
       </Switch>
      : 
      
-     this.props.sub.courses.map(course =>  < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/>)}
+     this.props.sub.courses.map(course => <div id="all-courses"> < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/> </div>)}
+       
         </div>              
         {/* <Route exact path="/course" render={(routerProps) => <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton}/>}/> */}
             
