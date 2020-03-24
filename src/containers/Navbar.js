@@ -60,8 +60,8 @@ class Navbar extends Component {
                    <ul>
           
                            <li><Link to = '/home'>Home</Link></li>
-                            <li><Link to = '/about-us'>Our Mission</Link></li>
                             <li><Link to = '/profile' >My Family</Link></li>
+                            <li><Link to = '/about-us'>Our Mission</Link></li>
                             {/* <li><Link to='/conversation'>Chatroom</Link></li> */}
                             <li><Link to = '/shop' >Shop</Link></li>
                             <li><Link to='/contact_us'>Contact Us</Link></li>

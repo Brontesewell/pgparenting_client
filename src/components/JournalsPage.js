@@ -4,6 +4,8 @@ import Navbar from '../containers/Navbar'
 import {connect} from 'react-redux'
 import addKid from '../actions/addKid'
 import JournalList from './JournalList'
+import AddJournal from './AddJournal'
+import { Link } from 'react-router-dom';
 
 class JournalsPage extends Component {
 
@@ -19,8 +21,10 @@ class JournalsPage extends Component {
               <h1 id="title-journal">{this.props.location.state.clickedjournal.name}'s  Journals</h1>
               <div id="line-journal-title"></div>
 
-        <h1>{this.props.location.state.clickedjournal.journals.map(journal => < JournalList journal={journal} />)}</h1>
-        <button id="course-button-back" className="btn" onClick={() => this.history.push('/profile')}>Back</button>
+            <AddJournal kid={this.props.location.state.clickedjournal}/>
+
+        {this.props.location.state.clickedjournal.journals.map(journal => < JournalList journal={journal} />)}
+        <button id="course-button-back" className="btn"><Link to="/profile">Back</Link></button>
             </div>
         );
     }

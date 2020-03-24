@@ -67,7 +67,7 @@ const rootReducer = (state = initialState, action) => {
                 return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}
                 
         case 'ADD_JOURNAL':
-                return {...state, journals: action.journal, kids:{...state.kids, journals: [...state.kids.journals, action.journal]}}
+                return {...state, journals:[...state.journals, action.journal]}
 
         case 'SET_ALL_JOURNALS':
                 return {...state, journals: action.journals }

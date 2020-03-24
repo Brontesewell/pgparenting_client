@@ -15,15 +15,13 @@ const addJournal = (e, state, history) => {
             body: JSON.stringify({
                 date_now: date_now,
                 text: text,
-                gender: gender,
                 kid_id: kid_id,
             })
         })
         .then(resp => resp.json())
         .then(data => {
             console.log(data)
-            dispatch({ type: "ADD_JOURNAL", journals: data })
-            history.push('/profile')
+            dispatch({ type: "ADD_JOURNAL", journal: data })
         })
     }
  

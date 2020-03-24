@@ -28,7 +28,7 @@ class Children extends Component {
             <h6 className="child-gender-bday">Gender: {this.props.kid.gender}</h6>
             <h6 className="child-gender-bday">Birthday: {this.props.kid.birthday}</h6>
            <div id="s-child">
-               <h5>Scores</h5>
+               <h5 className="p-a-scores">Achievement Scores</h5>
                <h6>Behaviour Score:  {this.props.kid.behaviour_score}/4</h6>
                <h6>Sport Score:  {this.props.kid.sport_score}/4</h6>
                <h6>Academic Score:  {this.props.kid.academic_score}/4</h6>
@@ -36,8 +36,8 @@ class Children extends Component {
                 <h6 id="total">Total Score: {this.props.kid.behaviour_score + this.props.kid.sport_score + this.props.kid.academic_score + this.props.kid.character_score}/16</h6>
                </div>
             
-            <div id="s-child">
-           <h5>Progress</h5>
+            <div id="p-child">
+           <h5  className="p-a-scores">Progress</h5>
            <h6>Behaviour Progress:  {this.props.kid.behaviour_progress}/4</h6>
             <h6>Sport Progress:  {this.props.kid.sport_progress}/4</h6>
            <h6>Academic Progress:  {this.props.kid.academic_progress}/4</h6>

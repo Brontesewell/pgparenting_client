@@ -115,6 +115,21 @@ margin-right:30px
   font-size: 20px;
 }
 
+#date-journal{
+  width: 40%;
+  float: center;
+  margin-left: 30%;
+}
+
+#btn-add-journal{
+  background-color: #8597C5;
+  float: center;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
 #btn-edit-child{
   background-color: #8597C5;
   float: center;
@@ -141,7 +156,12 @@ width: 50%;
 
 #p-child{
   float: right;
-  width: 50%;
+  margin-left: 20px;
+  width: 40%;
+}
+
+.p-a-scores{
+ color: #3b4b75;
 }
 
 #total{
@@ -190,6 +210,8 @@ width: 50%;
   border-radius: 15px;
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   transition: 0.3s;
   width: 70%;
   background-color: #FDEAE3;
@@ -1320,7 +1342,7 @@ input[type=submit]:hover {
 }
 
 #profiles{
-  height: 1000px;
+  height: 1500px;
   background-color: #fff4f0;
   margin-top: -42px
 }
