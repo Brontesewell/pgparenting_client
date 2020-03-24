@@ -129,14 +129,14 @@ margin-right:30px
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 10px;
-  /* border-style: solid;
-  border-width: thin; */
+  border-bottom-style: solid;
+  border-width: thin;
 }
 
 #s-child{
 float: left;
 width: 50%;
-margin-bottom: 20px;
+/* margin-bottom: 20px; */
 }
 
 #p-child{
