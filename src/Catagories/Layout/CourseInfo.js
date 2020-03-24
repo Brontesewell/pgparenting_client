@@ -14,8 +14,7 @@ class CourseInfo extends Component {
 
     render() {
 
-        console.log(this.state.course_id)
-        console.log(this.state.course)
+        
         const {course_id, user_id} = this.state
         const {history} = this.props
         return (

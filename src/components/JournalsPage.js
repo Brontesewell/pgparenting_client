@@ -11,8 +11,8 @@ class JournalsPage extends Component {
 
     
     render() {
-        console.log(this.props.location.state.clickedjournal.journals)
-
+        // console.log(this.props.location.state.clickedjournal.journals)
+console.log(this.props.journals)
         return (
             <div>
                 <div className = 'row'>
@@ -35,6 +35,7 @@ const mapStateToProps = state => {
         selectedKid: state.selectedKid,
         kids: state.kids,
         currentUser: state.currentUser,
+        journals :state.journals
     }
 }
 

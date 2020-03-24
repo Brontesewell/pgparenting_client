@@ -95,6 +95,15 @@ margin-top: 100px;
   height: 1000px;
 }
 
+.form-edit-p{
+  padding: 35px;
+  margin: 2% 10% 2% 13%;
+  box-shadow: 0 6px 15px 0 #8597C5;
+  border-radius: 35px;
+  transition: 0.3s;
+  width: 70%;
+}
+
 #add-kid-general{
   margin-left: 10%;
   float: center;
@@ -113,6 +122,8 @@ margin-right:30px
   margin-bottom: 20px;
   margin-top: 60px;
   font-size: 20px;
+  margin-right: 37%;
+  margin-left: 35%;
 }
 
 #date-journal{
@@ -134,8 +145,10 @@ margin-right:30px
   background-color: #8597C5;
   float: center;
   margin-bottom: 0px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 15px;
+  margin-right: 37%;
+  margin-left: 35%;
 }
 
 #child-div{
@@ -190,6 +203,8 @@ width: 50%;
 
 #score-title{
  color: #3b4b75;
+ margin-top: 30px;
+ margin-bottom: 30px;
 }
 
 #journal{

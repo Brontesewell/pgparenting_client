@@ -168,7 +168,7 @@ class AddKid extends Component {
                                 
                     
                     <div id="score-add-kid">
-                                <h3 id="score-title">Achievement Score</h3>
+                                <h4 id="score-title">Achievement Score</h4>
                                 <div className="rankings-score">
                                   <h6> 1 = Very Bad</h6>
                                   <h6> 2 = Poor</h6>

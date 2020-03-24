@@ -15,6 +15,7 @@ import fetchAllCatagories from './actions/fetchAllCatagories'
 import fetchAllUsers from './actions/fetchAllUsers'
 import fetchAllKids from './actions/fetchAllKids'
 import reAuth from './actions/reAuth'
+import fetchAllJournals from './actions/fetchAllJournals'
 import './App.css';
 import SignIn from './containers/SignIn'
 import AboutUs from './containers/AboutUs'
@@ -41,6 +42,7 @@ class App extends React.Component {
       this.props.fetchAllUsers()
       this.props.fetchAllCatagories()
       this.props.fetchAllKids()
+      this.props.fetchAllJournals()
   }
 
 
@@ -109,7 +111,8 @@ const mapsToDispatchProps = dispatch => {
     reAuth: () => dispatch(reAuth()),
     fetchAllUsers: ()=> dispatch(fetchAllUsers()),
     fetchAllCatagories: ()=> dispatch(fetchAllCatagories()),
-    fetchAllKids: ()=> dispatch(fetchAllKids())
+    fetchAllKids: ()=> dispatch(fetchAllKids()),
+    fetchAllJournals:()=> dispatch(fetchAllJournals())
   }
 }
   

@@ -11,7 +11,7 @@ const deleteKid = (e, kid, history) => {
             }
         })
         .then(() => {
-            console.log(history)
+            
             dispatch({type: 'DELETE_KID', kid})
             history.push('/profile')
         })

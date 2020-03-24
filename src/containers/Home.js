@@ -13,7 +13,7 @@ class Home extends Component {
 
     
     render () {  
-        console.log(this.props.currentUser)
+        // console.log(this.props.currentUser)
         return (
             <div>
                 <div className = 'row'>

@@ -27,7 +27,7 @@ class EditProfile extends Component {
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
-                <div className = 'form-edit'>
+                <div className = 'form-edit-p'>
                     <form className = 'container' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
                         <label htmlFor="firstName">First Name</label>
                         <input name="firstName" value={firstName} onChange={this.handleChange}/>
@@ -35,7 +35,7 @@ class EditProfile extends Component {
                         <input name="lastName" value={lastName} onChange={this.handleChange}/>
                        <label htmlFor="email">Email</label>
                         <input type='email' name="email" value={email} onChange={this.handleChange}/>
-                        <button className="waves-effect waves btn blue" type="submit" >Update</button>
+                        <button id="btn-edit-child" className="btn" type="submit" >Update</button>
                     </form>
                     <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteUser(e, history, currentUser)}>Delete Your Account</button>
                 </div>

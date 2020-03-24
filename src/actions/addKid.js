@@ -30,7 +30,7 @@ const addKid = (e, state, history) => {
         })
         .then(resp => resp.json())
         .then(data => {
-            console.log(data)
+            
             dispatch({ type: "ADD_KID", kid: data })
             history.push('/profile')
         })

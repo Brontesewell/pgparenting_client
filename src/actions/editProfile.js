@@ -22,7 +22,7 @@ const editProfile = (e, history, state, id) => {
 
             dispatch({type: 'SET_CURRENT_USER', user: data })
             history.push('/profile')
-            console.log(data)
+            
         }).catch(err => console.log(err))
     }
 } 

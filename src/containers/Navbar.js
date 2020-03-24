@@ -44,7 +44,7 @@ class Navbar extends Component {
 
     render() {
       const {firstName} = this.state
-      console.log(firstName)
+      // console.log(firstName)
         return (
             <div>
        

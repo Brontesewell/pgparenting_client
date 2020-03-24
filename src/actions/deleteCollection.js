@@ -15,7 +15,7 @@ const deleteCollection = (e, collection, history) => {
             })
         })
         .then(() => {
-            console.log(history)
+            
             dispatch({type: 'DELETE_COLLECTION', collection})
             // history.push('/profile')
         })
