@@ -4,15 +4,37 @@ import {Link} from 'react-router-dom'
 
 
 class Children extends Component {
-
-render() {
-    return (
-        <div>
-            <div id="child-name"><h5>{this.props.kid.name}</h5></div>
-            <div id="child-info"><h6 className="child-gender-bday">Gender: {this.props.kid.gender}</h6><h6 className="child-gender-bday">Birthday: {this.props.kid.birthday}</h6></div>
-
-            <div id="child-edit-b"> <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.kid)}><button id="edit-child-button" className="btn">Edit</button></Link></div>
+    
+    render() {
+        return (
+            <div>
+            <div id="child-div">
+            <h4>{this.props.kid.name}</h4>
+            <h6 className="child-gender-bday">Gender: {this.props.kid.gender}</h6>
+            <h6 className="child-gender-bday">Birthday: {this.props.kid.birthday}</h6>
+           <div id="s-child">
+               <h5>Scores</h5>
+               <h6>Behaviour Score:  {this.props.kid.behaviour_score}/4</h6>
+               <h6>Sport Score:  {this.props.kid.sport_score}/4</h6>
+               <h6>Academic Score:  {this.props.kid.academic_score}/4</h6>
+               <h6>Character Score:  {this.props.kid.character_score}/4</h6>
+            <h6 id="total">Total Score: 17/20</h6>
+               </div>
             
+            <div id="s-child">
+           <h5>Progress</h5>
+           <h6>Behaviour Progress:  {this.props.kid.behaviour_progress}/4</h6>
+            <h6>Sport Progress:  {this.props.kid.sport_progress}/4</h6>
+           <h6>Academic Progress:  {this.props.kid.academic_progress}/4</h6>
+           <h6>Character Progress:  {this.props.kid.character_progress}/4</h6>
+            
+            <h6 id="total">Total Progress: 19/20</h6>
+               </div>
+            <Link><h5 id="journal">{this.props.kid.name}'s Journals →</h5></Link>
+               
+            <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.kid)}><button id="edit-child-button" className="btn">Edit</button></Link>
+
+            </div>
 </div>
     );
 }

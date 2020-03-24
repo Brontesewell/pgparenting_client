@@ -22,18 +22,6 @@ label.active {
   color: #3b4b75 !important;
 }
 
-
-[type="radio"]:checked + label::after, [type="radio"].with-gap:checked + label::after {
-  background-color: #3b4b75 !important;
-}
-[type="radio"]:checked + label::after, [type="radio"].with-gap:checked + label::before, [type="radio"].with-gap:checked + label::after {
-  border: 2px solid #3b4b75 !important;
-}
-
-/* input[type='radio'] {
-  background-color: #3b4b75 !important; */
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -127,6 +115,39 @@ margin-right:30px
   font-size: 20px;
 }
 
+#btn-edit-child{
+  background-color: #8597C5;
+  float: center;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+#child-div{
+  text-align: left;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  /* border-style: solid;
+  border-width: thin; */
+}
+
+#s-child{
+float: left;
+width: 50%;
+margin-bottom: 20px;
+}
+
+#p-child{
+  float: right;
+  width: 50%;
+}
+
+#total{
+  font-weight: bolder;
+}
+
 .rankings-score{
   text-align: left;
   margin-left: 35%;
@@ -149,6 +170,13 @@ margin-right:30px
 
 #score-title{
  color: #3b4b75;
+}
+
+#journal{
+  color: #3b4b75;
+}
+#journal:hover{
+  text-decoration: underline;
 }
 
 #progress{
