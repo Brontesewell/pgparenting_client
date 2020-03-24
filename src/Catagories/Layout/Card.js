@@ -37,10 +37,10 @@ class Card extends Component {
      {this.state.clickedcourse ?  
      <Switch>
            <Redirect to={{
-                pathname: '/course',
+                pathname: `/course/${this.state.clickedcourse.id}`,
                 state: { clickedcourse: this.state.clickedcourse.id, clickedcourse: this.state.clickedcourse}
             }} />
-            <Route path='/course'>
+            <Route path={`/course/${this.state.clickedcourse.id}`} >
                 <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton} />
             </Route>
       </Switch>

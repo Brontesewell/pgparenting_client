@@ -31,7 +31,7 @@ import Young_Adults from './Catagories/Young_Adult';
 import CourseInfo from './Catagories/Layout/CourseInfo'
 import AddKid from './containers/AddKid'
 
-import ConversationsList from './messages/ConversationsList';
+
 
 
 class App extends React.Component {
@@ -45,6 +45,7 @@ class App extends React.Component {
 
 
   render(){
+    console.log(this.props.currentUser)
     return (
       <div className="App">
         <Router>
@@ -71,8 +72,8 @@ class App extends React.Component {
                 <Route exact path='/young_adults' component={Young_Adults}/>
                 <Route exact path='/edit-kid' component={EditKid}/>
                 <Route exact path='/course' component={CourseInfo} />
-                <Route exact path='/course' component={CourseInfo} />
-                <Route exact path='/conversation' component={ConversationsList} />
+                <Route exact path='/course/:id' component={CourseInfo} />
+             
 
 
             <Route exact path='/' component ={Welcome}/>
