@@ -78,10 +78,28 @@ margin-top: 100px;
 
 .form-edit {
   padding: 35px;
-  margin: 2% 25% 0%;
+  margin: 2% 10% 0% 10%;
   box-shadow: 0 6px 15px 0 rgba(37, 166, 154);
   border-radius: 35px;
   transition: 0.3s;
+  width: 70%;
+  height: 1000px;
+}
+
+#add-kid-general{
+  margin-left: 10%;
+  float: center;
+  margin-right: 10%;
+}
+
+#score-add-kid{
+float: left;
+width: 50%;
+}
+
+#progress{
+float: right;
+width: 50%;
 }
 
 .form-item {
