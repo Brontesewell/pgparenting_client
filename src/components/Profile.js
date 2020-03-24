@@ -16,11 +16,13 @@ console.log(props.currentUser.kids)
                {<Navbar/>} 
             </div>
             <div id="profiles">
+                <h1 id="my-family-title">My Family</h1>
+                <div id="line-family"></div>
             <div className = "my-fam">
-            <h1 id="my-profile">My Profile</h1>
+            <h1 id="my-profile">Profile</h1>
              <div className="line-profile"></div>
                 <h3 className="p">{first_name + ' ' + last_name}</h3>
-                <h6><strong>Email: </strong>{email}</h6>
+                <h6 id="email-p"><strong>Email: </strong>{email}</h6>
               
                 <div >
                     <Link to='/edit-profile'><button id="edit-p" className="btn">Edit Profile</button></Link>
@@ -32,7 +34,7 @@ console.log(props.currentUser.kids)
 
             <div id = "boxes"> 
             <div id = "leftbox"> 
-                <h3 id="my-children"> My Children</h3>  
+                <h3 id="my-children"> Children</h3>  
                 <div className="line-child"></div>
                         <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
                

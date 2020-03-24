@@ -554,6 +554,11 @@ div.menu-container {
 	margin-top: -5px;
 }
 
+#course-info{
+  background-color: #fff4f0;
+  margin-top: -42px;
+}
+
 
 
 
@@ -1103,7 +1108,7 @@ input[type=submit]:hover {
   width:53.5%; 
   margin-right: 5%;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 10px;
 } 
 
@@ -1127,23 +1132,49 @@ input[type=submit]:hover {
   border-color: #8597C5;
   border-radius: 14px;
   margin-left: 5%;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: white;
+}
+
+#line-family{
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  width: 250px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
+
+#my-family-title{
+  text-align: center;
+  color: #3b4b75;
+  padding-top: 30px;
+  font-weight: 350;
+}
+
+.p{
+  font-size: 35px;
+  color: #3b4b75;
+}
+
+#email-p{
+  color: #3b4b75;
 }
 
 #my-children{
   color: #3b4b75;
+  font-weight: 300;
 }
 
 #my-profile{
   color: #3b4b75;
   font-size: 45px;
+  font-weight: 300;
 }
 
 #profiles{
   height: 1000px;
   background-color: #fff4f0;
-  margin-top: -19px
+  margin-top: -42px
 }
 
 #delete-fav {
@@ -1381,6 +1412,7 @@ input[type=submit]:hover {
 
 #course-title{
   color: #8597C5;
+  padding-top: 45px;
 }
 
 #course-favs-button{

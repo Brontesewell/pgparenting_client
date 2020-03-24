@@ -23,7 +23,7 @@ class CourseInfo extends Component {
               <div className = 'row'>
                     <Navbar />
                 </div>
-              <div >
+              <div id="course-info">
                    <h1 id="course-title">{this.state.course.title}</h1>
                    <button id="course-favs-button" className="btn" onClick={(e) => this.props.addToCollection(e, this.state, history)}>Add To Favourites</button>
                    <div id="course-quote-div"><h5><i>"{this.state.course.quote}"</i></h5></div>

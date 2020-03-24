@@ -13,8 +13,6 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import './index.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
-import { API_WS_ROOT } from './constants';
-import { ActionCableProvider } from 'react-actioncable-provider';
 
 
 const persistConfig = {
@@ -38,9 +36,9 @@ const persistor = persistStore(store);
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-    <ActionCableProvider url={API_WS_ROOT}>  
+   
         <App />
-        </ActionCableProvider>,
+       
     </PersistGate>
   </Provider>
   , document.getElementById('root')
