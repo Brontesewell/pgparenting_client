@@ -179,6 +179,46 @@ width: 50%;
   text-decoration: underline;
 }
 
+
+#journal-buble{
+  padding-top: 1px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px 0 #8597C5;
+  border-radius: 15px;
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: 0.3s;
+  width: 70%;
+  background-color: #FDEAE3;
+}
+
+#title-journal{
+  color: #8597C5;
+}
+
+#journal-text{
+  font-size: 25px;
+}
+
+#created-j{
+  text-align: right;
+  margin-right: 20px;
+}
+
+#line-journal-title {
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  width: 350px;
+  float: center;
+  margin-left: 37%;
+  margin-right: 30%;
+  margin-top: -15px;
+
+}
+
 #progress{
 float: right;
 width: 45%;
