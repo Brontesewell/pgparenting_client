@@ -39,8 +39,14 @@ class EditKid extends Component {
                         <label htmlFor="name">Name</label>
                         <input name="name" value={name} onChange={this.handleChange}/>
 
-                        <label htmlFor="gender">Gender</label>
-                        <input name="gender" value={gender} onChange={this.handleChange}/>
+                        {/* <label htmlFor="gender">Gender</label>
+                        <input name="gender" value={gender} onChange={this.handleChange}/> */}
+
+                        <select className="browser-default" name="gender" onChange={this.handleChange}>
+                            <option value="" disabled selected>Choose a Gender</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
 
                        <label htmlFor="birthday">Birthday</label>
                         <input type='text' name="birthday" value={birthday} onChange={this.handleChange}/>

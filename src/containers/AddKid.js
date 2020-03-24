@@ -38,8 +38,13 @@ class AddKid extends Component {
                         <label htmlFor="name">Name</label>
                         <input name="name" value={name} onChange={this.handleChange}/>
 
-                        <label htmlFor="gender">Gender</label>
-                        <input name="gender" value={gender} onChange={this.handleChange}/>
+                        {/* <label htmlFor="gender">Gender</label>
+                        <input name="gender" value={gender} onChange={this.handleChange}/> */}
+                        <select className="browser-default" name="gender" onChange={this.handleChange}>
+                            <option value="" disabled selected>Choose a Gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
 
                        <label htmlFor="birthday">Birthday</label>
                         <input type='text' name="birthday" value={birthday} onChange={this.handleChange}/>
