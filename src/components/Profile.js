@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
@@ -6,10 +6,15 @@ import Children from './Children'
 import CourseCollection from './CourseCollection'
 import Footer from '../containers/Footer'
 
-const Profile = (props) => {
-console.log(props.currentUser.kids)
-    const {first_name, last_name, email} = props.currentUser
+class Profile extends Component  {
 
+    
+    
+    
+    render() {
+    console.log(this.props.currentUser.kids)
+    
+    const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
             <div className = 'row'>
@@ -40,14 +45,14 @@ console.log(props.currentUser.kids)
                
                 <br></br>
                 <br></br>
-                    {props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}
+                    {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}
             </div>
               
             <div id = "middlebox"> 
                 <h3 id="my-children">Favourite Courses</h3> 
                 <div className="line-favs"></div>
                 <div className="">
-                {props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
+                {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
                 </div>
             </div> 
               
@@ -57,6 +62,7 @@ console.log(props.currentUser.kids)
         </div>
         </div>
     )
+}
 }
 
 const mapStateToProps = state => {

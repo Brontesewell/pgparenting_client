@@ -31,7 +31,7 @@ import Young_Adults from './Catagories/Young_Adult';
 import CourseInfo from './Catagories/Layout/CourseInfo'
 import AddKid from './containers/AddKid'
 
-
+import JournalsPage from './components/JournalsPage'
 
 
 class App extends React.Component {
@@ -73,8 +73,8 @@ class App extends React.Component {
                 <Route exact path='/edit-kid' component={EditKid}/>
                 <Route exact path='/course' component={CourseInfo} />
                 <Route exact path='/course/:id' component={CourseInfo} />
-             
-
+                <Route exact path='/journal' component={JournalsPage} />
+                <Route exact path='/journal/:id' component={JournalsPage} />
 
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>

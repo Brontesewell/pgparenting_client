@@ -2,6 +2,7 @@ const initialState = {
     currentUser: {},
     users: [],
     kids: [],
+    journals: [],
     catagories: [],
     collections: [],
     // babies: [],
@@ -65,10 +66,11 @@ const rootReducer = (state = initialState, action) => {
          case 'ADD_KID':
                 return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}
                 
+        case 'ADD_JOURNAL':
+                return {...state, journals: action.journal, kids:{...state.kids, journals: [...state.kids.journals, action.journal]}}
 
-
-
-
+        case 'SET_ALL_JOURNALS':
+                return {...state, journals: action.journals }
 
 
 

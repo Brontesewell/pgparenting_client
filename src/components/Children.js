@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-
+import { Route, Switch, Redirect } from 'react-router-dom'
+import JournalsPage from './JournalsPage'
 
 class Children extends Component {
+    state = {
+        clickedjournal: null,
+    }
     
+    handleJournalClick = (course) => {
+        this.setState({
+            clickedjournal: course
+        })
+    }
+    
+    handleBackButton = () => {
+        this.setState({
+            clickedjournal: null
+        })
+    }
     render() {
         return (
             <div>
@@ -31,7 +46,22 @@ class Children extends Component {
             <h6 id="total">Total Progress: {this.props.kid.academic_progress + this.props.kid.character_progress + this.props.kid.sport_progress + this.props.kid.behaviour_progress}/16</h6>
                </div>
             <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.kid)}><button id="edit-child-button" className="btn">Edit</button></Link>
-            <Link><h5 id="journal">{this.props.kid.name}'s Journals →</h5></Link>
+            
+            
+            {this.state.clickedjournal ?  
+     <Switch>
+           <Redirect to={{
+                pathname: `/journal/${this.props.kid.id}`,
+                state: { clickedjournal: this.state.clickedjournal.id, clickedjournal: this.state.clickedjournal}
+            }} />
+            <Route path={`/journal/${this.props.kid.id}`} >
+                <JournalsPage clickedjournal={this.state.clickedjournal} handleBackButton={this.handleBackButton} />
+            </Route>
+      </Switch>
+     : 
+     <h5 id="journal" onClick={() => this.handleJournalClick(this.props.kid)} >{this.props.kid.name}'s Journals →</h5>}
+       
+           
                
 
             </div>
