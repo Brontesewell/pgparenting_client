@@ -11,7 +11,15 @@ class EditKid extends Component {
         name: this.props.selectedKid.name,
         birthday: this.props.selectedKid.birthday,
         gender: this.props.selectedKid.gender,
-        user_id: this.props.currentUser.id
+        behaviour_progress: this.props.selectedKid.behaviour_progress, 
+        behaviour_score: this.props.selectedKid.behaviour_score, 
+        sport_progress: this.props.selectedKid.sport_progress, 
+        sport_score: this.props.selectedKid.sport_score, 
+        academic_progress: this.props.selectedKid.academic_progress, 
+        academic_score: this.props.selectedKid.academic_score, 
+        character_progress: this.props.selectedKid.character_progress, 
+        character_score: this.props.selectedKid.character_score,
+        user_id: this.props.currentUser.id,
     }
 
     handleChange = (e) => {
@@ -42,7 +50,8 @@ class EditKid extends Component {
                         {/* <label htmlFor="gender">Gender</label>
                         <input name="gender" value={gender} onChange={this.handleChange}/> */}
 
-                        <select className="browser-default" name="gender" onChange={this.handleChange}>
+                        <label htmlFor="gender">Gender</label>
+                        <select className="browser-default" name="gender" value={gender} onChange={this.handleChange}>
                             <option value="" disabled selected>Choose a Gender</option>
                             <option value="Female">Female</option>
                             <option value="Male">Male</option>
@@ -50,6 +59,9 @@ class EditKid extends Component {
 
                        <label htmlFor="birthday">Birthday</label>
                         <input type='text' name="birthday" value={birthday} onChange={this.handleChange}/>
+
+
+                        
                         
                         <br></br>
                         <br></br>

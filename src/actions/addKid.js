@@ -1,7 +1,7 @@
 const addKid = (e, state, history) => {
     e.preventDefault();
 
-    const {name, birthday, gender, user_id} = state
+    const {name, birthday, gender, user_id, behaviour_progress, behaviour_score, sport_progress, sport_score, academic_progress, academic_score, character_progress, character_score} = state
 
     return (dispatch) => {
         fetch('http://localhost:3000/kids',{
@@ -16,7 +16,16 @@ const addKid = (e, state, history) => {
                 name: name,
                 birthday: birthday,
                 gender: gender,
-                user_id: user_id
+                user_id: user_id,
+                behaviour_progress: behaviour_progress, 
+                behaviour_score: behaviour_score, 
+                sport_progress: sport_progress, 
+                sport_score: sport_score, 
+                academic_progress: academic_progress, 
+                academic_score: academic_score, 
+                character_progress: character_progress, 
+                character_score: character_score,
+
             })
         })
         .then(resp => resp.json())

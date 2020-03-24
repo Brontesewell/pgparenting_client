@@ -1,6 +1,6 @@
 const editKid = (e, state, id, history) => {
     e.preventDefault();
-    const {name, birthday, gender} = state
+    const {name, birthday, gender, behaviour_progress, behaviour_score, sport_progress, sport_score, academic_progress, academic_score, character_progress, character_score} = state
 
     return (dispatch) => {
         return fetch(`http://localhost:3000/kids/${id}`, {
@@ -13,7 +13,15 @@ const editKid = (e, state, id, history) => {
             body: JSON.stringify({
                 name: name,
                 birthday: birthday,
-                gender: gender
+                gender: gender,
+                behaviour_progress: behaviour_progress, 
+                behaviour_score: behaviour_score, 
+                sport_progress: sport_progress, 
+                sport_score: sport_score, 
+                academic_progress: academic_progress, 
+                academic_score: academic_score, 
+                character_progress: character_progress, 
+                character_score: character_score,
             })
         })
         .then(resp => resp.json())
