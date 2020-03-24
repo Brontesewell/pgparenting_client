@@ -28,7 +28,7 @@ class SignIn extends Component {
                 <h4 id="sign_in">Login</h4>
                 <form onSubmit={(e) => this.props.signIn(e, this.state, this.props.history)}>
 
-                    <div className="input-field col s12">
+                    <div className="input-field col s12 ">
                         <i className="material-icons prefix"></i>
                         <label htmlFor='icon_prefix'>Email</label>
                         <input className = 'validate' id = 'icon_prefix' type='email' name="email" value={email} onChange={this.handleChange}/>

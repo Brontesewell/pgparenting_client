@@ -13,6 +13,27 @@
   }
 }
 
+input:focus {
+  border-bottom: 1px solid #3b4b75 !important;
+  box-shadow: 0 1px 0 0 #3b4b75 !important;
+}
+
+label.active {
+  color: #3b4b75 !important;
+}
+
+
+[type="radio"]:checked + label::after, [type="radio"].with-gap:checked + label::after {
+  background-color: #3b4b75 !important;
+}
+[type="radio"]:checked + label::after, [type="radio"].with-gap:checked + label::before, [type="radio"].with-gap:checked + label::after {
+  border: 2px solid #3b4b75 !important;
+}
+
+/* input[type='radio'] {
+  background-color: #3b4b75 !important; */
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -71,15 +92,15 @@ margin-top: 100px;
   display: inline-block;
   padding: 35px;
   margin: 5% 25% 0%;
-  box-shadow: 0 6px 15px 0 rgba(37, 166, 154);
+  box-shadow: 0 6px 15px 0 #8597C5;
   border-radius: 35px;
   transition: 0.3s;
 }
 
 .form-edit {
   padding: 35px;
-  margin: 2% 10% 0% 10%;
-  box-shadow: 0 6px 15px 0 rgba(37, 166, 154);
+  margin: 2% 10% 2% 13%;
+  box-shadow: 0 6px 15px 0 #8597C5;
   border-radius: 35px;
   transition: 0.3s;
   width: 70%;
@@ -94,12 +115,51 @@ margin-top: 100px;
 
 #score-add-kid{
 float: left;
-width: 50%;
+width: 45%;
+margin-right:30px
+}
+
+#btn-add-child{
+  background-color: #8597C5;
+  float: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.rankings-score{
+  text-align: left;
+  margin-left: 35%;
+  color: #3b4b75;
+}
+
+.rankings-progress{
+  text-align: left;
+  margin-left: 25%;
+  color: #3b4b75;
+}
+
+#progress-title{
+  color: #3b4b75;
+}
+
+#add-kid{
+  color: #3b4b75;
+}
+
+#score-title{
+ color: #3b4b75;
 }
 
 #progress{
 float: right;
-width: 50%;
+width: 45%;
+margin-left:30px
+}
+
+
+.score{
+  margin-left: 25px;
 }
 
 .form-item {
@@ -588,6 +648,8 @@ div.menu-container {
   padding-bottom: 10px;
   margin-bottom: 5px;
 } */
+
+
 
 #edit-child-button {
   background-color: #8597C5;
