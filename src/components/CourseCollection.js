@@ -17,7 +17,7 @@ render() {
         <div>
             <div id="favs-box">
                     <h5>{this.props.course.title}</h5>
-                    <br/><button id="delete-fav" className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}><Link to='/profile' id="delete-course">Delete Course</Link></button>
+                    <br/><button id="delete-fav" className="btn" type="submit" onClick={(e) => this.props.deleteCollection(e, collection, history)}><Link onClick={() =>  window.location.href="/profile"} id="delete-course">Delete Course</Link></button>
             </div>
         </div>
 
