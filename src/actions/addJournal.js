@@ -21,9 +21,10 @@ const addJournal = (e, state, history) => {
         .then(resp => resp.json())
         .then(data => {
             console.log(data)
-            dispatch({ type: "ADD_JOURNAL", journal: data }
+            dispatch({ type: "ADD_JOURNAL", journal: data })
+            // dispatch({ type: "SET_SELECTED_JOURNALS", journal: data})
             
-            )
+            
         })
     }
  

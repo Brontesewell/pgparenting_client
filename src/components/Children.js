@@ -5,24 +5,18 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import JournalsPage from './JournalsPage'
 
 class Children extends Component {
-    state = {
-        clickedjournal: null,
+
+
+    
+    handleJournalClick = (journal) => {
+        // console.log(journal)
+        this.props.selectedJournal(journal)
     }
     
-    handleJournalClick = (course) => {
-        this.setState({
-            clickedjournal: course
-        })
-    }
-    
-    handleBackButton = () => {
-        this.setState({
-            clickedjournal: null
-        })
-    }
+
 
     render() {
-        
+        console.log(this.props.selectedJournals)
         return (
             <div>
             <div id="child-div">
@@ -50,19 +44,22 @@ class Children extends Component {
             <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.kid)}><button id="edit-child-button" className="btn">Edit</button></Link>
             
             
-            {this.state.clickedjournal ?  
+            {this.props.selectedJournals ?
      <Switch>
            <Redirect to={{
                 pathname: `/journal/${this.props.kid.id}`,
-                state: { clickedjournal: this.state.clickedjournal.id, clickedjournal: this.state.clickedjournal}
+                state: { clickedjournal: this.props.selectedJournals}
             }} />
             <Route path={`/journal/${this.props.kid.id}`} >
-                <JournalsPage clickedjournal={this.state.clickedjournal} handleBackButton={this.handleBackButton} />
+                <JournalsPage clickedjournal={this.props.selectedJournals}  />
             </Route>
+
       </Switch>
      : 
 
-     <h5 id="journal" onClick={() => this.handleJournalClick(this.props.kid)} >{this.props.kid.name}'s Journals →</h5>}
+     <h5 id="journal" onClick={() => this.handleJournalClick(this.props.kid)} >{this.props.kid.name}'s Journals →</h5>
+     
+        }
        
            
                
@@ -79,14 +76,14 @@ const mapStateToProps = state => {
         kids: state.kids,
         currentUser: state.currentUser,
         journals: state.journals,
-        selectedJournals :state.selectedJournals
+        selectedJournals: state.selectedJournals
     }
 }
 
 const mapsToDispatchProps = dispatch =>{
     return{
         selectedKid: (kid) => dispatch({type: 'SET_SELECTED_KID', kid: kid}),
-    
+        selectedJournal: (journal) => dispatch({type: 'SET_SELECTED_JOURNALS', journal: journal}),
         }
 }
 export default connect(mapStateToProps, mapsToDispatchProps)(Children);

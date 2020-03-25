@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 class JournalsPage extends Component {
 
     render() {
-        // console.log(this.props.location.state.clickedjournal.journals)
+        console.log(this.props.selectedJournals)
 
 // console.log(this.props.journals)
         return (
@@ -23,7 +23,7 @@ class JournalsPage extends Component {
 
             <AddJournal kid={this.props.location.state.clickedjournal}/>
 
-        {this.props.location.state.clickedjournal.journals.map(journal => < JournalList journal={journal} />)}
+        {this.props.selectedJournals.journals.map(journal => < JournalList journal={journal} />)}
 
 
 

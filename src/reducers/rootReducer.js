@@ -16,7 +16,7 @@ const initialState = {
     loading: false,
     selectedKid: {},
     selectedCourse: {},
-    selectedJournals: {},
+    selectedJournals: null,
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -71,19 +71,25 @@ const rootReducer = (state = initialState, action) => {
          case 'ADD_KID':
                 return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}
                 
+
+
+
+
         case 'ADD_JOURNAL':
                 return { ...state, journals:[...state.journals, action.journal], selectedJournals:{...state.selectedJournals, journals: [...state.selectedJournals.journals, action.journal]}}
-
-
-        case 'SET_ALL_JOURNALS':
+        
+                case 'SET_ALL_JOURNALS':
                 return {...state, journals: action.journals }
 
         case 'DELETE_JOURNAL':
                 const filteredJournal = state.kids.journals.filter(journal => journal.id !== action.journal.id)
                 return {...state, kids: {...state.kids, journals: filteredJournal}}
 
-        // case 'SET_SELECTED_JOURNALS':
-        //      return {...state, selectedJournals: action.journal} 
+        case 'SET_SELECTED_JOURNALS':
+             return {...state, selectedJournals: action.journal} 
+
+
+
 
 
 
