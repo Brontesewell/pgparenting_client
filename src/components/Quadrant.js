@@ -24,9 +24,11 @@ console.log(this.state.total_behaviour)
                 
               
               <h4 id="quadrant-name">Behaviour</h4>
-               { this.state.total_behaviour <= 4 ? <h5>{this.props.kid.name} is less then 4</h5> :
-               this.state.total_behaviour >= 5 && this.state.total_behaviour <= 9  && this.props.kid.behaviour_progress >= 3 ? <h5>{this.props.kid.name} is 2</h5> :
-               this.state.total_behaviour >= 5 && this.state.total_behaviour <= 9  && this.props.kid.behaviour_score >= 2 ? <h5>{this.props.kid.name} is 3</h5> : 
+               { this.state.total_behaviour <= 5 ? <h5>{this.props.kid.name} is less then 5</h5> :
+               
+               this.state.total_behaviour >= 5 && this.state.total_behaviour <= 9  && this.props.kid.behaviour_progress === 2 ? <h5>{this.props.kid.name} is 2</h5> : 
+               this.state.total_behaviour >= 5 && this.state.total_behaviour <= 9  && this.props.kid.behaviour_progress >= 3 ? <h5>{this.props.kid.name} is 3</h5> :
+               
                this.state.total_behaviour >= 10 ? <h5>{this.props.kid.name} is more then 10</h5> : null
                
                }
