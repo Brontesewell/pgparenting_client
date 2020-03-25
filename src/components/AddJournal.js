@@ -4,6 +4,7 @@ import Navbar from '../containers/Navbar'
 import {connect} from 'react-redux'
 import addJournal from '../actions/addJournal'
 import { Link } from 'react-router-dom';
+require('react-datetime');
 
 class AddJournal extends Component {
 
@@ -34,6 +35,7 @@ class AddJournal extends Component {
             <div id="date-journal">
              <label htmlFor="date_now">Today's Date</label>
                  <input type='text' name="date_now" value={date_now} onChange={this.handleChange}/>
+                 
                  </div>  
 
                  <button id="btn-add-journal" className="btn" type="submit" >Add Journal</button>

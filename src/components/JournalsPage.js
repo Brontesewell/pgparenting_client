@@ -6,11 +6,12 @@ import addKid from '../actions/addKid'
 import JournalList from './JournalList'
 import AddJournal from './AddJournal'
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 class JournalsPage extends Component {
 
+
     render() {
-        console.log(this.props.selectedJournals)
 
 // console.log(this.props.journals)
         return (
@@ -25,10 +26,11 @@ class JournalsPage extends Component {
 
         {this.props.selectedJournals.journals.map(journal => < JournalList journal={journal} />).reverse()}
 
+        
+        
+        <button id="course-button-back" className="btn" onClick={() =>  window.location.href="/profile" }>Back</button>
 
-
-        <Link to="/profile"><button id="course-button-back" className="btn">Back</button></Link>
-            </div>
+</div>
         );
     }
 }

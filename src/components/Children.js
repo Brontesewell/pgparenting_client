@@ -12,6 +12,11 @@ class Children extends Component {
         // console.log(journal)
         this.props.selectedJournal(journal)
     }
+
+    // handleJournalBack = () => {
+    //     // console.log(journal)
+    //     this.props.selectedJournal = null
+    // }
     
 
 
@@ -51,7 +56,7 @@ class Children extends Component {
                 state: { clickedjournal: this.props.selectedJournals}
             }} />
             <Route path={`/journal/${this.props.selectedJournals.id}`} >
-                <JournalsPage clickedjournal={this.props.selectedJournals}  />
+                <JournalsPage clickedjournal={this.props.selectedJournals} handleJournalBack={this.handleJournalBack} />
             </Route>
 
       </Switch>
