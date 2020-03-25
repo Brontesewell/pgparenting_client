@@ -32,6 +32,8 @@ import Young_Adults from './Catagories/Young_Adult';
 import CourseInfo from './Catagories/Layout/CourseInfo'
 import AddKid from './containers/AddKid'
 
+import AboutASP from './containers/AboutASP'
+
 import JournalsPage from './components/JournalsPage'
 
 
@@ -77,6 +79,8 @@ class App extends React.Component {
                 <Route exact path='/course/:id' component={CourseInfo} />
                 <Route exact path='/journal' component={JournalsPage} />
                 <Route exact path='/journal/:id' component={JournalsPage} />
+                
+                <Route exact path='/about_scoring' component={AboutASP} />
 
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>

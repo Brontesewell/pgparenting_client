@@ -27,7 +27,7 @@ class AddJournal extends Component {
      const {history} = this.props
         return (
             <div>
-                <h2 id="add-kid">Add a Journay</h2>
+                <h2 id="add-kid">Add a Journal</h2>
                 <form className = 'container' onSubmit={(e) => this.props.addJournal(e, this.state, history)}>
                 <textarea rows="8" cols="120" name="text" form="usrform" value={text}  onChange={this.handleChange}> Enter text here...</textarea>
 
@@ -36,7 +36,7 @@ class AddJournal extends Component {
                  <input type='text' name="date_now" value={date_now} onChange={this.handleChange}/>
                  </div>   */}
 
-                 <button id="btn-add-journal" className="btn" type="submit" ><Link to='/profile'>Add Journal</Link></button>
+                 <button id="btn-add-journal" className="btn" type="submit" >Add Journal</button>
                 </form>
             </div>
         );

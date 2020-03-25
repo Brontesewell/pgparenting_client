@@ -13,7 +13,6 @@ class CourseInfo extends Component {
 
 
     render() {
-
         
         const {course_id, user_id} = this.state
         const {history} = this.props
@@ -40,7 +39,7 @@ class CourseInfo extends Component {
 
                    <br></br>
                    <br></br>
-                   <button id="course-button-back" className="btn" onClick={() => history.go(-1)}>Back</button>
+                   <button id="course-button-back" className="btn" onClick={() => history.push('/home')}>Back</button>
              </div>
              
             </div>

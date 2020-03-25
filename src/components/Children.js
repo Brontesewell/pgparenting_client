@@ -20,7 +20,9 @@ class Children extends Component {
             clickedjournal: null
         })
     }
+
     render() {
+        
         return (
             <div>
             <div id="child-div">
@@ -59,6 +61,7 @@ class Children extends Component {
             </Route>
       </Switch>
      : 
+
      <h5 id="journal" onClick={() => this.handleJournalClick(this.props.kid)} >{this.props.kid.name}'s Journals →</h5>}
        
            
@@ -73,6 +76,7 @@ class Children extends Component {
 const mapsToDispatchProps = dispatch =>{
     return{
         selectedKid: (kid) => dispatch({type: 'SET_SELECTED_KID', kid: kid}),
+    
         }
 }
 export default connect(null, mapsToDispatchProps)(Children);

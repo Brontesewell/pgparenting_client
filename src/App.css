@@ -108,6 +108,7 @@ margin-top: 100px;
   margin-left: 10%;
   float: center;
   margin-right: 10%;
+  font-weight: 300;
 }
 
 #score-add-kid{
@@ -223,12 +224,12 @@ width: 50%;
   text-align: center;
   box-shadow: 0 6px 15px 0 #8597C5;
   border-radius: 15px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   transition: 0.3s;
-  width: 70%;
+  width: 80%;
   background-color: #FDEAE3;
 }
 
@@ -1386,6 +1387,41 @@ input[type=submit]:hover {
   margin-bottom: 20px;
 }
 
+#asp-title{
+color: #8597C5
+}
+
+#asp-line{
+  border-bottom-style: solid;
+  border-bottom-color: #6B6b69;
+  width: 700px;
+  margin-left: 23%;
+  margin-bottom: 20px;
+}
+
+#about-s-p{
+  background-color: #8597C5;
+}
+
+.define-asp{
+  font-weight: 300;
+  color: #3b4b75;
+}
+
+.ranking-asp{
+  color: #3b4b75;
+}
+
+.asp-subtitle{
+  color: #8597C5;
+}
+
+#asp-div{
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .btn-delete-favs{
   background-color: #8597C5;
   margin-top: 10px;
@@ -1619,6 +1655,19 @@ input[type=submit]:hover {
   cursor: pointer;
   border-radius: 3px;
   margin-bottom: 50px;
+}
+
+#asp-button-back{
+  background-color: #8597C5;
+  color: white;
+  height: 37px;
+  font-size: 20px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 80px;
+  margin-top: 30px;
 }
 
 #course-quote-div{

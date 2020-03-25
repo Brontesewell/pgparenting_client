@@ -42,6 +42,8 @@ class Profile extends Component  {
                 <h3 id="my-children"> Children</h3>  
                 <div className="line-child"></div>
                         <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
+                        <br></br>
+                        <Link to='/about_scoring'><button id="about-s-p" className="btn">About Achievement Scoring and Progress</button></Link>
                
                 <br></br>
                 <br></br>

@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom';
 
 class JournalsPage extends Component {
 
-    
     render() {
         // console.log(this.props.location.state.clickedjournal.journals)
-console.log(this.props.journals)
+
+// console.log(this.props.journals)
         return (
             <div>
                 <div className = 'row'>
@@ -24,6 +24,9 @@ console.log(this.props.journals)
             <AddJournal kid={this.props.location.state.clickedjournal}/>
 
         {this.props.location.state.clickedjournal.journals.map(journal => < JournalList journal={journal} />)}
+
+
+
         <button id="course-button-back" className="btn"><Link to="/profile">Back</Link></button>
             </div>
         );
@@ -35,7 +38,7 @@ const mapStateToProps = state => {
         selectedKid: state.selectedKid,
         kids: state.kids,
         currentUser: state.currentUser,
-        journals :state.journals
+        journals: state.journals,
     }
 }
 
