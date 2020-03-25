@@ -23,7 +23,7 @@ class JournalsPage extends Component {
 
             <AddJournal kid={this.props.location.state.clickedjournal}/>
 
-        {this.props.selectedJournals.journals.map(journal => < JournalList journal={journal} />)}
+        {this.props.selectedJournals.journals.map(journal => < JournalList journal={journal} />).reverse()}
 
 
 

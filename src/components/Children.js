@@ -47,10 +47,10 @@ class Children extends Component {
             {this.props.selectedJournals ?
      <Switch>
            <Redirect to={{
-                pathname: `/journal/${this.props.kid.id}`,
+                pathname: `/journal/${this.props.selectedJournals.id}`,
                 state: { clickedjournal: this.props.selectedJournals}
             }} />
-            <Route path={`/journal/${this.props.kid.id}`} >
+            <Route path={`/journal/${this.props.selectedJournals.id}`} >
                 <JournalsPage clickedjournal={this.props.selectedJournals}  />
             </Route>
 
