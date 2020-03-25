@@ -1313,6 +1313,18 @@ input[type=submit]:hover {
   background-color: white;
 } 
 
+#quadrant{
+  float: left;  
+  border-style: solid;
+  /* border-width: thin; */
+  border-color: #8597C5;
+  width: 35%;
+  border-radius: 14px;
+  margin-left: 5%;
+  margin-top: 25px;
+  background-color: white;
+}
+
 .my-fam{
   width: 35%;
   float: left;

@@ -12,7 +12,7 @@ const fetchAllJournals= () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            
             dispatch({ type: "SET_ALL_JOURNALS", journals: data})
             // dispatch({ type: "SET_SELECTED_JOURNALS", journal: data})
         })

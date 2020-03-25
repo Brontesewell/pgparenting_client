@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import Children from './Children'
 import CourseCollection from './CourseCollection'
 import Footer from '../containers/Footer'
+import Quadrant from './Quadrant'
 
 class Profile extends Component  {
 
@@ -12,7 +13,7 @@ class Profile extends Component  {
     
     
     render() {
-    // console.log(this.props.currentUser.kids)
+    console.log(this.props.currentUser.kids)
     
     const {first_name, last_name, email} = this.props.currentUser
     return (
@@ -36,7 +37,6 @@ class Profile extends Component  {
 
 
 
-
             <div id = "boxes"> 
             <div id = "leftbox"> 
                 <h3 id="my-children"> Children</h3>  
@@ -48,6 +48,14 @@ class Profile extends Component  {
                 <br></br>
                 <br></br>
                     {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}
+            </div>
+
+
+
+            <div id ="quadrant">
+            <h3 id="my-children">Family Quadrant</h3> 
+                <div className="line-favs"></div>
+                {this.props.currentUser.kids.map(kid => < Quadrant kid={kid} />)}
             </div>
               
             <div id = "middlebox"> 

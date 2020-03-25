@@ -21,7 +21,7 @@ class Children extends Component {
 
 
     render() {
-        console.log(this.props.selectedJournals)
+        console.log(this.props.kid)
         return (
             <div>
             <div id="child-div">
