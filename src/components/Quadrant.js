@@ -31,6 +31,7 @@ console.log(this.state.total_behaviour)
                
                this.state.total_behaviour >= 10 ? <h5>{this.props.kid.name} is more then 10</h5> : null
                
+               
                }
 
                
