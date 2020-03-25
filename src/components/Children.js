@@ -73,13 +73,23 @@ class Children extends Component {
 }
 }
 
+const mapStateToProps = state => {
+    return {
+        selectedKid: state.selectedKid,
+        kids: state.kids,
+        currentUser: state.currentUser,
+        journals: state.journals,
+        selectedJournals :state.selectedJournals
+    }
+}
+
 const mapsToDispatchProps = dispatch =>{
     return{
         selectedKid: (kid) => dispatch({type: 'SET_SELECTED_KID', kid: kid}),
     
         }
 }
-export default connect(null, mapsToDispatchProps)(Children);
+export default connect(mapStateToProps, mapsToDispatchProps)(Children);
 
 
 

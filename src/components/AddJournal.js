@@ -31,10 +31,10 @@ class AddJournal extends Component {
                 <form className = 'container' onSubmit={(e) => this.props.addJournal(e, this.state, history)}>
                 <textarea rows="8" cols="120" name="text" form="usrform" value={text}  onChange={this.handleChange}> Enter text here...</textarea>
 
-            {/* <div id="date-journal">
+            <div id="date-journal">
              <label htmlFor="date_now">Today's Date</label>
                  <input type='text' name="date_now" value={date_now} onChange={this.handleChange}/>
-                 </div>   */}
+                 </div>  
 
                  <button id="btn-add-journal" className="btn" type="submit" >Add Journal</button>
                 </form>

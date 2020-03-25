@@ -27,7 +27,7 @@ class JournalsPage extends Component {
 
 
 
-        <button id="course-button-back" className="btn"><Link to="/profile">Back</Link></button>
+        <Link to="/profile"><button id="course-button-back" className="btn">Back</button></Link>
             </div>
         );
     }
@@ -39,6 +39,7 @@ const mapStateToProps = state => {
         kids: state.kids,
         currentUser: state.currentUser,
         journals: state.journals,
+        selectedJournals :state.selectedJournals
     }
 }
 
