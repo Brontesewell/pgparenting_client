@@ -23,6 +23,7 @@ const signUpUser = (e, state, history) => {
         })
         .then(resp => resp.json())
         .then(data => {
+            console.log(data)
             dispatch({ type: "SET_CURRENT_USER", user: data.user })
             dispatch({ type: "ADD_USER", user: data.user })
             localStorage.setItem('jwt', data.jwt)
