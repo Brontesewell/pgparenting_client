@@ -1867,18 +1867,22 @@ color: #8597C5
   background: red;
   border-radius: 2px;
   margin-top: -6px;
+  border-right-style: solid;
 }
 
 .two {
   background: orange;
   border-radius: 2px;
   margin-bottom: -13px;
+  border-right-style: solid;
 }
 
 .three {
   background: yellow;
   border-radius: 1px;
   margin-top: -6px;
+  margin-top: -155px;
+  margin-left: 130px;
 }
 
 .four {
@@ -1896,11 +1900,35 @@ color: #8597C5
   border-bottom: 3px solid black;
 }
 
+#side{
+  position: relative;
+  display: inline-block;
+  width: 3px;
+  height: 298px;
+  left: -68px;
+  background-color: black;
+  margin-top: -155px;
+}
+
 #bad-progress{
   text-align: center;
   float: left;
   margin-top: 27%;
   margin-left: -330px;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+}
+
+#bad-achievement{
+  margin-top: -10px
+}
+
+#good-progress{
+  text-align: center;
+  float: right;
+  margin-top: -155px;
+  padding-left: 50px;
   position: relative;
   display: inline-block;
   width: 20px;

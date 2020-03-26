@@ -52,14 +52,14 @@ console.log(this.state.sport_1)
                 <div class="block four">4 { this.props.behaviour_4.map(kid => <h6 id="behaviour4">{kid.name}</h6>)}</div>
                 <p id="bad-progress">Bad Progress ←</p>
                 <div id="inside">  </div>
+                <div id="side">  </div>
                 <div class="block one">1 { this.props.behaviour_1.map(kid => <h6 id="behaviour1">{kid.name}</h6>)}</div>
                 <div class="block three">3 { this.props.behaviour_3.map(kid => <h6 id="behaviour3">{kid.name}</h6>)}</div>
+                <p  id="good-progress">→ Good Progress </p>
+                <p id="bad-achievement">↓ Bad Achievement</p>
                 </div>
 
-                <p>→ Good Progress </p>
-<br></br>
-<br></br>
-                <p>↓ Bad Achievement</p>
+
                 <h4>Academic</h4>
                 <div class="block two">2 { this.state.academic_2.map(kid => <h6 id="academic2">{kid.name}</h6>)}</div>
                 <div class="block four">4 { this.state.academic_4.map(kid => <h6 id="academic4">{kid.name}</h6>)}</div>
