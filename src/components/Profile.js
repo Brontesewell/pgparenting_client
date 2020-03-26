@@ -75,7 +75,7 @@ class Profile extends Component  {
 
 
             <div id ="quadrant">
-            <h3 id="my-children">Family Quadrant</h3> 
+            <h3 id="my-children">Children Quadrant</h3> 
                 <div className="line-favs"></div>
                         <Link to='/about_scoring'><button id="about-s-p" className="btn">About Achievement Scoring, Progress & Quadrants</button></Link>
                

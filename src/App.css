@@ -1866,61 +1866,60 @@ color: #8597C5
 .one {
   background: red;
   border-radius: 2px;
+  margin-top: -6px;
 }
 
 .two {
   background: orange;
   border-radius: 2px;
+  margin-bottom: -13px;
 }
 
 .three {
   background: yellow;
-  border-radius: 2px;
+  border-radius: 1px;
+  margin-top: -6px;
 }
 
 .four {
   background: green;
-  border-radius: 2px;
+  border-radius: 1px;
+  margin-bottom: -13px;
 }
 
-#behaviour{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+#inside{
+  position: relative;
+  display: inline-block;
+  margin-left: -30px;
+  margin-right: 10px;
+  width: 120%;
+  border-bottom: 3px solid black;
 }
 
- /* #num1{
-  width: 50%;
-  background-color: red;
-  margin-top: -9px;
-  border-radius: 5px;
+#bad-progress{
   text-align: center;
-  margin-left: 25%;
+  float: left;
+  margin-top: 27%;
+  margin-left: -330px;
+  position: relative;
+  display: inline-block;
+  width: 20px;
 }
 
-#num2{
-  width: 50%;
-  background-color: orange;
-  margin-top: -9px;
-  border-radius: 5px;
-  text-align: center;
-  margin-left: 25%;
+
+#outside{
+width: 60%;
+margin-left: 20%;
+margin-right: 15%;
 }
 
-#num3{
-  width: 50%;
-  background-color: yellow;
-  margin-top: -9px;
-  border-radius: 5px;
-  text-align: center;
-  margin-left: 25%;
-}
 
-#num4{
-   width: 50%;
-  background-color: green;
-  margin-top: -9px;
-  border-radius: 5px;
-  text-align: center;
-  margin-left: 25%;
-} */
+
+
+/* 
+border-bottom-style: solid;
+border-bottom-color: #6B6b69;
+width: 430px;
+margin-left: -60px;
+top: 49%;
+position: fixed; */
