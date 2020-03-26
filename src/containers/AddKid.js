@@ -41,6 +41,7 @@ class AddKid extends Component {
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
+                <div id="edit-background">
                 <div className = 'form-edit'>
                     <h2 id="add-kid">Add a Child</h2>
                     <form className = 'edit-kid' onSubmit={(e) => this.props.addKid(e, this.state, history)}>
@@ -317,6 +318,7 @@ class AddKid extends Component {
                         <br></br>
                         <button id="btn-add-child" className="btn" type="submit" >Add Child</button>
                     </form>
+                   </div>
                    </div>
             </div>
         );

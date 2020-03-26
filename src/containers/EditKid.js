@@ -42,6 +42,7 @@ class EditKid extends Component {
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
+                <div id="edit-background">
                 <div className = 'form-edit'>
                 <h2 id="add-kid">Edit Child</h2>
                     <form className = 'edit-kid' onSubmit={(e)=> editKid(e, this.state, id, history)}>
@@ -321,6 +322,7 @@ class EditKid extends Component {
                         <button id="btn-edit-child" className="btn" type="submit" >Update</button>
                     </form>
                     <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteKid(e, selectedKid, history)}>Delete Your Kid</button>
+                </div>
                 </div>
             </div>
         );
