@@ -43,11 +43,14 @@ console.log(this.state.sport_1)
         return (
             <div>
         {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}
+               
                 <h4>Behaviour</h4>
+                <div id="behaviour">
                 <div class="block two">2 { this.props.behaviour_2.map(kid => <h5 id="behaviour2">{kid.name}</h5>)}</div>
                 <div class="block four">4 { this.props.behaviour_4.map(kid => <h5 id="behaviour4">{kid.name}</h5>)}</div>
                 <div class="block one">1 { this.props.behaviour_1.map(kid => <h5 id="behaviour1">{kid.name}</h5>)}</div>
                 <div class="block three">3 { this.props.behaviour_3.map(kid => <h5 id="behaviour3">{kid.name}</h5>)}</div>
+                </div>
 
                 <h4>Academic</h4>
                 <div class="block two">2 { this.state.academic_2.map(kid => <h5 id="academic2">{kid.name}</h5>)}</div>
