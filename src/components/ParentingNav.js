@@ -14,7 +14,7 @@ render() {
         
               
        <div class="menu-item">
-                <Link to = '/parenting-courses' className="parenting-links">Parenting Courses</Link>
+                <h5 id="menu-item-p">Parenting Courses</h5>
                    <ul>
                    
                         <li><a href="/baby">0-12mths</a></li>
@@ -22,13 +22,13 @@ render() {
                         <li><a href="/pre_school"> 3-5yrs</a></li>
                         <li><a href="/primary_school"> 6-10yrs</a></li>
                          <li><a href="/preteen">11-12yrs</a></li>
-                        <li><a href="/teen">13-18yrs</a></li>
+                        <li ><a href="/teen">13-18yrs</a></li>
                         <li><a href="/young_adults">19-25yrs</a></li>
                       
                    </ul>
         </div>
 
-        <div class="menu-item">
+        {/* <div class="menu-item">
       <Link to = '/parenting-tips' className="parenting-links">Parenting Tips</Link>
                    <ul>
           
@@ -42,9 +42,9 @@ render() {
                    </ul>
 
 
-        </div>
+        </div> */}
         <div class="menu-item">
-               <Link to = '/co-parents' className="parenting-links">Co-Parenting</Link>
+               <h5 onClick={() =>  window.location.href='/co-parents'}   id="menu-item-p">Co-Parenting</h5>
       
                </div>
         </div>

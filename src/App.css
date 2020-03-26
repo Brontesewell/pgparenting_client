@@ -342,6 +342,7 @@ color: black;
   color: black;
       float: center;
       margin-top: 29px;
+      margin-left: -20px;
   }
 
 
@@ -474,11 +475,12 @@ li:hover {
 
 
 .parenting-links {
-  color: #6B6b69;
-  /* margin-left: 20px; */
-  margin-right: 65px;
+  color: black;
+
   font-size: 25px;
 }
+
+
 
 .parenting-co {
   color: #6B6b69;
@@ -490,7 +492,7 @@ margin-left: -95px;
 .container-parenting {
   background-color: white;
   width: 700px;
-margin-left: 20%;
+margin-left: 33%;
 margin-right: 40%;
 margin-top: 40px;
 }
@@ -517,24 +519,32 @@ div.menu-container {
 	margin: 45px auto 0 auto;
 }
 
-.menu-item {
-	width: 33.33%;
-	float: left;
-    position: relative;
+.menu-item{
+	width: 30%;
+  float: left;
+ position: relative;
+
 }
 
 .menu-item a {
-	text-align: center;
 	padding: 5px 0 5px 0;
 	font-size: 25px;
 	text-decoration: none;
   border-radius: 5px;
-  background-color: white;
+  color: white;
 	margin: 0 10px 0 10px;
-	display: block;
+  display: block;
 }
 
-.menu-item a:link, .menu-item a:visited {
+#menu-item-p:hover{
+  color: #8597C5;
+}
+
+#menu-item-p{
+color: #6B6b69;
+}
+
+.menu-item a:link, .menu-itema:visited {
 	color: #6B6b69;
 }
 
@@ -546,14 +556,15 @@ div.menu-container {
 .menu-item ul {
   margin-top: 2px;
   background-color: white;
-  list-style-type: none;
-	height: 0px;
+	list-style-type: none;
+  height: 0px;
+  margin-left: 5px;
 	overflow: hidden;
     position: absolute;
     left: 0;
     top: 100%;
-    width: 86%;
-  margin-left: 13px;
+    width: 95%;
+    border-radius: 5px;
 	
 	-webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -563,7 +574,8 @@ div.menu-container {
 }
 
 .menu-item:hover ul {
-  height: 390px;
+  /* height: 370px; */
+  height: 310px;
   background-color: #8597C5;
 }
 
@@ -571,10 +583,10 @@ div.menu-container {
 	font-size: 20px;
 	width: 80%;
 	margin: 0 auto 0 auto;
-	border-radius: 5px;
-	margin-top: 0px;
+	border-radius: 0px;
+  margin-top: -5px;
+  text-align: center;
 }
-
 
 .sub_cats {
   color: #6B6b69;
