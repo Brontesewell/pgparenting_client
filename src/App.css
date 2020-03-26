@@ -1750,6 +1750,7 @@ color: #8597C5
   margin-left: 19%;
   margin-right: 15%;
   margin-top: 30px;
+  color: #2a4b91;
 }
 
 #course-image {
@@ -1762,6 +1763,7 @@ color: #8597C5
   margin-left: 20px;
   text-align: left;
   font-size: 20px;
+  color: #3b4b75;
 }
 
 #image-and-content{
@@ -1769,31 +1771,6 @@ color: #8597C5
   margin-left: 10%;
   margin-right: 10%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #room-show {
@@ -2020,4 +1997,19 @@ position: fixed; */
   margin-top: -0px;
   padding-top: 25px;
   height: 1300px;
+}
+
+#background-toddler {
+  background-color:  #fff4f0;
+  margin-top: -0px;
+  padding-top: 25px;
+  height: 900px;
+}
+
+
+#background-preschool{
+  background-color:  #fff4f0;
+  margin-top: -0px;
+  padding-top: 25px;
+  height: 600px;
 }
