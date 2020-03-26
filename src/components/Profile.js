@@ -32,7 +32,6 @@ class Profile extends Component  {
             this.setState(prevState => ({
                 behaviour_4: [...prevState.behaviour_4, ...this.state.behaviour_4.concat(kid)]
               }))  : 
-                    
                     null
             )
     }
