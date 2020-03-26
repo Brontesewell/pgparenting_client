@@ -66,8 +66,7 @@ class Profile extends Component  {
                 <h3 id="my-children"> Children</h3>  
                 <div className="line-child"></div>
                         <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
-                        <br></br>
-                        <Link to='/about_scoring'><button id="about-s-p" className="btn">About Achievement Scoring and Progress</button></Link>
+                        
                
                 <br></br>
                 <br></br>
@@ -79,6 +78,7 @@ class Profile extends Component  {
             <div id ="quadrant">
             <h3 id="my-children">Family Quadrant</h3> 
                 <div className="line-favs"></div>
+                        <Link to='/about_scoring'><button id="about-s-p" className="btn">About Achievement Scoring, Progress & Quadrants</button></Link>
                
                 < BehaviourQuadrant currentUser={this.props.currentUser} behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
                 {/* {this.props.currentUser.kids.map(kid => < BehaviourQuadrant kid={kid} />)} */}

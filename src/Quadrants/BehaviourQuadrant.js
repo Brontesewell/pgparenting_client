@@ -13,10 +13,6 @@ class BehaviourQuadrant extends Component {
         academic_2: [],
         academic_3: [],
         academic_4: [],
-        sport_1: [],
-        sport_2: [],
-        sport_3: [],
-        sport_4: [],
     }
 
     componentDidMount(){
