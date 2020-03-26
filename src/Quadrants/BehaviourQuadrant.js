@@ -48,11 +48,32 @@ class BehaviourQuadrant extends Component {
     //                 clickedquad: quad
     //                 })
     //             }
+
+    // state ={
+    //     behaviour_2_arr: []
+    // }
+
+    // componentDidMount(){
+    //     this.setState({
+    //         behaviour_2_arr: this.props.behaviour_3
+    //     })
+    // }
     
     render() {
-console.log(this.props.num_1)
+
+console.log(this.props.behaviour_2)
         return (
             <div>
+        {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}
+                <h4>Behaviour</h4>
+                <div class="block two">2 { this.props.behaviour_2.map(kid => <h3 id="behaviour2">{kid.name}</h3>)}</div>
+                <div class="block four">4 { this.props.behaviour_4.map(kid => <h3 id="behaviour4">{kid.name}</h3>)}</div>
+                <div class="block one">1 { this.props.behaviour_1.map(kid => <h3 id="behaviour1">{kid.name}</h3>)}</div>
+                <div class="block three">3 { this.props.behaviour_3.map(kid => <h3 id="behaviour3">{kid.name}</h3>)}</div>
+
+
+
+                
 {/* 
             <h5 id="num1">{this.state.num_1}</h5> 
            <h5 id="num2">{this.state.num_2}</h5>

@@ -10,22 +10,44 @@ import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
 class Profile extends Component  {
     
     state={
-        num_1: [],
-        num_2: [],
-        num_3: [],
-        num_4: []
+        behaviour_1: [],
+        behaviour_2: [],
+        behaviour_3: [],
+        behaviour_4: [],
+        academic_1: [],
+        academic_2: [],
+        academic_3: [],
+        academic_4: [],
+        sport_1: [],
+        sport_2: [],
+        sport_3: [],
+        sport_4: [],
+        character_1: [],
+        character_2: [],
+        character_3: [],
+        character_4: [],
     }
 
     componentDidMount(){
         this.props.currentUser.kids.map(kid => (kid.behaviour_score * kid.behaviour_progress) <= 5 ?
-            this.setState({
-                num_1: kid  
-            }) : null
-        )
+            this.setState(prevState => ({
+                behaviour_1: [...prevState.behaviour_1, ...this.state.behaviour_1.concat(kid)]
+              })) 
+            : (kid.behaviour_score * kid.behaviour_progress) >= 5 && (kid.behaviour_score * kid.behaviour_progress) <= 10 && kid.behaviour_progress == 2 ?
+            this.setState(prevState => ({
+                behaviour_2: [...prevState.behaviour_2, ...this.state.behaviour_2.concat(kid)]
+              })) : (kid.behaviour_score * kid.behaviour_progress) >= 5 && (kid.behaviour_score * kid.behaviour_progress) <= 10 && kid.behaviour_progress >= 3 ?
+            this.setState(prevState => ({
+                behaviour_3: [...prevState.behaviour_3, ...this.state.behaviour_3.concat(kid)]
+              })) : (kid.behaviour_score * kid.behaviour_progress) >= 11 ?
+            this.setState(prevState => ({
+                behaviour_4: [...prevState.behaviour_4, ...this.state.behaviour_4.concat(kid)]
+              })) : null
+            )
     }
 
     render() {
-    console.log(this.state.num_1)
+    console.log(this.state.behaviour_1)
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
@@ -66,8 +88,8 @@ class Profile extends Component  {
             <div id ="quadrant">
             <h3 id="my-children">Family Quadrant</h3> 
                 <div className="line-favs"></div>
-                <h4>Behaviour</h4>
-                < BehaviourQuadrant num_1={this.state.num_1} />
+               
+                < BehaviourQuadrant behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
                 {/* {this.props.currentUser.kids.map(kid => < BehaviourQuadrant kid={kid} />)} */}
             </div>
               

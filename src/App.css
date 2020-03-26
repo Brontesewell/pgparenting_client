@@ -1855,9 +1855,33 @@ color: #8597C5
 }
 
 
+.block {
+  width: 50%;
+  float: left;
+  height: 0;
+  padding-bottom: 50%;
+  
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: orange;
+}
+
+.three {
+  background: yellow;
+}
+
+.four {
+  background: green;
+}
 
 
- #num1{
+
+ /* #num1{
   width: 50%;
   background-color: red;
   margin-top: -9px;
@@ -1891,4 +1915,4 @@ color: #8597C5
   border-radius: 5px;
   text-align: center;
   margin-left: 25%;
-}
+} */
