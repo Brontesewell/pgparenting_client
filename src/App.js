@@ -79,8 +79,8 @@ class App extends React.Component {
                 <Route exact path='/course/:id' component={CourseInfo} />
                 <Route exact path='/journal' component={JournalsPage} />
                 <Route exact path='/journal/:id' component={JournalsPage} />
-                
                 <Route exact path='/about_scoring' component={AboutASP} />
+                {/* <Route exact path='/quadrant' component={BehaviourQuadrant} /> */}
 
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>

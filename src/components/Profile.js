@@ -5,12 +5,27 @@ import {Link} from 'react-router-dom'
 import Children from './Children'
 import CourseCollection from './CourseCollection'
 import Footer from '../containers/Footer'
-import Quadrant from './Quadrant'
+import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
 
 class Profile extends Component  {
     
+    state={
+        num_1: [],
+        num_2: [],
+        num_3: [],
+        num_4: []
+    }
+
+    componentDidMount(){
+        this.props.currentUser.kids.map(kid => (kid.behaviour_score * kid.behaviour_progress) <= 5 ?
+            this.setState({
+                num_1: kid  
+            }) : null
+        )
+    }
+
     render() {
-    
+    console.log(this.state.num_1)
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
@@ -51,8 +66,9 @@ class Profile extends Component  {
             <div id ="quadrant">
             <h3 id="my-children">Family Quadrant</h3> 
                 <div className="line-favs"></div>
-                <button ></button>
-                {this.props.currentUser.kids.map(kid => < Quadrant kid={kid} />)}
+                <h4>Behaviour</h4>
+                < BehaviourQuadrant num_1={this.state.num_1} />
+                {/* {this.props.currentUser.kids.map(kid => < BehaviourQuadrant kid={kid} />)} */}
             </div>
               
             <div id = "middlebox"> 

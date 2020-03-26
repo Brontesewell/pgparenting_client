@@ -4,19 +4,20 @@ import Navbar from '../containers/Navbar'
 import {connect} from 'react-redux'
 
 
-
 class QuadBox extends Component {
 
    
 
     
     render() {
-     console.log(this.props.num_1) 
-// console.log(this.state.total_behaviour)
+    
+console.log(this.props.num_1)
         return (
             <div>
                 
-
+                <div className = 'row'>
+               {<Navbar/>} 
+            </div>
 
                 {/* <div class="block one">2</div>
             <div class="block two">4</div>
