@@ -14,14 +14,6 @@ class Profile extends Component  {
         behaviour_2: [],
         behaviour_3: [],
         behaviour_4: [],
-        sport_1: [],
-        sport_2: [],
-        sport_3: [],
-        sport_4: [],
-        character_1: [],
-        character_2: [],
-        character_3: [],
-        character_4: [],
     }
 
     componentDidMount(){
@@ -46,7 +38,7 @@ class Profile extends Component  {
     }
 
     render() {
-    console.log(this.state.academic_1)
+ 
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >

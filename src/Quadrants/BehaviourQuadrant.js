@@ -4,59 +4,19 @@ import Navbar from '../containers/Navbar'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import { Route, Switch, Redirect } from 'react-router-dom'
+import QuadBox from './QuadBox'
 
 class BehaviourQuadrant extends Component {
 
-    // state = {
-    //     total_progress: this.props.kid.academic_progress + this.props.kid.character_progress + this.props.kid.sport_progress + this.props.kid.behaviour_progress,
-    //     total_score: this.props.kid.behaviour_score + this.props.kid.sport_score + this.props.kid.academic_score + this.props.kid.character_score,
-    //     total_behaviour: this.props.kid.behaviour_score * this.props.kid.behaviour_progress,
-    //     total_sport: this.props.kid.sport_score * this.props.kid.sport_progress,
-    //     total_academic: this.props.kid.academic_progress * this.props.kid.academic_score,
-    //     total_character: this.props.kid.character_score * this.props.kid.character_progress,
-    //     num_1: [],
-    //     num_2: [],
-    //     num_3: [],
-    //     num_4: [],
-    //     clickedquad: null
-    // }
-
-    
-    
-    // componentDidMount(){
-    //     if(this.state.total_behaviour <= 5){
-    //     this.setState({
-    //         num_1: this.props.kid.name
-    //     })}
-    //     else if(this.state.total_behaviour >= 5 && this.state.total_behaviour <= 10  && this.props.kid.behaviour_progress == 2){
-    //         this.setState({
-    //             num_2: this.props.kid.name
-    //         }) }
-    //         else if(this.state.total_behaviour >= 5 && this.state.total_behaviour <= 10  && this.props.kid.behaviour_progress >= 3){
-    //             this.setState({
-    //                 num_3: this.props.kid.name
-    //             })}
-    //             else if (this.state.total_behaviour >= 11){
-    //                 this.setState({
-    //                     num_4: this.props.kid.name
-    //                 })}
-    //             }
-
-
-    //         handleQuadClick = (quad) => {
-    //             this.setState({
-    //                 clickedquad: quad
-    //                 })
-    //             }
-
-    // state ={
-    //     behaviour_2_arr: []
-    // }
     state={
         academic_1: [],
         academic_2: [],
         academic_3: [],
         academic_4: [],
+        sport_1: [],
+        sport_2: [],
+        sport_3: [],
+        sport_4: [],
     }
 
     componentDidMount(){
@@ -75,14 +35,15 @@ class BehaviourQuadrant extends Component {
        : (kid.academic_score * kid.academic_progress) >= 11 ?
         this.setState(prevState => ({
             academic_4: [...prevState.academic_4, ...this.state.academic_4.concat(kid)]
-          })) :null
+          })) :
+          null
 
         )
     }
     
     render() {
 
-console.log(this.state.academic_1)
+console.log(this.state.sport_1)
         return (
             <div>
         {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}
@@ -93,60 +54,13 @@ console.log(this.state.academic_1)
                 <div class="block three">3 { this.props.behaviour_3.map(kid => <h5 id="behaviour3">{kid.name}</h5>)}</div>
 
                 <h4>Academic</h4>
-
+                <div class="block two">2 { this.state.academic_2.map(kid => <h5 id="academic2">{kid.name}</h5>)}</div>
+                <div class="block four">4 { this.state.academic_4.map(kid => <h5 id="academic4">{kid.name}</h5>)}</div>
+                <div class="block one">1 { this.state.academic_1.map(kid => <h5 id="academic1">{kid.name}</h5>)}</div>
+                <div class="block three">3 { this.state.academic_3.map(kid => <h5 id="academic3">{kid.name}</h5>)}</div>
                 
-{/* 
-            <h5 id="num1">{this.state.num_1}</h5> 
-           <h5 id="num2">{this.state.num_2}</h5>
-            <h5 id="num3">{this.state.num_3}</h5> 
-            <h5 id="num4">{this.state.num_4}</h5> */}
-                    {/* <button className="buttonss"><Link to={{
-                            pathname: '/quadrant',
-                                state: {
-                                    num_1: this.state.num_1, 
-                                    num_2: this.state.num_2,
-                                    num_3: this.state.num_3,
-                                    num_4: this.state.num_4
-                     }
-                    }}>Quadrants</Link></button> */}
-
-{/* {this.props.clickedquad ?
-     <Switch>
-           <Redirect to={{
-                pathname: '/quadrant',
-                state: { clickedquad: this.props.clickedquad, num_1: this.state.num_1, 
-                    num_2: this.state.num_2,
-                    num_3: this.state.num_3,
-                    num_4: this.state.num_4 }
-            }} /> */}
-            {/* <Route path='/quadrant' >
-                <QuadBox clickedjournal={this.props.selectedJournals} num_1: this.state.num_1, 
-                                    num_2: this.state.num_2,
-                                    num_3: this.state.num_3,
-                                    num_4: this.state.num_4 />
-            </Route> */}
-      {/* </Switch>
-     : 
-
-     <button className="buttonss" onClick={() => this.handleQuadClick()} >Quadrants</button>
-     
-        } */}
-            
-                {/* <div class="block one">2</div>
-            <div class="block two">4</div>
-                <div class="block three">1</div>
-                <div class="block four">3</div> */}
-              
-              {/* <h4 id="quadrant-name">Behaviour</h4> */}
-              
-              {/* <div id="behaviour_quad">
-               { this.state.total_behaviour <= 5 ? <div id="one"><h5>{this.props.kid.name} is 1</h5></div> :
-               this.state.total_behaviour >= 5 && this.state.total_behaviour <= 9  && this.props.kid.behaviour_progress === 2 ?<div id="two"><h5>{this.props.kid.name} is 2</h5></div> : 
-               this.state.total_behaviour >= 5 && this.state.total_behaviour <= 9  && this.props.kid.behaviour_progress >= 3 ? <div id="three"><h5>{this.props.kid.name} is 3</h5></div> :
-               this.state.total_behaviour >= 10 ? <div id="four"><h5>{this.props.kid.name} is 4</h5></div> : null
-               }
-               </div> */}
-
+                < QuadBox currentUser={this.props.currentUser} />
+       
                
             </div>
         );
