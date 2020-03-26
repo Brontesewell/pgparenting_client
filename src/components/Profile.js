@@ -14,10 +14,6 @@ class Profile extends Component  {
         behaviour_2: [],
         behaviour_3: [],
         behaviour_4: [],
-        academic_1: [],
-        academic_2: [],
-        academic_3: [],
-        academic_4: [],
         sport_1: [],
         sport_2: [],
         sport_3: [],
@@ -29,7 +25,8 @@ class Profile extends Component  {
     }
 
     componentDidMount(){
-        this.props.currentUser.kids.map(kid => (kid.behaviour_score * kid.behaviour_progress) <= 5 ?
+        this.props.currentUser.kids.map(kid => 
+            kid.behaviour_score * kid.behaviour_progress <= 5 ?
             this.setState(prevState => ({
                 behaviour_1: [...prevState.behaviour_1, ...this.state.behaviour_1.concat(kid)]
               })) 
@@ -42,12 +39,14 @@ class Profile extends Component  {
               })) : (kid.behaviour_score * kid.behaviour_progress) >= 11 ?
             this.setState(prevState => ({
                 behaviour_4: [...prevState.behaviour_4, ...this.state.behaviour_4.concat(kid)]
-              })) : null
+              }))  : 
+                    
+                    null
             )
     }
 
     render() {
-    console.log(this.state.behaviour_1)
+    console.log(this.state.academic_1)
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
@@ -89,7 +88,7 @@ class Profile extends Component  {
             <h3 id="my-children">Family Quadrant</h3> 
                 <div className="line-favs"></div>
                
-                < BehaviourQuadrant behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
+                < BehaviourQuadrant currentUser={this.props.currentUser} behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
                 {/* {this.props.currentUser.kids.map(kid => < BehaviourQuadrant kid={kid} />)} */}
             </div>
               
