@@ -1839,6 +1839,40 @@ color: #8597C5
 }
 
 
+#one{
+  width: 50%;
+  float: left;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+#two{
+  width: 50%;
+  float: left;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+#three{
+  width: 50%;
+  float: left;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+#four{
+  
+    width: 50%;
+    float: left;
+    height: 0;
+    padding-bottom: 50%;
+
+}
+
+
+#behaviour_quad{
+  border-style: solid;
+}
 
 
 
@@ -1850,9 +1884,25 @@ color: #8597C5
 
 
 
+.block {
+  width: 50%;
+  float: left;
+  height: 0;
+  padding-bottom: 50%;
+}
 
+.one {
+  background: yellow;
+}
 
+.two {
+  background: lightblue;
+}
 
+.three {
+  background: orange;
+}
 
-
-
+.four {
+  background: red;
+}

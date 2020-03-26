@@ -8,12 +8,8 @@ import Footer from '../containers/Footer'
 import Quadrant from './Quadrant'
 
 class Profile extends Component  {
-
-    
-    
     
     render() {
-    console.log(this.props.currentUser.kids)
     
     const {first_name, last_name, email} = this.props.currentUser
     return (
@@ -55,6 +51,7 @@ class Profile extends Component  {
             <div id ="quadrant">
             <h3 id="my-children">Family Quadrant</h3> 
                 <div className="line-favs"></div>
+                <button ></button>
                 {this.props.currentUser.kids.map(kid => < Quadrant kid={kid} />)}
             </div>
               

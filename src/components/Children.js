@@ -9,19 +9,12 @@ class Children extends Component {
 
     
     handleJournalClick = (journal) => {
-        // console.log(journal)
         this.props.selectedJournal(journal)
     }
 
-    // handleJournalBack = () => {
-    //     // console.log(journal)
-    //     this.props.selectedJournal = null
-    // }
-    
-
 
     render() {
-        console.log(this.props.kid)
+        // console.log(this.props.kid)
         return (
             <div>
             <div id="child-div">
