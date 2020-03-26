@@ -44,7 +44,7 @@ class EditKid extends Component {
                 </div>
                 <div className = 'form-edit'>
                 <h2 id="add-kid">Edit Child</h2>
-                    <form className = 'container' onSubmit={(e)=> editKid(e, this.state, id, history)}>
+                    <form className = 'edit-kid' onSubmit={(e)=> editKid(e, this.state, id, history)}>
                     <div id="add-kid-general">
                         <label htmlFor="name">Name</label>
                         <input name="name" value={name} onChange={this.handleChange}/>
@@ -68,8 +68,9 @@ class EditKid extends Component {
                         <div className="rankings-progress">
                         <h6> 1 = Getting Worse</h6>
                         <h6> 2 = No Progress</h6>
-                        <h6> 3 = Progress</h6>
-                        <h6> 4 = Very Good Progress</h6>
+                        <h6> 3 = Very Little Progress</h6>
+                        <h6> 4 = Progress</h6>
+                        <h6> 5 = Very Good Progress</h6>
                         </div>
                         <br></br>
 
@@ -92,6 +93,11 @@ class EditKid extends Component {
                               <label className="score">
                                 <input name="behaviour_progress" value="4" type="radio" onChange={this.handleChange} checked={behaviour_progress === '4'}/>
                                 <span>4</span>
+                              </label>
+
+                              <label className="score">
+                                <input name="behaviour_progress" value="5" type="radio" onChange={this.handleChange} checked={behaviour_progress === '5'}/>
+                                <span>5</span>
                               </label>
     
                               <br></br> 
@@ -118,6 +124,11 @@ class EditKid extends Component {
                                 <span>4</span>
                               </label>
 
+                              <label className="score">
+                                <input name="sport_progress" value="5" type="radio" onChange={this.handleChange} checked={sport_progress === '5'}/>
+                                <span>5</span>
+                              </label>
+
                               <br></br> 
                               <br></br> 
 
@@ -140,6 +151,11 @@ class EditKid extends Component {
                               <label className="score">
                                 <input name="academic_progress" value="4" type="radio" onChange={this.handleChange} checked={academic_progress === '4'}/>
                                 <span>4</span>
+                              </label>
+
+                              <label className="score">
+                                <input name="academic_progress" value="5" type="radio" onChange={this.handleChange} checked={academic_progress === '5'}/>
+                                <span>5</span>
                               </label>
 <br></br> 
 <br></br> 
@@ -165,6 +181,11 @@ class EditKid extends Component {
                                 <input name="character_progress" value="4" type="radio" onChange={this.handleChange} checked={character_progress === '4'}/>
                                 <span>4</span>
                               </label>
+
+                              <label className="score">
+                                <input name="character_progress" value="5" type="radio" onChange={this.handleChange} checked={character_progress === '5'}/>
+                                <span>5</span>
+                              </label>
                               </div>
 
                                 
@@ -174,8 +195,9 @@ class EditKid extends Component {
                                 <div className="rankings-score">
                                   <h6> 1 = Very Bad</h6>
                                   <h6> 2 = Poor</h6>
-                                   <h6> 3 = Good</h6>
-                                   <h6> 4 = Very Good</h6>
+                                  <h6> 3 = Ok</h6>
+                                   <h6> 4 = Good</h6>
+                                   <h6> 5 = Very Good</h6>
                                    </div>
                                <br></br>
 
@@ -198,6 +220,11 @@ class EditKid extends Component {
                               <label className="score">
                                 <input name="behaviour_score" value="4" type="radio" onChange={this.handleChange} checked={behaviour_score === '4'}/>
                                 <span>4</span>
+                              </label>
+
+                              <label className="score">
+                                <input name="behaviour_score" value="5" type="radio" onChange={this.handleChange} checked={behaviour_score === '5'}/>
+                                <span>5</span>
                               </label>
     
                               <br></br> 
@@ -224,6 +251,11 @@ class EditKid extends Component {
                                 <span>4</span>
                               </label>
 
+                              <label className="score">
+                                <input name="sport_score" value="5" type="radio" onChange={this.handleChange} checked={sport_score === '5'}/>
+                                <span>5</span>
+                              </label>
+
                               <br></br> 
                               <br></br> 
 
@@ -246,6 +278,11 @@ class EditKid extends Component {
                               <label className="score">
                                 <input name="academic_score" value="4" type="radio" onChange={this.handleChange} checked={academic_score === '4'}/>
                                 <span>4</span>
+                              </label>
+
+                              <label className="score">
+                                <input name="academic_score" value="5" type="radio" onChange={this.handleChange} checked={academic_score === '5'}/>
+                                <span>5</span>
                               </label>
 <br></br> 
 <br></br> 
@@ -270,6 +307,11 @@ class EditKid extends Component {
                               <label className="score">
                                 <input name="character_score" class="with-gap" value="4" type="radio" onChange={this.handleChange} checked={character_score === '4'}/>
                                 <span>4</span>
+                              </label>
+
+                              <label className="score">
+                                <input name="character_score" class="with-gap" value="5" type="radio" onChange={this.handleChange} checked={character_score === '5'}/>
+                                <span>5</span>
                               </label>
                               </div>
 
