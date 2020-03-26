@@ -523,7 +523,7 @@ div.menu-container {
 	width: 30%;
   float: left;
  position: relative;
-
+margin-left: 20px;
 }
 
 .menu-item a {
@@ -586,6 +586,15 @@ color: #6B6b69;
 	border-radius: 0px;
   margin-top: -5px;
   text-align: center;
+}
+
+.parent-lis:hover {
+  background-color: #516496
+}
+
+#scroller{
+  color: #516496;
+  background-color: #516496
 }
 
 .sub_cats {
@@ -771,6 +780,7 @@ color: #6B6b69;
 	border-radius: 0px;
 	margin-top: -5px;
 }
+
 
 #course-info{
   background-color: #fff4f0;

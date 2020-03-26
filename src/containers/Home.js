@@ -7,6 +7,7 @@ import Logo from '../Logo.jpg'
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; //Add this line Here
 
 class Home extends Component {
 
@@ -100,7 +101,7 @@ class Home extends Component {
                         </form>
                     </div>
                     </div>
-
+                    <ScrollUpButton/>
                 <Footer/>
        
                     

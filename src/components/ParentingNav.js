@@ -17,13 +17,13 @@ render() {
                 <h5 id="menu-item-p">Parenting Courses</h5>
                    <ul>
                    
-                        <li><a href="/baby">0-12mths</a></li>
-                       <li><a href="/toddler">1-2yrs</a></li>
-                        <li><a href="/pre_school"> 3-5yrs</a></li>
-                        <li><a href="/primary_school"> 6-10yrs</a></li>
-                         <li><a href="/preteen">11-12yrs</a></li>
-                        <li ><a href="/teen">13-18yrs</a></li>
-                        <li><a href="/young_adults">19-25yrs</a></li>
+                        <li className="parent-lis"><a href="/baby">0-12mths</a></li>
+                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
+                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
+                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
+                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
+                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
+                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
                       
                    </ul>
         </div>
