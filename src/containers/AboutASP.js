@@ -27,8 +27,9 @@ class AboutASP extends Component {
                <h5 className="ranking-asp">Ranking:</h5>
                <h5 className="ranking-asp">1 = Very Bad</h5>
                <h5 className="ranking-asp">2 = Poor</h5>
-               <h5 className="ranking-asp">3 = Good</h5>
-               <h5 className="ranking-asp">4 = Very Good</h5>
+               <h5 className="ranking-asp">3 = Ok</h5>
+               <h5 className="ranking-asp">4 = Good</h5>
+               <h5 className="ranking-asp">5 = Very Good</h5>
 
                <br></br>
               
@@ -37,9 +38,13 @@ class AboutASP extends Component {
                <h5 className="ranking-asp">Ranking:</h5>
                <h5 className="ranking-asp">1 = Getting Worse</h5>
                <h5 className="ranking-asp">2 = No Progress</h5>
-               <h5 className="ranking-asp">3 = Progress</h5>
-               <h5 className="ranking-asp">4 = Very Good Progress</h5>
+               <h5 className="ranking-asp">3 = Little Progress</h5>
+               <h5 className="ranking-asp">4 = Progress</h5>
+               <h5 className="ranking-asp">5 = Very Good Progress</h5>
               
+               <br></br>
+
+               <h4 className="asp-subtitle">Quadrants</h4>
                </div>
                <Link to="/profile"><button id="asp-button-back" className="btn">Back</button></Link>
 

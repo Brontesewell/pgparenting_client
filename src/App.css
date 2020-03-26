@@ -103,6 +103,8 @@ margin-top: 100px;
   padding-bottom: 20px;
 }
 
+
+
 .form-edit-p{
   padding: 35px;
   margin: 2% 10% 2% 13%;
@@ -411,10 +413,10 @@ color: black;
 #welcome-user-nav {
   float: right;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 350;
   margin-top: 50px;
   color: #8597C5;
-  margin-right: -90px;
+  margin-right: -60px;
 
 }
 
@@ -584,8 +586,9 @@ color: #6B6b69;
 	width: 80%;
 	margin: 0 auto 0 auto;
 	border-radius: 0px;
-  margin-top: -5px;
+  margin-top: -7px;
   text-align: center;
+  height: 35px;
 }
 
 .parent-lis:hover {
@@ -602,8 +605,7 @@ color: #6B6b69;
   float:left;
   font-size: 40px;
   margin-left: 7%;
-  margin-right: 70%;
-  margin-top: 0px;
+  margin-right: 60%;
 }
 
 .Catagory{
@@ -2012,3 +2014,10 @@ width: 430px;
 margin-left: -60px;
 top: 49%;
 position: fixed; */
+
+.background-catagory{
+  background-color:  #fff4f0;
+  margin-top: -0px;
+  padding-top: 25px;
+  height: 1300px;
+}

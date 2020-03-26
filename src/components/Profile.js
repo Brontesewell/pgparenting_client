@@ -6,6 +6,7 @@ import Children from './Children'
 import CourseCollection from './CourseCollection'
 import Footer from '../containers/Footer'
 import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; //Add this line Here
 
 class Profile extends Component  {
     
@@ -95,6 +96,7 @@ class Profile extends Component  {
         </div> 
 
         </div>
+        <ScrollUpButton/>
         </div>
     )
 }

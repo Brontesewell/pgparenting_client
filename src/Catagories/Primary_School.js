@@ -25,12 +25,13 @@ state = {
         return (
             <div>
                <div><Navbar/></div>
+               <div className="background-catagory">
               <h1 className="Catagory">Primary School (6 - 10 yrs old)</h1>
         <div className="line-catagory"></div>
        
        {this.props.catagories.filter(baby => baby.id === 4).map(b => <Container baby={createBabyHash(b)}/>)}
   
-             
+       </div>
             </div>
                 
         );

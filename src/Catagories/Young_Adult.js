@@ -25,6 +25,7 @@ state = {
         return (
             <div>
                <div><Navbar/></div>
+               <div className="background-catagory">
               <h1 className="Catagory">Young Adults (19 - 25 yrs old)</h1>
         <div className="line-catagory"></div>
        
@@ -32,7 +33,7 @@ state = {
   
              
             </div>
-                
+            </div>    
         );
     }
   }
