@@ -1416,6 +1416,13 @@ color: #8597C5
 
 #about-s-p{
   background-color: #8597C5;
+  color: white;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-bottom: -2px;
 }
 
 .define-asp{
@@ -1865,21 +1872,21 @@ color: #8597C5
 
 .one {
   background: red;
-  border-radius: 2px;
+  border-radius: 3px;
   margin-top: -6px;
   border-right-style: solid;
 }
 
 .two {
   background: orange;
-  border-radius: 2px;
+  border-radius: 3px;
   margin-bottom: -13px;
   border-right-style: solid;
 }
 
 .three {
   background: yellow;
-  border-radius: 1px;
+  border-radius: 3px;
   margin-top: -6px;
   margin-top: -155px;
   margin-left: 130px;
