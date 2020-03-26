@@ -42,11 +42,21 @@ class QuadCharacter extends Component {
           <div>
 
 
-                <h4>Character</h4>
+                
+                <h4 className="quad-title">Character</h4>
+                <div id="line-quad-bottom"></div>
+                <div id="outside">
+                <p> ↑ Good Achievement</p>
                 <div class="block two">2 { this.state.character_2.map(kid => <h5 id="character2">{kid.name}</h5>)}</div>
                 <div class="block four">4 { this.state.character_4.map(kid => <h5 id="character4">{kid.name}</h5>)}</div>
+                <p id="bad-progress">Bad Progress ←</p>
+                <div id="inside">  </div>
+                <div id="side">  </div>
                 <div class="block one">1 { this.state.character_1.map(kid => <h5 id="character1">{kid.name}</h5>)}</div>
                 <div class="block three">3 { this.state.character_3.map(kid => <h5 id="character3">{kid.name}</h5>)}</div>
+                <p  id="good-progress">→ Good Progress </p>
+                <p id="bad-achievement">↓ Bad Achievement</p>
+                </div>
                 
                
             </div>

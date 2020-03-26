@@ -44,10 +44,11 @@ console.log(this.state.sport_1)
             <div>
         {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}
                
-                <h4>Behaviour</h4>
+            
+                <h4 className="quad-title">Behaviour</h4>
+                <div id="line-quad-bottom"></div>
                 <div id="outside">
                 <p> ↑ Good Achievement</p>
-             
                 <div class="block two">2 { this.props.behaviour_2.map(kid => <h6 id="behaviour2">{kid.name}</h6>)}</div>
                 <div class="block four">4 { this.props.behaviour_4.map(kid => <h6 id="behaviour4">{kid.name}</h6>)}</div>
                 <p id="bad-progress">Bad Progress ←</p>
@@ -58,14 +59,25 @@ console.log(this.state.sport_1)
                 <p  id="good-progress">→ Good Progress </p>
                 <p id="bad-achievement">↓ Bad Achievement</p>
                 </div>
+               
 
 
-                <h4>Academic</h4>
+                <h4 className="quad-title">Academic</h4>
+                <div id="line-quad-bottom"></div>
+                <div id="outside">
+                <p> ↑ Good Achievement</p>
                 <div class="block two">2 { this.state.academic_2.map(kid => <h6 id="academic2">{kid.name}</h6>)}</div>
                 <div class="block four">4 { this.state.academic_4.map(kid => <h6 id="academic4">{kid.name}</h6>)}</div>
+                <p id="bad-progress">Bad Progress ←</p>
+                <div id="inside">  </div>
+                <div id="side">  </div>
                 <div class="block one">1 { this.state.academic_1.map(kid => <h6 id="academic1">{kid.name}</h6>)}</div>
                 <div class="block three">3 { this.state.academic_3.map(kid => <h6 id="academic3">{kid.name}</h6>)}</div>
-                
+                <p  id="good-progress">→ Good Progress </p>
+                <p id="bad-achievement">↓ Bad Achievement</p>
+                </div>
+
+
                 < QuadBox currentUser={this.props.currentUser} />
        
                

@@ -42,12 +42,23 @@ console.log(this.state.sport_1)
           <div>
 
 
-                <h4>Sport</h4>
+             
+                <h4 className="quad-title">Sport</h4>
+                <div id="line-quad-bottom"></div>
+                <div id="outside">
+                <p> ↑ Good Achievement</p>
                 <div class="block two">2 { this.state.sport_2.map(kid => <h5 id="sport2">{kid.name}</h5>)}</div>
                 <div class="block four">4 { this.state.sport_4.map(kid => <h5 id="sport4">{kid.name}</h5>)}</div>
+                <p id="bad-progress">Bad Progress ←</p>
+                <div id="inside">  </div>
+                <div id="side">  </div>
                 <div class="block one">1 { this.state.sport_1.map(kid => <h5 id="sport1">{kid.name}</h5>)}</div>
                 <div class="block three">3 { this.state.sport_3.map(kid => <h5 id="sport3">{kid.name}</h5>)}</div>
-               
+                <p  id="good-progress">→ Good Progress </p>
+                <p id="bad-achievement">↓ Bad Achievement</p>
+                </div>
+                
+
                 < QuadCharacter currentUser={this.props.currentUser} />
                
             </div>

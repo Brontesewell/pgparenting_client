@@ -1941,6 +1941,20 @@ margin-left: 20%;
 margin-right: 15%;
 }
 
+#line-quad-bottom{
+  margin-top: 20px;
+  border-bottom-style: solid;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-color: #6B6b69;
+  margin-top: -5px;
+}
+
+.quad-title{
+  color: #3b4b75;
+  padding-top: 40px;
+}
 
 
 
