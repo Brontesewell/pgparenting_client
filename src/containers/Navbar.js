@@ -55,7 +55,7 @@ class Navbar extends Component {
  
         <div class="menu-item-nav">
                     
-                    <button type="button" class="button">☰</button>
+                    <button type="button" id="menu-item-nav-threelines" class="button">☰</button>
                     <div class="container">
                    <ul>
           

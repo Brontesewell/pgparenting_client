@@ -713,6 +713,10 @@ div.menu-container {
   display: block;
 }
 
+#menu-item-nav-threelines:hover{
+  color: #8597C5;
+}
+
 .menu-item-nav a:link, .menu-item-nava:visited {
 	color: #6B6b69;
 }
@@ -726,12 +730,14 @@ div.menu-container {
   margin-top: 2px;
   background-color: white;
 	list-style-type: none;
-	height: 0px;
+  height: 0px;
+  margin-left: 20px;
 	overflow: hidden;
     position: absolute;
     left: 0;
     top: 100%;
     width: 86%;
+    border-radius: 5px;
 	
 	-webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -1976,8 +1982,6 @@ margin-right: 15%;
   color: #3b4b75;
   padding-top: 40px;
 }
-
-
 
 /* 
 border-bottom-style: solid;
