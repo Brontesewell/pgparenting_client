@@ -10,7 +10,7 @@ render() {
     const {history, currentUser} = this.props
     const collection = {user_id: currentUser.id, course_id: this.props.course.id}
     const {id} = collection
-// console.log(this.props)
+console.log(this.props.course)
 
 
     return (

@@ -16,7 +16,9 @@ class JournalList extends Component {
                 
               <div id="journal-buble">
               <h1 id="journal-text">{this.props.journal.text}</h1>
-                <h5 id="created-j"><i>Created at 21/03/2020{this.props.journal.date_now}</i></h5>
+                <h5 id="created-j"><i>Created at 27/03/2020</i></h5>
+                {/* <h5 id="created-j"><i>Created at {this.props.journal.date_now}</i></h5> */}
+
                 {/* <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) =>deleteJournal(e, journal, history)}>Delete Your Journal</button> */}
               </div> 
             </div>
