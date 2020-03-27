@@ -36,8 +36,8 @@ state = {
             </div>
 
              <div id="bottom-courses">
-               <Link to='/teen'><h5 id="back-page">13 - 18 yrs → </h5></Link>
-             <Link to='/co-parents'><h5 id="back-page">Co-Parenting → </h5></Link>
+               <Link to='/teen'><h5 id="back-page">← 13 - 18 yrs</h5></Link>
+             <Link to='/co-parents'><h5 id="next-page">Co-Parenting → </h5></Link>
             </div>
             </div>    
         );
