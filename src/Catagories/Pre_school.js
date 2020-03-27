@@ -4,6 +4,7 @@ import fetchAllCatagories from '../actions/fetchAllCatagories';
 import {createBabyHash} from "../utilities/helpers"
 import Navbar from '../containers/Navbar'
 import Container from './Layout/Container';
+import {Link} from 'react-router-dom'
 
 class Pre_school extends Component {
 
@@ -31,6 +32,10 @@ state = {
        
        {this.props.catagories.filter(baby => baby.id === 3).map(b => <Container baby={createBabyHash(b)}/>)}
   
+       </div>
+       <div id="bottom-courses">
+       <Link to='/toddler'><h5 id="back-page">← 1 - 2 yrs</h5></Link>
+       <Link to='/primary_school'><h5 id="next-page">6 - 10 yrs → </h5></Link>
        </div>
             </div>
                 

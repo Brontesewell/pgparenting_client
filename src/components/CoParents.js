@@ -25,11 +25,11 @@ class CoParents extends Component {
 
 
         {this.props.catagories.filter(baby => baby.id === 8).map(b => <Container baby={createBabyHash(b)}/>)}
+
                     </div>
 
                 
                    
-
 
 
             </div>

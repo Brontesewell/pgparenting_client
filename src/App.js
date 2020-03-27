@@ -62,8 +62,8 @@ class App extends React.Component {
                 <Route exact path='/shop' component={ShopList}/>
                 <Route exact path='/profile' component={Profile}/>
                 <Route exact path='/edit-profile' component={EditProfile}/>
-                <Route exact path='/parenting-courses' component={ParentingCourses}/>
-                <Route exact path='/parenting-tips' component={ParentingTips}/>
+                {/* <Route exact path='/parenting-courses' component={ParentingCourses}/>
+                <Route exact path='/parenting-tips' component={ParentingTips}/> */}
                 <Route exact path='/co-parents' component={CoParents}/>
                 <Route exact path='/add-child' component={AddKid}/>
 
