@@ -18,7 +18,7 @@ class CoParents extends Component {
         return (
             <div>
                 <Navbar/>
-                <div id="background-toddler">
+                <div className="background-catagory">
                        <h1 className="Catagory">Co-Parenting</h1>
         <div className="line-catagory"></div>
 
