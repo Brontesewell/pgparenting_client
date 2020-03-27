@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import Navbar from './Navbar'
-// import Parent from '../Parent.jpeg'
+import Parent from '../Parent.jpg'
 
 
 class AboutUs extends Component {
@@ -20,7 +20,7 @@ class AboutUs extends Component {
                 <div id="about-us-div">
                         <h2 id="about-names">Mark and Stephanie Sewell</h2>
 
-                    {/* <div id="parents"><img className ='parents-photo' alt="parents" src={Parent}/></div> */}
+                    <div id="parents"><img className ='parents-photo' alt="parents" src={Parent}/></div>
                  <div id="about-us-text">
                         <h4 className="about-text">About Us</h4>
                         <p className="about-text">We are all about “better parenting for a better world”.  </p>
