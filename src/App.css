@@ -1485,7 +1485,7 @@ color: #8597C5;
 }
 
 .define-family{
-  font-weight: 350;
+  font-weight: 300;
   color: #3b4b75;
 }
 
@@ -1497,8 +1497,17 @@ color: #8597C5;
   color: #8597C5;
 }
 
+
+#asp-backgrounds{
+  background-color: #fff4f0;
+  height: 2200;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
 .asp-defines{
   color: #8597C5;
+  font-weight: 300;
 }
 
 #quadrant{
@@ -1511,6 +1520,7 @@ color: #8597C5;
 
 #defines{
   color: #3b4b75;
+  font-weight: bolder;
 }
 
 #defining-asp{
