@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import Navbar from './Navbar'
-import Parents from '../Parents.jpg'
+import Parents from '../Parents.jpeg'
+
 
 class AboutUs extends Component {
 

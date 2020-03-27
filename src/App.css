@@ -1424,15 +1424,23 @@ input[type=submit]:hover {
   margin-top: -42px
 }
 
+#child-name{
+  margin-right: 400px;
+  border: none;
+}
+
 #delete-fav {
   background-color: #8597C5;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   /* margin-bottom: 20px; */
 }
 
 #favs-box{
   border-style: double;
   border-color: #8597C5;
-  width: 42%;
+  width: 22%;
   float: left;
   margin-left: 20px;
   margin-right: 10px;
@@ -1449,21 +1457,21 @@ input[type=submit]:hover {
 }
 
 #asp-title{
-color: #8597C5
+color: #8597C5;
 }
 
 #asp-line{
   border-bottom-style: solid;
   border-bottom-color: #6B6b69;
-  width: 700px;
-  margin-left: 23%;
+  width: 350px;
+  margin-left: 37%;
   margin-bottom: 20px;
 }
 
 #about-s-p{
   background-color: #8597C5;
   color: white;
-  font-size: 13px;
+  font-size: 17px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -1476,12 +1484,51 @@ color: #8597C5
   color: #3b4b75;
 }
 
+.define-family{
+  font-weight: 350;
+  color: #3b4b75;
+}
+
 .ranking-asp{
   color: #3b4b75;
 }
 
 .asp-subtitle{
   color: #8597C5;
+}
+
+.asp-defines{
+  color: #8597C5;
+}
+
+#quadrant{
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 30%;
+}
+
+#defines{
+  color: #3b4b75;
+}
+
+#defining-asp{
+  margin-left: 10%;
+}
+
+.asp-cats{
+  color: #3b4b75;
+}
+
+#cats{
+  margin-left: 10%;
+}
+
+.asp-rank-title{
+  color: #3b4b75;
+  text-decoration: underline;
+  margin-top: 70px;
 }
 
 #asp-div{

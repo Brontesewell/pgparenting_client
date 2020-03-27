@@ -18,7 +18,7 @@ class Children extends Component {
         return (
             <div>
             <div id="child-div">
-            <h4>{this.props.kid.name}</h4>
+            <h4 id="child-name">{this.props.kid.name}</h4>
             <h6 className="child-gender-bday">Gender: {this.props.kid.gender}</h6>
             <h6 className="child-gender-bday">Birthday: {this.props.kid.birthday}</h6>
            <div id="s-child">
