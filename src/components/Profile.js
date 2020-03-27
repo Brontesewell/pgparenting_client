@@ -86,7 +86,7 @@ class Profile extends Component  {
               
             <div id = "middlebox"> 
                 <h3 id="my-children">Favourite Courses</h3> 
-                <div className="line-favs"></div>
+                <div className="line-favss"></div>
                 <div className="">
                 {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
                 </div>
