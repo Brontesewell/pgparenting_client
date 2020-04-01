@@ -21,6 +21,7 @@ const addJournal = (e, state, history) => {
         .then(resp => resp.json())
         .then(data => {
             
+            
             dispatch({ type: "ADD_JOURNAL", journal: data })
             // dispatch({ type: "SET_SELECTED_JOURNALS", journal: data})
             
