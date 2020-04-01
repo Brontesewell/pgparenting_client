@@ -49,7 +49,7 @@ class App extends React.Component {
 
 
   render(){
-    console.log(this.props.currentUser)
+    console.log(this.props.users)
     return (
       <div className="App">
         <Router>
@@ -106,7 +106,8 @@ class App extends React.Component {
   
 const mapStateToProps = state => {
   return {
-    currentUser: state.currentUser
+    currentUser: state.currentUser,
+    users: state.users
   }
 }
 

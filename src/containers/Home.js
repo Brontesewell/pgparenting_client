@@ -14,7 +14,7 @@ class Home extends Component {
 
     
     render () {  
-        // console.log(this.props.currentUser)
+        console.log(this.props.users)
         return (
             <div>
                 <div className = 'row'>
@@ -114,6 +114,7 @@ class Home extends Component {
 const mapStateToProps = state => {
     return {
         currentUser: state.currentUser,
+        users: state.users
     }
 }
 
