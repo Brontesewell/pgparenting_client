@@ -10,6 +10,9 @@ class Children extends Component {
     
     handleJournalClick = (journal) => {
         this.props.selectedJournal(journal)
+        console.log(journal)
+        console.log(this.props.selectedJournal)
+        localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournal(journal)));
     }
 
 
