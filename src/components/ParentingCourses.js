@@ -25,43 +25,43 @@ class ParentingCourses extends Component {
         Young_Adult: [],
     }
 
-    componentDidMount () {
+    // componentDidMount () {
       
-       this.props.fetchAllCatagories()
-    }
+    //    this.props.fetchAllCatagories()
+    // }
 
-    componentDidMount() {
-         this.state.catagories.map(catagories => catagories.id === 1 ?
-            this.setState({
-            baby: catagories
-            }) : 
-            catagories.id === 2 ?
-            this.setState({
-                Toddler: catagories
-            }) :
-            catagories.id === 3 ?
-            this.setState({
-                Pre_school: catagories
-            }) :
-            catagories.id === 4 ?
-            this.setState({
-                Primary_School: catagories
-            }) :
-            catagories.id === 5 ?
-            this.setState({
-                Preteen: catagories
-            }) :
-            catagories.id === 6 ?
-            this.setState({
-                Teen: catagories
-            }) :
-            catagories.id === 7 ?
-            this.setState({
-                Young_Adult: catagories
-            }) :
-                null
-         )
-    }
+    // // componentDidMount() {
+    // //      this.state.catagories.map(catagories => catagories.id === 1 ?
+    // //         this.setState({
+    // //         baby: catagories
+    // //         }) : 
+    // //         catagories.id === 2 ?
+    // //         this.setState({
+    // //             Toddler: catagories
+    // //         }) :
+    // //         catagories.id === 3 ?
+    // //         this.setState({
+    // //             Pre_school: catagories
+    // //         }) :
+    // //         catagories.id === 4 ?
+    // //         this.setState({
+    // //             Primary_School: catagories
+    // //         }) :
+    // //         catagories.id === 5 ?
+    // //         this.setState({
+    // //             Preteen: catagories
+    // //         }) :
+    // //         catagories.id === 6 ?
+    // //         this.setState({
+    // //             Teen: catagories
+    // //         }) :
+    // //         catagories.id === 7 ?
+    // //         this.setState({
+    // //             Young_Adult: catagories
+    // //         }) :
+    // //             null
+    // //      )
+    // // }
 
 
 
