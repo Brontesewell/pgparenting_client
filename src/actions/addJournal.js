@@ -20,8 +20,8 @@ const addJournal = (e, state, history) => {
         })
         .then(resp => resp.json())
         .then(data => {
-            
-            
+            console.log(data)
+            localStorage.getItem('selectedJournal')
             dispatch({ type: "ADD_JOURNAL", journal: data })
             // dispatch({ type: "SET_SELECTED_JOURNALS", journal: data})
             

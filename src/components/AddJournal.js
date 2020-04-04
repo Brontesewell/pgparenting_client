@@ -21,6 +21,13 @@ class AddJournal extends Component {
         })
     }
 
+    // onClick = ()  => {
+    //     this.setState(() => {
+    //         localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals));
+    //     });
+    //        console.log(JSON.parse(localStorage.getItem('selectedJournal')))
+    //    }
+
     render() {
         // console.log(this.state.kid_id)
 

@@ -6,18 +6,18 @@ import JournalsPage from './JournalsPage'
 
 class Children extends Component {
 
-
-    
+  
+    //look at this\/
     handleJournalClick = (journal) => {
         this.props.selectedJournal(journal)
-        console.log(journal)
         console.log(this.props.selectedJournal)
-        localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournal(journal)));
+        console.log(journal)
+        localStorage.setItem('selectedJournal', JSON.stringify(journal));
     }
 
 
     render() {
-        // console.log(this.props.kid)
+        
         return (
             <div>
             <div id="child-div">
@@ -49,10 +49,9 @@ class Children extends Component {
      <Switch>
            <Redirect to={{
                 pathname: `/journal/${this.props.selectedJournals.id}`,
-                state: { clickedjournal: this.props.selectedJournals}
             }} />
             <Route path={`/journal/${this.props.selectedJournals.id}`} >
-                <JournalsPage clickedjournal={this.props.selectedJournals} handleJournalBack={this.handleJournalBack} />
+                <JournalsPage/>
             </Route>
 
       </Switch>

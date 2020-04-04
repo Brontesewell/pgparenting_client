@@ -10,25 +10,53 @@ import { useHistory } from 'react-router-dom';
 
 class JournalsPage extends Component {
 
+    // state = {
+    //     selectedJournals: this.props.selectedJournals
+    //   }
+
+    // componentDidMount () {
+    //     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals));
+    //   }
+      
+// componentCleanUp = () => {
+  
+//     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals))
+//   }
+    //   componentWillUnmount () {
+    //     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals))
+    //   }
+
+//   componentDidMount(){
+//       this.setState({
+//         clickedJournal: JSON.parse(localStorage.getItem('selectedJournal'))
+//       })
+//   }
+
+    handleBackClick = () => {
+        window.location.href="/profile"
+        this.props.clearSelectedJournals()
+        localStorage.removeItem("selectedJournal")
+    }
 
     render() {
+console.log(this.props.selectedJournals)
+// console.log(this.state.selectedJournals)
 
-// console.log(this.props.journals)
         return (
             <div>
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
-              <h1 id="title-journal">{this.props.location.state.clickedjournal.name}'s  Journals</h1>
+              <h1 id="title-journal">{this.props.selectedJournals.name}'s  Journals</h1>
               <div id="line-journal-title"></div>
 
-            <AddJournal kid={this.props.location.state.clickedjournal}/>
+            <AddJournal kid={this.props.selectedJournals}/>
 
         {this.props.selectedJournals.journals.map(journal => < JournalList journal={journal} />).reverse()}
 
         
         
-        <button id="course-button-back" className="btn" onClick={() =>  window.location.href="/profile" }>Back</button>
+        <button id="course-button-back" className="btn" onClick={() => this.handleBackClick()}>Back</button>
 
 </div>
         );
@@ -44,6 +72,11 @@ const mapStateToProps = state => {
         selectedJournals :state.selectedJournals
     }
 }
+const mapDispatchToProps = dispatch => {
+    return {
+        clearSelectedJournals: () => dispatch({ type: "CLEAR_SELECTED_JOURNALS" })
+    }
+}
 
 
-export default connect(mapStateToProps, null)(JournalsPage);
+export default connect(mapStateToProps, mapDispatchToProps)(JournalsPage);

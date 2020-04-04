@@ -16,7 +16,8 @@ const initialState = {
     loading: false,
     selectedKid: {},
     selectedCourse: {},
-    selectedJournals: null,
+    selectedJournals: JSON.parse(localStorage.getItem('selectedJournal')),
+    // selectJournals: {}
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -89,7 +90,8 @@ const rootReducer = (state = initialState, action) => {
         case 'SET_SELECTED_JOURNALS':
              return {...state, selectedJournals: action.journal} 
 
-
+        case 'CLEAR_SELECTED_JOURNALS':
+            return {...state, selectedJournals: null }
 
 
 

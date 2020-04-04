@@ -32,6 +32,7 @@ const addKid = (e, state, history) => {
         .then(data => {
             
             dispatch({ type: "ADD_KID", kid: data })
+            localStorage.setItem('selectedJournal', JSON.stringify(data));
             history.push('/profile')
         })
     }
