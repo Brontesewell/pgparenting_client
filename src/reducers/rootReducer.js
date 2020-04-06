@@ -20,6 +20,7 @@ const initialState = {
     // selectJournals: {}
 }
 
+
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'BEGIN_SIGN_IN':
