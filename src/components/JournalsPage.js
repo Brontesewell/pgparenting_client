@@ -10,10 +10,6 @@ import { useHistory } from 'react-router-dom';
 
 class JournalsPage extends Component {
 
-    // state = {
-    //     selectedJournals: this.props.selectedJournals
-    //   }
-
     // componentDidMount () {
     //     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals));
     //   }
@@ -39,8 +35,7 @@ class JournalsPage extends Component {
     }
 
     render() {
-console.log(this.props.selectedJournals)
-// console.log(this.state.selectedJournals)
+
 
         return (
             <div>

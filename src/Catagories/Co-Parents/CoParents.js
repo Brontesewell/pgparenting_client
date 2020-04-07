@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import Navbar from '../containers/Navbar'
 import {Link} from 'react-router-dom'
-import fetchAllCatagories from '../actions/fetchAllCatagories';
-import Container from '../Catagories/Layout/Container';
-import {createBabyHash} from "../utilities/helpers"
+import fetchAllCatagories from '../../actions/fetchAllCatagories';
+import Navbar from '../../containers/Navbar'
+import Container from './CoParentContainer';
+import {createBabyHash} from "../../utilities/helpers"
 
 
 class CoParents extends Component {

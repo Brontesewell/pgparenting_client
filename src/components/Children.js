@@ -5,7 +5,6 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import JournalsPage from './JournalsPage'
 
 class Children extends Component {
-
   
     //look at this\/
     handleJournalClick = (journal) => {
@@ -17,7 +16,7 @@ class Children extends Component {
 
 
     render() {
-        
+        console.log(this.props.selectedJournals)
         return (
             <div>
             <div id="child-div">
@@ -51,7 +50,7 @@ class Children extends Component {
                 pathname: `/journal/${this.props.selectedJournals.id}`,
             }} />
             <Route path={`/journal/${this.props.selectedJournals.id}`} >
-                <JournalsPage/>
+                <JournalsPage />
             </Route>
 
       </Switch>

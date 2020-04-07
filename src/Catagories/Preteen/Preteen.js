@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import fetchAllCatagories from '../actions/fetchAllCatagories';
-import {createBabyHash} from "../utilities/helpers"
-import Navbar from '../containers/Navbar'
-import Container from './Layout/Container';
+import fetchAllCatagories from '../../actions/fetchAllCatagories';
+import {createBabyHash} from "../../utilities/helpers"
+import Navbar from '../../containers/Navbar'
+import Container from './PreteenContainer';
 import {Link} from 'react-router-dom'
 
 class Preteen extends Component {

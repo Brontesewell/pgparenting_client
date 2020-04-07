@@ -10,7 +10,7 @@ import Profile from './components/Profile'
 import ContactUs from './containers/ContactUs'
 import ParentingCourses from './components/ParentingCourses'
 import ParentingTips from './components/ParentingTips'
-import CoParents from './components/CoParents'
+import CoParents from './Catagories/Co-Parents/CoParents'
 import fetchAllCatagories from './actions/fetchAllCatagories'
 import fetchAllUsers from './actions/fetchAllUsers'
 import fetchAllKids from './actions/fetchAllKids'
@@ -22,14 +22,14 @@ import AboutUs from './containers/AboutUs'
 import ShopList from './containers/ShopList'
 import ContactUsHome from './containers/ContactUsHome'
 
-import Baby from './Catagories/Baby'
-import Toddler from './Catagories/Toddler'
-import Pre_school from './Catagories/Pre_school';
-import Primary_school from './Catagories/Primary_School';
-import Preteen from './Catagories/Preteen';
-import Teen from './Catagories/Teen';
-import Young_Adults from './Catagories/Young_Adult';
-import CourseInfo from './Catagories/Layout/CourseInfo'
+import Baby from './Catagories/Baby/Baby'
+import Toddler from './Catagories/Toddler/Toddler'
+import Pre_school from './Catagories/Pre-School/Pre_school';
+import Primary_school from './Catagories/Primary-School/Primary_School';
+import Preteen from './Catagories/Preteen/Preteen';
+import Teen from './Catagories/Teen/Teen';
+import Young_Adults from './Catagories/Young-Adult/Young_Adult';
+import CourseInfo from './Catagories/Baby/BabyCourseInfo'
 import AddKid from './containers/AddKid'
 
 import AboutASP from './containers/AboutASP'

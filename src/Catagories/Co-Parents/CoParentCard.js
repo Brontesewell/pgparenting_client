@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-import Images from './Images';
-import CourseInfo from './CourseInfo'
+import Images from './CoParentImages';
+import CourseInfo from './CoParentCourseInfo'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 class Card extends Component {

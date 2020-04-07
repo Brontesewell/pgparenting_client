@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import fetchAllCatagories from '../actions/fetchAllCatagories';
-import {createBabyHash} from "../utilities/helpers"
-import Navbar from '../containers/Navbar'
-import Container from './Layout/Container';
+import fetchAllCatagories from '../../actions/fetchAllCatagories';
+import {createBabyHash} from "../../utilities/helpers"
+import Navbar from '../../containers/Navbar'
+import Container from './PrimaryContainer';
 import {Link} from 'react-router-dom'
 
 class Primary_School extends Component {
