@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-import Images from './YAImages';
-import CourseInfo from './YACourseInfo'
+import YAImages from './YAImages';
+import YACourseInfo from './YACourseInfo'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 class Card extends Component {
@@ -41,12 +41,12 @@ class Card extends Component {
                 state: { clickedcourse: this.state.clickedcourse.id, clickedcourse: this.state.clickedcourse}
             }} />
             <Route path={`/course/${this.state.clickedcourse.id}`} >
-                <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton} />
+                <YACourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton} />
             </Route>
       </Switch>
      : 
      
-     this.props.sub.courses.map(course => <div id="all-courses"> < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/> </div>)}
+     this.props.sub.courses.map(course => <div id="all-courses"> < YAImages sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/> </div>)}
        
         </div>              
         {/* <Route exact path="/course" render={(routerProps) => <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton}/>}/> */}

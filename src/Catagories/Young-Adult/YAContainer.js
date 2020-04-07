@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from './YACard';
+import YACard from './YACard';
 
 class Container extends Component {
 
@@ -11,7 +11,7 @@ class Container extends Component {
         return (
             <div>
 
-    {this.props.baby.catagory.sub_catagories.map(sub => <Card sub={sub} />)}
+    {this.props.baby.catagory.sub_catagories.map(sub => <YACard sub={sub} />)}
              
             </div>
                 
