@@ -10,7 +10,6 @@ import Profile from './components/Profile'
 import ContactUs from './containers/ContactUs'
 import ParentingCourses from './components/ParentingCourses'
 import ParentingTips from './components/ParentingTips'
-import CoParents from './Catagories/Co-Parents/CoParents'
 import fetchAllCatagories from './actions/fetchAllCatagories'
 import fetchAllUsers from './actions/fetchAllUsers'
 import fetchAllKids from './actions/fetchAllKids'
@@ -21,19 +20,34 @@ import SignIn from './containers/SignIn'
 import AboutUs from './containers/AboutUs'
 import ShopList from './containers/ShopList'
 import ContactUsHome from './containers/ContactUsHome'
+import CoParents from './Catagories/Co-Parents/CoParents'
+import CoParentCourseInfo from './Catagories/Co-Parents/CoParentCourseInfo'
+
+
 
 import Baby from './Catagories/Baby/Baby'
+import BabyCourseInfo from './Catagories/Baby/BabyCourseInfo'
+
 import Toddler from './Catagories/Toddler/Toddler'
+import ToddlerCourseInfo from './Catagories/Toddler/ToddlerCourseInfo'
+
 import Pre_school from './Catagories/Pre-School/Pre_school';
+import PreSchoolCourseInfo from './Catagories/Pre-School/PreSchoolCourseInfo';
+
 import Primary_school from './Catagories/Primary-School/Primary_School';
+import PrimaryCourseInfo from './Catagories/Primary-School/PrimaryCourseInfo';
+
 import Preteen from './Catagories/Preteen/Preteen';
+import PreteenCourseInfo from './Catagories/Preteen/PreteenCourseInfo';
+
 import Teen from './Catagories/Teen/Teen';
+import TeenCourseInfo from './Catagories/Teen/TeenCourseInfo';
+
 import Young_Adults from './Catagories/Young-Adult/Young_Adult';
-import CourseInfo from './Catagories/Baby/BabyCourseInfo'
+import YACourseInfo from './Catagories/Young-Adult/YACourseInfo';
+
 import AddKid from './containers/AddKid'
-
 import AboutASP from './containers/AboutASP'
-
 import JournalsPage from './components/JournalsPage'
 
 
@@ -64,19 +78,33 @@ class App extends React.Component {
                 <Route exact path='/edit-profile' component={EditProfile}/>
                 {/* <Route exact path='/parenting-courses' component={ParentingCourses}/>
                 <Route exact path='/parenting-tips' component={ParentingTips}/> */}
-                <Route exact path='/co-parents' component={CoParents}/>
                 <Route exact path='/add-child' component={AddKid}/>
+                
+                <Route exact path='/co-parents' component={CoParents}/>
+                <Route exact path='/co-parents/:id' component={CoParentCourseInfo}/>
 
                 <Route exact path='/baby' component={Baby}/>
+                <Route exact path='/baby/:id' component={BabyCourseInfo} />
+
                 <Route exact path='/toddler' component={Toddler}/>
+                <Route exact path='/toddler/:id' component={ToddlerCourseInfo}/>
+
                 <Route exact path='/pre_school' component={Pre_school}/>
+                <Route exact path='/pre_school/:id' component={PreSchoolCourseInfo}/>
+
                 <Route exact path='/primary_school' component={Primary_school}/>
+                <Route exact path='/primary_school/:id' component={PrimaryCourseInfo}/>
+
                 <Route exact path='/preteen' component={Preteen}/>
+                <Route exact path='/preteen/:id' component={PreteenCourseInfo}/>
+
                 <Route exact path='/teen' component={Teen}/>
+                <Route exact path='/teen/:id' component={TeenCourseInfo}/>
+
                 <Route exact path='/young_adults' component={Young_Adults}/>
+                <Route exact path='/young_adults/:id' component={YACourseInfo}/>
+
                 <Route exact path='/edit-kid' component={EditKid}/>
-                <Route exact path='/course' component={CourseInfo} />
-                <Route exact path='/course/:id' component={CourseInfo} />
                 <Route exact path='/journal' component={JournalsPage} />
                 <Route exact path='/journal/:id' component={JournalsPage} />
                 <Route exact path='/about_scoring' component={AboutASP} />

@@ -39,7 +39,7 @@ class CourseInfo extends Component {
 
                    <br></br>
                    <br></br>
-                   <button id="course-button-back" className="btn" onClick={() => history.push('/home')}>Back</button>
+                   <button id="course-button-back" className="btn" onClick={() => history.push('/toddler')}>Back</button>
              </div>
              
             </div>
