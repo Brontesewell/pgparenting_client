@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
-
 class SubscribeForm extends Component {
+
+
+
     state = {
-        email: "",
-        emailSubscribed: []
+        subscribe: "",
     }
 
     handleChange = (e) => {
@@ -14,6 +15,9 @@ class SubscribeForm extends Component {
             [name]: value
         })
     }
+
+
+    
 
     render () {  
         console.log(this.state.email)
@@ -36,7 +40,7 @@ class SubscribeForm extends Component {
 
                                   <div class="row">
                                   <div class="input-field col s12">
-                                         <input id="email" type="email" class="validate" value={this.state.email}  onChange={this.handleChange}/>
+                                         <input id="email" type="email" class="validate"  onChange={this.handleChange}/>
                                          <label id="emails" for="email">Email</label>
                                  </div>
                                  </div>
@@ -49,6 +53,7 @@ class SubscribeForm extends Component {
         )
     }
 }
+
 const mapStateToProps = state => {
     return {
         currentUser: state.currentUser
@@ -58,4 +63,7 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, null)(SubscribeForm);
 
 
+  
+ 
+  
 
