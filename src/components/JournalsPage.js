@@ -10,28 +10,12 @@ import { useHistory } from 'react-router-dom';
 
 class JournalsPage extends Component {
 
-    // componentDidMount () {
-    //     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals));
-    //   }
-      
-// componentCleanUp = () => {
-  
-//     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals))
-//   }
-    //   componentWillUnmount () {
-    //     localStorage.setItem('selectedJournal', JSON.stringify(this.props.selectedJournals))
-    //   }
 
-//   componentDidMount(){
-//       this.setState({
-//         clickedJournal: JSON.parse(localStorage.getItem('selectedJournal'))
-//       })
-//   }
 
     handleBackClick = () => {
-        window.location.href="/profile"
         this.props.clearSelectedJournals()
-        localStorage.removeItem("selectedJournal")
+        this.props.history.push('/profile')
+
     }
 
     render() {

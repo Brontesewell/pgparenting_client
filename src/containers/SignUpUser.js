@@ -10,7 +10,8 @@ export class SignUpUser extends Component {
         firstName: '',
         lastName: '',
         email: '',
-        password: ''
+        password: '',
+        subscribe: false,
     }
 
     handleChange = (e) => {
@@ -18,10 +19,17 @@ export class SignUpUser extends Component {
         this.setState({
             [name]: value
         })
-    } 
+    }
+    
+    handleSubscribe = (e) => {
+        // const {subscribe, value} = e.target
+        this.setState({
+            subscribe: true
+        })
+    }
 
     render() {
-       const { firstName, lastName, email, password } = this.state
+       const { firstName, lastName, email, password, subscribe } = this.state
        const {history} = this.props
         return (
            
@@ -52,8 +60,15 @@ export class SignUpUser extends Component {
                     
                         <label>Password</label>
                         <input type='password' name="password" placeholder="Password" value={password} onChange={this.handleChange}/>
+                        
                         </div>
+                        
                                   </div>
+                        <h5>Email Preference</h5>
+                        <label>
+                        <input type="checkbox" class="filled-in" onClick={ () => this.handleSubscribe()}/>
+                         <span>PG Parenting Newsletter</span>
+                        </label>                    
 
                     <button  id="sign-up-button" className="btn-large" type="submit">Next</button>
                     <br></br>

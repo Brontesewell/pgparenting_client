@@ -1,7 +1,7 @@
 const signUpUser = (e, state, history) => {
     e.preventDefault();
 
-    const {firstName, lastName, email, password} = state
+    const {firstName, lastName, email, password, subscribe} = state
 
     return (dispatch) => {
         fetch('http://localhost:3000/users',{
@@ -18,6 +18,7 @@ const signUpUser = (e, state, history) => {
                     last_name: lastName,
                     email: email,
                     password: password,
+                    subscribe: subscribe,
                 }
             })
         })

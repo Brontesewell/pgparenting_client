@@ -11,7 +11,7 @@ class Children extends Component {
         this.props.selectedJournal(journal)
         console.log(this.props.selectedJournal)
         console.log(journal)
-        localStorage.setItem('selectedJournal', JSON.stringify(journal))
+        // localStorage.setItem('selectedJournal', JSON.stringify(journal))
     }
 
 
