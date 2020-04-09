@@ -12,15 +12,17 @@ class Email extends Component {
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
-               
-        {this.props.users.map(c => <h3>{c.email}</h3>)}
+               <h1>{this.props.currentUser.email}</h1>
+               {this.props.currentUser.email === "123@gmail.com" ? this.props.users.map(c => <h3>{c.email}</h3>) : null}
+        
      </div>
         )
     }
 }
 const mapStateToProps = state => {
     return {
-        users: state.users
+        users: state.users,
+        currentUser: state.currentUser
     }
 }
 

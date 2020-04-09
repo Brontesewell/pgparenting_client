@@ -16,6 +16,7 @@ const initialState = {
     loading: false,
     selectedKid: {},
     selectedCourse: {},
+    // emailSubscribed: [],
     selectedJournals: null,
     // JSON.parse(localStorage.getItem('selectedJournal')),
     // selectJournals: {}

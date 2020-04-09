@@ -49,7 +49,7 @@ import YACourseInfo from './Catagories/Young-Adult/YACourseInfo';
 import AddKid from './containers/AddKid'
 import AboutASP from './containers/AboutASP'
 import JournalsPage from './components/JournalsPage'
-import Email from './Emails/Email'
+import Email from './EmailSubscribe/Email'
 
 class App extends React.Component {
 
