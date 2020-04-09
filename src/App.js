@@ -63,7 +63,7 @@ class App extends React.Component {
 
 
   render(){
-    console.log(this.props.users)
+    console.log(this.props.currentUser)
     return (
       <div className="App">
         <Router>
