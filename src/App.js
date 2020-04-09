@@ -49,7 +49,7 @@ import YACourseInfo from './Catagories/Young-Adult/YACourseInfo';
 import AddKid from './containers/AddKid'
 import AboutASP from './containers/AboutASP'
 import JournalsPage from './components/JournalsPage'
-
+import Email from './Emails/Email'
 
 class App extends React.Component {
 
@@ -109,6 +109,8 @@ class App extends React.Component {
                 <Route exact path='/journal/:id' component={JournalsPage} />
                 <Route exact path='/about_scoring' component={AboutASP} />
                 {/* <Route exact path='/quadrant' component={BehaviourQuadrant} /> */}
+                <Route exact path='/email' component={Email} />
+
 
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
