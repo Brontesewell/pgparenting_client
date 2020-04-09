@@ -29,6 +29,12 @@ class EditKid extends Component {
         })
     } 
 
+  //   handleBackClick = () => {
+  //     this.props.clearSelectedKid()
+  //     // this.props.history.push('/profile')
+
+  // }
+
     render() {
         
         console.log(this.props.selectedKid)
@@ -340,8 +346,12 @@ const mapStateToProps = state => {
 const mapsToDispatchProps = dispatch => {
     return {
         editKid: (e, history, state, id) => dispatch(editKid(e, history, state, id)),
-        deleteKid: (e, kid, history) => dispatch(deleteKid(e, kid, history))
+        deleteKid: (e, kid, history) => dispatch(deleteKid(e, kid, history)),
+        clearSelectedKid: () => dispatch({ type: "CLEAR_SELECTED_KID" })
     }
 }
+
+
+
 
 export default connect(mapStateToProps, mapsToDispatchProps)(EditKid);

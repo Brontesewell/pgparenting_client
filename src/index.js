@@ -19,7 +19,7 @@ const persistConfig = {
   key: 'root',
   storage: storage,
   stateReconciler: autoMergeLevel2,
-  whitelist: ['currentUser', 'selectedJournals']
+  whitelist: ['currentUser', 'selectedJournals', 'selectedKid']
   };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

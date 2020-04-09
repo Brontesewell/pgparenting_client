@@ -75,7 +75,8 @@ const rootReducer = (state = initialState, action) => {
 
          case 'ADD_KID':
                 return {...state, kids: action.kid, currentUser:{...state.currentUser, kids: [...state.currentUser.kids, action.kid]}}
-                
+        // case 'CLEAR_SELECTED_KID':
+        //         return {...state, selectedKid: {} }                
 
 
 
