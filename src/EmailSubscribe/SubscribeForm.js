@@ -44,7 +44,7 @@ class SubscribeForm extends Component {
                                          <label id="emails" for="email">Email</label>
                                  </div> */}
                                  </div> 
-                             <button class="btn-newsletter" type="submit" name="action">Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>
+                             {this.props.currentUser.subscribe === "true" ? <button>Subscribed</button> :<button class="btn-newsletter" type="submit" name="action">Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>}
                           </div>
                         </form>
                     </div>
