@@ -8,8 +8,8 @@ import EditProfile from './containers/EditProfile'
 import EditKid from './containers/EditKid'
 import Profile from './components/Profile'
 import ContactUs from './containers/ContactUs'
-import ParentingCourses from './components/ParentingCourses'
-import ParentingTips from './components/ParentingTips'
+// import ParentingCourses from './components/ParentingCourses'
+// import ParentingTips from './components/ParentingTips'
 import fetchAllCatagories from './actions/fetchAllCatagories'
 import fetchAllUsers from './actions/fetchAllUsers'
 import fetchAllKids from './actions/fetchAllKids'
@@ -22,8 +22,10 @@ import ShopList from './containers/ShopList'
 import ContactUsHome from './containers/ContactUsHome'
 import CoParents from './Catagories/Co-Parents/CoParents'
 import CoParentCourseInfo from './Catagories/Co-Parents/CoParentCourseInfo'
-
-
+import AddKid from './containers/AddKid'
+import AboutASP from './containers/AboutASP'
+import JournalsPage from './components/JournalsPage'
+import Email from './EmailSubscribe/Email'
 
 import Baby from './Catagories/Baby/Baby'
 import BabyCourseInfo from './Catagories/Baby/BabyCourseInfo'
@@ -46,10 +48,8 @@ import TeenCourseInfo from './Catagories/Teen/TeenCourseInfo';
 import Young_Adults from './Catagories/Young-Adult/Young_Adult';
 import YACourseInfo from './Catagories/Young-Adult/YACourseInfo';
 
-import AddKid from './containers/AddKid'
-import AboutASP from './containers/AboutASP'
-import JournalsPage from './components/JournalsPage'
-import Email from './EmailSubscribe/Email'
+
+
 
 class App extends React.Component {
 
