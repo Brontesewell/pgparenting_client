@@ -4,7 +4,7 @@ import Navbar from '../containers/Navbar';
 
 
 class Email extends Component {
-    
+
     render () {  
         
         return (
@@ -12,6 +12,9 @@ class Email extends Component {
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
+
+
+
                <h1>Subscribed Users:</h1>
                {this.props.currentUser.email === "123@gmail.com" ? this.props.users.map(c => c.subscribe === "true" ? <h3>{c.email}</h3> : null) : null}
         

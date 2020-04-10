@@ -15,7 +15,7 @@ class SubscribeForm extends Component {
             [name]: value
         })
     }
-
+ 
 
     
 
@@ -38,13 +38,16 @@ class SubscribeForm extends Component {
                                           <label for="last_name">Last Name</label>
                                      </div> */}
 
+
+
+
                                    <div class="row">
                                   {/* <div class="input-field col s12">
                                          <input id="email" type="email" class="validate"  onChange={this.handleChange}/>
                                          <label id="emails" for="email">Email</label>
                                  </div> */}
                                  </div> 
-                             {this.props.currentUser.subscribe === "true" ? <button>Subscribed</button> :<button class="btn-newsletter" type="submit" name="action">Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>}
+                             {/* {this.props.currentUser.subscribe === "true" ? <button>Subscribed</button> :<button class="btn-newsletter" type="submit" name="action">Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>} */}
                           </div>
                         </form>
                     </div>
