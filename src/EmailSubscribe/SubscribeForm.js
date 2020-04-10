@@ -26,7 +26,7 @@ class SubscribeForm extends Component {
                <div id="newsletter">
                     <h4 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h4>
                         <div class="row" id="newsletter-div">
-                             <form class="col s12">
+                              <form class="col s12">
                                   <div class="row">
                                    {/* <div class="input-field col s6">
                                         <input id="first_name" type="text" class="validate"/>
@@ -38,13 +38,13 @@ class SubscribeForm extends Component {
                                           <label for="last_name">Last Name</label>
                                      </div> */}
 
-                                  <div class="row">
-                                  <div class="input-field col s12">
+                                   <div class="row">
+                                  {/* <div class="input-field col s12">
                                          <input id="email" type="email" class="validate"  onChange={this.handleChange}/>
                                          <label id="emails" for="email">Email</label>
-                                 </div>
-                                 </div>
-                             <button class="btn-newsletter" type="submit" name="action">Submit<i id="arrow-newsleeter" class="material-icons right"/> </button>
+                                 </div> */}
+                                 </div> 
+                             <button class="btn-newsletter" type="submit" name="action">Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>
                           </div>
                         </form>
                     </div>

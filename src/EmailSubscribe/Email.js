@@ -12,8 +12,8 @@ class Email extends Component {
                 <div className = 'row'>
                     {<Navbar/>}
                 </div>
-               <h1>{this.props.currentUser.email}</h1>
-               {this.props.currentUser.email === "123@gmail.com" ? this.props.users.map(c => <h3>{c.email}</h3>) : null}
+               <h1>Subscribed Users:</h1>
+               {this.props.currentUser.email === "123@gmail.com" ? this.props.users.map(c => c.subscribe === "true" ? <h3>{c.email}</h3> : null) : null}
         
      </div>
         )
