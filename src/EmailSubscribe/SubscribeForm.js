@@ -1,26 +1,30 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import editProfile from '../actions/editProfile'
 
 class SubscribeForm extends Component {
 
 
 
     state = {
-        subscribe: "",
+        subscribe: this.props.currentUser.subscribe,
     }
 
     handleChange = (e) => {
-        const {name, value} = e.target
+        // const {name, value} = e.target
         this.setState({
-            [name]: value
+            subscribe: "true"
         })
-    }
- 
+        this.props.editProfile(e, this.props.history, this.state, this.props.currentUser.id)
+    } 
 
     
 
     render () {  
-        console.log(this.state.email)
+        console.log(this.state.subscribe)
+        const {subscribe} = this.state
+        const {editProfile, history, currentUser} = this.props
+        console.log(currentUser.subscribe)
         return (
             <div>
                <div id="newsletter">
@@ -47,7 +51,7 @@ class SubscribeForm extends Component {
                                          <label id="emails" for="email">Email</label>
                                  </div> */}
                                  </div> 
-                             {/* {this.props.currentUser.subscribe === "true" ? <button>Subscribed</button> :<button class="btn-newsletter" type="submit" name="action">Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>} */}
+                             {currentUser.subscribe === "true" ? <button class="btn-newsletter-clicked" disabled>Subscribed ✓</button> :<button class="btn-newsletter" onClick={() => this.handleChange()}>Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>}
                           </div>
                         </form>
                     </div>
@@ -63,7 +67,13 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, null)(SubscribeForm);
+const mapsToDispatchProps = dispatch => {
+    return {
+        editProfile: (e, history, state, id) => dispatch(editProfile(e, history, state, id)),
+    }
+}
+
+export default connect(mapStateToProps, mapsToDispatchProps)(SubscribeForm);
 
 
   

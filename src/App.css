@@ -1311,6 +1311,19 @@ input[type=submit]:hover {
   border-radius: 3px;
 }
 
+.btn-newsletter-clicked{
+  background-color: #757b8a;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: lightgray;
+  font-size: 17px;
+  margin-left: 20%;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 #newsletter{
   height: 370px;
   margin-top: -23px;
