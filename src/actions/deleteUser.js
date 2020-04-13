@@ -12,7 +12,7 @@ const deleteUser = (e, history, user) => {
             dispatch({type: 'CLEAR_CURRENT_USER', user})
             dispatch({type: 'DELETE_USER', user})
             history.push('/')
-        })
+        }).catch(err => console.log(err))
     }
 }
 

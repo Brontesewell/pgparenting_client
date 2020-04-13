@@ -30,7 +30,7 @@ const fetchAllCatagories= () => {
             //     dispatch({ type: "GET_ALL_YOUNG_ADULTS", young_adults: data}) :
             //     null
             // )
-        })
+        }).catch(err => console.log(err))
     }
 }
 

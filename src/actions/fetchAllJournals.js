@@ -15,7 +15,7 @@ const fetchAllJournals= () => {
             
             dispatch({ type: "SET_ALL_JOURNALS", journals: data})
             // dispatch({ type: "SET_SELECTED_JOURNALS", journal: data})
-        })
+        }).catch(err => console.log(err))
     }
 }
 

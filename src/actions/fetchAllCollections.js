@@ -14,7 +14,7 @@ const fetchAllCollections= () => {
         .then(data => {
             dispatch({ type: "GET_ALL_COLLECTIONS", collection: data})
        
-        })
+        }).catch(err => console.log(err))
     }
 }
 

@@ -30,7 +30,7 @@ const editKid = (e, state, id, history) => {
             dispatch({type: 'SET_SELECTED_KID', kid: data})
             dispatch({type: 'EDIT_KID', kid: data})
             history.push('/profile')
-        })
+        }).catch(err => console.log(err))
     }   
 }
 

@@ -22,7 +22,7 @@ return (dispatch) => {
                window.alert('Course added to favourites in your user profile!')
            
        
-       })
+       }).catch(err => console.log(err))
    }
 }
 

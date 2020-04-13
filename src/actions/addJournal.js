@@ -26,7 +26,7 @@ const addJournal = (e, state, history) => {
             // dispatch({ type: "SET_SELECTED_JOURNALS", journal: data})
             
             
-        })
+        }).catch(err => console.log(err))
     }
  
 }

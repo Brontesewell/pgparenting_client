@@ -14,7 +14,7 @@ const deleteJournal = (e, journal, history) => {
             
             dispatch({type: 'DELETE_JOURNAL', journal})
             history.push('/profile')
-        })
+        }).catch(err => console.log(err))
     }
 }
 
