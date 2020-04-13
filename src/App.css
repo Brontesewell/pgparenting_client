@@ -544,15 +544,17 @@ margin-left: 20px;
 
 #menu-item-p{
 color: #6B6b69;
+cursor: pointer;
 }
 
 .menu-item a:link, .menu-itema:visited {
-	color: #6B6b69;
+  color: #6B6b69;
+  cursor: pointer;
 }
 
 .menu-item a:hover, .menu-item a:active {
 	color: #8597C5;
-
+  cursor: pointer;
 }
 
 .menu-item ul {
@@ -560,12 +562,12 @@ color: #6B6b69;
   background-color: white;
 	list-style-type: none;
   height: 0px;
-  margin-left: 5px;
+  margin-left: 20px;
 	overflow: hidden;
     position: absolute;
     left: 0;
     top: 100%;
-    width: 95%;
+    width: 80%;
     border-radius: 5px;
 	
 	-webkit-transition: height 1s ease;
@@ -577,7 +579,8 @@ color: #6B6b69;
 
 .menu-item:hover ul {
   /* height: 370px; */
-  height: 275px;
+  cursor: pointer;
+  height: 235px;
   background-color: #8597C5;
 }
 
@@ -586,14 +589,23 @@ color: #6B6b69;
 	width: 80%;
 	margin: 0 auto 0 auto;
 	border-radius: 0px;
-  margin-top: -7px;
+  margin-top: -13px;
   margin-bottom: -5px;
   text-align: center;
   height: 35px;
+  margin-right: 45px;
+}
+
+.menu-item a:hover{
+  color: white;
 }
 
 .parent-lis:hover {
-  background-color: #516496
+ /* text-decoration: underline; */
+ font-weight: bolder;
+ cursor: pointer;
+ color: white;
+ background-color: #8597C5;
 }
 
 #scroller{
