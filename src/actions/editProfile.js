@@ -1,7 +1,7 @@
 const editProfile = (e, history, state, id) => {
     e.preventDefault();
 
-    const {firstName, lastName, email } = state
+    const {firstName, lastName, subscribe, email } = state
 
     return(dispatch) => {
         return fetch(`http://localhost:3000/users/${id}`, {
@@ -14,12 +14,12 @@ const editProfile = (e, history, state, id) => {
             body: JSON.stringify({
                 first_name: firstName,
                 last_name: lastName,
-                email: email
+                email: email,
+                subscribe: subscribe,
             })
         })
         .then(resp => resp.json())
         .then(data => {
-console.log(data)
             dispatch({type: 'SET_CURRENT_USER', user: data })
             history.push('/profile')
             

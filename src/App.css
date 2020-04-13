@@ -1311,6 +1311,10 @@ input[type=submit]:hover {
   border-radius: 3px;
 }
 
+#newsletter-click{
+  color: white;
+}
+
 .btn-newsletter-clicked{
   background-color: #757b8a;
   transform: translate(-50%, -50%);

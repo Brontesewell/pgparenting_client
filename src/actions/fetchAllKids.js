@@ -13,7 +13,7 @@ const fetchAllKids= () => {
         .then(res => res.json())
         .then(data => {
             dispatch({ type: "SET_ALL_KIDS", kids: data})
-        })
+        }).catch(err => console.log(err))
     }
 }
 

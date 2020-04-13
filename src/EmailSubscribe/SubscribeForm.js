@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import editProfile from '../actions/editProfile'
+import { Link } from "react-router-dom";
+
 
 class SubscribeForm extends Component {
 
@@ -15,13 +17,12 @@ class SubscribeForm extends Component {
         this.setState({
             subscribe: "true"
         })
-        this.props.editProfile(e, this.props.history, this.state, this.props.currentUser.id)
     } 
 
     
 
     render () {  
-        console.log(this.state.subscribe)
+        console.log(this.props.editProfile)
         const {subscribe} = this.state
         const {editProfile, history, currentUser} = this.props
         console.log(currentUser.subscribe)
@@ -30,7 +31,7 @@ class SubscribeForm extends Component {
                <div id="newsletter">
                     <h4 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h4>
                         <div class="row" id="newsletter-div">
-                              <form class="col s12">
+                              <form className = 'col s12' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
                                   <div class="row">
                                    {/* <div class="input-field col s6">
                                         <input id="first_name" type="text" class="validate"/>
@@ -51,7 +52,17 @@ class SubscribeForm extends Component {
                                          <label id="emails" for="email">Email</label>
                                  </div> */}
                                  </div> 
-                             {currentUser.subscribe === "true" ? <button class="btn-newsletter-clicked" disabled>Subscribed ✓</button> :<button class="btn-newsletter" onClick={() => this.handleChange()}>Click Me!<i id="arrow-newsleeter" class="material-icons right"/> </button>}
+                                {currentUser.subscribe === "true" ? <button class="btn-newsletter-clicked" disabled>Subscribed ✓</button> :  <div>
+                        
+                        <label>
+                        <input type="checkbox" name="subscribe" class="filled-in" onChange={this.handleChange} value="true" checked={subscribe === 'true'}/>
+                         <span>{currentUser.email}</span>
+                        </label>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <button className="btn-newsletter" type="submit">Confirm</button>
+                        </div>}
                           </div>
                         </form>
                     </div>

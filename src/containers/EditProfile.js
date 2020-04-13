@@ -10,6 +10,7 @@ class EditProfile extends Component {
         firstName: this.props.currentUser.first_name,
         lastName: this.props.currentUser.last_name,
         email: this.props.currentUser.email,
+        subscribe: this.props.currentUser.subscribe
     }
 
     handleChange = (e) => {
@@ -20,7 +21,7 @@ class EditProfile extends Component {
     } 
 
     render() {
-        const {firstName, lastName,  email} = this.state
+        const {firstName, lastName, subscribe, email} = this.state
         const {editProfile, deleteUser, history, currentUser} = this.props
         return (
             <div>
@@ -35,6 +36,11 @@ class EditProfile extends Component {
                         <input name="lastName" value={lastName} onChange={this.handleChange}/>
                        <label htmlFor="email">Email</label>
                         <input type='email' name="email" value={email} onChange={this.handleChange}/>
+                        <h5>Email Preference</h5>
+                        <label>
+                        <input type="checkbox" name="subscribe" class="filled-in" onChange={this.handleChange} value="true" checked={subscribe === 'true'}/>
+                         <span>PG Parenting Newsletter</span>
+                        </label>
                         <button id="btn-edit-child" className="btn" type="submit" >Update</button>
                     </form>
                     <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteUser(e, history, currentUser)}>Delete Your Account</button>

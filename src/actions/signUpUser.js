@@ -29,7 +29,7 @@ const signUpUser = (e, state, history) => {
             dispatch({ type: "ADD_USER", user: data.user })
             localStorage.setItem('jwt', data.jwt)
             history.push('/home')
-        })
+        }).catch(err => console.log(err))
     }
 
  

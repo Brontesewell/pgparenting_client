@@ -13,7 +13,7 @@ const fetchAllUsers= () => {
         .then(res => res.json())
         .then(users => {
             dispatch({ type: "SET_ALL_USERS", users: users})
-        })
+        }).catch(err => console.log(err))
     }
 }
 

@@ -22,7 +22,7 @@ const signIn = (e, state, history ) => {
                 dispatch({ type: "SET_CURRENT_USER", user: data.user })
                 localStorage.setItem('jwt', data.jwt)
                 history.push('/home')
-        })
+        }).catch(err => console.log(err))
         
     }
 }
