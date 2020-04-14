@@ -343,8 +343,8 @@ color: black;
 .logo-home{
   color: black;
       float: left;
-      margin-top: 10px;
-      margin-left: -50px;
+      margin-top: 11px;
+      margin-left: -60px;
       width: 20%;
   }
 
@@ -1898,9 +1898,9 @@ color: #8597C5;
 
 #quote-over-images{
   position: absolute;
-  top: 73%;
-  left: 320px;
-  width: 500px;
+  top: 60%;
+  left: 370px;
+  width: 700px;
   height: 150px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
