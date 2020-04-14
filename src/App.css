@@ -547,6 +547,8 @@ div.menu-container {
 
 #menu-item-p:hover{
   color: #8597C5;
+  /* text-decoration: underline; */
+  font-weight: bolder;
 }
 
 #menu-item-p{
@@ -563,7 +565,7 @@ font-size: 20px;
 }
 
 .menu-item a:hover, .menu-item a:active {
-	color: #8597C5;
+  color: #8597C5;
   cursor: pointer;
 }
 
@@ -610,7 +612,11 @@ font-size: 20px;
   color: white;
 }
 
-.parent-lis:hover {
+.menu-icon{
+  background-color: black;
+}
+
+.parent-lis:hover  {
  /* text-decoration: underline; */
  font-weight: bolder;
  cursor: pointer;
@@ -827,17 +833,35 @@ font-size: 20px;
   padding-bottom: 20px;
 }
 
+.sidenav-text{
+  color: white;
+  font-size: 25px;
+}
 
+.sidenav-text:hover{
+  font-weight: bolder;
+}
+
+#side-navbar{
+  width: 200px;
+}
+
+.sidenav-text-name{
+  color: white;
+  font-weight: bolder;
+}
 
 
 .menu-item-nav{
-	width: 23%;
+	width: 15%;
 	float: right;
     position: relative;
-    margin-top: 4px;
+    margin-top: 17px;
     cursor: pointer;
-    margin-right: -100px;
+    margin-right: -70px;
 }
+
+
 
 .menu-item-nav a {
 	padding: 5px 0 5px 0;
@@ -849,9 +873,19 @@ font-size: 20px;
   display: block;
 }
 
+#menu-item-nav-threeline{
+  float:right;
+  margin-top: 5px;
+}
+
+#menu-item-nav-threeline:hover{
+  color: #8597C5;
+}
+
 #menu-item-nav-threelines{
   float:right;
 }
+
 
 #menu-item-nav-threelines:hover{
   color: #8597C5;
