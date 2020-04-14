@@ -836,14 +836,18 @@ font-size: 20px;
 .sidenav-text{
   color: white;
   font-size: 25px;
+  margin-left: 45px;
+  margin-bottom: 40px;
+  float: left;
 }
 
 .sidenav-text:hover{
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 #side-navbar{
-  width: 200px;
+  width: 250px;
 }
 
 .sidenav-text-name{
@@ -882,14 +886,13 @@ font-size: 20px;
   color: #8597C5;
 }
 
-#menu-item-nav-threelines{
+/* #menu-item-nav-threelines{
   float:right;
 }
 
-
 #menu-item-nav-threelines:hover{
   color: #8597C5;
-}
+} */
 
 .menu-item-nav a:link, .menu-item-nava:visited {
 	color: #6B6b69;
@@ -1233,6 +1236,8 @@ input[type=submit]:hover {
   height: 450px;
   margin-top: -20px;
 }
+
+
 
 
 #from-the-blog{
@@ -1869,20 +1874,40 @@ color: #8597C5;
 
 
 .parents-photo{
-  width: 100%;
+  object-fit: cover;
+  width: 80%;
+  height: 320px;
+  margin-top: -20px;
 }
 
 #parents{
   float: left;
   width: 40%;
-  margin-left: 7%;
-  margin-top: 10px;
+  margin-left: 3%;
+  padding-top: 90px;
 }
 
 #about-us-div{
-  background-color: #fff4f0;
-  height: 550px;
-  margin-top: -36px
+  background-color: #FDEAE3;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-top: -18px;
+  /* height: 550px;
+  margin-b */
+}
+
+
+#about-us-inside-div{
+  background-color: white;
+  height: 780px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#quote-about{
+  padding-top: 1
+  0px
 }
 
 .shopping{
@@ -1893,20 +1918,35 @@ color: #8597C5;
 
 #about-us-text{
   float: right;
-  width: 40%;
-  margin-right: 10%;
+  width: 50%;
+  margin-right: 5%;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  padding-top: 50px;
 }
 
 .about-text {
   color: #3b4b75;
+  text-align: left;
+  font-size: 18px
+}
+.about-text-co-founder{
+  color: #3b4b75;
+  text-align: left;
+}
+
+.about-text-title{
+  color: #3b4b75;
+  text-align: left;
+  font-weight: bolder;
 }
 
 #about-names{
   color: #8597C5;
-  font-weight: 300;
-  padding-top: 30px
+  font-weight: 900;
+  padding-bottom: 40px;
+  margin-top: -1px;
+  /* text-decoration: underline; */
 }
 
 .quote-home-image{
@@ -1942,11 +1982,34 @@ color: #8597C5;
   padding-right: 15px;
 }
 
+
 #button-image-home:hover{
   color: #6B6b69;
   background-color: white;
   border-style: solid;
   border-color: white;
+  border-radius: 2px;
+}
+
+#button-image-about{
+  color: #8597C5;
+  background-color: none;
+  border-style: solid;
+  border-color: #8597C5;
+  border-radius: 2px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+
+#button-image-about:hover{
+  color: #fff;
+  background-color: #8597C5;
+  border-style: solid;
+  border-color: #8597C5;
   border-radius: 2px;
 }
 

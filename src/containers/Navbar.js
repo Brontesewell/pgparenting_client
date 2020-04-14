@@ -61,9 +61,9 @@ class Navbar extends Component {
                     <Sidebar
         sidebar={<div id="side-navbar">
           <br></br>
-        <h5 className="sidenav-text-name">Welcome, {firstName}</h5>
+        {/* <h5 className="sidenav-text-name">Welcome, {firstName}</h5> */}
           <br></br>
-        <br></br>
+        {/* <br></br> */}
       
           <Link to = '/home' className="sidenav-text">Home</Link>
          <br></br>
