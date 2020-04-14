@@ -1896,6 +1896,26 @@ color: #8597C5;
   border-radius: 15px;
 }
 
+#button-image-home{
+  color: white;
+  background-color: none;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#button-image-home:hover{
+  color: #6B6b69;
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+}
+
 #quote-over-images{
   position: absolute;
   top: 60%;
