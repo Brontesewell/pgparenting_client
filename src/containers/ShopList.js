@@ -14,8 +14,8 @@ class ShopList extends Component {
                     <Navbar />
                 </div>
                 <div className="shopping">
-                <h1 id="shop-title"> Shop</h1>
-                <div className="line-catagory"></div>
+                <h5 id="shop-title"> SHOP</h5>
+                {/* <div className="line-catagory"></div> */}
                 <ul>
                     {shop.map(item => < ShopCard item={item}/>)}
                 </ul>

@@ -24,7 +24,10 @@ class AboutUs extends Component {
                         
                         
 
-                    <div id="parents"><img className ='parents-photo' alt="parents" src={Parent}/><h2 id="quote-about">We are all about “better parenting for a better world”</h2><br></br> <br></br><a  href='/contact_us' id="button-image-about">Contact Us</a></div>
+                    <div id="parents"><img className ='parents-photo' alt="parents" src={Parent}/>
+                    <h2 id="quote-about">We are all about “better parenting for a better world”</h2>
+                    <br></br> <br></br>
+                    <a  href='/contact_us' id="button-image-about">Contact Us</a></div>
                  <div id="about-us-text">
                 <h5 className="about-text-title">Mark and Stephanie Sewell</h5>
                 <h6 className="about-text-co-founder"><i>Co-Founders and Parenting Professionals</i></h6>
