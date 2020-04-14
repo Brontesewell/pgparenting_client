@@ -69,20 +69,6 @@ class Navbar extends Component {
                           </div>
        
                 
-        <div class="menu-item-tips">
-              <h6 id="menu-item-p">Parenting Tips</h6>
-                   <ul>
-          
-                   <li className="parent-lis"><a href="/baby">0-12mths</a></li>
-                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
-                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
-                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
-                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
-                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
-                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
-                   </ul>
-        </div>
-        
               
        <div class="menu-item">
                 <h6 id="menu-item-p">Parenting Courses</h6>
@@ -98,7 +84,21 @@ class Navbar extends Component {
                       
                    </ul>
         </div>
-
+       
+        <div class="menu-item-tips">
+              <h6 id="menu-item-p">Parenting Tips</h6>
+                   <ul>
+          
+                   <li className="parent-lis"><a href="/baby">0-12mths</a></li>
+                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
+                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
+                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
+                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
+                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
+                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
+                   </ul>
+        </div>
+        
        
         <br></br>
    

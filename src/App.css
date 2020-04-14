@@ -502,9 +502,11 @@ margin-top: 40px;
 
 .line-row {
   border-bottom-style: solid;
-  border-bottom-color: #6B6b69;
+  border-bottom-color: #ccc;
   border-width: thin;
-  margin-top: 35px;
+  margin-top: 45px;
+  -moz-box-shadow:    0.5px 0.5px 1px 1px #ccc;
+  -webkit-box-shadow: 0.5px 0.5px 1px 1px #ccc;
 
 }
 
@@ -529,6 +531,8 @@ div.menu-container {
 	width: 15%;
   float: right;
  position: relative;
+ margin-right: -60px;
+ margin-left: 30px;
 }
 
 .menu-item a {
@@ -548,6 +552,7 @@ div.menu-container {
 #menu-item-p{
   float: right;
 color: #6B6b69;
+margin-top: 20px;
 cursor: pointer;
 font-size: 20px;
 }
@@ -618,7 +623,6 @@ font-size: 20px;
 
 
 
-
 .menu-item-tips{
 	width: 15%;
   float: right;
@@ -639,12 +643,7 @@ font-size: 20px;
   color: #8597C5;
 }
 
-#menu-item-p{
-  float: right;
-color: #6B6b69;
-cursor: pointer;
-font-size: 20px;
-}
+
 
 .menu-item-tips a:link, .menu-item-tipsa:visited {
   color: #6B6b69;
@@ -872,7 +871,7 @@ font-size: 20px;
   background-color: white;
 	list-style-type: none;
   height: 0px;
-  margin-left: 50px;
+  margin-left: 70px;
 	overflow: hidden;
     position: absolute;
     left: 0;
