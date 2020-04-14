@@ -14,22 +14,28 @@ class Navbar extends Component {
       this.state = {
         firstName: this.props.currentUser.first_name,
         sidebarDocked: mql.matches,
-        sidebarOpen: false
+        sidebarOpen: false,
+        pullRight: false
       };
       this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
       this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
-   
+
     componentWillMount() {
       mql.addListener(this.mediaQueryChanged);
+      this.setState({
+        pullRight: true
+      })
     }
   
     onSetSidebarOpen(open) {
-      this.setState({ sidebarOpen: open });
+      this.setState({ sidebarOpen: open});
     }
+    
+     
    
     mediaQueryChanged() {
-      this.setState({ sidebarDocked: mql.matches, sidebarOpen: false });
+      this.setState({ sidebarDocked: mql.matches, sidebarOpen: false});
     }
 
     // clickButton = () => {
@@ -77,6 +83,7 @@ class Navbar extends Component {
         <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>Sign Out</Link>
         </div>
       }
+        pullRight={this.state.pullRight}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
         styles={{ sidebar: { background: "#8597C5" } }}
