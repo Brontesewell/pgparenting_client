@@ -1906,6 +1906,7 @@ color: #8597C5;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  border-radius: 1px;
 }
 
 #quote-about{
@@ -1930,7 +1931,7 @@ color: #8597C5;
 
 .about-text {
   color: #3b4b75;
-  text-align: left;
+  text-align: justify;
   font-size: 18px
 }
 .about-text-co-founder{
