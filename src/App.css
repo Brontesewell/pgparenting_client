@@ -532,7 +532,7 @@ div.menu-container {
   float: right;
  position: relative;
  margin-right: -60px;
- margin-left: 30px;
+ margin-left: 40px;
 }
 
 .menu-item a {
@@ -548,16 +548,28 @@ div.menu-container {
 #menu-item-p:hover{
   color: #8597C5;
   /* text-decoration: underline; */
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 #menu-item-p{
   float: right;
-color: #6B6b69;
+color: black;
 margin-top: 20px;
 cursor: pointer;
 font-size: 20px;
+font-weight: 300;
 }
+
+.dot-nav{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.dot-nav-between-drop{
+  margin-left: -35px;
+  margin-top: 20px;
+}
+
 
 .menu-item a:link, .menu-itema:visited {
   color: #6B6b69;
@@ -574,13 +586,13 @@ font-size: 20px;
   background-color: white;
 	list-style-type: none;
   height: 0px;
-  margin-left: 40px;
+  margin-left: 39px;
 	overflow: hidden;
     position: absolute;
     left: 0;
     top: 100%;
     width: 80%;
-    border-radius: 5px;
+    border-radius: 2px;
 	
 	-webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -594,6 +606,7 @@ font-size: 20px;
   cursor: pointer;
   height: 235px;
   background-color: #8597C5;
+ 
 }
 
 .menu-item ul li a {
@@ -666,14 +679,14 @@ font-size: 20px;
   background-color: white;
 	list-style-type: none;
   height: 0px;
-  margin-left: 67px;
+  margin-left: 69px;
 	overflow: hidden;
     position: absolute;
     left: 0;
     top: 100%;
     width: 65%;
 
-    border-radius: 5px;
+    border-radius: 2px;
 	
 	-webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -834,16 +847,18 @@ font-size: 20px;
 }
 
 .sidenav-text{
-  color: white;
+  color: #6B6b69;
   font-size: 25px;
   margin-left: 45px;
   margin-bottom: 40px;
+  font-weight: 300;
   float: left;
 }
 
 .sidenav-text:hover{
-  font-weight: bolder;
-  text-decoration: underline;
+  font-weight: 350;
+  text-decoration: line-through;
+  color: #8597C5;
 }
 
 #side-navbar{
@@ -880,6 +895,7 @@ font-size: 20px;
 #menu-item-nav-threeline{
   float:right;
   margin-top: 5px;
+  margin-right: 15px;
 }
 
 #menu-item-nav-threeline:hover{

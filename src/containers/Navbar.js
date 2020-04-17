@@ -65,28 +65,28 @@ class Navbar extends Component {
           <br></br>
         {/* <br></br> */}
       
-          <Link to = '/home' className="sidenav-text">Home</Link>
+          <Link to = '/home' className="sidenav-text">HOME</Link>
          <br></br>
         <br></br>
-        <Link to="/profile" className="sidenav-text">My Family</Link>
+        <Link to="/profile" className="sidenav-text">MY FAMILY</Link>
          <br></br>
         <br></br>
-        <Link to = '/about-us' className="sidenav-text">Our Mission</Link>
+        <Link to = '/about-us' className="sidenav-text">OUR MISSION</Link>
          <br></br>
         <br></br>
-        <Link to = '/shop' className="sidenav-text">Shop</Link>
+        <Link to = '/shop' className="sidenav-text">SHOP</Link>
          <br></br>
         <br></br>
-        <Link to='/contact_us' className="sidenav-text">Contact Us</Link>
+        <Link to='/contact_us' className="sidenav-text">CONTACT US</Link>
         <br></br>
         <br></br>
-        <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>Sign Out</Link>
+        <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Link>
         </div>
       }
         pullRight={this.state.pullRight}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
-        styles={{ sidebar: { background: "#8597C5" } }}
+        styles={{ sidebar: { background: "#fff" } }}
       >
         <button type="button" id="menu-item-nav-threeline" class="button" onClick={() => this.onSetSidebarOpen(true)}>
         ☰
@@ -122,14 +122,15 @@ class Navbar extends Component {
               </div> 
               
                    <div class="menu-item">
-                          <h6 onClick={() =>  window.location.href='/co-parents'}   id="menu-item-p">Co-Parenting</h6>
+                          <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
+                     <h6 className="dot-nav">•</h6>
                  
                           </div>
        
                 
               
        <div class="menu-item">
-                <h6 id="menu-item-p">Parenting Courses</h6>
+                <h6 id="menu-item-p" >PARENTING COURSES</h6>
                    <ul>
                    
                         <li className="parent-lis"><a href="/baby">0-12mths</a></li>
@@ -141,10 +142,11 @@ class Navbar extends Component {
                         <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
                       
                    </ul>
+                   <h6 className="dot-nav-between-drop">•</h6>
         </div>
        
         <div class="menu-item-tips">
-              <h6 id="menu-item-p">Parenting Tips</h6>
+              <h6 id="menu-item-p">PARENTING TIPS</h6>
                    <ul>
           
                    <li className="parent-lis"><a href="/baby">0-12mths</a></li>
