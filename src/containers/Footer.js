@@ -1,19 +1,34 @@
 
 import {connect} from 'react-redux'
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Logo from '../Logo.jpg'
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
-
+import editProfile from '../actions/editProfile'
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
  
+    state = {
+        subscribe: this.props.currentUser.subscribe,
+    }
+
+
+
+    handleChange = (e) => {
+        // const {name, value} = e.target
+        this.setState({
+            subscribe: "true"
+        })
+    } 
 
 
     render() {
-      
+        console.log(this.props.editProfile)
+        const {subscribe} = this.state
+        const {editProfile, history, currentUser} = this.props
+        console.log(currentUser.subscribe)
         return (
             <div id="footer">
 <footer class="footer-distributed">
@@ -44,14 +59,30 @@ class Footer extends Component {
     </div>
 
     <div class="footer-right">
-
-            <p class="footer-company-about"><span id="span-footer">About the company</span></p>
-          
-        <p id="about-footer-text"> Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. Lorem ipsum dolor sit amet, consectateur adispicing elit. Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit.</p>
-
     
-
+    <h5 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h5>
+                        <div class="row" id="newsletter-div">
+                              <form className = 'col s12' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
+                                  <div class="row">
+                                   <div class="row">
+                                 
+                                 </div> 
+                                {currentUser.subscribe === "true" ? <button class="btn-newsletter-clicked" disabled>Subscribed ✓</button> :  <div>
+                        <label>
+                        <input type="checkbox" name="subscribe" class="filled-in" onChange={this.handleChange} value="true" checked={subscribe === 'true'}/>
+                         <span>{currentUser.email}</span>
+                        </label>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <button className="btn-newsletter" type="submit">Confirm</button>
+                        </div>}
+                          </div>
+                        </form>
+                    </div>  
     </div>
+    
 
 </footer>
 </div>
@@ -60,7 +91,66 @@ class Footer extends Component {
 
 }
 
+const mapStateToProps = state => {
+    return {
+        currentUser: state.currentUser
+    }
+}
 
-export default Footer;
+const mapsToDispatchProps = dispatch => {
+    return {
+        editProfile: (e, history, state, id) => dispatch(editProfile(e, history, state, id)),
+    }
+}
 
+export default connect(mapStateToProps, mapsToDispatchProps)(Footer);
+
+
+
+
+
+    
+
+
+//         return (
+//             <div>
+//                <div id="newsletter">
+//                     <h6 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h6>
+//                         <div class="row" id="newsletter-div">
+//                               <form className = 'col s12' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
+//                                   <div class="row">
+                             
+
+
+
+
+//                                    <div class="row">
+                                 
+//                                  </div> 
+//                                 {currentUser.subscribe === "true" ? <button class="btn-newsletter-clicked" disabled>Subscribed ✓</button> :  <div>
+                        
+//                         <label>
+//                         <input type="checkbox" name="subscribe" class="filled-in" onChange={this.handleChange} value="true" checked={subscribe === 'true'}/>
+//                          <span>{currentUser.email}</span>
+//                         </label>
+//                         <br></br>
+//                         <br></br>
+//                         <br></br>
+//                         <button className="btn-newsletter" type="submit">Confirm</button>
+//                         </div>}
+//                           </div>
+//                         </form>
+//                     </div>
+//                     </div>
+//       </div>
+//         )
+//     }
+// }
+
+
+
+
+  
+ 
+  
 

@@ -29,7 +29,7 @@ class SubscribeForm extends Component {
         return (
             <div>
                <div id="newsletter">
-                    <h4 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h4>
+                    <h6 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h6>
                         <div class="row" id="newsletter-div">
                               <form className = 'col s12' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
                                   <div class="row">
