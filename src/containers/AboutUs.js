@@ -19,9 +19,9 @@ class AboutUs extends Component {
                 <div id="about-us-div">
 
                         <h6 id="about-names">ABOUT US</h6>
-
-                    <div id="about-us-inside-div">
+                    <div className="line-about"></div>
                         
+                    <div id="about-us-inside-div">
                         
 
                     <div id="parents"><img className ='parents-photo' alt="parents" src={Parent}/>
@@ -45,7 +45,34 @@ class AboutUs extends Component {
                         {/* <p className="about-text">  We are creating a unique online experience to help parents in the art of parenting. On that journey, we wish to become a trusted source of parenting information and practical advice. </p> 
                         <p className="about-text"> “Success” to us means parents working together to grow and develop kids that are a blessing to themselves, their parents and their communities.</p> */}
                 </div>
-               
+                <br></br>
+                    </div>
+                <h1 id="family-name">Our Family</h1>
+                <div class="about-family">
+                            <div class="column-about"><h5>Bronte</h5>
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                            <p>akjhds askjdk jasksadj aksjhd kasdjh kasjdh ir uweoiaslkdjaslkdj alskdj laksdj alskdj alsdj   laskjdl asdlkj ldkasjd   zmzxcnweoir</p>
+                            </div>
+                           
+                            <div class="column-about"><h5>Riley</h5>
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                                <p>akjhds askjdk jasksadj aksjhd kasdjh kasjdh ir uweoiaslkdjaslkdj alskdj laksdj alskdj alsdj   laskjdl asdlkj ldkasjd   zmzxcnweoir</p>
+                            </div>
+                            
+                            <div class="column-about"><h5>Sierra</h5>
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                                <p>akjhds askjdk jasksadj aksjhd kasdjh kasjdh ir uweoiaslkdjaslkdj alskdj laksdj alskdj alsdj   laskjdl asdlkj ldkasjd   zmzxcnweoir</p>
+                            </div>
+                            
+                            <div class="column-about"><h5>Mark</h5>
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                                <p>akjhds askjdk jasksadj aksjhd kasdjh kasjdh ir uweoiaslkdjaslkdj alskdj laksdj alskdj alsdj   laskjdl asdlkj ldkasjd   zmzxcnweoir</p>
+                            </div>
+                           
+                            <div class="column-about"><h5>Stephanie</h5>
+                            <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"/>
+                                <p>akjhds askjdk jasksadj aksjhd kasdjh kasjdh ir uweoiaslkdjaslkdj alskdj laksdj alskdj alsdj   laskjdl asdlkj ldkasjd   zmzxcnweoir</p>
+                            </div>
                 </div>
             </div>
         </div>

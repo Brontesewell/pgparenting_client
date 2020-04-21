@@ -55,7 +55,7 @@ class Navbar extends Component {
       const {firstName} = this.state
       // console.log(firstName)
         return (
-            <div>
+            <div className="navbar">
        
 
                     <Sidebar
