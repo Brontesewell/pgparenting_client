@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import Navbar from './Navbar'
 import Parent from '../Parent2.jpeg'
-
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 
 class AboutUs extends Component {
 
@@ -132,7 +132,7 @@ class AboutUs extends Component {
               </div>
             </div>
 
-            
+            <ScrollUpButton/>
 
                 </div>
             </div>

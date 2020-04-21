@@ -1611,7 +1611,8 @@ input[type=submit]:hover {
   font-size: 17px;
   margin-left: 50%;
   margin-top: 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  width: 150px;
   border: none;
   cursor: pointer;
   border-radius: 3px;

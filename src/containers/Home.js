@@ -7,8 +7,7 @@ import Logo from '../Logo.jpg'
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
-import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; //Add this line Here
-import SubscribeForm from '../EmailSubscribe/SubscribeForm'
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 
@@ -77,8 +76,6 @@ class Home extends Component {
                         <div id="text-about"><h5 id="quote-about">We are all about “better parenting for a better world”</h5></div>
                         <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div>
                     </div>
-
-                    <SubscribeForm/>
 
                     
                     <ScrollUpButton/>
