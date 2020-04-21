@@ -123,14 +123,14 @@ class Navbar extends Component {
               
                    <div class="menu-item">
                           <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
-                     <h6 className="dot-nav">•</h6>
+                     {/* <h6 className="dot-nav">•</h6> */}
                  
                           </div>
        
                 
               
-       <div class="menu-item">
-                <h6 id="menu-item-p" >PARENTING COURSES</h6>
+       <div class="menu-item-course">
+                <h6 id="menu-item-p-course" >PARENTING COURSES</h6>
                    <ul>
                    
                         <li className="parent-lis"><a href="/baby">0-12mths</a></li>
@@ -142,7 +142,7 @@ class Navbar extends Component {
                         <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
                       
                    </ul>
-                   <h6 className="dot-nav-between-drop">•</h6>
+                   {/* <h6 className="dot-nav-between-drop">•</h6> */}
         </div>
        
         <div class="menu-item-tips">

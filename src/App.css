@@ -531,8 +531,9 @@ div.menu-container {
 	width: 15%;
   float: right;
  position: relative;
+ display: flex;
+ margin-left: 90px;
  margin-right: -60px;
- margin-left: 40px;
 }
 
 .menu-item a {
@@ -553,11 +554,12 @@ div.menu-container {
 
 #menu-item-p{
   float: right;
-color: black;
+color: #5a5a5c;
 margin-top: 20px;
 cursor: pointer;
-font-size: 20px;
-font-weight: 300;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 1px
 }
 
 .dot-nav{
@@ -636,6 +638,103 @@ font-weight: 300;
  color: white;
  background-color: #8597C5;
 }
+
+
+
+#menu-item-p-course:hover{
+  color: #8597C5;
+  /* text-decoration: underline; */
+  /* font-weight: bolder; */
+}
+
+#menu-item-p-course{
+color: #5a5a5c;
+margin-top: 20px;
+cursor: pointer;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 1px
+}
+
+.menu-item-course{
+	width: 18%;
+  float: right;
+ position: relative;
+ /* display: flex; */
+ margin-left: 30px;
+ margin-right: -60px;
+}
+
+.menu-item-course a {
+	padding: 5px 0 5px 0;
+	font-size: 25px;
+	text-decoration: none;
+  border-radius: 5px;
+  color: white;
+	margin: 0 10px 0 10px;
+  display: block;
+}
+
+#menu-item-course-p:hover{
+  color: #8597C5;
+}
+
+
+
+.menu-item-course a:link, .menu-item-coursea:visited {
+  color: #6B6b69;
+  cursor: pointer;
+}
+
+.menu-item-course a:hover, .menu-item-course a:active {
+	color: #8597C5;
+  cursor: pointer;
+}
+
+.menu-item-course ul {
+  margin-top: 2px;
+  background-color: white;
+	list-style-type: none;
+  height: 0px;
+  margin-left: 6px;
+	overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 65%;
+
+    border-radius: 2px;
+	
+	-webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+}
+
+.menu-item-course:hover ul {
+  /* height: 370px; */
+  cursor: pointer;
+  height: 235px;
+  background-color: #8597C5;
+}
+
+.menu-item-course ul li a {
+	font-size: 19px;
+	width: 80%;
+	margin: 0 auto 0 auto;
+	border-radius: 0px;
+  margin-top: -13px;
+  margin-bottom: -5px;
+  margin-left: -20px;
+  text-align: center;
+  height: 35px;
+}
+
+.menu-item-course a:hover{
+  color: white;
+}
+
 
 
 
@@ -872,7 +971,7 @@ font-weight: 300;
 
 
 .menu-item-nav{
-	width: 15%;
+	width: 12%;
 	float: right;
     position: relative;
     margin-top: 17px;
@@ -1970,7 +2069,7 @@ color: #8597C5;
 }
 
 .quote-home-image{
-  color: #fff;
+  color:#fff;
   font-size: 45px;
   font-weight: 500;
 }
@@ -1991,10 +2090,10 @@ color: #8597C5;
 }
 
 #button-image-home{
-  color: white;
+  color: #3b4b75;
   background-color: none;
   border-style: solid;
-  border-color: white;
+  border-color: #3b4b75;
   border-radius: 2px;
   padding-top: 4px;
   padding-bottom: 5px;
@@ -2004,10 +2103,10 @@ color: #8597C5;
 
 
 #button-image-home:hover{
-  color: #6B6b69;
-  background-color: white;
+  color: white;
+  background-color: #3b4b75;
   border-style: solid;
-  border-color: white;
+  border-color: #3b4b75;
   border-radius: 2px;
 }
 
