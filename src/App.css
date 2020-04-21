@@ -1592,11 +1592,22 @@ input[type=submit]:hover {
   -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 17px;
-  margin-left: 20%;
+  margin-left: 50%;
+  margin-bottom: -35px;
+  margin-top: 40px;
   padding: 10px 30px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+}
+
+.btn-newsletter:hover{
+  background-color: #8597C5;
+  color: white;
+}
+
+#checkbox-newsletter{
+padding-top: -30px;
 }
 
 #newsletter-click{

@@ -73,9 +73,8 @@ class Footer extends Component {
                          <span>{currentUser.email}</span>
                         </label>
                         <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
+                       
+                        
                         <button className="btn-newsletter" type="submit">Confirm</button>
                         </div>}
                           </div>
