@@ -67,17 +67,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-            {/* { this.props.currentUser ? ( */}
            
               <Switch>
+          {/* {this.props.currentUser !== {} ? <> */}
                 <Route exact path='/home' component={Home}/>
                 <Route exact path='/contact_us' component={ContactUsHome} />
                 <Route exact path='/about-us' component={AboutUs} />
                 <Route exact path='/shop' component={ShopList}/>
                 <Route exact path='/profile' component={Profile}/>
                 <Route exact path='/edit-profile' component={EditProfile}/>
-                {/* <Route exact path='/parenting-courses' component={ParentingCourses}/>
-                <Route exact path='/parenting-tips' component={ParentingTips}/> */}
                 <Route exact path='/add-child' component={AddKid}/>
                 
                 <Route exact path='/co-parents' component={CoParents}/>
@@ -108,23 +106,21 @@ class App extends React.Component {
                 <Route exact path='/journal' component={JournalsPage} />
                 <Route exact path='/journal/:id' component={JournalsPage} />
                 <Route exact path='/about_scoring' component={AboutASP} />
-                {/* <Route exact path='/quadrant' component={BehaviourQuadrant} /> */}
-                <Route exact path='/email' component={Email} />
-
+    <Route exact path='/email' component={Email} /> ) 
+    {/* </>:<> */}
 
             <Route exact path='/' component ={Welcome}/>
             <Route exact path='/signup-user' component={SignUpUser}/>
             <Route exact path='/signin-user' component={SignIn} />
-            <Route exact path='/contact-us' component={ContactUs} />
+            <Route exact path='/contact-us' component={ContactUs} /> 
+            {/* </> */}
+          {/* } */}
               </Switch>
-              
-          {/* //   ) : (
-          //     <Switch>
-          //   {/* <Route exact path='/' component ={Welcome}/>
-          //   <Route exact path='/signup-user' component={SignUpUser}/>
-          //   <Route exact path='/signin-user' component={SignIn} />
-          //   <Route exact path='/contact-us' component={ContactUs} /> */}
-          {/* // </Switch> */}
+                
+                {/* <Route exact path='/quadrant' component={BehaviourQuadrant} /> */}
+                {/* <Route exact path='/parenting-courses' component={ParentingCourses}/>
+                <Route exact path='/parenting-tips' component={ParentingTips}/> */}
+            
         
 
         </Router>

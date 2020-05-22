@@ -8,6 +8,7 @@ class Welcome extends Component {
 
 
     render() {
+        
         return (
             <div>
                 <div className="split left-side">
@@ -29,10 +30,10 @@ class Welcome extends Component {
                     <h3 id="membership-title">With you every step of the way</h3>
                     <div id="left-membership">
                         <h4 id="left-membership-head">Explore all the benefits that are included when you sign-up:</h4>
-                        <h4 className="h5-left-membership">Exlusive access to parenting courses</h4>
-                        <h4 className="h5-left-membership">Unlimited access to parenting guides and articles</h4>
-                        <h4 className="h5-left-membership">Expert and doctor opinion</h4>
-                        <h4 className="h5-left-membership">Private online community chatroom</h4>
+                        <h4 className="h5-left-membership">- Exlusive access to parenting courses</h4>
+                        <h4 className="h5-left-membership">- Unlimited access to parenting guides and articles</h4>
+                        <h4 className="h5-left-membership">- Expert and doctor opinion</h4>
+                        <h4 className="h5-left-membership">- Private online community chatroom</h4>
                     </div>
                    
                     <div id="right-membership">

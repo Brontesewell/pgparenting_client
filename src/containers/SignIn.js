@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import signIn from '../actions/signIn'
 import Logo from '../Logo.jpg'
 import { Link } from "react-router-dom";
+import WelcomeNav from './WelcomeNav'
 
 class SignIn extends Component {
 
@@ -23,12 +24,13 @@ class SignIn extends Component {
 
         return (
             <div >
+                <WelcomeNav />
                  {/* <a href="/"><img className ='logo-signin' alt="Logo" src={Logo}/></a> */}
                 <div className="container-signin">
-                <h4 id="sign_in">Login</h4>
+                <h1 id="sign_in">Login In</h1>
                 <form onSubmit={(e) => this.props.signIn(e, this.state, this.props.history)}>
 
-                    <div className="input-field col s12 ">
+                    <div className="input-field col s10 ">
                         <i className="material-icons prefix"></i>
                         <label htmlFor='icon_prefix'>Email</label>
                         <input className = 'validate' id = 'icon_prefix' type='email' name="email" value={email} onChange={this.handleChange}/>
@@ -40,7 +42,7 @@ class SignIn extends Component {
                         <input className = 'validate' id='icon_lock' type='password' name="password" value={password} onChange={this.handleChange}/>
                     </div>
                     
-                    <button id="sign-in-button" className="btn-large" type="submit">Next</button>
+                    <button id="sign-in-button" className="btn-large" type="submit">Continue  →</button>
                <br></br>
                 <Link to='/signup-user' className="links-signin" >Or Sign Up</Link>
                 </form>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import Navbar from './Navbar'
-import Parent from '../Parent2.jpeg'
+import Parent from '../Parent.jpg'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 
 class AboutUs extends Component {

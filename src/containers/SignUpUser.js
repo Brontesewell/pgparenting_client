@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import signUpUser from '../actions/signUpUser'
 import Logo from '../Logo.jpg'
 import { Link } from "react-router-dom";
+import WelcomeNav from './WelcomeNav'
+
 
 export class SignUpUser extends Component {
 
@@ -32,7 +34,8 @@ export class SignUpUser extends Component {
        const { firstName, lastName, email, password, subscribe } = this.state
        const {history} = this.props
         return (
-           
+           <div>
+                <WelcomeNav />
             <div className="container-signup">
                 <h4 id="sign_in">Sign Up</h4>
                 
@@ -76,6 +79,7 @@ export class SignUpUser extends Component {
                 
                 </form>
 
+            </div>
             </div>
         );
     }
