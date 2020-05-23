@@ -1,6 +1,5 @@
-import {FormControl, Nav, Button, Navbar, Form, NavDropdown} from 'react-bootstrap'
+import { Nav, Navbar,} from 'react-bootstrap'
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Logo from '../Logo.jpg'
 
 
@@ -10,7 +9,7 @@ const WelcomeNav = () =>  {
 
                     
                     <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="/"><img  alt="Logo" src={Logo}/></Navbar.Brand>
+                    <Navbar.Brand href="/"><img className="logo" alt="Logo" src={Logo}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">

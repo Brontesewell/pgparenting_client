@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 input:focus {
   border-bottom: 1px solid #3b4b75 !important;
@@ -37,14 +32,7 @@ label.active {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 body {
   margin: 0;
@@ -325,19 +313,17 @@ h2 {
 
 
 
-/* delete this if */
+/* delete this if
   @media only screen and (min-width: 993px) { 
     .container {
         width: 77% !important;
     }
-  }
+  } */
 
 
 .logo{
-color: black;
-    float: left;
-    margin-left: -50px;
-    margin-top: 20px;
+    margin-top: 1px;
+    margin-left: 50px;
 }
 
 .logo-home{
@@ -359,7 +345,7 @@ color: black;
   margin-left: 40px;
   float: right;
   font-size: 24px;
-  margin-top: 18px;
+  margin-top: 10px;
   margin-right: -10px;
 }
 
@@ -904,11 +890,11 @@ letter-spacing: 1px
 }
 
 /* Clear floats after image containers */
-.row::after {
+/* .row::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 
 #sign-in-button {
@@ -1249,20 +1235,32 @@ input[type=submit]:hover {
  
  #membership-title {
    color: #8597C5;
-   font-weight: 300;
+   font-weight: 300; 
+   margin-bottom: 40px;
+   margin-top: 40px;
   }
   
   #left-membership-head{ 
    margin-bottom: 10px;
-   color: #2B2A2A;
+   color: #2B2A2A; 
+   text-align: justify;
+   font-size: 28px;
+   margin-left: 8%;
+   margin-right: 5%;
+   margin-bottom: 30px;
  }
 
  .h5-left-membership {
-  font-weight: 300;
   padding-bottom: 1%;
   color: #6B6b69;
-  font-size: 32px;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: left;
+  margin-left: 8%;
+  margin-right: 5%;
+  line-height: 40px;
  }
+
  
  #bottom-div-welcome{
   margin-top: 30%;

@@ -8,7 +8,7 @@ class Welcome extends Component {
 
 
     render() {
-        
+
         return (
             <div>
                 <div className="split left-side">
@@ -24,8 +24,8 @@ class Welcome extends Component {
                     </div>
                 
                
-                <ScrollableAnchor id={'section1'}>
-                    <div>
+                {/* <ScrollableAnchor id={'section1'}> */}
+                    {/* <div>
                     
                     <h3 id="membership-title">With you every step of the way</h3>
                     <div id="left-membership">
@@ -39,8 +39,27 @@ class Welcome extends Component {
                     <div id="right-membership">
                         <img src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
                     </div>
+                </div> */}
+
+
+                {/* </ScrollableAnchor> */}
+
+                <div class="container">
+                        <h3 id="membership-title">With you every step of the way</h3>
+                    <div class="row">
+                        <div class="col-lg">
+                        <h4 id="left-membership-head">Explore all the benefits that are included when you sign-up:</h4>
+                        <h4 className="h5-left-membership">- Exlusive access to parenting courses</h4>
+                        <h4 className="h5-left-membership">- Unlimited access to parenting guides and articles</h4>
+                        <h4 className="h5-left-membership">- Expert and doctor opinion</h4>
+                        <h4 className="h5-left-membership">- Private online community chatroom</h4>
+                        </div>
+                        <div class="col-lg">
+                            <img src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+                        </div>
+                    </div>
                 </div>
-                </ScrollableAnchor>
+
                 <br></br>
                 <br></br>
                 <br></br>
@@ -56,6 +75,9 @@ class Welcome extends Component {
                 </div>
                 
                 </div>
+
+
+
             </div>
                 
         );
