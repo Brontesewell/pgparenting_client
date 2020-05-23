@@ -57,8 +57,6 @@ class App extends React.Component {
       this.props.reAuth()
       this.props.fetchAllUsers()
       this.props.fetchAllCatagories()
-      this.props.fetchAllKids()
-      this.props.fetchAllJournals()
   }
 
 
@@ -142,8 +140,6 @@ const mapsToDispatchProps = dispatch => {
     reAuth: () => dispatch(reAuth()),
     fetchAllUsers: ()=> dispatch(fetchAllUsers()),
     fetchAllCatagories: ()=> dispatch(fetchAllCatagories()),
-    fetchAllKids: ()=> dispatch(fetchAllKids()),
-    fetchAllJournals:()=> dispatch(fetchAllJournals())
   }
 }
   

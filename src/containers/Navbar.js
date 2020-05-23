@@ -1,3 +1,4 @@
+
 import {connect} from 'react-redux'
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -55,15 +56,13 @@ class Navbar extends Component {
       const {firstName} = this.state
       // console.log(firstName)
         return (
-            <div className="navbar">
+            <div>
        
-
+{/* 
                     <Sidebar
         sidebar={<div id="side-navbar">
           <br></br>
-        {/* <h5 className="sidenav-text-name">Welcome, {firstName}</h5> */}
           <br></br>
-        {/* <br></br> */}
       
           <Link to = '/home' className="sidenav-text">HOME</Link>
          <br></br>
@@ -96,24 +95,12 @@ class Navbar extends Component {
 
             <div className="container">
                 <a href="/home"><img className ='logo-home' alt="Logo" src={Logo}/></a>
-        {/* <h3 id="welcome-user-nav" >Welcome, {firstName}</h3> */}
+
  
                   
         <div class="menu-item-nav">
        
-                    {/* <button type="button" id="menu-item-nav-threelines" class="button">☰</button> */}
-                    {/* <div class="container">
-                   <ul>
-          
-                           <li><Link to = '/home'>Home</Link></li>
-                            <li><Link onClick={() =>  window.location.href="/profile" } >My Family</Link></li>
-                            <li><Link to = '/about-us'>Our Mission</Link></li>
-                            <li><Link to = '/shop' >Shop</Link></li>
-                            <li><Link to='/contact_us'>Contact Us</Link></li>
-                            <li><Link to = '/' onClick={this.handleSignOut}>Sign Out</Link></li>
-                         
-                   </ul> 
-                   </div>      */}
+
               </div>
               
               
@@ -123,7 +110,7 @@ class Navbar extends Component {
               
                    <div class="menu-item">
                           <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
-                     {/* <h6 className="dot-nav">•</h6> */}
+          
                  
                           </div>
        
@@ -142,7 +129,6 @@ class Navbar extends Component {
                         <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
                       
                    </ul>
-                   {/* <h6 className="dot-nav-between-drop">•</h6> */}
         </div>
        
         <div class="menu-item-tips">
@@ -163,9 +149,8 @@ class Navbar extends Component {
         <br></br>
    
       
-      <div class="line-row"></div>
-{/* 
-                <ParentingNav/> */}
+      <div class="line-row"></div> */}
+     
             
             </div>
         );

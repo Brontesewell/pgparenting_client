@@ -363,6 +363,10 @@ color: black;
   margin-right: -10px;
 }
 
+.ml-auto{
+  margin-right: 40px;
+}
+
 .btnleft {
   position: absolute;
   top: 55%;

@@ -11,8 +11,7 @@ import storage from 'redux-persist/lib/storage'
 import { PersistGate } from 'redux-persist/lib/integration/react';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import './index.css';
-import 'materialize-css/dist/css/materialize.min.css';
-import 'materialize-css';
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 const persistConfig = {

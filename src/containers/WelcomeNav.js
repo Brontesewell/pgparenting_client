@@ -1,15 +1,16 @@
+import {FormControl, Nav, Button, Navbar, Form} from 'react-bootstrap'
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo.jpg'
 
 
-class WelcomeNav extends Component {
-
-    render() {
+const WelcomeNav = props =>  {
+    const { location } = props;
+    // render() {
         return (
             <nav id="wecome-navbar">
 
-                <div className="container">
+                {/* <div className="container">
                  
                     <a href="/"><img className ='logo' alt="Logo" src={Logo}/></a>
 
@@ -17,12 +18,27 @@ class WelcomeNav extends Component {
                       <Link to='/signup-user' className="nav-links" >Join Now</Link>
                         <Link to='/signin-user' className="nav-links">Login</Link>
                 
-                </div>
-            </nav>
+      
+                    </div> */}
+                    
+
+                    <>
+
+                    <Navbar bg="light" variant="light">
+                        <Navbar.Brand href="/"><img  alt="Logo" src={Logo}/></Navbar.Brand>
+                        <Nav className="ml-auto" activeKey={location}>
+                        <Nav.Link className="nav-links" href="/signin-user">Login</Nav.Link>
+                        <Nav.Link  className="nav-links" href="/signup-user">Join Now</Nav.Link>
+                        <Nav.Link  className="nav-links" href="/contact-us">Contact Us</Nav.Link>
+                        </Nav>
+                    </Navbar>
+                    </>
+       
+             </nav>
         );
     }
 
-}
+// }
 
 export default WelcomeNav;
 

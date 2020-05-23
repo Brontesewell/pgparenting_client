@@ -5,21 +5,12 @@ const initialState = {
     journals: [],
     catagories: [],
     collections: [],
-    // babies: [],
-    // toddlers: [],
-    // pre_schools: [],
-    // primary_schools: [],
-    // preteens: [],
-    // teens: [],
-    // young_adults: [],
     displayCatagories: [],
     loading: false,
     selectedKid: {},
     selectedCourse: {},
     // emailSubscribed: [],
     selectedJournals: null,
-    // JSON.parse(localStorage.getItem('selectedJournal')),
-    // selectJournals: {}
 }
 
 
@@ -55,7 +46,6 @@ const rootReducer = (state = initialState, action) => {
      
      
         case 'ADDED_TO_FAVS':
-                // return {...state, collections: action.collection, currentUser:{...state.currentUser, collections: [...state.currentUser.collections, action.collection]}}
                 return { ...state, collections:[...state.collections, action.collection], currentUser:{...state.currentUser, collections: [...state.currentUser.collections, action.collection]}}
                 
 
@@ -97,32 +87,8 @@ const rootReducer = (state = initialState, action) => {
         case 'CLEAR_SELECTED_JOURNALS':
             return {...state, selectedJournals: null }
 
-
-
-
-
-
-        case 'GET_ALL_BABYS':
-                // const newArray = state.babies.filter(catagories => catagories.id == 1)
-                return {...state, babies: action.babies}
-               
-
-        // case 'GET_ALL_TODDLERS':
-        //         return {...state, toddlers: action.toddlers, loading:true }
-
-
-        // case 'GET_ALL_PRE_SCHOOLS':
-        //          return {...state, pre_schools: action.pre_schools, loading:true }
-        // case 'GET_ALL_PRIMARY_SCHOOLS':
-        //         return {...state, primary_schools: action.primary_schools, loading:true }
-        // case 'GET_ALL_PRETEENS':
-        //           return {...state, preteens: action.preteens, loading:true }
-        // case 'GET_ALL_TEENS':
-        //            return {...state, teens: action.teens, loading:true }
-        // case 'GET_ALL_YOUNG_ADULTS':
-        //             return {...state, young_adults: action.young_adults, loading:true }
-
-
+        case 'ADD_CONTACT':
+            return {...state, currentUser: {...state.currentUser, contacts: action.contact_info}}
 
         default:
             return state
