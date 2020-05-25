@@ -115,13 +115,13 @@ class Welcome extends Component {
                 </div>
                 
                 <FacebookShareButton
-        url={shareUrl}
-        title="Twitter"
-        className="Demo__some-network__share-button">
-        <FacebookIcon
-          size={32}
-          round />
-      </FacebookShareButton>
+                    url={shareUrl}
+                    title="Twitter"
+                    className="Demo__some-network__share-button">
+                    <FacebookIcon
+                    size={32}
+                    square />
+                </FacebookShareButton>
                 </div>
 
 
@@ -133,15 +133,3 @@ class Welcome extends Component {
 }
 
 export default Welcome;
-
-{/* <h4 className = 'pink-text'>Sign Up</h4>
-<Link to='/signup-user'><button className='waves-effect waves-light btn-large pink accent-3'>
-    Sign Up Now</button></Link>
-</div>
-</div>
-
-<div className="split right-side">
-<div className="centered">
-<h4 className = 'pink-text'>Sign In</h4>
-<Link to='/signin-user'><button className='waves-effect waves-light btn-large pink accent-3'>
-    Sign In Now</button></Link> */}

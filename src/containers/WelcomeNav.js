@@ -9,7 +9,8 @@ const WelcomeNav = () =>  {
 
                     
                     <Navbar bg="light" expand="lg" className="navbar-welcome-page">
-                    <Navbar.Brand href="/"><img className="logo" alt="Logo" src={Logo}/></Navbar.Brand>
+                    {/* <Navbar.Brand href="/"><img className="logo" alt="Logo" src={Logo}/></Navbar.Brand> */}
+                    <Navbar.Brand className="navbar-brand-small" href="/"><img className="logo-small" alt="Logo" src={Logo}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">

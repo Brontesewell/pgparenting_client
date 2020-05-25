@@ -42,8 +42,8 @@ body {
 
 #welcome-image {
   float: top;
-  width: 100%; /* width of container */
-  height: 600px; /* height of container */
+  width: 100%;
+  height: 600px;
   object-fit: cover;
   position: center;
   overflow: hidden;
@@ -321,6 +321,23 @@ h2 {
   } */
 
 
+  @media only screen and (max-width: 355px) {
+    .navbar-brand {
+      margin-left: -40px;
+      width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 355px) {
+    #wecome-navbar {
+      height: 74px !important
+    }
+  }
+
+.navbar-brand{
+  margin-left: -10px;
+}
+
 .logo{
     margin-top: 1px;
     margin-left: 30px;
@@ -337,7 +354,7 @@ h2 {
 
 #wecome-navbar {
   background-color: white;
-  height: 95px;
+  height: 86px;
 }
 
 .nav-links {
