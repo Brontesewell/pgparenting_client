@@ -1285,8 +1285,46 @@ input[type=submit]:hover {
       display: none;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .welcome-bottom-image {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .welcome-bottom-image-small {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #bottom-div-welcome {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #bottom-div-welcome-small {
+      display: none;
+  }
+}
+
+.welcome-bottom-image-small{
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
  
  #bottom-div-welcome{
+  margin-top: 30%;
+  background-color: #FDEAE3;
+  height: 560px;
+ }
+
+ #bottom-div-welcome-small{
   margin-top: 30%;
   background-color: #FDEAE3;
   height: 560px;
@@ -1364,9 +1402,13 @@ input[type=submit]:hover {
 
 #right-welcome-bottom-small{
   border-radius: 20px;
-  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
 
 #right-top-text {
   text-align: left;
@@ -1375,6 +1417,14 @@ input[type=submit]:hover {
   margin: 10px;
   
 }
+
+#right-top-text-small{
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 10px;
+}
+
 #right-bottom-text {
   text-align: right;
   font-weight: 200;
@@ -1402,7 +1452,7 @@ input[type=submit]:hover {
 
 .btn-welcome-bottom-small {
   position: absolute;
-  margin-top: 50%;
+  margin-top: 60%;
   right: 2%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

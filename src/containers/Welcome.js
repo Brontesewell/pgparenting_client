@@ -70,11 +70,15 @@ class Welcome extends Component {
                         <a href="/signup-user"><button className="btn-welcome-bottom">Join PG Parenting</button></a>
                         
                     <div id="left-welcome-bottom">
-                        <img src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
+                        <img className="welcome-bottom-image" src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
                     </div>
+                </div>
+                    <div id="bottom-div-welcome-small">
                         <div id="right-welcome-bottom-small" className="box-small sb3-small"><h5 id="right-top-text-small">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
                         <a href="/signup-user"><button className="btn-welcome-bottom-small">Join PG Parenting</button></a>
+                        <img className="welcome-bottom-image-small" src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
                 </div>
+                
                 
                 </div>
 
