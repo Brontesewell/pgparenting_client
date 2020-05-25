@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import WelcomeNav from "./WelcomeNav"
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Logo from '../Logo.jpg'
 import {
     EmailShareButton,
     FacebookShareButton,
@@ -90,7 +91,13 @@ class Welcome extends Component {
                         <a href="/signup-user"><button className="btn-welcome-bottom-small">Join PG Parenting</button></a>
                 </div>
 
-                <h4>Share Now</h4>
+                
+                </div>
+
+                <div id="welcome-footer">
+
+
+                <h4 id="share-now">Share Now</h4>
                 
                 <FacebookShareButton
                     url={shareUrl}
@@ -184,10 +191,8 @@ class Welcome extends Component {
                     size={32}
                     round/>
                 </TumblrShareButton>
-                
+
                 </div>
-
-
 
             </div>
                 

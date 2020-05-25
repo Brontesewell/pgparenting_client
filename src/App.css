@@ -1309,6 +1309,21 @@ input[type=submit]:hover {
   margin-left: 5%;
   margin-right: 2%;
  }
+
+ #share-now{
+  color: #6B6b69;
+  font-weight: 200; 
+  margin-bottom: 20px;
+  padding-top: 40px;
+  font-size: 30px;
+  letter-spacing: 1px;
+ }
+
+ #welcome-footer{
+   margin-top: 50px;
+   min-height: 200px;
+   background-color: rgb(226, 223, 223);
+ }
  
  #membership-title {
    color: #8597C5;
@@ -1428,12 +1443,14 @@ input[type=submit]:hover {
  #bottom-div-welcome{
   background-color: #FDEAE3;
   height: 560px;
+  margin-bottom: -50px;
  }
 
  #bottom-div-welcome-small{
   background-color: #FDEAE3;
   min-height: 760px;
   padding-top: 20px;
+  margin-bottom: -50px;
  }
 
  #left-welcome-bottom{
