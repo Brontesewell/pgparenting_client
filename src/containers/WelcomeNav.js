@@ -8,7 +8,7 @@ const WelcomeNav = () =>  {
             <nav id="wecome-navbar">
 
                     
-                    <Navbar bg="light" expand="lg">
+                    <Navbar bg="light" expand="lg" className="navbar-welcome-page">
                     <Navbar.Brand href="/"><img className="logo" alt="Logo" src={Logo}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

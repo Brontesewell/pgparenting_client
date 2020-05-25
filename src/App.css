@@ -355,8 +355,8 @@ h2 {
 
 .btnleft {
   position: absolute;
-  top: 55%;
-  left: 30%;
+  top: 70%;
+  left: 32%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #8597C5;
@@ -374,7 +374,7 @@ h2 {
 
 .btnright{
   position: absolute;
-  top: 55%;
+  top: 70%;
   left: 70%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -391,14 +391,71 @@ h2 {
   background-color:#FDEAE3;    
 }
 
+
+
+.btnleft-small {
+  position: absolute;
+  top: 70%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #8597C5;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btnleft-small:focus {     
+  background-color:#3b4b75;    
+}
+
+.btnright-small{
+  position: absolute;
+  top: 70%;
+  left: 76%;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #FDEAE3;
+  color: #6B6b69;
+  font-size: 20px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btnright-small:focus {     
+  background-color:#FDEAE3;    
+}
+
+.navbar-welcome-page{
+  z-index: 500;
+  position: fixed;
+}
+
 .tagline {
   position: absolute;
-  top: 30%;
+  top: 42%;
   left: 40%;
   transform: translate(-30%, -30%);
   -ms-transform: translate(-30%, -30%);
   color: white;
   font-size: 50px;
+}
+
+
+.tagline-small {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
+  color: white;
+  font-size: 40px;
 }
 
 #welcome-user-nav {
@@ -1238,7 +1295,8 @@ input[type=submit]:hover {
    font-weight: 200; 
    margin-bottom: 40px;
    margin-top: 40px;
-   font-size: 30px
+   font-size: 30px;
+   letter-spacing: 1px;
   }
   
   #left-membership-head{ 
@@ -1249,6 +1307,7 @@ input[type=submit]:hover {
    margin-left: 8%;
    margin-right: 5%;
    margin-bottom: 30px;
+   letter-spacing: 1px;
  }
 
  .h5-left-membership {
@@ -1258,7 +1317,9 @@ input[type=submit]:hover {
   text-align: left;
   margin-left: 8%;
   margin-right: 5%;
-  line-height: 45px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  font-weight: 200;
  }
 
 
@@ -1310,24 +1371,37 @@ input[type=submit]:hover {
   }
 }
 
+@media only screen and (max-width: 720px) {
+  .tagline, .btnleft, .btnright {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .tagline-small, .btnleft-small, .btnright-small {
+      display: none;
+  }
+}
+
+
+
 .welcome-bottom-image-small{
-  width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
  
  #bottom-div-welcome{
-  margin-top: 30%;
   background-color: #FDEAE3;
   height: 560px;
  }
 
  #bottom-div-welcome-small{
-  margin-top: 30%;
   background-color: #FDEAE3;
-  height: 560px;
+  min-height: 760px;
+  padding-top: 20px;
  }
 
  #left-welcome-bottom{
@@ -1402,9 +1476,9 @@ input[type=submit]:hover {
 
 #right-welcome-bottom-small{
   border-radius: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -1414,27 +1488,30 @@ input[type=submit]:hover {
   text-align: left;
   font-weight: 300;
   line-height: 1.4;
+  letter-spacing: 1px;
   margin: 10px;
   
 }
 
 #right-top-text-small{
   text-align: left;
-  font-weight: 300;
+  font-weight: thin;
   line-height: 1.4;
+  letter-spacing: 1px;
   margin: 10px;
 }
 
 #right-bottom-text {
   text-align: right;
   font-weight: 200;
+  letter-spacing: 1px;
   margin: 10px;
 }
 
 .btn-welcome-bottom{
   position: absolute;
   margin-top: 30%;
-  right: 2%;
+  right: 0.1%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #8597C5;
@@ -1451,19 +1528,16 @@ input[type=submit]:hover {
 }
 
 .btn-welcome-bottom-small {
-  position: absolute;
-  margin-top: 60%;
-  right: 2%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: #8597C5;
   color: white;
   font-size: 20px;
-width: 250px;
+  width: 250px;
+  margin-top: 20px;
   padding: 15px 30px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 .btn-welcome-bottom-small:focus {     
