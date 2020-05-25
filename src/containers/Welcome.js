@@ -5,51 +5,27 @@ import {
     EmailShareButton,
     FacebookShareButton,
     InstapaperShareButton,
-    LineShareButton,
     LinkedinShareButton,
-    LivejournalShareButton,
-    MailruShareButton,
-    OKShareButton,
     PinterestShareButton,
-    PocketShareButton,
-    RedditShareButton,
-    TelegramShareButton,
-    TumblrShareButton,
     TwitterShareButton,
     ViberShareButton,
-    VKShareButton,
+    RedditShareButton,
     WhatsappShareButton,
-    WorkplaceShareButton,
+    TelegramShareButton,
+    TumblrShareButton,
   } from "react-share";
-  import {
-    FacebookShareCount,
-    OKShareCount,
-    PinterestShareCount,
-    RedditShareCount,
-    TumblrShareCount,
-    VKShareCount,
-  } from "react-share";
-
   import {
     EmailIcon,
     FacebookIcon,
     InstapaperIcon,
-    LineIcon,
     LinkedinIcon,
-    LivejournalIcon,
-    MailruIcon,
-    OKIcon,
     PinterestIcon,
-    PocketIcon,
     RedditIcon,
     TelegramIcon,
     TumblrIcon,
     TwitterIcon,
     ViberIcon,
-    VKIcon,
-    WeiboIcon,
     WhatsappIcon,
-    WorkplaceIcon,
   } from "react-share";
 
 
@@ -113,15 +89,102 @@ class Welcome extends Component {
                         <img className="welcome-bottom-image-small" src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
                         <a href="/signup-user"><button className="btn-welcome-bottom-small">Join PG Parenting</button></a>
                 </div>
+
+                <h4>Share Now</h4>
                 
                 <FacebookShareButton
                     url={shareUrl}
-                    title="Twitter"
-                    className="Demo__some-network__share-button">
+                    title="Facebook"
+                    className="share-button">
                     <FacebookIcon
                     size={32}
-                    square />
+                    round/>
                 </FacebookShareButton>
+                <TwitterShareButton
+                    url={shareUrl}
+                    title="Twitter"
+                    className="share-button">
+                    <TwitterIcon
+                    size={32}
+                    round/>
+                </TwitterShareButton>
+                <EmailShareButton
+                    url={shareUrl}
+                    title="Email"
+                    className="share-button">
+                    <EmailIcon
+                    size={32}
+                    round/>
+                </EmailShareButton>
+                <LinkedinShareButton
+                    url={shareUrl}
+                    title="Linkedin"
+                    className="share-button">
+                    <LinkedinIcon
+                    size={32}
+                    round/>
+                </LinkedinShareButton>
+                <PinterestShareButton
+                    url={shareUrl}
+                    title="Pinterest"
+                    className="share-button">
+                    <PinterestIcon
+                    size={32}
+                    round/>
+                </PinterestShareButton>
+                <RedditShareButton
+                    url={shareUrl}
+                    title="Reddit"
+                    className="share-button">
+                    <RedditIcon
+                    size={32}
+                    round/>
+                </RedditShareButton>
+                <WhatsappShareButton
+                    url={shareUrl}
+                    title="Whatsapp"
+                    className="share-button">
+                    <WhatsappIcon
+                    size={32}
+                    round/>
+                </WhatsappShareButton>
+                <InstapaperShareButton
+                    url={shareUrl}
+                    title="Instapaper"
+                    className="share-button">
+                    <InstapaperIcon
+                    size={32}
+                    round/>
+                </InstapaperShareButton>
+
+
+                <ViberShareButton
+                    url={shareUrl}
+                    title="Viber"
+                    className="share-button">
+                    <ViberIcon
+                    size={32}
+                    round/>
+                </ViberShareButton>
+
+                <TelegramShareButton
+                    url={shareUrl}
+                    title="Telegram"
+                    className="share-button">
+                    <TelegramIcon
+                    size={32}
+                    round/>
+                </TelegramShareButton>
+
+                <TumblrShareButton
+                    url={shareUrl}
+                    title="Tumblr"
+                    className="share-button">
+                    <TumblrIcon
+                    size={32}
+                    round/>
+                </TumblrShareButton>
+                
                 </div>
 
 
