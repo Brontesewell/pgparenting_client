@@ -412,14 +412,14 @@ h2 {
 
 .btnleft-small {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 27%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #8597C5;
   color: white;
   font-size: 20px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
@@ -431,7 +431,7 @@ h2 {
 
 .btnright-small{
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 76%;
   width: 150px;
   transform: translate(-50%, -50%);
@@ -439,7 +439,7 @@ h2 {
   background-color: #FDEAE3;
   color: #6B6b69;
   font-size: 20px;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
@@ -467,7 +467,7 @@ h2 {
 
 .tagline-small {
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 40%;
   transform: translate(-30%, -30%);
   -ms-transform: translate(-30%, -30%);
@@ -1400,6 +1400,18 @@ input[type=submit]:hover {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .tagline-small{
+    top: 36%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .btnleft-small, .btnright-small {
+    top: 68%;
+  }
+}
+
 
 
 .welcome-bottom-image-small{
@@ -1493,9 +1505,9 @@ input[type=submit]:hover {
 
 #right-welcome-bottom-small{
   border-radius: 20px;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
+  margin-left: 11%;
+  margin-right: 11%;
+  width: 78%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
