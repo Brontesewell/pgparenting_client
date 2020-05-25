@@ -49,10 +49,10 @@ class Welcome extends Component {
                     <div class="row">
                         <div class="col-lg">
                         <h4 id="left-membership-head">Explore all the benefits that are included when you sign-up:</h4>
-                        <h4 className="h5-left-membership">- Exlusive access to parenting courses</h4>
-                        <h4 className="h5-left-membership">- Unlimited access to parenting guides and articles</h4>
-                        <h4 className="h5-left-membership">- Expert and doctor opinion</h4>
-                        <h4 className="h5-left-membership">- Private online community chatroom</h4>
+                        <h4 className="h5-left-membership">Exlusive access to parenting courses</h4>
+                        <h4 className="h5-left-membership">Unlimited access to parenting guides and articles</h4>
+                        <h4 className="h5-left-membership">Expert and doctor opinion</h4>
+                        <h4 className="h5-left-membership">Private online community chatroom</h4>
                         </div>
                         <div class="col-lg">
                             <img src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
@@ -65,13 +65,15 @@ class Welcome extends Component {
                 <br></br>
                 <br></br>
                 <div>
-            <div id="bottom-div-welcome">
-                <div  id="right-welcome-bottom" class="box sb3"><h5 id="right-top-text">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
-                <a href="/signup-user"><button className="btn-welcome-bottom">Join PG Parenting</button></a>
-
-            <div id="left-welcome-bottom">
+                    <div id="bottom-div-welcome">
+                        <div id="right-welcome-bottom" className="box sb3"><h5 id="right-top-text">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
+                        <a href="/signup-user"><button className="btn-welcome-bottom">Join PG Parenting</button></a>
+                        
+                    <div id="left-welcome-bottom">
                         <img src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
                     </div>
+                        <div id="right-welcome-bottom-small" className="box-small sb3-small"><h5 id="right-top-text-small">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
+                        <a href="/signup-user"><button className="btn-welcome-bottom-small">Join PG Parenting</button></a>
                 </div>
                 
                 </div>

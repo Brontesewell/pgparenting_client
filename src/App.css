@@ -323,7 +323,7 @@ h2 {
 
 .logo{
     margin-top: 1px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .logo-home{
@@ -1235,15 +1235,16 @@ input[type=submit]:hover {
  
  #membership-title {
    color: #8597C5;
-   font-weight: 300; 
+   font-weight: 200; 
    margin-bottom: 40px;
    margin-top: 40px;
+   font-size: 30px
   }
   
   #left-membership-head{ 
    margin-bottom: 10px;
-   color: #2B2A2A; 
-   text-align: justify;
+   color: black; 
+   text-align: left;
    font-size: 28px;
    margin-left: 8%;
    margin-right: 5%;
@@ -1252,15 +1253,38 @@ input[type=submit]:hover {
 
  .h5-left-membership {
   padding-bottom: 1%;
-  color: #6B6b69;
+  color: #2B2A2A; 
   font-size: 25px;
-  font-weight: 100;
   text-align: left;
   margin-left: 8%;
   margin-right: 5%;
-  line-height: 40px;
+  line-height: 45px;
  }
 
+
+ @media only screen and (max-width: 1000px) {
+  .btn-welcome-bottom {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .btn-welcome-bottom-small {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .right-welcome-bottom, .right-top-text, .box, .sb3   {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .right-welcome-bottom-small, .right-top-text-small, .box-small, .sb3-small   {
+      display: none;
+  }
+}
  
  #bottom-div-welcome{
   margin-top: 30%;
@@ -1277,7 +1301,31 @@ input[type=submit]:hover {
   margin-top: 10%;
  }
 
- 
+ .box-small {
+  width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  color: #6B6b69;
+  font-family: arial;
+  position: relative;
+}
+
+
+
+.sb3-small:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 30px solid #fff;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #fff;
+  border-bottom: 30px solid transparent;
+  left: 14px;
+  bottom: -50px;
+}
 
 
  .box {
@@ -1314,6 +1362,12 @@ input[type=submit]:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#right-welcome-bottom-small{
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #right-top-text {
   text-align: left;
   font-weight: 300;
@@ -1343,6 +1397,26 @@ input[type=submit]:hover {
 }
 
 .btn-welcome-bottom:focus {     
+  background-color:#3b4b75;    
+}
+
+.btn-welcome-bottom-small {
+  position: absolute;
+  margin-top: 50%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #8597C5;
+  color: white;
+  font-size: 20px;
+width: 250px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-welcome-bottom-small:focus {     
   background-color:#3b4b75;    
 }
 
