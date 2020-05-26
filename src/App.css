@@ -1314,9 +1314,22 @@ input[type=submit]:hover {
   color: #6B6b69;
   font-weight: 200; 
   margin-bottom: 20px;
-  padding-top: 40px;
+  padding-top: 100px;
   font-size: 30px;
   letter-spacing: 1px;
+ }
+
+ .membership-div{
+   background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
+   background-attachment: fixed;
+
+ }
+
+ 
+
+ #footer-logo{
+  padding-top: 20px;
+  width: 17%;
  }
 
  #welcome-footer{
@@ -1329,7 +1342,7 @@ input[type=submit]:hover {
    color: #8597C5;
    font-weight: 200; 
    margin-bottom: 40px;
-   margin-top: 40px;
+   padding-top: 40px;
    font-size: 30px;
    letter-spacing: 1px;
   }

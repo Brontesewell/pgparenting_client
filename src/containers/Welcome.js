@@ -53,8 +53,8 @@ class Welcome extends Component {
                             <a href='#section1'> <button className="btnright-small" >Learn More</button> </a>
                         </div>
                     </div>
+                <div className="membership-div">
         
-                
                 <ScrollableAnchor id={'section1'}>
                 <div class="container">
                         <h3 id="membership-title">With you every step of the way</h3>
@@ -67,7 +67,7 @@ class Welcome extends Component {
                         <h4 className="h5-left-membership">Private online community chatroom</h4>
                         </div>
                         <div class="col-lg">
-                            <img src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+                            <img id="image-membership" src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
                         </div>
                     </div>
                 </div>
@@ -76,6 +76,7 @@ class Welcome extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
+                </div>
                 <div>
                     <div id="bottom-div-welcome">
                         <div id="right-welcome-bottom" className="box sb3"><h5 id="right-top-text">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
@@ -93,10 +94,7 @@ class Welcome extends Component {
 
                 
                 </div>
-
-                <div id="welcome-footer">
-
-
+                <div id="share-div">
                 <h4 id="share-now">Share Now</h4>
                 
                 <FacebookShareButton
@@ -191,6 +189,13 @@ class Welcome extends Component {
                     size={32}
                     round/>
                 </TumblrShareButton>
+                </div>
+
+
+                <div id="welcome-footer">
+
+                    <img src={Logo} id="footer-logo"/>
+                        <h4>Follow Us</h4>
 
                 </div>
 

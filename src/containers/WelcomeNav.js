@@ -14,6 +14,7 @@ const WelcomeNav = () =>  {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
+                        <Nav.Link  className="nav-links" href="/">Home</Nav.Link>
                         <Nav.Link className="nav-links" href="/signin-user">Login</Nav.Link>
                         <Nav.Link  className="nav-links" href="/signup-user">Join Now</Nav.Link>
                         <Nav.Link  className="nav-links" href="/contact-us">Contact Us</Nav.Link>
