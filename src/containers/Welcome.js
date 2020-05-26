@@ -28,6 +28,9 @@ import {
     ViberIcon,
     WhatsappIcon,
   } from "react-share";
+  import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 
 class Welcome extends Component {
@@ -191,12 +194,82 @@ class Welcome extends Component {
                 </TumblrShareButton>
                 </div>
 
+                <div className="courses-welcome">
+                    <div class="container">
+                        <h4 id="courses-title-welcome">Popular Avaliable Courses</h4>
+                        <div class="row">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                                <div className="course-card-welcome">
+                                <img className="image-course-welcome" src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+                                <span className="course-welcome-image-overlay">
+                                    <span className="span-course-welcome">When should my child switch from two naps to one?</span>
+                                    <div className="course-welcome-div"></div>
+                                    <span className="span-course-catagory">SLEEP</span>
+                                </span>
+                                </div>
+                            </div>
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                                <div className="course-card-welcome">
+                                <img className="image-course-welcome" src="https://images.unsplash.com/photo-1544285703-276682d3196b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                                <span className="course-welcome-image-overlay">
+                                    <span className="span-course-welcome">When should my child switch from two naps to one?</span>
+                                    <div className="course-welcome-div"></div>
+                                    <span className="span-course-catagory">SLEEP</span>
+                                </span>
+                                </div>
+                            </div>
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                             <div className="course-card-welcome">
+                                <img className="image-course-welcome" src="https://images.unsplash.com/photo-1523151401668-fff9e38a48e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                                <span className="course-welcome-image-overlay">
+                                    <span className="span-course-welcome">When should my child switch from two naps to one?</span>
+                                    <div className="course-welcome-div"></div>
+                                    <span className="span-course-catagory">SLEEP</span>
+                                </span>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div className="course-card-welcome">
+                                <img className="image-course-welcome" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                                <span className="course-welcome-image-overlay">
+                                    <span className="span-course-welcome">When should my child switch from two naps to one?</span>
+                                    <div className="course-welcome-div"></div>
+                                    <span className="span-course-catagory">SLEEP</span>
+                                </span>
+                                </div>
+                            </div>
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div className="course-card-welcome">
+                                <img className="image-course-welcome" src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                                <span className="course-welcome-image-overlay">
+                                    <span className="span-course-welcome">When should my child switch from two naps to one?</span>
+                                    <div className="course-welcome-div"></div>
+                                    <span className="span-course-catagory">SLEEP</span>
+                                </span>
+                                </div>
+                            </div>
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div className="course-card-welcome">
+                                <img className="image-course-welcome" src="https://images.unsplash.com/photo-1513807016779-d51c0c026263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                                <span className="course-welcome-image-overlay">
+                                    <span className="span-course-welcome">When should my child switch from two naps to one?</span>
+                                    <div className="course-welcome-div"></div>
+                                    <span className="span-course-catagory">SLEEP</span>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div id="welcome-footer">
-
-                    <img src={Logo} id="footer-logo"/>
-                        <h4>Follow Us</h4>
-
+                        <h5 id="contact-footer">Connect with us</h5>
+                        <p id="icons-footer"> <FontAwesomeIcon icon={faFacebook} className="icon-f"/><FontAwesomeIcon icon={faInstagram} className="icon-f"/><FontAwesomeIcon icon={faYoutube} /></p>
+                         <br></br>
+                         <p id="email-icon-footer"><FontAwesomeIcon icon={faEnvelope} id="email-footer" />pgparenting@gmail.com</p>
                 </div>
 
             </div>

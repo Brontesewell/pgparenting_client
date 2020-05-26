@@ -1311,10 +1311,10 @@ input[type=submit]:hover {
  }
 
  #share-now{
-  color: #6B6b69;
+  color: #8597C5;
   font-weight: 200; 
   margin-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 40px;
   font-size: 30px;
   letter-spacing: 1px;
  }
@@ -1322,10 +1322,15 @@ input[type=submit]:hover {
  .membership-div{
    background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
    background-attachment: fixed;
-
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%; */
  }
 
- 
+ #share-div{
+  background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
+  background-attachment: fixed;
+  padding-bottom: 50px;
+ }
 
  #footer-logo{
   padding-top: 20px;
@@ -1333,9 +1338,9 @@ input[type=submit]:hover {
  }
 
  #welcome-footer{
-   margin-top: 50px;
    min-height: 200px;
    background-color: rgb(226, 223, 223);
+   padding-top: 40px;
  }
  
  #membership-title {
@@ -1346,6 +1351,13 @@ input[type=submit]:hover {
    font-size: 30px;
    letter-spacing: 1px;
   }
+
+  .courses-welcome{
+    padding-bottom: 100px;
+    padding-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   
   #left-membership-head{ 
    margin-bottom: 10px;
@@ -1354,6 +1366,7 @@ input[type=submit]:hover {
    font-size: 28px;
    margin-left: 8%;
    margin-right: 5%;
+   padding-top: 20px;
    margin-bottom: 30px;
    letter-spacing: 1px;
  }
@@ -1456,14 +1469,14 @@ input[type=submit]:hover {
  #bottom-div-welcome{
   background-color: #FDEAE3;
   height: 560px;
-  margin-bottom: -50px;
+  padding-bottom: 40px;
  }
 
  #bottom-div-welcome-small{
   background-color: #FDEAE3;
   min-height: 760px;
   padding-top: 20px;
-  margin-bottom: -50px;
+  padding-bottom: 40px;
  }
 
  #left-welcome-bottom{
@@ -1473,6 +1486,13 @@ input[type=submit]:hover {
   margin-left: 11%;
   margin-right: 2%;
   margin-top: 10%;
+  margin-bottom: 40px;
+ }
+
+ #courses-title-welcome{
+   font-size: 35px;
+   padding: 20px;
+   color: #282c34;
  }
 
  .box-small {
@@ -1526,6 +1546,63 @@ input[type=submit]:hover {
   border-bottom: 30px solid transparent;
   left: 14px;
   bottom: -50px;
+}
+
+.course-welcome-image-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.6;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 0;
+  min-height: 95px;
+}
+
+.span-course-welcome{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.5vw;
+  font-weight: 550;
+}
+
+.image-course-welcome{
+filter: brightness(59%);
+}
+
+.course-welcome-div{
+  content: '';
+    border-top: 1px solid #fff;
+    display: block;
+    width: 60%;
+    margin: 10px 20% 1px 20%;
+    padding-top: 10px;
+}
+
+.course-card-welcome:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.course-card-welcome{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.span-course-catagory{
+  margin-left: 7%;
+  margin-right: 7%;
+  font-weight: 350;
+  font-size: 15px;
 }
 
 #right-welcome-bottom{
