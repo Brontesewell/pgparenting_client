@@ -31,6 +31,7 @@ import {
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { SocialIcon } from 'react-social-icons';
 
 
 class Welcome extends Component {
@@ -266,10 +267,11 @@ class Welcome extends Component {
 
 
                 <div id="welcome-footer">
-                        <h5 id="contact-footer">Connect with us</h5>
-                        <p id="icons-footer"> <FontAwesomeIcon icon={faFacebook} className="icon-f"/><FontAwesomeIcon icon={faInstagram} className="icon-f"/><FontAwesomeIcon icon={faYoutube} /></p>
-                         <br></br>
-                         <p id="email-icon-footer"><FontAwesomeIcon icon={faEnvelope} id="email-footer" />pgparenting@gmail.com</p>
+                        <h5 id="footer-title">Connect with us</h5>
+                        <SocialIcon className="share-button" url="https://www.instagram.com/pgparenting/" style={{ height: 35, width: 35 }}/>
+                        <SocialIcon className="share-button" url="https://www.facebook.com" style={{ height: 35, width: 35 }}/>
+                        <SocialIcon className="share-button" url="https://www.youtube.com" style={{ height: 35, width: 35 }}/>
+                         <p id="email-icon-footer-welcome"><FontAwesomeIcon icon={faEnvelope} id="email-footer" /> pgparenting@gmail.com</p>
                 </div>
 
             </div>

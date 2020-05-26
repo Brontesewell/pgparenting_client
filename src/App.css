@@ -1339,7 +1339,7 @@ input[type=submit]:hover {
 
  #welcome-footer{
    min-height: 200px;
-   background-color: rgb(226, 223, 223);
+   background-color: rgb(216, 216, 216);
    padding-top: 40px;
  }
  
@@ -1350,6 +1350,21 @@ input[type=submit]:hover {
    padding-top: 40px;
    font-size: 30px;
    letter-spacing: 1px;
+  }
+
+
+#email-icon-footer-welcome{
+  color: #516496;
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+  #footer-title{
+    color: #516496;
+    font-weight: 200; 
+    padding-bottom: 20px;
+    font-size: 27px;
+    letter-spacing: 1px;
   }
 
   .courses-welcome{
@@ -1491,7 +1506,8 @@ input[type=submit]:hover {
 
  #courses-title-welcome{
    font-size: 35px;
-   padding: 20px;
+   padding-bottom: 40px;
+   padding-top: 20px;
    color: #282c34;
  }
 
