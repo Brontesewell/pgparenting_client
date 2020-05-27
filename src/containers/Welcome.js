@@ -30,7 +30,6 @@ import {
   } from "react-share";
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { SocialIcon } from 'react-social-icons';
 
 
@@ -39,7 +38,7 @@ class Welcome extends Component {
 
 
     render() {
-        const shareUrl = `https://www.example.com${this.props.location.pathname}`;
+        const shareUrl = `https://www.pgparenting.com${this.props.location.pathname}`;
         return (
             <div>
                 <div className="split left-side">
@@ -98,8 +97,8 @@ class Welcome extends Component {
 
                 
                 </div>
-                <div id="share-div">
-                <h4 id="share-now">Share Now</h4>
+                 <div id="share-div">
+                 <h4 id="share-now">Share Now</h4>
                 
                 <FacebookShareButton
                     url={shareUrl}
@@ -192,9 +191,10 @@ class Welcome extends Component {
                     <TumblrIcon
                     size={32}
                     round/>
-                </TumblrShareButton>
-                </div>
+                </TumblrShareButton> 
+                </div> 
 
+                <div className="courses-welcome-divs">
                 <div className="courses-welcome">
                     <div class="container">
                         <h4 id="courses-title-welcome">Popular Avaliable Courses</h4>
@@ -262,8 +262,6 @@ class Welcome extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
 
                 <div id="welcome-footer">
@@ -273,6 +271,9 @@ class Welcome extends Component {
                         <SocialIcon className="share-button" url="https://www.youtube.com" style={{ height: 35, width: 35 }}/>
                          <p id="email-icon-footer-welcome"><FontAwesomeIcon icon={faEnvelope} id="email-footer" /> pgparenting@gmail.com</p>
                 </div>
+                </div>
+                </div>
+                    </div>
 
             </div>
                 

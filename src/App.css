@@ -452,6 +452,9 @@ h2 {
 .navbar-welcome-page{
   z-index: 500;
   position: fixed;
+  -webkit-box-shadow: 2px 1px 2px 4px rgb(29, 28, 28);  
+  -moz-box-shadow:    2px 1px 2px 4px rgb(51, 50, 50);  
+  box-shadow:         2px 1px 2px 4px rgb(248, 247, 247);
 }
 
 .tagline {
@@ -1003,15 +1006,16 @@ letter-spacing: 1px
   padding-left: 11px;
 }
 
+
 .container-signin {
-  width: 600px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 100px;
-  padding-right: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
 }
+
 
 .container-signup{
   width: 600px;
@@ -1339,8 +1343,8 @@ input[type=submit]:hover {
 
  #welcome-footer{
    min-height: 200px;
-   background-color: rgb(216, 216, 216);
-   padding-top: 40px;
+   /* background-color: rgb(216, 216, 216); */
+   padding-top: 200px;
  }
  
  #membership-title {
@@ -1368,11 +1372,18 @@ input[type=submit]:hover {
   }
 
   .courses-welcome{
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     padding-top: 40px;
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  .courses-welcome-divs{
+    background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
   
   #left-membership-head{ 
    margin-bottom: 10px;
@@ -1482,7 +1493,8 @@ input[type=submit]:hover {
 
  
  #bottom-div-welcome{
-  background-color: #FDEAE3;
+  background-color: rgb(251, 235, 230);
+  /* background-color: #fff; */
   height: 560px;
   padding-bottom: 40px;
  }
@@ -1663,6 +1675,17 @@ filter: brightness(59%);
   margin: 10px;
 }
 
+.btn-login{
+  background-color: #8597C5;
+  color: white;
+  font-size: 20px;
+  padding: 5px 40px;
+  margin-bottom: 5%;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 .btn-welcome-bottom{
   position: absolute;
   margin-top: 30%;
@@ -1701,12 +1724,31 @@ filter: brightness(59%);
 
 .links-signin{
   color: #6B6b69;
-  margin-left: 80px;
   float: center;
   font-size: 20px;
-  margin-right: 40px;
   text-decoration: underline;
   font-weight: 300;
+}
+
+.links-signin:hover{
+  color: #3b4b75
+}
+
+.login-title{
+  font-size: 35px;
+  color: #516496;
+
+}
+
+#parenting{
+  color: #8597C5;
+}
+
+#login-div{
+  background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .links-signup{
