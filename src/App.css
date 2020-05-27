@@ -1006,6 +1006,15 @@ letter-spacing: 1px
   padding-left: 11px;
 }
 
+.fname-forms{
+  padding-left: 0px !important;
+  padding-right: 7px !important;
+}
+
+.lname-forms{
+  padding-right: 0px !important;
+  padding-left: 7px !important;
+}
 
 .container-signin {
   /* text-align: center; */
@@ -1013,6 +1022,15 @@ letter-spacing: 1px
   justify-content: center;
   align-items: center;
   padding-top: 10%;
+  padding-bottom: 20%;
+}
+
+.container-signup {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px !important;
   padding-bottom: 20%;
 }
 
