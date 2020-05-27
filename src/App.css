@@ -1080,6 +1080,12 @@ letter-spacing: 1px
   }
 }
 
+@media only screen and (max-width: 425px) {
+  #contact-us-image-small {
+      padding-bottom: 20%;
+  }
+}
+
 
 .container-signup{
   width: 600px;
