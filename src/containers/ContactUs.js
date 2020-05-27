@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import WelcomeNav from './WelcomeNav';
-
+import ReactContactForm from 'react-mail-form';
 class ContactUs extends Component {
 
 
@@ -10,31 +10,25 @@ class ContactUs extends Component {
         
         return (
             <div>
-                <div className = 'row'>
+               
                     {<WelcomeNav/>}
-                </div>
+               
 
                     <div id ="contact-us-image">
 
                    
                     <div className="contact-us-div">
-                    <form >
-                            <h1 id="contact-us-title">Contact Us</h1>
+                   
+                            <h2 id="contact-us-title">Contact Us</h2>
 
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
-
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
-                            <label for="lname">Email</label>
-                            <input type="text" id="email" name="email" placeholder="Your Email.."></input>
-
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
-
-                            <input type="submit" value="Submit"></input>
-
-                    </form>
+                            <h5 className="contact-options"><span id="contact-options-title">Location:</span> San Francisco, California</h5>
+                            <h5 className="contact-options"><span id="contact-options-title">Phone: </span> +1 828 6366</h5>
+                            <h5 className="contact-options"><span id="contact-options-title">Email: </span>support@pgparenting.com</h5>
+                            <br></br>
+                            <div id="send-gmail-contact"> 
+                            <h5 className="contact-options">Or Email us on your Gmail:</h5>
+                            <ReactContactForm to="jumpinggirlnz@icloud.com" />
+                            </div>
 
                     </div>
 

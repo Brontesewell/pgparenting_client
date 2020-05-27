@@ -76,9 +76,9 @@ export class SignUpUser extends Component {
                             
                                 <div className="text-center mt-4">
                                     <button className="btn-login" color="indigo" type="submit">Continue  →</button>
+                                    <Link to='/signin-user' className="links-signup" >Or Login</Link>
                                 </div>
                   
-                <Link to='/signin-user' className="links-signup" >Or Login</Link>
                 
                 </form>
                 </MDBCol>

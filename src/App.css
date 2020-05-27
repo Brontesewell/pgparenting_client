@@ -1017,7 +1017,7 @@ letter-spacing: 1px
 }
 
 .container-signin {
-  /* text-align: center; */
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1026,12 +1026,21 @@ letter-spacing: 1px
 }
 
 .container-signup {
-  /* text-align: center; */
+  
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 0px !important;
-  padding-bottom: 20%;
+  padding-bottom: 12% !important;
+}
+
+.contact-options{
+  text-align: left;
+  color: #6B6b69;
+}
+
+.contact-email{
+    color: #6B6b69;
 }
 
 
@@ -1313,8 +1322,41 @@ input[type=submit]:hover {
   margin-right:50px;
 }
 
+#send-gmail-contact a{
+  background-color: #8597C5;
+  color: white;
+  font-size: 20px;
+  padding: 5px 40px;
+  margin-bottom: 5%;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#send-gmail-contact input{
+border-style: solid;
+border-color: #5a5a5c;
+border-radius: 3px;
+border-width: thin;
+margin-bottom: 2px;
+}
+
+#send-gmail-contact textarea{
+  border-style: solid;
+  border-color: #5a5a5c;
+  border-radius: 3px;
+}
+
 #contact-us-title {
   color: #8597C5;
+  text-align: left;
+  margin-bottom: 40px;
+  padding-left: 10%;
+}
+
+#send-gmail-contact{
+  width: 50%;
+  height: 80%;
 }
 
 #right-membership{
