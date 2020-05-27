@@ -452,9 +452,10 @@ h2 {
 .navbar-welcome-page{
   z-index: 500;
   position: fixed;
-  -webkit-box-shadow: 2px 1px 2px 4px rgb(29, 28, 28);  
-  -moz-box-shadow:    2px 1px 2px 4px rgb(51, 50, 50);  
+  -webkit-box-shadow: 4px 4px 4px 6px rgb(15, 15, 15);  
+  -moz-box-shadow:    4px 4px 4px 6px rgb(34, 33, 33);  
   box-shadow:         2px 1px 2px 4px rgb(248, 247, 247);
+
 }
 
 .tagline {
@@ -497,6 +498,23 @@ h2 {
   margin-left: -150px;
   background-color: #8597C5;
   width: 240px;
+}
+
+#contact-us-image-small{
+
+  background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+ 
+}
+
+.contact-us-div-small{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 10%;
+padding-bottom: 20%;
 }
 
 .button {
@@ -1036,11 +1054,30 @@ letter-spacing: 1px
 
 .contact-options{
   text-align: left;
-  color: #6B6b69;
+  color: rgb(31, 30, 30);
+}
+
+.contact-options-s{
+  text-align: center;
+  color: rgb(31, 30, 30);
+  /* padding-left: 5%; */
 }
 
 .contact-email{
     color: #6B6b69;
+}
+
+
+@media only screen and (max-width: 1015px) {
+  .contact-us-div, #contact-us-image {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 1015px) {
+  #contact-us-image-small,  .contact-us-div-small{
+      display: none;
+  }
 }
 
 
@@ -1279,7 +1316,7 @@ height: 70px
   height: 45rem;
   background-image: url(https://images.unsplash.com/photo-1560328055-e938bb2ed50a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
 background-size: 100%;
-background-repeat: no repeat;
+background-repeat: no-repeat;
 background-position: center;
 overflow: hidden;
 }
@@ -1359,6 +1396,55 @@ margin-bottom: 2px;
   height: 80%;
 }
 
+#send-gmail-contact-small{
+  width: 90%;
+  height: 80%;
+}
+
+#send-gmail-contact-small a{
+  background-color: #8597C5;
+  color: white;
+  font-size: 20px;
+  padding: 5px 40px;
+  margin-bottom: 5%;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contact-options-small{
+  text-align: center;
+  color: rgb(31, 30, 30);
+}
+
+#send-gmail-contact-small input{
+  border-style: solid;
+  border-color: #5a5a5c;
+  border-radius: 3px;
+  border-width: thin;
+  margin-bottom: 2px;
+  }
+  
+  #send-gmail-contact-small textarea{
+    border-style: solid;
+    border-color: #5a5a5c;
+    border-radius: 3px;
+    margin-left: 5;
+  }
+  
+  #contact-us-title {
+    color: #8597C5;
+    text-align: left;
+    margin-bottom: 40px;
+    padding-left: 10%;
+  }
+
+  #contact-us-title-small{
+    color: #8597C5;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
 #right-membership{
   width:45%;
   float: right;
@@ -1386,8 +1472,9 @@ margin-bottom: 2px;
  .membership-div{
    background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
    background-attachment: fixed;
-  /* background-repeat: no-repeat;
-  background-size: 100% 100%; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
  }
 
  #share-div{
