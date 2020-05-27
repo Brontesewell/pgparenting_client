@@ -74,8 +74,14 @@ export class SignUpUser extends Component {
                             <span>PG Parenting Newsletter</span>
                             </label>
                             
-                                <div className="text-center mt-4">
+                                <div className="text-center mt-4 div-big">
                                     <button className="btn-login" color="indigo" type="submit">Continue  →</button>
+                                    <Link to='/signin-user' className="links-signup" >Or Login</Link>
+                                </div>
+
+                                <div className="text-center mt-4 div-small">
+                                    <button className="btn-login" color="indigo" type="submit">Continue  →</button>
+                                    <br></br>
                                     <Link to='/signin-user' className="links-signup" >Or Login</Link>
                                 </div>
                   

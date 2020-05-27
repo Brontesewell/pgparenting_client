@@ -1081,10 +1081,36 @@ letter-spacing: 1px
 }
 
 @media only screen and (max-width: 425px) {
-  #contact-us-image-small {
+  #contact-us-image-small{
       padding-bottom: 20%;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  #login-div{
+      padding-bottom: 60%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .signin-div{
+      padding-top: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 985px) {
+  .div-big {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 985px) {
+  .div-small{
+      display: none;
+  }
+}
+
 
 
 .container-signup{
