@@ -110,29 +110,42 @@ class NavBar extends Component {
                       </button>
                     </Sidebar>
 
-<nav className="home-navbar-side">
-  <Navbar bg="light" expand="lg" >
-  <Navbar.Brand className="navbar-brand-small" href="/"><img className="logo-small" alt="Logo" src={Logo}/></Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
-    </Form>
-  </Navbar.Collapse>
-</Navbar>
-</nav>
+                    <nav className="home-navbar-side">
+                      <Navbar bg="light" expand="lg" >
+                      <Navbar.Brand className="navbar-brand-small" href="/"><img className="logo-small" alt="Logo" src={Logo}/></Navbar.Brand>
+                      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                      <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                          <Nav.Link href='/home' className="sidenav-text">HOME</Nav.Link>
+                          <Nav.Link href="/profile" className="sidenav-text">MY FAMILY</Nav.Link>
+                          <Nav.Link href='/about-us' className="sidenav-text">OUR MISSION</Nav.Link>
+                          <Nav.Link href='/shop' className="sidenav-text">SHOP</Nav.Link>
+                          <Nav.Link href='/contact_us' className="sidenav-text">CONTACT US</Nav.Link>
+                          <NavDropdown title="PARENTING TIPS" id="basic-nav-dropdown" className="sidenav-p">
+                            <NavDropdown.Item href="/baby">0-12mths</NavDropdown.Item>
+                            <NavDropdown.Item href="/toddler">1-2yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/pre_school"> 3-5yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/primary_school"> 6-10yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/preteen">11-12yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/teen">13-18yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/young_adults">19-25yrs</NavDropdown.Item>
+                          </NavDropdown>
+                          <NavDropdown.Divider />
+                          <NavDropdown title="PARENTING COURSES" id="basic-nav-dropdown" className="sidenav-p">
+                            <NavDropdown.Item href="/baby">0-12mths</NavDropdown.Item>
+                            <NavDropdown.Item href="/toddler">1-2yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/pre_school"> 3-5yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/primary_school"> 6-10yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/preteen">11-12yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/teen">13-18yrs</NavDropdown.Item>
+                            <NavDropdown.Item href="/young_adults">19-25yrs</NavDropdown.Item>
+                          </NavDropdown>
+                          <Nav.Link href='/co-parents' className="sidenav-text">CO-PARENTING</Nav.Link>
+                          <Nav.Link href='/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Nav.Link>
+                        </Nav>
+                      </Navbar.Collapse>
+                    </Navbar>
+                    </nav>
 
 {/* 
  
