@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import ScrollableAnchor from 'react-scrollable-anchor'
+import WelcomeNav from './WelcomeNav'
 
 
 class Home extends Component {
@@ -19,10 +20,10 @@ class Home extends Component {
         console.log(this.props.currentUser)
         return (
             <div>
-                <div className = 'row'>
-                    {<Navbar/>}
+                
+                    <Navbar/>
                     
-                </div>
+               
                 {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
                 <div>  
                   <img id="top-home-img" src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>

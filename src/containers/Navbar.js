@@ -1,6 +1,7 @@
 
 import {connect} from 'react-redux'
 import React, { Component } from 'react';
+import { Nav, Navbar, NavDropdown, FormControl, Form, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import Logo from '../Logo.jpg'
 import ParentingNav from '../components/ParentingNav'
@@ -8,7 +9,8 @@ import Sidebar from "react-sidebar";
 const mql = window.matchMedia(`(min-width: 800px)`);
 
 
-class Navbar extends Component {
+
+class NavBar extends Component {
     container = React.createRef();
     constructor(props) {
       super(props);
@@ -53,49 +55,59 @@ class Navbar extends Component {
     }
 
     render() {
-      const {firstName} = this.state
-      // console.log(firstName)
-        return (
-            <div>
+      return (
+        <div>
+
+        <img className ='logo-home' alt="Logo" src={Logo}/>
        
-{/* 
-                    <Sidebar
-        sidebar={<div id="side-navbar">
-          <br></br>
-          <br></br>
-      
-          <Link to = '/home' className="sidenav-text">HOME</Link>
-         <br></br>
-        <br></br>
-        <Link to="/profile" className="sidenav-text">MY FAMILY</Link>
-         <br></br>
-        <br></br>
-        <Link to = '/about-us' className="sidenav-text">OUR MISSION</Link>
-         <br></br>
-        <br></br>
-        <Link to = '/shop' className="sidenav-text">SHOP</Link>
-         <br></br>
-        <br></br>
-        <Link to='/contact_us' className="sidenav-text">CONTACT US</Link>
-        <br></br>
-        <br></br>
-        <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Link>
+        <div class="menu-item-course">
+        <h6 id="menu-item-p">PARENTING COURSE</h6>
         </div>
-      }
-        pullRight={this.state.pullRight}
-        open={this.state.sidebarOpen}
-        onSetOpen={this.onSetSidebarOpen}
-        styles={{ sidebar: { background: "#fff" } }}
-      >
-        <button type="button" id="menu-item-nav-threeline" class="button" onClick={() => this.onSetSidebarOpen(true)}>
-        ☰
-        </button>
-      </Sidebar>
-     
+        
+        <div class="menu-item-tips">
+        <h6 id="menu-item-p">PARENTING TIPS</h6>
+        </div>
 
-            <div className="container">
-                <a href="/home"><img className ='logo-home' alt="Logo" src={Logo}/></a>
+        <div class="menu-item">
+        <h6 id="menu-item-p">CO-PARENTING</h6>
+        </div>
 
+
+
+                    <Sidebar
+                      sidebar={<div id="side-navbar">
+                        <br></br>
+                        <br></br>
+                    
+                        <Link to = '/home' className="sidenav-text">HOME</Link>
+                      <br></br>
+                      <br></br>
+                      <Link to="/profile" className="sidenav-text">MY FAMILY</Link>
+                      <br></br>
+                      <br></br>
+                      <Link to = '/about-us' className="sidenav-text">OUR MISSION</Link>
+                      <br></br>
+                      <br></br>
+                      <Link to = '/shop' className="sidenav-text">SHOP</Link>
+                      <br></br>
+                      <br></br>
+                      <Link to='/contact_us' className="sidenav-text">CONTACT US</Link>
+                      <br></br>
+                      <br></br>
+                      <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Link>
+                      </div>
+                    }
+                      pullRight={this.state.pullRight}
+                      open={this.state.sidebarOpen}
+                      onSetOpen={this.onSetSidebarOpen}
+                      styles={{ sidebar: { background: "#fff" } }}
+                    >
+                      <button type="button" id="menu-item-nav-threeline" class="button" onClick={() => this.onSetSidebarOpen(true)}>
+                      ☰
+                      </button>
+                    </Sidebar>
+            
+{/* 
  
                   
         <div class="menu-item-nav">
@@ -149,10 +161,12 @@ class Navbar extends Component {
         <br></br>
    
       
-      <div class="line-row"></div> */}
+       */}
+       {/* <div class="line-row"></div> */}
      
             
-            </div>
+            </div> 
+           
         );
     }
 
@@ -170,4 +184,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

@@ -347,7 +347,7 @@ h2 {
   color: black;
       float: left;
       margin-top: 11px;
-      margin-left: -60px;
+      margin-left: 3%;
       width: 20%;
   }
 
@@ -358,10 +358,13 @@ h2 {
 }
 
 .nav-links {
-  color: #6B6b69;
+  color: #5a5a5c;
+cursor: pointer;
+font-size: 19px;
+font-weight: 400;
+letter-spacing: 1px;
   margin-left: 40px;
   float: right;
-  font-size: 24px;
   margin-top: 10px;
   margin-right: -10px;
 }
@@ -535,6 +538,12 @@ padding-bottom: 20%;
   overflow-x: hidden;  
 }
 
+.menu-item{
+float: left;
+padding-left: 35px;
+margin-top: 2px;
+}
+
 .dropdown {
   top: 100%;
   left: 0;
@@ -615,24 +624,6 @@ div.menu-container {
   padding-top: 1px;
 }
 
-.menu-item{
-	width: 15%;
-  float: right;
- position: relative;
- display: flex;
- margin-left: 80px;
- margin-right: -90px;
-}
-
-.menu-item a {
-	padding: 5px 0 5px 0;
-	font-size: 25px;
-	text-decoration: none;
-  border-radius: 5px;
-  color: white;
-	margin: 0 10px 0 10px;
-  display: block;
-}
 
 #menu-item-p:hover{
   color: #8597C5;
@@ -641,11 +632,10 @@ div.menu-container {
 }
 
 #menu-item-p{
-  float: right;
 color: #5a5a5c;
 margin-top: 25px;
 cursor: pointer;
-font-size: 17px;
+font-size: 19px;
 font-weight: 400;
 letter-spacing: 1px
 }
@@ -660,60 +650,6 @@ letter-spacing: 1px
   margin-top: 20px;
 }
 
-
-.menu-item a:link, .menu-itema:visited {
-  color: #6B6b69;
-  cursor: pointer;
-}
-
-.menu-item a:hover, .menu-item a:active {
-  color: #8597C5;
-  cursor: pointer;
-}
-
-.menu-item ul {
-  margin-top: 2px;
-  background-color: white;
-	list-style-type: none;
-  height: 0px;
-  margin-left: 39px;
-	overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 80%;
-    border-radius: 2px;
-	
-	-webkit-transition: height 1s ease;
-    -moz-transition: height 1s ease;
-    -o-transition: height 1s ease;
-    -ms-transition: height 1s ease;
-    transition: height 1s ease;
-}
-
-.menu-item:hover ul {
-  /* height: 370px; */
-  cursor: pointer;
-  height: 235px;
-  background-color: #8597C5;
- 
-}
-
-.menu-item ul li a {
-	font-size: 19px;
-	width: 80%;
-	margin: 0 auto 0 auto;
-	border-radius: 0px;
-  margin-top: -13px;
-  margin-bottom: -5px;
-  margin-left: -10px;
-  text-align: center;
-  height: 35px;
-}
-
-.menu-item a:hover{
-  color: white;
-}
 
 .menu-icon{
   background-color: black;
@@ -744,14 +680,19 @@ font-weight: 400;
 letter-spacing: 1px
 }
 
+
+
+
 .menu-item-course{
-	width: 18%;
-  float: right;
- position: relative;
- /* display: flex; */
- margin-left: 30px;
- margin-right: -60px;
+	padding-left: 15%;
+  float: left;
+  margin-top: 2px;
+ 
 }
+
+
+
+
 
 .menu-item-course a {
 	padding: 5px 0 5px 0;
@@ -830,10 +771,14 @@ letter-spacing: 1px
 
 
 .menu-item-tips{
-	width: 15%;
-  float: right;
- position: relative;
+  padding-left: 35px;
+  float: left;
+  margin-top: 2px;
 }
+
+
+
+
 
 .menu-item-tips a {
 	padding: 5px 0 5px 0;
@@ -1944,7 +1889,7 @@ filter: brightness(59%);
   object-fit: cover;
   width: 100%;
   height: 450px;
-  margin-top: -20px;
+  margin-top: 200px;
 }
 
 
