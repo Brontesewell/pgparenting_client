@@ -640,12 +640,11 @@ div.menu-container {
 
 #menu-item-p:hover{
   color: #8597C5;
-  /* text-decoration: underline; */
-  /* font-weight: bolder; */
+
 }
 
 #menu-item-p{
-color: #5a5a5c;
+  color: #5a5a5c;
 margin-top: 25px;
 cursor: pointer;
 font-size: 19px;
@@ -1122,18 +1121,21 @@ letter-spacing: 1px
 
 .sidenav-text{
   color: #6B6b69;
-  margin-left: 45px;
   margin-bottom: 4px;
   font-size: 20px;
   font-weight: 400;
   float: left;
+  margin-left: 20px;
+}
+
+.sidenav-p{
+  color: #6B6b69;
+  margin-bottom: 4px;
+  font-size: 20px;
 }
 
 .sidenav-text:hover{
   font-weight: 350;
-  text-decoration: underline;
-  /* text-decoration: line-through; */
-  /* font-weight: bolder; */
   color: #8597C5;
 }
 

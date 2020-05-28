@@ -58,6 +58,7 @@ class NavBar extends Component {
       return (
         <div class="line-row">
 
+
         <img className ='logo-home' alt="Logo" src={Logo}/>
        
         <div class="menu-item-course">
@@ -116,12 +117,9 @@ class NavBar extends Component {
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
+                        
                           <Nav.Link href='/home' className="sidenav-text">HOME</Nav.Link>
-                          <Nav.Link href="/profile" className="sidenav-text">MY FAMILY</Nav.Link>
-                          <Nav.Link href='/about-us' className="sidenav-text">OUR MISSION</Nav.Link>
-                          <Nav.Link href='/shop' className="sidenav-text">SHOP</Nav.Link>
-                          <Nav.Link href='/contact_us' className="sidenav-text">CONTACT US</Nav.Link>
-                          <NavDropdown title="PARENTING TIPS" id="basic-nav-dropdown" className="sidenav-p">
+                          <NavDropdown title="PARENTING TIPS" id="basic-nav-dropdown" className="sidenav-p shadow-none">
                             <NavDropdown.Item href="/baby">0-12mths</NavDropdown.Item>
                             <NavDropdown.Item href="/toddler">1-2yrs</NavDropdown.Item>
                             <NavDropdown.Item href="/pre_school"> 3-5yrs</NavDropdown.Item>
@@ -130,8 +128,7 @@ class NavBar extends Component {
                             <NavDropdown.Item href="/teen">13-18yrs</NavDropdown.Item>
                             <NavDropdown.Item href="/young_adults">19-25yrs</NavDropdown.Item>
                           </NavDropdown>
-                          <NavDropdown.Divider />
-                          <NavDropdown title="PARENTING COURSES" id="basic-nav-dropdown" className="sidenav-p">
+                          <NavDropdown title="PARENTING COURSES" id="basic-nav-dropdown" className="sidenav-p shadow-none">
                             <NavDropdown.Item href="/baby">0-12mths</NavDropdown.Item>
                             <NavDropdown.Item href="/toddler">1-2yrs</NavDropdown.Item>
                             <NavDropdown.Item href="/pre_school"> 3-5yrs</NavDropdown.Item>
@@ -141,6 +138,10 @@ class NavBar extends Component {
                             <NavDropdown.Item href="/young_adults">19-25yrs</NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link href='/co-parents' className="sidenav-text">CO-PARENTING</Nav.Link>
+                          <Nav.Link href="/profile" className="sidenav-text">MY FAMILY</Nav.Link>
+                          <Nav.Link href='/about-us' className="sidenav-text">OUR MISSION</Nav.Link>
+                          <Nav.Link href='/shop' className="sidenav-text">SHOP</Nav.Link>
+                          <Nav.Link href='/contact_us' className="sidenav-text">CONTACT US</Nav.Link>
                           <Nav.Link href='/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Nav.Link>
                         </Nav>
                       </Navbar.Collapse>
