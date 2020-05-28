@@ -60,7 +60,8 @@ class NavBar extends Component {
 
 
         <img className ='logo-home' alt="Logo" src={Logo}/>
-       
+
+        {/* <div class="menu-item-nav">
         <div class="menu-item-course">
         <h6 id="menu-item-p">PARENTING COURSE</h6>
 
@@ -69,13 +70,12 @@ class NavBar extends Component {
         <div class="menu-item-tips">
         <h6 id="menu-item-p">PARENTING TIPS</h6>
         </div>
-
+</div>
+        
         <div class="menu-item">
         <h6 id="menu-item-p" >CO-PARENTING</h6>
     
-        </div>
-        
-
+        </div> */}
 
 
                     <Sidebar
@@ -148,29 +148,15 @@ class NavBar extends Component {
                     </Navbar>
                     </nav>
 
-{/* 
+
  
                   
         <div class="menu-item-nav">
        
-
-              </div>
-              
-              
-      
-        
-              </div> 
-              
-                   <div class="menu-item">
-                          <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
-          
-                 
-                          </div>
-       
-                
+ 
               
        <div class="menu-item-course">
-                <h6 id="menu-item-p-course" >PARENTING COURSES</h6>
+                <h6 id="menu-item-p" >PARENTING COURSES</h6>
                    <ul>
                    
                         <li className="parent-lis"><a href="/baby">0-12mths</a></li>
@@ -197,19 +183,21 @@ class NavBar extends Component {
                         <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
                    </ul>
         </div>
-        
-       
-        <br></br>
-   
-      
-       */}
-       {/* <div class="line-row"></div> */}
+
+        <div class="menu-item">
+        <h6 id="menu-item-p" >CO-PARENTING</h6>
+        </div>
      
-            
-            </div> 
+            </div>
+            {/* <div class="menu-item">
+                   <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
+   
+          
+                   </div> */}
+             </div> 
            
-        );
-    }
+           );
+          }
 
 }
 

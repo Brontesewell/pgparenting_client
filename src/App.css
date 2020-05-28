@@ -1154,12 +1154,7 @@ letter-spacing: 1px
 
 
 .menu-item-nav{
-	width: 12%;
-	float: right;
     position: relative;
-    margin-top: 17px;
-    cursor: pointer;
-    margin-right: -70px;
 }
 
 
