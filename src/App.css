@@ -588,20 +588,12 @@ margin-left: -95px;
 }
 
 
-/* .container-parenting {
-  background-color: white;
-  width: 700px;
-margin-left: 33%;
-margin-right: 40%;
-margin-top: 40px;
-} */
 
 
 .line-row {
   border-bottom-style: solid;
   border-bottom-color: #ccc;
   border-width: thin;
-  margin-top: 45px;
   -moz-box-shadow:    0.5px 0.5px 1px 1px #ccc;
   -webkit-box-shadow: 0.5px 0.5px 1px 1px #ccc;
 
@@ -687,10 +679,22 @@ letter-spacing: 1px
 	padding-left: 15%;
   float: left;
   margin-top: 2px;
- 
+  position: relative; 
 }
 
 
+.menu-item ul {
+  margin-top: 5px;
+  list-style-type: none;
+  height: 0px;
+  overflow: hidden;
+
+  position: absolute;  /* <-- added declarations */
+  left: 0; top: 100%;  /*     here               */
+  width: 100%;         /*     and here...        */
+
+  transition: height 1s ease;
+}
 
 
 

@@ -56,12 +56,13 @@ class NavBar extends Component {
 
     render() {
       return (
-        <div>
+        <div class="line-row">
 
         <img className ='logo-home' alt="Logo" src={Logo}/>
        
         <div class="menu-item-course">
         <h6 id="menu-item-p">PARENTING COURSE</h6>
+
         </div>
         
         <div class="menu-item-tips">
@@ -69,8 +70,10 @@ class NavBar extends Component {
         </div>
 
         <div class="menu-item">
-        <h6 id="menu-item-p">CO-PARENTING</h6>
+        <h6 id="menu-item-p" >CO-PARENTING</h6>
+    
         </div>
+        
 
 
 
