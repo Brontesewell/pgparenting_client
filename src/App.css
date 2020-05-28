@@ -351,6 +351,27 @@ h2 {
       width: 20%;
   }
 
+  .logo-home-small{
+    color: black;
+        float: left;
+        margin-top: 14px;
+        margin-left: 3%;
+        width: 250px;
+    }
+
+
+ @media only screen and (max-width: 975px) {
+  .logo-home {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 975px) {
+  .logo-home-small {
+      display: none;
+  }
+}
+
 
 #wecome-navbar {
   background-color: white;
@@ -672,6 +693,29 @@ font-weight: 400;
 letter-spacing: 1px
 }
 
+@media only screen and (max-width: 1135px) {
+  .menu-item-course{
+      padding-left: 5% !important;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .menu-item-course, .menu-item, .menu-item-tips{
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  #side-navbar, #menu-item-nav-threeline {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 975px) {
+  .home-navbar-side{
+      display: none;
+  }
+}
 
 
 
@@ -1062,6 +1106,9 @@ letter-spacing: 1px
 
 
 
+
+
+
 .container-signup{
   width: 600px;
   margin-left: 25%;
@@ -1091,6 +1138,10 @@ letter-spacing: 1px
 }
 
 #side-navbar{
+  width: 250px;
+}
+
+#side-navbar-small{
   width: 250px;
 }
 
@@ -1128,17 +1179,19 @@ letter-spacing: 1px
   color: #5a5a5c;
 }
 
+#menu-item-nav-threeline-small{
+  float:right;
+  margin-top: 9px;
+  margin-right: 15px;
+  color: #5a5a5c;
+}
+
+
 #menu-item-nav-threeline:hover{
   color: #8597C5;
 }
 
-/* #menu-item-nav-threelines{
-  float:right;
-}
 
-#menu-item-nav-threelines:hover{
-  color: #8597C5;
-} */
 
 .menu-item-nav a:link, .menu-item-nava:visited {
 	color: #6B6b69;
@@ -1893,7 +1946,7 @@ filter: brightness(59%);
   object-fit: cover;
   width: 100%;
   height: 450px;
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
 
