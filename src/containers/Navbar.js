@@ -151,7 +151,7 @@ class NavBar extends Component {
 
  
                   
-        <div class="menu-item-nav">
+        
        
  
               
@@ -170,6 +170,9 @@ class NavBar extends Component {
                    </ul>
         </div>
        
+          
+
+            
         <div class="menu-item-tips">
               <h6 id="menu-item-p">PARENTING TIPS</h6>
                    <ul>
@@ -183,12 +186,12 @@ class NavBar extends Component {
                         <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
                    </ul>
         </div>
+      
 
         <div class="menu-item">
         <h6 id="menu-item-p" >CO-PARENTING</h6>
         </div>
      
-            </div>
             {/* <div class="menu-item">
                    <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
    

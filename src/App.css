@@ -675,6 +675,15 @@ letter-spacing: 1px
  background-color: #8597C5;
 }
 
+.dropdown-item{
+  color: #5a5a5c !important;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center !important;
+  letter-spacing: 1px;
+  float: center !important;
+}
 
 
 #menu-item-p-course:hover{
@@ -718,6 +727,8 @@ letter-spacing: 1px
 
 
 
+
+
 .menu-item-course{
 	padding-left: 15%;
   float: left;
@@ -726,36 +737,17 @@ letter-spacing: 1px
 }
 
 
-.menu-item ul {
-  margin-top: 5px;
-  list-style-type: none;
-  height: 0px;
-  overflow: hidden;
-
-  position: absolute;  /* <-- added declarations */
-  left: 0; top: 100%;  /*     here               */
-  width: 100%;         /*     and here...        */
-
-  transition: height 1s ease;
-}
-
-
-
 .menu-item-course a {
-	padding: 5px 0 5px 0;
 	font-size: 25px;
 	text-decoration: none;
   border-radius: 5px;
   color: white;
-	margin: 0 10px 0 10px;
   display: block;
 }
 
 #menu-item-course-p:hover{
   color: #8597C5;
 }
-
-
 
 .menu-item-course a:link, .menu-item-coursea:visited {
   color: #6B6b69;
@@ -768,16 +760,14 @@ letter-spacing: 1px
 }
 
 .menu-item-course ul {
-  margin-top: 2px;
   background-color: white;
 	list-style-type: none;
   height: 0px;
-  margin-left: 39px;
-	overflow: hidden;
+  overflow: hidden;
     position: absolute;
-    left: 0;
+    left: 6;
     top: 100%;
-    width: 65%;
+    width: 55%;
 
     border-radius: 2px;
 	
@@ -789,28 +779,25 @@ letter-spacing: 1px
 }
 
 .menu-item-course:hover ul {
-  /* height: 370px; */
   cursor: pointer;
-  height: 235px;
+  height: 245px;
   background-color: #8597C5;
 }
 
 .menu-item-course ul li a {
 	font-size: 19px;
-	width: 80%;
-	margin: 0 auto 0 auto;
-	border-radius: 0px;
-  margin-top: -13px;
-  margin-bottom: -5px;
-  margin-left: -10px;
+  border-radius: 0px;
   text-align: center;
-  height: 35px;
+  height: 17px;
 }
 
 .menu-item-course a:hover{
   color: white;
 }
 
+.menu-item-course li{
+  margin-left: -40px !important;
+}
 
 
 
@@ -821,27 +808,20 @@ letter-spacing: 1px
   padding-left: 35px;
   float: left;
   margin-top: 2px;
+  position: relative; 
 }
 
-
-
-
-
 .menu-item-tips a {
-	padding: 5px 0 5px 0;
 	font-size: 25px;
 	text-decoration: none;
   border-radius: 5px;
   color: white;
-	margin: 0 10px 0 10px;
   display: block;
 }
 
 #menu-item-tips-p:hover{
   color: #8597C5;
 }
-
-
 
 .menu-item-tips a:link, .menu-item-tipsa:visited {
   color: #6B6b69;
@@ -854,16 +834,14 @@ letter-spacing: 1px
 }
 
 .menu-item-tips ul {
-  margin-top: 2px;
   background-color: white;
 	list-style-type: none;
   height: 0px;
-  margin-left: 69px;
-	overflow: hidden;
+  overflow: hidden;
     position: absolute;
-    left: 0;
+    left: 6;
     top: 100%;
-    width: 65%;
+    width: 80%;
 
     border-radius: 2px;
 	
@@ -875,30 +853,25 @@ letter-spacing: 1px
 }
 
 .menu-item-tips:hover ul {
-  /* height: 370px; */
   cursor: pointer;
-  height: 235px;
+  height: 245px;
   background-color: #8597C5;
 }
 
 .menu-item-tips ul li a {
 	font-size: 19px;
-	width: 80%;
-	margin: 0 auto 0 auto;
-	border-radius: 0px;
-  margin-top: -13px;
-  margin-bottom: -5px;
-  margin-left: -20px;
+  border-radius: 0px;
   text-align: center;
-  height: 35px;
+  height: 17px;
 }
 
 .menu-item-tips a:hover{
   color: white;
 }
 
-
-
+.menu-item-tips li{
+  margin-left: -63px !important;
+}
 
 
 
@@ -1153,21 +1126,6 @@ letter-spacing: 1px
 }
 
 
-.menu-item-nav{
-    position: relative;
-}
-
-
-
-.menu-item-nav a {
-	padding: 5px 0 5px 0;
-	font-size: 25px;
-	text-decoration: none;
-  border-radius: 5px;
-  color: white;
-	margin: 0 10px 0 10px;
-  display: block;
-}
 
 #menu-item-nav-threeline{
   float:right;
@@ -1176,12 +1134,6 @@ letter-spacing: 1px
   color: #5a5a5c;
 }
 
-#menu-item-nav-threeline-small{
-  float:right;
-  margin-top: 9px;
-  margin-right: 15px;
-  color: #5a5a5c;
-}
 
 
 #menu-item-nav-threeline:hover{
@@ -1190,66 +1142,12 @@ letter-spacing: 1px
 
 
 
-.menu-item-nav a:link, .menu-item-nava:visited {
-	color: #6B6b69;
-}
-
-.menu-item-nav a:hover, .menu-item-nav a:active {
-	color: #8597C5;
-
-}
-
-.menu-item-nav ul {
-  margin-top: 2px;
-  background-color: white;
-	list-style-type: none;
-  height: 0px;
-  margin-left: 70px;
-	overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 86%;
-    border-radius: 5px;
-	
-	-webkit-transition: height 1s ease;
-    -moz-transition: height 1s ease;
-    -o-transition: height 1s ease;
-    -ms-transition: height 1s ease;
-    transition: height 1s ease;
-}
-
-.menu-item-nav:hover ul {
-  /* height: 370px; */
-  height: 310px;
-  background-color: #8597C5;
-}
-
-.menu-item-nav ul li a {
-	font-size: 20px;
-	width: 80%;
-	margin: 0 auto 0 auto;
-	border-radius: 0px;
-  margin-top: -5px;
-}
-
 
 #course-info{
   background-color: #fff4f0;
   margin-top: -42px;
 }
 
-
-
-
-
-/* .children-div {
-  border-style: solid;
-  border-width: thin;
-  border-color: #8597C5;
-  padding-bottom: 10px;
-  margin-bottom: 5px;
-} */
 
 
 
