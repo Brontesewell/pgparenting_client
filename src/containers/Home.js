@@ -28,7 +28,7 @@ class Home extends Component {
                 <div>  
                   <img id="top-home-img" src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
                 {/* <div id="quote-over-image"><h6 id="quote-home-image">We are all about “better parenting for a better world”</h6></div> */}
-                {/* <div id="quote-over-images"><h3 className="quote-home-image">Better Parenting for a Better World</h3><a  href='#section2' id="button-image-home">Learn More</a></div> */}
+                <div id="quote-over-images"><h3 className="quote-home-image">Better Parenting for a Better World</h3><a  href='#section2' id="button-image-home">Learn More</a></div>
                 </div>
 
                 <div id="tip-home">

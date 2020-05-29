@@ -98,6 +98,17 @@ class Welcome extends Component {
                 
                 </div>
                  <div id="share-div">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                        <h4 id="world-map-text">Lead Parenting courses Worldwide with proven curriculum</h4>
+                    
+                        </div>
+                        <div class="col-lg">
+                                 <img id="world-map" src="https://lh3.googleusercontent.com/proxy/MUETR6Ot7jKEq1EGeZ6qOu4kj5pyWo95eiK1UetCM6TUkK1cTFdXsmmBCsrQsLqNnTdqu87WjanW-FgtNE6KMWEULoqV4Zvea70ycmRTyp5xaT7N"/>
+                        </div>
+                    </div>
+                </div>
                  <h4 id="share-now">Share Now</h4>
                 
                 <FacebookShareButton

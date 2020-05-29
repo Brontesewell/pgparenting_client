@@ -56,26 +56,10 @@ class NavBar extends Component {
 
     render() {
       return (
-        <div class="line-row">
+        <div >
 
-
+<div className="navbar-homepage">
         <img className ='logo-home' alt="Logo" src={Logo}/>
-
-        {/* <div class="menu-item-nav">
-        <div class="menu-item-course">
-        <h6 id="menu-item-p">PARENTING COURSE</h6>
-
-        </div>
-        
-        <div class="menu-item-tips">
-        <h6 id="menu-item-p">PARENTING TIPS</h6>
-        </div>
-</div>
-        
-        <div class="menu-item">
-        <h6 id="menu-item-p" >CO-PARENTING</h6>
-    
-        </div> */}
 
 
                     <Sidebar
@@ -106,13 +90,57 @@ class NavBar extends Component {
                       onSetOpen={this.onSetSidebarOpen}
                       styles={{ sidebar: { background: "#fff" } }}
                     >
-                      <button type="button" id="menu-item-nav-threeline" class="button" onClick={() => this.onSetSidebarOpen(true)}>
+                      <a href="#" type="button" id="menu-item-nav-threeline" class="button-nav" onClick={() => this.onSetSidebarOpen(true)}>
                       ☰
-                      </button>
+                      </a>
                     </Sidebar>
 
+
+ 
+                  
+        
+       
+ 
+              
+       <div class="menu-item-course">
+                <h6 id="menu-item-p" >PARENTING COURSES ▼</h6>
+                   <ul>
+                   
+                        <li className="parent-lis"><a href="/baby">0-12mths</a></li>
+                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
+                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
+                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
+                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
+                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
+                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
+                      
+                   </ul>
+        </div>
+       
+          
+
+            
+        <div class="menu-item-tips">
+              <h6 id="menu-item-p">PARENTING TIPS ▼</h6>
+                   <ul>
+          
+                   <li className="parent-lis"><a href="/baby">0-12mths</a></li>
+                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
+                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
+                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
+                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
+                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
+                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
+                   </ul>
+        </div>
+      
+
+        <div class="menu-item">
+        <h6 id="menu-item-p" >CO-PARENTING</h6>
+        </div>
+        </div>
                     <nav className="home-navbar-side">
-                      <Navbar bg="light" expand="lg" >
+                      <Navbar bg="light" expand="lg" className="navbar-home">
                       <Navbar.Brand className="navbar-brand-small" href="/"><img className="logo-small" alt="Logo" src={Logo}/></Navbar.Brand>
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav">
@@ -147,56 +175,7 @@ class NavBar extends Component {
                       </Navbar.Collapse>
                     </Navbar>
                     </nav>
-
-
- 
-                  
-        
-       
- 
-              
-       <div class="menu-item-course">
-                <h6 id="menu-item-p" >PARENTING COURSES</h6>
-                   <ul>
-                   
-                        <li className="parent-lis"><a href="/baby">0-12mths</a></li>
-                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
-                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
-                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
-                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
-                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
-                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
-                      
-                   </ul>
-        </div>
-       
-          
-
-            
-        <div class="menu-item-tips">
-              <h6 id="menu-item-p">PARENTING TIPS</h6>
-                   <ul>
-          
-                   <li className="parent-lis"><a href="/baby">0-12mths</a></li>
-                       <li className="parent-lis"><a href="/toddler">1-2yrs</a></li>
-                        <li className="parent-lis"><a href="/pre_school"> 3-5yrs</a></li>
-                        <li className="parent-lis"><a href="/primary_school"> 6-10yrs</a></li>
-                         <li className="parent-lis"><a href="/preteen">11-12yrs</a></li>
-                        <li  className="parent-lis"><a href="/teen">13-18yrs</a></li>
-                        <li className="parent-lis"><a href="/young_adults">19-25yrs</a></li>
-                   </ul>
-        </div>
-      
-
-        <div class="menu-item">
-        <h6 id="menu-item-p" >CO-PARENTING</h6>
-        </div>
      
-            {/* <div class="menu-item">
-                   <h6 onClick={() =>  window.location.href='/co-parents'}  className="parenting-cos" id="menu-item-p">CO-PARENTING</h6>
-   
-          
-                   </div> */}
              </div> 
            
            );
