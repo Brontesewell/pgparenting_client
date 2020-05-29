@@ -1424,7 +1424,7 @@ height: 70px
 
 #shop-div{
   float: center;
-  margin: 55px;
+  margin-left: 7%;
 }
 
 #imgshop {
@@ -1437,9 +1437,8 @@ height: 70px
 }
 
 #shop-button {
-  margin-left: 39%;
-  margin-right: 35%;
-  margin-bottom: 10px;
+  width: 90%;
+  border: none;
   background-color: #8597C5;
 }
 
