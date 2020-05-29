@@ -40,6 +40,8 @@
     "react-sidebar": "^3.0.2",
     "react-simple-dropdown": "^3.2.3",
     "react-simple-sidenav": "^1.0.1",
+    "react-slick": "^0.26.1",
+    "react-slick-slider": "^0.15.10",
     "react-social-icons": "^4.1.0",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",

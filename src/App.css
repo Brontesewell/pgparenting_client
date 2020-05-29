@@ -390,6 +390,7 @@ letter-spacing: 1px;
   float: right;
   margin-top: 10px;
   margin-right: -10px;
+  font-family: sans-serif;
 }
 
 .ml-auto{
@@ -494,12 +495,15 @@ letter-spacing: 1px;
 
 .navbar-homepage{
   height: 85px;
+  background-color: rgb(248, 247, 247);
   z-index: 500;
-  /* background-color: rgb(250, 250, 250);
+  width: 100%;
   -webkit-box-shadow: 4px 4px 4px 6px rgb(15, 15, 15);  
   -moz-box-shadow:    4px 4px 4px 6px rgb(34, 33, 33);  
-  box-shadow:         2px 1px 2px 4px rgb(248, 247, 247); */
+  box-shadow:         2px 1px 2px 4px rgb(248, 247, 247);
+  
 }
+
 
 .tagline {
   position: absolute;
@@ -596,7 +600,7 @@ float: left;
 padding-left: 35px;
 margin-top: 2px;
 position: relative;
-z-index: 500;
+
 }
 
 .dropdown {
@@ -645,14 +649,7 @@ margin-left: -95px;
 
 
 
-.line-row {
-  border-bottom-style: solid;
-  border-bottom-color: #ccc;
-  border-width: thin;
-  -moz-box-shadow:    0.5px 0.5px 1px 1px #ccc;
-  -webkit-box-shadow: 0.5px 0.5px 1px 1px #ccc;
 
-}
 
 .dropdown {
   position: relative;
@@ -678,12 +675,13 @@ div.menu-container {
 }
 
 #menu-item-p{
-  color: #5a5a5c;
+  color: #6B6b69;
 margin-top: 28px;
 cursor: pointer;
 font-size: 17px;
 font-weight: 400;
-letter-spacing: 1px
+letter-spacing: 1px;
+font-family: sans-serif;
 }
 
 .dot-nav{
@@ -1315,9 +1313,17 @@ letter-spacing: 1px
   font-size: 20px;
 }
 
-.sidenav-text:hover{
+.sidenav-text:hover::before {
   font-weight: 350;
-  color: #8597C5;
+  color: #6B6b69;
+  text-decoration: none !important;
+  content: "→ "
+}
+
+.sidenav-text:hover {
+  font-weight: 350;
+  color: #6B6b69;
+  text-decoration: none !important;
 }
 
 #side-navbar{
@@ -2064,7 +2070,6 @@ filter: brightness(59%);
   object-fit: cover;
   width: 100%;
   height: 650px;
-  margin-top: -86px;
 }
 
 
