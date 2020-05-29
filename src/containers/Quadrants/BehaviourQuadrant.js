@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Navbar from '../containers/Navbar'
+import Navbar from '../Navbar'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import { Route, Switch, Redirect } from 'react-router-dom'

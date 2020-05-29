@@ -18,7 +18,7 @@ import fetchAllJournals from './actions/fetchAllJournals'
 import './App.css';
 import SignIn from './containers/SignIn'
 import AboutUs from './containers/AboutUs'
-import ShopList from './containers/ShopList'
+import ShopList from './containers/Shop/ShopList'
 import ContactUsHome from './containers/ContactUsHome'
 import CoParents from './Catagories/Co-Parents/CoParents'
 import CoParentCourseInfo from './Catagories/Co-Parents/CoParentCourseInfo'

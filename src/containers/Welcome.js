@@ -101,7 +101,7 @@ class Welcome extends Component {
                  <div class="container">
                     <div class="row">
                         <div class="col-lg">
-                        <h4 id="world-map-text">Lead Parenting courses Worldwide with proven curriculum</h4>
+                        <h4 id="world-map-text">Lead Parenting courses Worldwide with proven Curriculum</h4>
                     
                         </div>
                         <div class="col-lg">

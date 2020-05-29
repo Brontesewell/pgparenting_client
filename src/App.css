@@ -1424,19 +1424,16 @@ height: 70px
 
 #shop-div{
   float: center;
-  margin: 25px;
-  background-color: #FDEAE3;
+  margin: 55px;
 }
 
 #imgshop {
-  height: 15rem;
-  margin-left: 11%;
+  height: 18rem;
 }
 
 #title-product-shop {
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: -10px;
 }
 
 #shop-button {
@@ -1631,6 +1628,9 @@ margin-bottom: 2px;
  #share-div{
   background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
   padding-bottom: 50px;
  }
 
@@ -1952,10 +1952,11 @@ filter: brightness(59%);
 
 #right-top-text {
   text-align: left;
-  font-weight: 300;
   line-height: 1.4;
   letter-spacing: 1px;
   margin: 10px;
+  /* font-family: sans-serif;
+  font-weight: 300; */
   
 }
 

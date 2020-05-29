@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import editProfile from '../actions/editProfile'
+import editProfile from '../../actions/editProfile'
 import { Link } from "react-router-dom";
 
 
