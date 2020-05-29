@@ -2323,9 +2323,8 @@ padding-top: -30px;
   color: lightgray;
   font-size: 17px;
   margin-left: 50%;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px 20px;
-  width: 150px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
@@ -2800,24 +2799,21 @@ color: #8597C5;
 }
 
 .quote-home-image{
-  color:#fff;
-  font-size: 45px;
-  font-weight: 500;
+  color:#5a5a5c;
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: 200;
 }
 
-#quote-over-image{
+#quote-over-images{
   position: absolute;
-  top: 45%;
-  right: -85px;
-  width: 400px;
+  top: 50%;
+  left: 370px;
+  width: 50%;
   height: 150px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #fff;
-  opacity: 0.8;
-  border: none;
-  cursor: pointer;
-  border-radius: 15px;
+  font-size: 25px;
 }
 
 #button-image-home{
@@ -2863,16 +2859,6 @@ color: #8597C5;
   border-radius: 2px;
 }
 
-#quote-over-images{
-  position: absolute;
-  top: 60%;
-  left: 370px;
-  width: 700px;
-  height: 150px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 25px;
-}
 
 #course-title{
   color: #8597C5;
