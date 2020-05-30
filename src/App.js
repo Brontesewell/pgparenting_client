@@ -25,7 +25,7 @@ import CoParentCourseInfo from './Catagories/Co-Parents/CoParentCourseInfo'
 import AddKid from './containers/AddKid'
 import AboutASP from './containers/AboutASP'
 import JournalsPage from './components/JournalsPage'
-import Email from './EmailSubscribe/Email'
+import Email from './containers/EmailSubscribe/Email'
 
 import Baby from './Catagories/Baby/Baby'
 import BabyCourseInfo from './Catagories/Baby/BabyCourseInfo'
@@ -104,7 +104,7 @@ class App extends React.Component {
                 <Route exact path='/journal' component={JournalsPage} />
                 <Route exact path='/journal/:id' component={JournalsPage} />
                 <Route exact path='/about_scoring' component={AboutASP} />
-    <Route exact path='/email' component={Email} /> ) 
+    <Route exact path='/admin-info' component={Email} /> ) 
     {/* </>:<> */}
 
             <Route exact path='/' component ={Welcome}/>

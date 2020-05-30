@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import Children from './Children'
 import CourseCollection from './CourseCollection'
 import Footer from '../containers/Footer'
-import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
+import BehaviourQuadrant from '../containers/Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; //Add this line Here
 
 class Profile extends Component  {
