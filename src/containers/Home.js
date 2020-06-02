@@ -28,10 +28,16 @@ class Home extends Component {
                 <div>  
                   <img id="top-home-img" src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
                 
-                <div id="quote-over-images"><h3 className="quote-home-image">Behind every young child who believes in himself is a parent who believed first.</h3><a  href='#section2' id="button-image-home">Learn More</a></div>
+                <div id="quote-over-images"><h3 className="quote-home-image">Tip of the Week </h3>
+                <h3 className="quote-home-text">If your child refuses to do something, try turning it into a game. 
+                "Humor and games are two great tools that parents sometimes forget about in the heat of the moment," says Zebooker. When her 
+                own son, now 13, was in preschool, she used to persuade him to put his shoes on in the morning by playing shoe store. 
+                "I would say, 'Welcome to Miss Mommy's Shoe Store, I've got the perfect pair for you to
+                 try on today,' and I'd speak in a silly accent and he loved it."</h3>
+                <a  href='#section2' id="button-image-home">Learn More</a></div>
                 </div>
 
-                <div id="tip-home">
+                {/* <div id="tip-home">
                     <h2 id="tip-title">PG Parenting Tip of the week</h2>
 
                     <div id="tip">
@@ -44,13 +50,35 @@ class Home extends Component {
                         <p id="tip-p">If your child refuses to do something, try turning it into a game. "Humor and games are two great tools that parents sometimes forget about in the heat of the moment," says Zebooker. When her own son, now 13, was in preschool, she used to persuade him to put his shoes on in the morning by playing shoe store. "I would say, 'Welcome to Miss Mommy's Shoe Store, I've got the perfect pair for you to try on today,' and I'd speak in a silly accent and he loved it."</p>
                     </div>
                     </div>
-                    </div>
+                    </div> */}
 
                     <ScrollableAnchor id={'section2'}>
-                    <div id="line-home"></div>
-                    </ScrollableAnchor>
+                    {/* <div id="line-home"></div> */}
                  <h5 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h5>
-                    <div id="blog-home-div">
+                    </ScrollableAnchor>
+                    
+                 <div id="blog-home-div">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <img className="blog-images" src="https://images.unsplash.com/photo-1546015720-b8b30df5aa27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
+                            <h5 className="blog-titles">Sleeping Babies</h5>
+                            <h7>By <Link className="links-blog" to='/about-us'>Mark Sewell</Link></h7>
+                        </div>
+                        <div class="col-lg">
+                            <img className="blog-images" src="https://images.unsplash.com/photo-1484665754804-74b091211472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                            <h5 className="blog-titles">Positive PG Parenting</h5>
+                            <h7>By  <Link className="links-blog" to='/about-us'>Stephanie</Link> & <Link className="links-blog" to='/about-us'>Mark</Link></h7>
+                        </div>
+                            <div class="col-lg">
+                            <img className="blog-images" src=" https://images.unsplash.com/photo-1580377968131-bac075a9a3d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                            <h5 className="blog-titles">Good habits & consistency</h5>
+                            <h7>By <Link className="links-blog" to='/about-us'>Stephanie Sewell</Link></h7>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    {/* <div id="blog-home-div">
                     <div id="left-blog">
                     <img className="blog-images" src="https://images.unsplash.com/photo-1546015720-b8b30df5aa27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
                     <h5 className="blog-titles">Sleeping Babies</h5>
@@ -68,9 +96,9 @@ class Home extends Component {
                     <img className="blog-images" src=" https://images.unsplash.com/photo-1580377968131-bac075a9a3d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
                     <h5 className="blog-titles">Good habits & consistency</h5>
                     <h7>By <Link className="links-blog" to='/about-us'>Stephanie Sewell</Link></h7>
-                    </div>
+                    </div> */}
 
-                    </div>
+                    {/* </div> */}
                     <div id="line-home-2">
                         <div id="title-about"><h1 id="about-home">About Us</h1></div>
                         
@@ -80,6 +108,8 @@ class Home extends Component {
 
                     
                     <ScrollUpButton/>
+
+                    <div id="line-home"></div>
                 <Footer/>
        
                     
