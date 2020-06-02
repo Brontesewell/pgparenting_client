@@ -69,6 +69,7 @@ class Welcome extends Component {
                         <h4 className="h5-left-membership">Unlimited access to parenting guides and articles</h4>
                         <h4 className="h5-left-membership">Expert and doctor opinion</h4>
                         <h4 className="h5-left-membership">Private online community chatroom</h4>
+                        <h4 className="h5-left-membership">Childrens growth and success tracker</h4>
                         </div>
                         <div class="col-lg">
                             <img id="image-membership" src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
