@@ -25,7 +25,7 @@ import CoParentCourseInfo from './Catagories/Co-Parents/CoParentCourseInfo'
 import AddKid from './containers/AddKid'
 import AboutASP from './containers/AboutASP'
 import JournalsPage from './components/JournalsPage'
-import Email from './containers/EmailSubscribe/Email'
+import Email from './containers/EmailSubscribe/Admin'
 
 import Baby from './Catagories/Baby/Baby'
 import BabyCourseInfo from './Catagories/Baby/BabyCourseInfo'

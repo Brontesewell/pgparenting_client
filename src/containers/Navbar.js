@@ -84,6 +84,12 @@ class NavBar extends Component {
                       <br></br>
                       <br></br>
                       <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Link>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      {this.props.currentUser.email === "123@gmail.com" ? <Link to = '/admin-info' className="sidenav-text" >ADMIN</Link> : null }
                       </div>
                     }
                       pullRight={this.state.pullRight}

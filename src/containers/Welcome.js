@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WelcomeNav from "./WelcomeNav"
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Logo from '../Logo.jpg'
+import WorldMap from '../World-Map-PNG-Picture.png'
 import {
     EmailShareButton,
     FacebookShareButton,
@@ -101,11 +102,11 @@ class Welcome extends Component {
                  <div class="container">
                     <div class="row">
                         <div class="col-lg">
-                        <h4 id="world-map-text">Lead Parenting courses Worldwide with proven Curriculum</h4>
+                        <h4 id="world-map-text">Led Parenting courses Worldwide with proven Curriculum</h4>
                     
                         </div>
                         <div class="col-lg">
-                                 <img id="world-map" src="https://lh3.googleusercontent.com/proxy/MUETR6Ot7jKEq1EGeZ6qOu4kj5pyWo95eiK1UetCM6TUkK1cTFdXsmmBCsrQsLqNnTdqu87WjanW-FgtNE6KMWEULoqV4Zvea70ycmRTyp5xaT7N"/>
+                                 <img id="world-map" src={WorldMap}/>
                         </div>
                     </div>
                 </div>

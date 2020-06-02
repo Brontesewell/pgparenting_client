@@ -22,7 +22,7 @@ class ContactUs extends Component {
     }
     
     render () {  
-        console.log(this.props.currentUser.contacts)
+        // console.log(this.props.currentUser.contacts)
         const {email, description,  user_id} = this.state
         const {history} = this.props
         return (

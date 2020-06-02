@@ -4,7 +4,7 @@ import Navbar from '../Navbar';
 import SideNav, {MenuIcon} from 'react-simple-sidenav';
 
 
-class Email extends Component {
+class Admin extends Component {
 state={
     showNav4: false,
 }
@@ -42,4 +42,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, null)(Email);
+export default connect(mapStateToProps, null)(Admin);
