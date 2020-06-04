@@ -52,7 +52,7 @@ class Welcome extends Component {
                             <a href="/signup-user"><button className="btnleft">Join Now</button></a>
                             <a href='#section1'> <button className="btnright" >Learn More</button> </a>
 
-                            <h5 className="tagline-small"><strong>Better Parenting for a Better World</strong></h5>
+                            <h5 className="tagline-small">Better Parenting for a Better World</h5>
                             <a href="/signup-user"><button className="btnleft-small">Join Now</button></a>
                             <a href='#section1'> <button className="btnright-small" >Learn More</button> </a>
                         </div>

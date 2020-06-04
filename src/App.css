@@ -2086,11 +2086,11 @@ filter: brightness(59%);
 
 
 #from-the-blog{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   word-spacing: 3px;
   color: #8597C5;
   margin-top:50px;
-  margin-left: 7.5%;
+  margin-left: 7.4%;
   text-align: left;
 }
 
@@ -2103,42 +2103,26 @@ filter: brightness(59%);
   border-radius: 3px;
 }
 
-#blog-home-div{
-  float:center;
-  margin-left: 7%;
-  margin-right: 7%;
-  
-}
 
-
-#left-blog{
+.blog-titles{
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 400;
   margin-top: 20px;
-  float:left;  
-  width:30%; 
-  height:280px; 
-  color: #6B6b69
-}
-
-#right-blog{
-  margin-top: 20px;
-  margin-left: 5%;
-  float:right; 
-  width:30%; 
-  height:280px; 
-  color: #6B6b69
-}
-
-#center-blog{
-  margin-top: 20px;
-  margin-left: 5%;
-  float:left;  
-  width:30%; 
-  height:280px; 
-  color: #6B6b69
+  margin-left: 10px;
+  color: #2d395a;
 }
 
 .links-blog{
   color: #8597C5;
+
+}
+
+.blogs-name{
+  text-align: left;
+  margin-left: 10px;
+  color: #2d395a;
+  margin-bottom: 60px;
 }
 
 .links-blog:hover{
@@ -2274,6 +2258,7 @@ filter: brightness(59%);
 #quote-about{
   color: #3b4b75;
   font-weight: 350;
+  font-size: 25px;
 }
 
 #newsletter-title{
@@ -2811,7 +2796,7 @@ color: #8597C5;
 #top-home-img {
   object-fit: cover;
   width: 100%;
-  height: 650px;
+  height: 600px;
   filter: brightness(78%);
 }
 
@@ -2824,7 +2809,7 @@ color: #8597C5;
 }
 
 .quote-home-text{
-  color:#fff;
+  color: #fff;
   font-size: 20px;
   font-family: sans-serif;
   font-weight: 300;
