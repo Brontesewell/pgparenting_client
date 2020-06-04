@@ -55,7 +55,7 @@ class Home extends Component {
 
                     <ScrollableAnchor id={'section2'}>
                     {/* <div id="line-home"></div> */}
-                 <h5 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h5>
+                 <h4 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h4>
                     </ScrollableAnchor>
                     
                 
@@ -98,7 +98,8 @@ class Home extends Component {
                         </Col>
                     </div>
                 </div>
-                 
+                 <br></br>
+                    
               
 
 
@@ -112,9 +113,46 @@ class Home extends Component {
                     <br></br>
                     
                     <div>
-                        <h4>Shop Now</h4>
+                    <h4 id="from-the-blog"><strong id="o">•</strong>Top items this week<strong id="o">•</strong></h4>
+                   
+                        <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <img className="shop-items-week" src="https://m.media-amazon.com/images/I/91h01JGKRUL._AC_UL640_FMwebp_QL65_.jpg" />
+                            <h4>Window Art with multiple colors</h4>
+                            <h5>$10.97</h5>
+                            <a href="/shop" class="btn-buy">Buy</a>
+                        </div>
+                    <div class="col-md">
+                             <img className="shop-items-week" src="https://images-na.ssl-images-amazon.com/images/I/91KdsKe21SL._SX679_.jpg" />
+                             <h4>Infant 4-in-1 Convertible Carrier</h4>
+                            <h5>$29.99</h5>
+                            <a href="/shop" class="btn-buy">Buy</a>
+                        </div>
+                        <div class="col-md">
+                            <img className="shop-items-week" src="https://m.media-amazon.com/images/I/81HCcHPXZnL._AC_UY436_FMwebp_QL65_.jpg"/>
+                            <h4>The 7 Habits of Highly Effective Teens</h4>
+                            <h5>$1.18</h5>
+                            <a href="/shop" class="btn-buy">Buy</a>
+                         </div>
+                        <div class="col-md">
+                            <img className="shop-items-week" src="https://m.media-amazon.com/images/I/91tO0NfkvcL._AC_UY436_FMwebp_QL65_.jpg"/>
+                            <h4>Big Preschool Workbook - Ages 4</h4>
+                            <h5>$6.99</h5>
+                            <a href="/shop" class="btn-buy">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                        <a href="/shop" class="btn-shops">View More  →</a>
                     </div>
 
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <br></br>
 

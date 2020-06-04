@@ -2320,14 +2320,16 @@ padding-top: -30px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: lightgray;
-  font-size: 17px;
-  margin-left: 50%;
+  font-size: 15px;
+  margin-left: 0%;
   margin-top: 50px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
 }
+
+
 
 #newsletter{
   height: 290px;
@@ -2480,6 +2482,45 @@ color: #3a4768;
   text-decoration: none;
 }
 
+.btn-shops{
+  background-color: #8597C5;
+  float: right;
+  padding: 5px 40px;
+  font-size: 25px;
+  margin-right: 110px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+
+.btn-shops:hover{
+  color: white;
+  background-color: #516496;
+  text-decoration: none;
+}
+
+.btn-buy{
+  background-color: #757b8a;
+  float: center;
+  padding: 5px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+
+.btn-buy:hover{
+  color: white;
+  background-color: #516496;
+  text-decoration: none;
+}
+
+.shop-items-week{
+  height: 300px
+}
 .btn-direct{
   background-color: #8597C5;
   float: left;
