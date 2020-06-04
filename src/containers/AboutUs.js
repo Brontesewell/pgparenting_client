@@ -12,9 +12,9 @@ class AboutUs extends Component {
         
         return (
             <div>
-                <div className = 'row'>
+                
                     <Navbar />
-                </div>
+                
 
                 <div id="about-us-div">
 

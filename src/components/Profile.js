@@ -42,9 +42,9 @@ class Profile extends Component  {
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
-            <div className = 'row'>
+            
                {<Navbar/>} 
-            </div>
+            
             <div id="profiles">
                 <h1 id="my-family-title">My Family</h1>
                 <div id="line-family"></div>

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import ScrollableAnchor from 'react-scrollable-anchor'
+import {Col} from 'react-bootstrap'
 import WelcomeNav from './WelcomeNav'
 
 
@@ -57,27 +58,48 @@ class Home extends Component {
                  <h5 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h5>
                     </ScrollableAnchor>
                     
-                 <div id="blog-home-div">
+                
                     <div class="container">
                     <div class="row">
                         <div class="col-md">
+                        <div className="course-card-welcome" onClick={()=> this.props.history.push('/baby')}>
                             <img className="blog-images" src="https://images.unsplash.com/photo-1546015720-b8b30df5aa27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
-                            <h5 className="blog-titles">Sleeping Babies</h5>
+                            </div>
+                            <h5 className="blog-titles" onClick={()=> this.props.history.push('/baby')}>Sleeping Babies</h5>
                             <h6 className="blogs-name">By <Link className="links-blog" to='/about-us'>Mark Sewell</Link></h6>
                         </div>
                         <div class="col-md">
+                        <div className="course-card-welcome" onClick={()=> this.props.history.push('/toddler')}>
                             <img className="blog-images" src="https://images.unsplash.com/photo-1484665754804-74b091211472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
-                            <h5 className="blog-titles">Positive PG Parenting</h5>
+                            </div>
+                            <h5 className="blog-titles" onClick={()=> this.props.history.push('/toddler')}>Positive PG Parenting</h5>
                             <h6 className="blogs-name">By  <Link className="links-blog" to='/about-us'>Stephanie</Link> & <Link className="links-blog" to='/about-us'>Mark</Link></h6>
                         </div>
                             <div class="col-md">
+                            <div className="course-card-welcome" onClick={()=> this.props.history.push('/teen')}>
                             <img className="blog-images" src=" https://images.unsplash.com/photo-1580377968131-bac075a9a3d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
-                            <h5 className="blog-titles">Good habits & consistency</h5>
+                            </div>
+                            <h5 className="blog-titles" onClick={()=> this.props.history.push('/teen')}>Good habits & consistency</h5>
                             <h6 className="blogs-name">By <Link className="links-blog" to='/about-us'>Stephanie Sewell</Link></h6>
                         </div>
                     </div>
                 </div>
+                
+            
+                <div class="container">
+                    <div class="row">
+                        <Col lg={3}>
+                             <i className="far fa-calendar-check appt"></i>
+                        </Col>
+                        <Col lg={9}>
+                            <h1 className="book-title"> Are you struggling with parenting and want 1:1 Mentorship?</h1>
+                            <h4 className="book-text">For only $30 you can have a 45 minute session!</h4>
+                            <a href="https://calendar.google.com/calendar/r" class="btn-book">Book Now!</a>
+                        </Col>
+                    </div>
                 </div>
+                 
+              
 
 
                     <div id="line-home-2">
@@ -86,8 +108,32 @@ class Home extends Component {
                         <div id="text-about"><h5 id="quote-about">We are all about “better parenting for a better world”</h5></div>
                         <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div>
                     </div>
-
+                    <br></br>
+                    <br></br>
                     
+                    <div>
+                        <h4>Shop Now</h4>
+                    </div>
+
+                    <br></br>
+                    <br></br>
+
+                    <div id="buttons-direct">
+                    <a href="#" class="btn-direct">My Family</a>
+                    <a href="#" class="btn-direct">Contact Us</a>
+                    <a href="#" class="btn-direct">Shop</a>
+                    <a href="#" class="btn-direct">Book a Appointment</a>
+                    <a href="#" class="btn-direct">Young Adults</a>
+                    <a href="#" class="btn-direct">Babies</a>
+                    <a href="#" class="btn-direct">Teens</a>
+                    <a href="#" class="btn-direct">Primary School</a>
+                    <a href="#" class="btn-direct">Childrens Growth System</a>
+                    <a href="#" class="btn-direct">Preteens</a>
+                    <a href="#" class="btn-direct">Toddler</a>
+                    <a href="#" class="btn-direct">About Us</a>
+                    <a href="#" class="btn-direct">Co-Parenting</a>
+                    </div>
+
                     <ScrollUpButton/>
 
                     <div id="line-home"></div>
