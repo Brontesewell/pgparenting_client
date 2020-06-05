@@ -2756,7 +2756,12 @@ color: #8597C5;
 }
 
 #contact-footer{
-  color: #3b4b75;
+  color: #516496;
+  font-weight: 350; 
+  padding-bottom: 20px;
+  font-size: 27px;
+  letter-spacing: 1px;
+  margin-top: 25px;
 }
 
 .icon-f{
@@ -2801,6 +2806,11 @@ color: #8597C5;
 	margin: 20px 0 12px;
   padding: 0;
   font-size: 20px;
+}
+
+.footer-links a:hover{
+  color: #8597C5;
+  text-decoration: none;
 }
 
 .footer-links a{

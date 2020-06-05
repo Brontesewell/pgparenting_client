@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import editProfile from '../actions/editProfile'
 import { Link } from "react-router-dom";
+import { SocialIcon } from 'react-social-icons';
 
 class Footer extends Component {
  
@@ -51,8 +52,10 @@ class Footer extends Component {
 
     <div class="footer-center">
         <h5 id="contact-footer">Connect with us</h5>
-       <p id="icons-footer"> <FontAwesomeIcon icon={faFacebook} className="icon-f"/><FontAwesomeIcon icon={faInstagram} className="icon-f"/><FontAwesomeIcon icon={faYoutube} /></p>
-        <p id="email-icon-footer"><FontAwesomeIcon icon={faEnvelope} id="email-footer" />pgparenting@gmail.com</p>
+                        <SocialIcon className="share-button" url="https://www.instagram.com/pgparenting/" style={{ height: 35, width: 35 }}/>
+                        <SocialIcon className="share-button" url="https://www.facebook.com" style={{ height: 35, width: 35 }}/>
+                        <SocialIcon className="share-button" url="https://www.youtube.com" style={{ height: 35, width: 35 }}/>
+                        <p id="email-icon-footer-welcome"><FontAwesomeIcon icon={faEnvelope} id="email-footer" /> pgparenting@gmail.com</p>
         
 
 
