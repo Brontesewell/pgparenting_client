@@ -2915,6 +2915,11 @@ color: #8597C5;
   filter: brightness(78%);
 }
 
+#light-bulb{
+  width: 7%;
+  margin-top: -10px;
+}
+
 #quote-home-img{
   object-fit: cover;
   width: 100%;
@@ -2925,7 +2930,7 @@ color: #8597C5;
   color:#fff;
   font-size: 30px;
   font-family: sans-serif;
-  font-weight: 350;
+  font-weight: 300;
   margin-bottom: 30px;
 }
 
