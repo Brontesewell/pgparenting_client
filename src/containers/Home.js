@@ -16,13 +16,30 @@ import FadeIn from 'react-fade-in';
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
 import { SocialIcon } from 'react-social-icons';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
+import addContact from '../actions/addContact'
 
 class Home extends Component {
 
+    state = {
+        email: this.props.currentUser.email,
+        description: "",
+        f_name: this.props.currentUser.first_name,
+        l_name: this.props.currentUser.last_name,
+        user_id: this.props.currentUser.id
+    }
 
+    handleChange = (e) => {
+        const {name, value} = e.target
+        this.setState({
+            [name]: value
+        })
+    }
     
     render () {  
         console.log(this.props.currentUser)
+        const {email, description,  user_id} = this.state
+        const {history} = this.props
         return (
             <div>
                 
@@ -201,6 +218,40 @@ class Home extends Component {
                     <a href="#" class="btn-direct">Co-Parenting</a>
                     </div>
 
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+           
+                    <div class="contact-home-div">
+                  <Fade>
+                    
+                                <h1 id="contact-home">Contact Us</h1>
+                                <br></br>
+                                <h5 className="contact-option">Email: support@pgparenting.com</h5>
+                                <h5 className="contact-option">Phone: +1 828 6366</h5>
+                                <h5 className="contact-option">Location: San Francisco, California</h5>
+                                <br></br>
+                                <br></br>
+                                <span id="email-home-contact" for="lname">Email is being sent from: <strong>{email}</strong></span>
+                                <br></br>
+                                <br></br>
+                                <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
+                                    <label htmlFor="description" className="grey-text">Description</label>
+                                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
+                                    <button id="btn-add-contact" className="btn" type="submit" >Send</button>
+                                </form>
+
+                    </Fade>
+                    </div>
+                   
+
                     <ScrollUpButton/>
 
                     <div id="line-home"></div>
@@ -220,4 +271,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, null)(Home);
+const mapsToDispatchProps = dispatch => {
+    return {
+        addContact: (e, history, state) => dispatch(addContact(e, history, state)),
+    }
+}
+
+export default connect(mapStateToProps, mapsToDispatchProps)(Home);

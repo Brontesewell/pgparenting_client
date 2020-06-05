@@ -1238,9 +1238,31 @@ letter-spacing: 1px
   padding-bottom: 12% !important;
 }
 
+.contact-option{
+  color: rgb(39, 44, 68);
+}
+
+.contact-home-div {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+#contact-home{
+  color: rgb(39, 44, 68);
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+#email-home-contact{
+  color: rgb(39, 44, 68);
+  font-family: sans-serif;
+}
+
 .contact-options{
   text-align: left;
-  color: rgb(31, 30, 30);
+  color: rgb(30, 30, 31);
 }
 
 .contact-options-s{
@@ -2187,7 +2209,7 @@ filter: brightness(59%);
 }
 
 #line-home{
-  margin-top: 210px;
+  margin-top: 110px;
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -2548,7 +2570,7 @@ margin-bottom: 20px;
   margin-top: 10px;
 }
 #buttons-direct{
-  margin-left: 10%;
+  margin-left: 11%;
   margin-right: 10%;
 }
 
@@ -2972,14 +2994,7 @@ color: #8597C5;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 20px;
-  /* position: absolute;
   color: #2d395a;
-  width: 47%;
-  margin-top: -360px;
-  
-  left: 600px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
 }
 
 #button-image-home{

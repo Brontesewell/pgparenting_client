@@ -47,7 +47,7 @@ class ContactUs extends Component {
                     <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
 
 
-                    <button id="btn-add-contact" className="btn" type="submit" >Add Child</button>
+                    <button id="btn-add-contact" className="btn" type="submit" >Send</button>
                     </form>
 
                     </MDBCol>
