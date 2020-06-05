@@ -74,12 +74,14 @@ class Footer extends Component {
                                                         <div>
                                                                 <label>
                                                                 <input type="checkbox" name="subscribe" class="filled-in" onChange={this.handleChange} value="true" checked={subscribe === 'true'}/>
-                                                                <span>{currentUser.email}</span>
+                                                                <span id="subscribe-name"> {currentUser.email}</span>
                                                                 </label>
-                                                                <br></br>
+                                                                <p id="subscribe-text-info">If you don't want to use this email we suggest you change your email in <a href='/profile'>profile settings</a> or <a href='/contact_us'>contact us</a> and we can add you to the newletters.</p>
+                                                              
                                                             
                                                                 
                                                                 <button className="btn-newsletter" type="submit">Confirm</button>
+                                                                
                                                         </div>}
 
                                                 </div>
