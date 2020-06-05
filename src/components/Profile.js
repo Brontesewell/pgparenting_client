@@ -49,22 +49,31 @@ class Profile extends Component  {
                 <h1 id="my-family-title">My Family</h1>
                 <div id="line-family"></div>
             <div className = "my-fam">
-            <h1 id="my-profile">Profile</h1>
-             <div className="line-profile"></div>
-                <h3 className="p">{first_name + ' ' + last_name}</h3>
-                <h6 id="email-p"><strong>Email: </strong>{email}</h6>
               
+              <h4>My Profile</h4>
+              <h4>Family Growth Tracker</h4>
+              <h4>My Profile</h4>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <a href="/add-child" class="btn-direct">Add Child</a>
               
-                    <button onClick={()=> this.props.history.push('/edit-profile')} id="edit-p" className="btn">Edit Profile</button>
-                   
             </div>
 
 
 
             <div id = "boxes"> 
             <div id = "leftbox"> 
+            <h1 id="my-profile">Profile</h1>
+            
+                <h3 className="p">{first_name + ' ' + last_name}</h3>
+                <h6 id="email-p"><strong>Email: </strong>{email}</h6>
+                
+                    <button onClick={()=> this.props.history.push('/edit-profile')} id="edit-p" className="btn">Edit Profile</button>
+                    <br />
                 <h3 id="my-children"> Children</h3>  
-                <div className="line-child"></div>
                         <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
                         
                
