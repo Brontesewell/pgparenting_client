@@ -25,9 +25,9 @@ class EditProfile extends Component {
         const {editProfile, deleteUser, history, currentUser} = this.props
         return (
             <div>
-                <div className = 'row'>
+                
                     {<Navbar/>}
-                </div>
+               
                 <div className = 'form-edit-p'>
                     <form className = 'container' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
                         <label htmlFor="firstName">First Name</label>

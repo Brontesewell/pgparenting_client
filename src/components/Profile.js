@@ -43,7 +43,7 @@ class Profile extends Component  {
     return (
         <div >
             
-               {<Navbar/>} 
+               {/* {<Navbar/>} */}
             
             <div id="profiles">
                 <h1 id="my-family-title">My Family</h1>
@@ -54,9 +54,9 @@ class Profile extends Component  {
                 <h3 className="p">{first_name + ' ' + last_name}</h3>
                 <h6 id="email-p"><strong>Email: </strong>{email}</h6>
               
-                <div >
-                    <Link to='/edit-profile'><button id="edit-p" className="btn">Edit Profile</button></Link>
-                    </div>
+              
+                    <button onClick={()=> this.props.history.push('/edit-profile')} id="edit-p" className="btn">Edit Profile</button>
+                   
             </div>
 
 
@@ -81,7 +81,7 @@ class Profile extends Component  {
                         <Link to='/about_scoring'><button id="about-s-p" >Family Report Info</button></Link>
                
                 < BehaviourQuadrant currentUser={this.props.currentUser} behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
-                {/* {this.props.currentUser.kids.map(kid => < BehaviourQuadrant kid={kid} />)} */}
+               
             </div>
               
             <div id = "middlebox"> 

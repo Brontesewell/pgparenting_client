@@ -12,9 +12,9 @@ class AboutASP extends Component {
         
         return (
             <div>
-                <div className = 'row'>
+                
                     <Navbar />
-                </div>
+               
 
         <div id="asp-backgrounds">
                 <h2 id="asp-title">Family Report</h2>

@@ -38,9 +38,9 @@ class AddKid extends Component {
 
         return (
             <div>
-                <div className = 'row'>
+                
                     {<Navbar/>}
-                </div>
+                
                 <div id="edit-background">
                 <div className = 'form-edit'>
                     <h2 id="add-kid">Add a Child</h2>
