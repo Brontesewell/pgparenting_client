@@ -2257,10 +2257,11 @@ filter: brightness(59%);
   margin-top: 42px
 }
 
-#quote-about{
+#quote-about-page{
   color: #3b4b75;
   font-weight: 350;
-  font-size: 25px;
+  margin-top: 10px;
+  font-size: 55px;
 }
 
 #newsletter-title{
@@ -3408,4 +3409,6 @@ font-size: 40px;
   height: 280px;
   margin-bottom: 30px;
   float: bottom;
+  /* filter: brightness(80%); */
 }
+

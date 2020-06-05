@@ -25,7 +25,7 @@ class AboutUs extends Component {
                         
 
                     <div id="parents"><img className ='parents-photo' alt="parents" src={Parent}/>
-                    <h2 id="quote-about">We are all about “better parenting for a better world”</h2>
+                    <h2 id="quote-about-page">We are all about “better parenting for a better world”</h2>
                     <br></br> <br></br>
                     <a  href='/contact_us' id="button-image-about">Contact Us</a></div>
                
@@ -52,6 +52,7 @@ class AboutUs extends Component {
         <div className="family-about">
             <h5 className="family-name">About Our Family</h5>
             <img id="about-my-family" src="https://images.unsplash.com/photo-1576014131795-d440191a8e8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+         
             <br></br>
             <br></br>
             <div class="about-family">
