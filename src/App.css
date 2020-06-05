@@ -2928,7 +2928,7 @@ color: #8597C5;
 
 .quote-home-image{
   color:#fff;
-  font-size: 30px;
+  font-size: 45px;
   font-family: sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
@@ -2936,11 +2936,12 @@ color: #8597C5;
 
 .quote-home-text{
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   font-family: sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
-  text-align: justify;
+  text-align: center;
+  margin-left: 15px;
 }
 
 #quote-over-images{
