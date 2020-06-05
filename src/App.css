@@ -1641,7 +1641,7 @@ margin-bottom: 2px;
  .membership-div{
    background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
    background-attachment: fixed;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
  }
@@ -1650,7 +1650,7 @@ margin-bottom: 2px;
   background-image: url('https://mikajabi.s3.us-east-1.amazonaws.com/all-access/aa-landing-page/images/quote-bg.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: bottom center;
   padding-bottom: 50px;
  }
@@ -2503,6 +2503,11 @@ font-size: 20px;
 margin-top: 20px;
 }
 
+.home-shop-title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .home-shop-text{
   color: #516496;
   font-family: sans-serif;
@@ -2865,8 +2870,9 @@ color: #8597C5;
 }
 
 #quote-about{
-  padding-top: 1
-  0px
+  color: #3b4b75;
+  font-weight: 350;
+  font-size: 30px;
 }
 
 .shopping{
@@ -2912,12 +2918,13 @@ color: #8597C5;
   object-fit: cover;
   width: 100%;
   height: 600px;
-  filter: brightness(78%);
+  filter: brightness(85%);
+  /* filter: blur(1px); */
 }
 
 #light-bulb{
-  width: 7%;
-  margin-top: -10px;
+  width: 9%;
+  margin-top: -15px;
 }
 
 #quote-home-img{
@@ -2927,7 +2934,7 @@ color: #8597C5;
 }
 
 .quote-home-image{
-  color:#fff;
+  color:rgb(102, 99, 99);
   font-size: 45px;
   font-family: sans-serif;
   font-weight: 300;
@@ -2935,24 +2942,27 @@ color: #8597C5;
 }
 
 .quote-home-text{
-  color: #fff;
+  color: rgb(102, 99, 99);
   font-size: 30px;
   font-family: sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
   text-align: center;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 #quote-over-images{
   position: absolute;
-  top: 45%;
   left: 400px;
   width: 45%;
-  height: 150px;
+   bottom: 0%;
+ 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   font-size: 25px;
+  background-color: rgba(250, 248, 248, 0.3);
+  border-radius: 3px;
+  padding: 15px;
 }
 
 .quote-img-text{
