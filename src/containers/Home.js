@@ -229,17 +229,31 @@ class Home extends Component {
                     <br></br>
                     <br></br>
            
-                    <div class="contact-home-div">
-                  <Fade>
+                
                     
                                 <h1 id="contact-home">Contact Us</h1>
                                 <br></br>
-                                <h5 className="contact-option">Email: support@pgparenting.com</h5>
-                                <h5 className="contact-option">Phone: +1 828 6366</h5>
-                                <h5 className="contact-option">Location: San Francisco, California</h5>
+                                <br></br>
+                                <div class="container">
+                                <div class="row contact-names">
+                                    <div class="col-md">
+                                            <h5 className="contact-option">Email: support@pgparenting.com</h5>
+                                        </div>
+                                        <div class="col-md">
+                                             <h5 className="contact-option">Phone: +1 828 6366</h5>
+                                        </div>
+                                        <div class="col-md">
+                                            <h5 className="contact-option">Location: San Francisco, California</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <br></br>
                                 <br></br>
-                                <span id="email-home-contact" for="lname">Email is being sent from: <strong>{email}</strong></span>
+                            <div class="contact-home-div">
+                                <span id="email-home-contact">OR</span>
+                                <br/>
+                                <span id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></span>
                                 <br></br>
                                 <br></br>
                                 <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
@@ -247,9 +261,9 @@ class Home extends Component {
                                     <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
                                     <button id="btn-add-contact" className="btn" type="submit" >Send</button>
                                 </form>
+                          </div>
 
-                    </Fade>
-                    </div>
+                   
                    
 
                     <ScrollUpButton/>
