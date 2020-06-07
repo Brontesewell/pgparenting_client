@@ -32,6 +32,8 @@ import {
   import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SocialIcon } from 'react-social-icons';
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 
 class Welcome extends Component {
@@ -61,18 +63,24 @@ class Welcome extends Component {
         
                 <ScrollableAnchor id={'section1'}>
                 <div class="container">
+                    <Fade>
                         <h3 id="membership-title">With you every step of the way</h3>
+                    </Fade>
                     <div class="row">
                         <div class="col-lg">
+                        <Fade>
                         <h4 id="left-membership-head">Explore all the benefits that are included when you sign-up:</h4>
                         <h4 className="h5-left-membership">Exlusive access to parenting courses</h4>
                         <h4 className="h5-left-membership">Unlimited access to parenting guides and articles</h4>
                         <h4 className="h5-left-membership">Expert and doctor opinion</h4>
                         <h4 className="h5-left-membership">Private online community chatroom</h4>
                         <h4 className="h5-left-membership">Childrens growth and success tracker</h4>
+                        </Fade>
                         </div>
                         <div class="col-lg">
+                        <Fade>
                             <img id="image-membership" src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+                            </Fade>                       
                         </div>
                     </div>
                 </div>
@@ -83,6 +91,7 @@ class Welcome extends Component {
                 <br></br>
                 </div>
                 <div>
+                        <Fade>
                     <div id="bottom-div-welcome">
                         <div id="right-welcome-bottom" className="box sb3"><h5 id="right-top-text">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
                         <a href="/signup-user"><button className="btn-welcome-bottom">Join PG Parenting</button></a>
@@ -91,26 +100,32 @@ class Welcome extends Component {
                         <img className="welcome-bottom-image" src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
                     </div>
                 </div>
+                        </Fade>
+                        <Fade>
                     <div id="bottom-div-welcome-small">
                         <div id="right-welcome-bottom-small" className="box-small sb3-small"><h5 id="right-top-text-small">My subscription to PG introduced me to a support system that has helped me to become a better role model for my kid.</h5><h5 id="right-bottom-text">- Taylor, Auston TX</h5></div>
                         <img className="welcome-bottom-image-small" src="https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" />
                         <a href="/signup-user"><button className="btn-welcome-bottom-small">Join PG Parenting</button></a>
                 </div>
-
+                </Fade>
                 
                 </div>
                  <div id="share-div">
                  <div class="container">
                     <div class="row">
                         <div class="col-lg">
+                        <Fade>
                         <h4 id="world-map-text">Led Parenting courses Worldwide with proven Curriculum</h4>
-                    
+                        </Fade>
                         </div>
                         <div class="col-lg">
+                        <Fade>
                                  <img id="world-map" src={WorldMap}/>
+                                 </Fade>
                         </div>
                     </div>
                 </div>
+                
                  <h4 id="share-now">Share Now</h4>
                 
                 <FacebookShareButton
@@ -205,14 +220,18 @@ class Welcome extends Component {
                     size={32}
                     round/>
                 </TumblrShareButton> 
+                
                 </div> 
 
                 <div className="courses-welcome-divs">
                 <div className="courses-welcome">
                     <div class="container">
+                    <Fade>
                         <h4 id="courses-title-welcome">Popular Avaliable Courses</h4>
+                        </Fade>
                         <div class="row">
                             <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <Fade>
                                 <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
                                 <span className="course-welcome-image-overlay">
@@ -221,8 +240,10 @@ class Welcome extends Component {
                                     <span className="span-course-catagory">SLEEP</span>
                                 </span>
                                 </div>
+                                </Fade>
                             </div>
                             <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <Fade>
                                 <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1544285703-276682d3196b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
                                 <span className="course-welcome-image-overlay">
@@ -231,8 +252,10 @@ class Welcome extends Component {
                                     <span className="span-course-catagory">SLEEP</span>
                                 </span>
                                 </div>
+                                </Fade>
                             </div>
                             <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <Fade>
                              <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1523151401668-fff9e38a48e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
                                 <span className="course-welcome-image-overlay">
@@ -241,10 +264,12 @@ class Welcome extends Component {
                                     <span className="span-course-catagory">SLEEP</span>
                                 </span>
                              </div>
+                             </Fade>
                             </div>
                         </div>
                         <div class="row">
                             <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <Fade>
                             <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
                                 <span className="course-welcome-image-overlay">
@@ -253,8 +278,10 @@ class Welcome extends Component {
                                     <span className="span-course-catagory">SLEEP</span>
                                 </span>
                                 </div>
+                                </Fade>
                             </div>
                             <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <Fade>
                             <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
                                 <span className="course-welcome-image-overlay">
@@ -263,8 +290,10 @@ class Welcome extends Component {
                                     <span className="span-course-catagory">SLEEP</span>
                                 </span>
                                 </div>
+                                </Fade>
                             </div>
                             <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <Fade>
                             <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1513807016779-d51c0c026263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
                                 <span className="course-welcome-image-overlay">
@@ -273,6 +302,7 @@ class Welcome extends Component {
                                     <span className="span-course-catagory">SLEEP</span>
                                 </span>
                                 </div>
+                                </Fade>
                             </div>
                         </div>
 

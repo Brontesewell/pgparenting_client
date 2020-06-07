@@ -1239,14 +1239,17 @@ letter-spacing: 1px
 }
 
 .contact-option{
-  color: rgb(39, 44, 68);
+  color: #2d395a;
+  text-align: left;
 }
 
 .contact-home-div {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-
+  text-align: left;
+  color: #2d395a;
+  padding-left: 20px;
 }
 
 #contact-home{

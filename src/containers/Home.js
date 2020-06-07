@@ -187,6 +187,8 @@ class Home extends Component {
                     <br></br>
                     <br></br>
                     <br></br>
+                    <br></br>
+                    <br></br>
                     <div>
                         <Fade>
                     <h3 className="quote-img-text">“Encourage and support your kids because children are apt to live up to what you believe of them.” - PG Parenting</h3>
@@ -196,6 +198,8 @@ class Home extends Component {
                             
                     </Fade>
                 </div>
+                <br></br>
+                    <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
@@ -231,37 +235,37 @@ class Home extends Component {
            
                 
                     
-                                <h1 id="contact-home">Contact Us</h1>
-                                <br></br>
-                                <br></br>
+                                {/* <h1 id="contact-home">Contact Us</h1> */}
+                                <h4 id="from-the-blog"><strong id="o">•</strong>Contact Us<strong id="o">•</strong></h4>
+                               
+                               
                                 <div class="container">
                                 <div class="row contact-names">
+                                        <div class="col-md">
+                                            <div class="contact-home-div">
+                                                {/* <span id="email-home-contact">OR</span> */}
+                                               
+                                                <h5 id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></h5>
+                                                <br></br>
+                                               
+                                                <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
+                                                    <label htmlFor="description" className="grey-text">Message</label>
+                                                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
+                                                    <button id="btn-add-contact" className="btn" type="submit" >Send</button>
+                                                </form>
+                                            </div>
+                                        </div>
                                     <div class="col-md">
-                                            <h5 className="contact-option">Email: support@pgparenting.com</h5>
+                                            <h5 className="contact-option"><strong>Email:</strong> support@pgparenting.com</h5>
+                                            <h5 className="contact-option"><strong>Location:</strong> San Francisco, California</h5>
+                                             <h5 className="contact-option"><strong>Phone:</strong> +1 828 6366</h5>
                                         </div>
-                                        <div class="col-md">
-                                             <h5 className="contact-option">Phone: +1 828 6366</h5>
-                                        </div>
-                                        <div class="col-md">
-                                            <h5 className="contact-option">Location: San Francisco, California</h5>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 
                                 <br></br>
                                 <br></br>
-                            <div class="contact-home-div">
-                                <span id="email-home-contact">OR</span>
-                                <br/>
-                                <span id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></span>
-                                <br></br>
-                                <br></br>
-                                <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
-                                    <label htmlFor="description" className="grey-text">Description</label>
-                                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
-                                    <button id="btn-add-contact" className="btn" type="submit" >Send</button>
-                                </form>
-                          </div>
 
                    
                    
