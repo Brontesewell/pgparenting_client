@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import Navbar from '../containers/Navbar'
+import Navbar from '../../containers/Navbar'
 import {Link} from 'react-router-dom'
-import Children from './Children'
-import CourseCollection from './CourseCollection'
-import Footer from '../containers/Footer'
-import BehaviourQuadrant from '../containers/Quadrants/BehaviourQuadrant'
-import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; //Add this line Here
+import Children from '../Children'
+import CourseCollection from '../CourseCollection'
+import Footer from '../../containers/Footer'
+import BehaviourQuadrant from '../../containers/Quadrants/BehaviourQuadrant'
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
+import MyProfile from './MyProfile'
 
 class Profile extends Component  {
     
@@ -15,6 +16,7 @@ class Profile extends Component  {
         behaviour_2: [],
         behaviour_3: [],
         behaviour_4: [],
+        profilePage: false
     }
 
     componentDidMount(){
@@ -37,6 +39,12 @@ class Profile extends Component  {
             )
     }
 
+    clickProfile = () => {
+        this.setState({
+            profilePage: !this.state.profilePage
+        })
+    }
+
     render() {
  
     const {first_name, last_name, email} = this.props.currentUser
@@ -52,7 +60,7 @@ class Profile extends Component  {
               
               <h4>My Profile</h4>
               <h4>Family Growth Tracker</h4>
-              <h4>My Profile</h4>
+              <h4 onClick={ () => this.clickProfile() && <MyProfile/> }>Kids</h4>
               <br></br>
               <br></br>
               <br></br>
@@ -65,42 +73,26 @@ class Profile extends Component  {
 
 
             <div id = "boxes"> 
-            <div id = "leftbox"> 
-            <h1 id="my-profile">Profile</h1>
-            
-                <h3 className="p">{first_name + ' ' + last_name}</h3>
-                <h6 id="email-p"><strong>Email: </strong>{email}</h6>
-                
-                    <button onClick={()=> this.props.history.push('/edit-profile')} id="edit-p" className="btn">Edit Profile</button>
-                    <br />
-                <h3 id="my-children"> Children</h3>  
-                        <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
-                        
-               
-                <br></br>
-                <br></br>
-                    {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}
-            </div>
+            {/* <div id = "leftbox"> 
+            <MyProfile/> */}
+             {/* <MyProfile/>  */}
+
+            {/* </div> */} 
 
 
 
-            <div id ="quadrantss">
+            {/* <div id ="quadrantss">
             <h3 id="my-children">Children Quadrant</h3> 
                 <div className="line-favs"></div>
                         <Link to='/about_scoring'><button id="about-s-p" >Family Report Info</button></Link>
                
                 < BehaviourQuadrant currentUser={this.props.currentUser} behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
                
-            </div>
+            </div> */}
               
-            <div id = "middlebox"> 
-                <h3 id="my-children">Favourite Courses</h3> 
-                <div className="line-favss"></div>
-                <div className="">
-                {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
-                </div>
+            {/* <div id = "middlebox"> 
             </div> 
-              
+               */}
           
         </div> 
 
