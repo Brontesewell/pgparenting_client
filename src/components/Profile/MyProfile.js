@@ -7,40 +7,73 @@ import CourseCollection from '../CourseCollection'
 import Footer from '../../containers/Footer'
 import BehaviourQuadrant from '../../containers/Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
+import {Col} from 'react-bootstrap'
+
 
 class MyProfile extends Component  {
     
 
     render() {
- 
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div> 
         <div id = "leftbox"> 
  
-            <h1 id="my-profile">My Profile</h1>
+            <h3 id="my-profile">My Profile</h3>
+            <br/>
+                <div class="container">
+                    <div class="row">
+                    <Col lg={9}>
+                            <h6 id="email-p"><strong>Name: </strong>{first_name + ' ' + last_name}</h6>
+                            <h6 id="email-p"><strong>Email: </strong>{email}</h6>
+                        </Col>
+
+                        <Col lg={3}>
+                            <Link to='/edit-profile'> <button id="edit-p" className="btn">Edit Profile</button></Link>
+                            <Link to='/edit-profile'> <button id="edit-p" className="btn">Delete Account</button></Link>
+                        </Col>
+                    </div>
+                </div>
             
-                <h3 className="p">Name: {first_name + ' ' + last_name}</h3>
-                <h6 id="email-p"><strong>Email: </strong>{email}</h6>
-                
-                <Link to='/edit-profile'> <button id="edit-p" className="btn">Edit Profile</button></Link>
-                    <br />
-                <h3 id="my-children"> Children</h3>  
-                <h5>Childrens Names</h5>
-                        <Link to='/add-child'><button id="edit-p" className="btn">Add another Child</button></Link>
-                        
+                <br/>
+                <br />
+
+
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                        <h3 id="my-children">Favourite Courses</h3>  
+                    
+                <div className="">
+                {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
+                </div>
+          
+                        </div>
+
+                        <div class="col-md">
+                     
+                            <h3 id="my-children"> Children</h3>  
+                            <ul>
+                            {this.props.currentUser.kids.map(kid => <li id="kid-profile-li">{kid.name}</li> )}
+                            </ul>
+                      
                
+                             <br/>
+                            <Link to='/add-child'><button id="add-child-btn" className="btn">Add Child</button></Link>
+
+                        </div>
+                    </div>
+                </div>
+                
                 <br></br>
                 <br></br>
                     {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}
                     <br></br>
                 <br></br>
-                <h3 id="my-children">Favourite Courses</h3> 
-                <div className="line-favss"></div>
-                <div className="">
-                {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
-                </div>
-          
+                      
+                        
+               
+
 
           
        

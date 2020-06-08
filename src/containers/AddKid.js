@@ -3,8 +3,14 @@ import React, { Component } from 'react';
 import Navbar from './Navbar'
 import {connect} from 'react-redux'
 import addKid from '../actions/addKid'
-
-
+import {Form, Col, FormGroup, FormControl} from 'react-bootstrap'
+import DateRangePicker from 'react-bootstrap-daterangepicker';
+// you will need the css that comes with bootstrap@3. if you are using
+// a tool like webpack, you can do the following:
+import 'bootstrap/dist/css/bootstrap.css';
+// you will also need the css that comes with bootstrap-daterangepicker
+import 'bootstrap-daterangepicker/daterangepicker.css';
+import { MDBDatePickerV5 } from 'mdbreact';
 class AddKid extends Component {
 
     state = {
@@ -46,20 +52,31 @@ class AddKid extends Component {
                     <h2 id="add-kid">Add a Child</h2>
                     <form className = 'edit-kid' onSubmit={(e) => this.props.addKid(e, this.state, history)}>
                        <div id="add-kid-general">
-                        <label htmlFor="name">Name</label>
-                        <input name="name" value={name} onChange={this.handleChange}/>
 
-                        {/* <label htmlFor="gender">Gender</label>
-                        <input name="gender" value={gender} onChange={this.handleChange}/> */}
-                         <label htmlFor="gender">Gender</label>
-                        <select className="browser-default" value={gender} name="gender" onChange={this.handleChange}>
-                            <option value="" disabled selected>Choose a Gender</option>
-                            <option value="female">Female</option>
-                            <option value="male">Male</option>
-                        </select>
+                          
+                              <Form.Row>
+                                <Form.Group as={Col} controlId="formGridName">
+                                  <Form.Label>Name</Form.Label>
+                                  <Form.Control name="name" value={name} onChange={this.handleChange} type="text" placeholder="Name" />
+                                </Form.Group>
 
-                       <label htmlFor="birthday">Birthday</label>
-                        <input type='text' name="birthday" value={birthday} onChange={this.handleChange}/>
+                                <Form.Group as={Col} controlId="formGridGender">
+                                  <Form.Label id="gender-profile-kid">Gender</Form.Label>
+                                  <Form.Control name="gender" value={gender} onChange={this.handleChange} as="select" defaultValue="Choose...">
+                                    <option  value="" disabled>Choose...</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                  </Form.Control>
+                                </Form.Group>
+                              </Form.Row>
+                              <Form.Row>
+                                <Form.Group as={Col} controlId="formGridBirthday">
+                                  <Form.Label>Birthday</Form.Label>
+                                  <Form.Control name="birthday" value={birthday} onChange={this.handleChange} type="text" placeholder="Birthday" />
+                                </Form.Group>
+                                </Form.Row>  
+                  
+                 
                         </div>
 
                         <div id="progress">
@@ -156,8 +173,8 @@ class AddKid extends Component {
                                 <input name="academic_progress" value="5" type="radio" onChange={this.handleChange} checked={academic_progress === '5'}/>
                                 <span>5</span>
                               </label>
-<br></br> 
-<br></br> 
+                              <br></br> 
+                              <br></br> 
 
 
                               <label htmlFor="Character Progress">Character Progress</label>  
