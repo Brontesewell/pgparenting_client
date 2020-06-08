@@ -16,7 +16,7 @@ class Profile extends Component  {
         profilePage: true,
         quadrantPage: false,
     }
-    
+
     clickProfile = () => {
         this.setState({
             profilePage: true,
@@ -40,9 +40,12 @@ class Profile extends Component  {
                {/* {<Navbar/>} */}
             
             <div id="profiles">
+
                 <h1 id="my-family-title">My Family</h1>
                 <div id="line-family"></div>
-            <div className = "my-fam">
+
+                
+            <div className = "side-nav-profile">
               
               <h4 onClick={ () => this.clickProfile()}>My Profile</h4>
               <h4 onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
