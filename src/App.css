@@ -81,7 +81,7 @@ margin-top: 100px;
   background-color: white;
   transition: 0.3s;
   width: 80%;
-  height: 1170px;
+  min-height: 1000px;
 }
 
 #edit-background{
@@ -124,10 +124,12 @@ margin-top: 100px;
   background-color: #8597C5;
   float: center;
   margin-bottom: 20px;
-  margin-top: 90px;
+  margin-top: 60px;
   font-size: 20px;
   margin-right: 37%;
   margin-left: 35%;
+  font-weight: 400;
+  color: white;
 }
 
 
@@ -215,16 +217,14 @@ width: 50%;
 }
 
 
+#score-title{
+ color: #3b4b75;
+}
 
 #add-kid{
   color: #3b4b75;
 }
 
-#score-title{
- color: #3b4b75;
- margin-top: 30px;
- margin-bottom: 30px;
-}
 
 #journal{
   color: #3b4b75;
@@ -288,7 +288,7 @@ margin-right: 30px;
   float: left;
   width: 45%;
   margin-left: 10px;
-  }
+}
 
 .score{
   margin-left: 30px;

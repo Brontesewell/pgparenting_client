@@ -94,26 +94,26 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="behaviour_progress" value="1" type="radio" checked onChange={this.handleChange} checked={behaviour_progress === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="behaviour_progress" value="2" type="radio" onChange={this.handleChange} checked={behaviour_progress === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="behaviour_progress" value="3" type="radio" onChange={this.handleChange} checked={behaviour_progress === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="behaviour_progress" value="4" type="radio" onChange={this.handleChange} checked={behaviour_progress === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
     
                               <label className="score">
                                 <input name="behaviour_progress" value="5" type="radio" onChange={this.handleChange} checked={behaviour_progress === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
 
                               <br></br> 
@@ -123,26 +123,26 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="sport_progress" value="1" type="radio" checked onChange={this.handleChange} checked={sport_progress === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="sport_progress" value="2" type="radio" onChange={this.handleChange} checked={sport_progress === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="sport_progress" value="3" type="radio" onChange={this.handleChange} checked={sport_progress === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="sport_progress" value="4" type="radio" onChange={this.handleChange} checked={sport_progress === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="sport_progress" value="5" type="radio" onChange={this.handleChange} checked={sport_progress === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
 
                               <br></br> 
@@ -152,26 +152,26 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="academic_progress" value="1" type="radio" checked onChange={this.handleChange} checked={academic_progress === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="academic_progress" value="2" type="radio" onChange={this.handleChange} checked={academic_progress === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="academic_progress" value="3" type="radio" onChange={this.handleChange} checked={academic_progress === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="academic_progress" value="4" type="radio" onChange={this.handleChange} checked={academic_progress === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="academic_progress" value="5" type="radio" onChange={this.handleChange} checked={academic_progress === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
                               <br></br> 
                               <br></br> 
@@ -181,32 +181,32 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="character_progress" value="1" type="radio" checked onChange={this.handleChange} checked={character_progress === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="character_progress" value="2" type="radio" onChange={this.handleChange} checked={character_progress === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="character_progress" value="3" type="radio" onChange={this.handleChange} checked={character_progress === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="character_progress" value="4" type="radio" onChange={this.handleChange} checked={character_progress === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="character_progress" value="5" type="radio" onChange={this.handleChange} checked={character_progress === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
                               </div>
 
                                 
                     
-                    <div id="score-add-kid">
+                            <div id="score-add-kid">
                                 <h4 id="score-title">Achievement Score</h4>
                                 <div className="rankings-score">
                                 <h6> 1 = Very Bad</h6>
@@ -221,26 +221,26 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="behaviour_score" value="1" type="radio" checked onChange={this.handleChange} checked={behaviour_score === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="behaviour_score" value="2" type="radio" onChange={this.handleChange} checked={behaviour_score === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="behaviour_score" value="3" type="radio" onChange={this.handleChange} checked={behaviour_score === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="behaviour_score" value="4" type="radio" onChange={this.handleChange} checked={behaviour_score === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="behaviour_score" value="5" type="radio" onChange={this.handleChange} checked={behaviour_score === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
     
                               <br></br> 
@@ -250,26 +250,26 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="sport_score" value="1" type="radio" checked onChange={this.handleChange} checked={sport_score === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="sport_score" value="2" type="radio" onChange={this.handleChange} checked={sport_score === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="sport_score" value="3" type="radio" onChange={this.handleChange} checked={sport_score === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="sport_score" value="4" type="radio" onChange={this.handleChange} checked={sport_score === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="sport_score" value="5" type="radio" onChange={this.handleChange} checked={sport_score === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
 
                               <br></br> 
@@ -279,26 +279,26 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="academic_score" value="1" type="radio" checked onChange={this.handleChange} checked={academic_score === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="academic_score" value="2" type="radio" onChange={this.handleChange} checked={academic_score === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="academic_score" value="3" type="radio" onChange={this.handleChange} checked={academic_score === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="academic_score" value="4" type="radio" onChange={this.handleChange} checked={academic_score === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="academic_score" value="5" type="radio" onChange={this.handleChange} checked={academic_score === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
 <br></br> 
 <br></br> 
@@ -308,32 +308,32 @@ class AddKid extends Component {
                             <br></br>   
                               <label className="score">
                                 <input name="character_score" value="1" type="radio" checked onChange={this.handleChange} checked={character_score === '1'}/>
-                                <span>1</span>
+                                <span> 1</span>
                               </label>
 
                               <label className="score">
                                 <input name="character_score" value="2" type="radio" onChange={this.handleChange} checked={character_score === '2'}/>
-                                <span>2</span>
+                                <span> 2</span>
                               </label>
                               <label className="score">
                                 <input name="character_score" class="with-gap" value="3" type="radio" onChange={this.handleChange} checked={character_score === '3'}/>
-                                <span>3</span>
+                                <span> 3</span>
                               </label>
 
                               <label className="score">
                                 <input name="character_score" class="with-gap" value="4" type="radio" onChange={this.handleChange} checked={character_score === '4'}/>
-                                <span>4</span>
+                                <span> 4</span>
                               </label>
 
                               <label className="score">
                                 <input name="character_score" class="with-gap" value="5" type="radio" onChange={this.handleChange} checked={character_score === '5'}/>
-                                <span>5</span>
+                                <span> 5</span>
                               </label>
                               </div>
 
                         <br></br>
                         <br></br>
-                        <button id="btn-add-child" className="btn" type="submit" >Add Child</button>
+                        <button id="btn-add-child" className="btn" type="submit" >Submit</button>
                     </form>
                    </div>
                    </div>
