@@ -7,41 +7,27 @@ import CourseCollection from '../CourseCollection'
 import Footer from '../../containers/Footer'
 import BehaviourQuadrant from '../../containers/Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
-import MyProfile from './MyProfile'
+import MyProfile from './MyProfile';
+import FamilyQuad from './FamilyQuads'
 
 class Profile extends Component  {
-    
+
     state={
-        behaviour_1: [],
-        behaviour_2: [],
-        behaviour_3: [],
-        behaviour_4: [],
-        profilePage: false
+        profilePage: true,
+        quadrantPage: false,
     }
-
-    componentDidMount(){
-        this.props.currentUser.kids.map(kid => 
-            kid.behaviour_score * kid.behaviour_progress <= 5 ?
-            this.setState(prevState => ({
-                behaviour_1: [...prevState.behaviour_1, ...this.state.behaviour_1.concat(kid)]
-              })) 
-            : (kid.behaviour_score * kid.behaviour_progress) >= 5 && (kid.behaviour_score * kid.behaviour_progress) <= 10 && kid.behaviour_progress == 2 ?
-            this.setState(prevState => ({
-                behaviour_2: [...prevState.behaviour_2, ...this.state.behaviour_2.concat(kid)]
-              })) : (kid.behaviour_score * kid.behaviour_progress) >= 5 && (kid.behaviour_score * kid.behaviour_progress) <= 10 && kid.behaviour_progress >= 3 ?
-            this.setState(prevState => ({
-                behaviour_3: [...prevState.behaviour_3, ...this.state.behaviour_3.concat(kid)]
-              })) : (kid.behaviour_score * kid.behaviour_progress) >= 11 ?
-            this.setState(prevState => ({
-                behaviour_4: [...prevState.behaviour_4, ...this.state.behaviour_4.concat(kid)]
-              }))  : 
-                    null
-            )
-    }
-
+    
     clickProfile = () => {
         this.setState({
-            profilePage: !this.state.profilePage
+            profilePage: true,
+            quadrantPage: false,
+        })
+    }
+
+    clickQuadrant =() =>{
+        this.setState({
+            quadrantPage: true,
+            profilePage: false
         })
     }
 
@@ -58,9 +44,9 @@ class Profile extends Component  {
                 <div id="line-family"></div>
             <div className = "my-fam">
               
-              <h4>My Profile</h4>
-              <h4>Family Growth Tracker</h4>
-              <h4 onClick={ () => this.clickProfile() && <MyProfile/> }>Kids</h4>
+              <h4 onClick={ () => this.clickProfile()}>My Profile</h4>
+              <h4 onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
+              <h4 >Kids</h4>
               <br></br>
               <br></br>
               <br></br>
@@ -75,8 +61,8 @@ class Profile extends Component  {
             <div id = "boxes"> 
             {/* <div id = "leftbox"> 
             <MyProfile/> */}
-             {/* <MyProfile/>  */}
-
+                {this.state.profilePage === true ? <MyProfile/> : null}
+                {this.state.quadrantPage === true ? <FamilyQuad/> : null}
             {/* </div> */} 
 
 

@@ -15,7 +15,7 @@ class MyProfile extends Component  {
  
     const {first_name, last_name, email} = this.props.currentUser
     return (
-        <div id = "boxes"> 
+        <div> 
         <div id = "leftbox"> 
  
             <h1 id="my-profile">My Profile</h1>
