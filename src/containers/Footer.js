@@ -52,7 +52,10 @@ class Footer extends Component {
                         
                         
                     
+                        <div className="line-footers"></div>
                         </div>
+
+
                         <div class="col-lg">
                                  
 
@@ -62,7 +65,10 @@ class Footer extends Component {
                             <SocialIcon className="share-button" url="https://www.youtube.com" style={{ height: 35, width: 35 }}/>
                             <p id="email-icon-footer-welcome"><FontAwesomeIcon icon={faEnvelope} id="email-footer" /> pgparenting@gmail.com</p>
         
+                        <div className="line-footers"></div>
                         </div>
+
+
                         <div class="col-lg">
                                  
                                 <h5 id="newsletter-title">Sign up for <strong id="newsletter-logo">PG Parenting</strong> newsletter</h5>

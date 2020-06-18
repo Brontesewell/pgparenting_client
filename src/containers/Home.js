@@ -236,7 +236,7 @@ class Home extends Component {
                     <a href="#" class="btn-direct">Preteens</a>
                     <a href="#" class="btn-direct">Toddler</a>
                     <a href="#" class="btn-direct">About Us</a>
-                    <a href="#" class="btn-direct">Co-Parenting</a>
+                    <a href="#" class="btn-direct1">Co-Parenting</a>
                     </div>
 
                     <br></br>
@@ -246,10 +246,10 @@ class Home extends Component {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-           
+                   
+                  
+                  
+        
                 
                     
                                 {/* <h1 id="contact-home">Contact Us</h1> */}
@@ -258,6 +258,11 @@ class Home extends Component {
                                
                                 <div class="container">
                                 <div class="row contact-names">
+                                    <div class="col-md">
+                                            <h5 className="contact-option"><strong>Email:</strong> support@pgparenting.com</h5>
+                                            <h5 className="contact-option"><strong>Location:</strong> San Francisco, California</h5>
+                                             <h5 className="contact-option"><strong>Phone:</strong> +1 828 6366</h5>
+                                        </div>
                                         <div class="col-md">
                                             <div class="contact-home-div">
                                                 
@@ -272,17 +277,12 @@ class Home extends Component {
                                                 </form>
                                             </div>
                                         </div>
-                                    <div class="col-md">
-                                            <h5 className="contact-option"><strong>Email:</strong> support@pgparenting.com</h5>
-                                            <h5 className="contact-option"><strong>Location:</strong> San Francisco, California</h5>
-                                             <h5 className="contact-option"><strong>Phone:</strong> +1 828 6366</h5>
-                                        </div>
                                         
                                     </div>
                                 </div>
                                 
                                 <br></br>
-                                <br></br>
+                                
 
                    
                    
