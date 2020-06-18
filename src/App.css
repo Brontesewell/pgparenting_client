@@ -2328,7 +2328,7 @@ filter: brightness(59%);
   margin-bottom: 40px;
   word-spacing: 3px;
   color: #8597C5;
-  margin-top:50px;
+  margin-top: 50px;
   margin-left: 7.4%;
   text-align: left;
   font-family: sans-serif;
@@ -2675,10 +2675,9 @@ padding-top: -30px;
   border: none;
 }
 
-.appt{
-  font-size: 190px !important;
-  color: #262e44;
-}
+
+
+
 
 .book-title{
   padding-top: 50px !important;
@@ -2706,6 +2705,12 @@ color: #3a4768;
   color: white;
   background-color: #516496;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 330px) {
+  .btn-shops{
+    margin-right: 15% !important;
+   }
 }
 
 .btn-shops{
@@ -2741,9 +2746,9 @@ margin-top: 20px;
 }
 
 .home-shop-text{
-  color: #516496;
+  color: #8e8f91;
   font-family: sans-serif;
-font-weight: 300;
+font-weight: 400;
 font-size: 19px;
 margin-bottom: 20px;
 }
@@ -2756,12 +2761,14 @@ margin-bottom: 20px;
   border: none;
   border-radius: 3px;
   color: white;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 
 .btn-buy:hover{
   color: white;
-  background-color: #516496;
+  background-color: #808283;
   text-decoration: none;
 }
 
@@ -2785,6 +2792,136 @@ margin-bottom: 20px;
   margin-bottom: 6% !important;
   font-family: sans-serif;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 1039px) {
+  #buttons-direct{
+    margin-bottom: 7% !important;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+  #buttons-direct{
+    margin-bottom: 10% !important;
+   }
+}
+
+@media only screen and (max-width: 711px) {
+  #buttons-direct{
+    margin-bottom: 19% !important;
+   }
+}
+
+@media only screen and (max-width: 528px) {
+  #buttons-direct{
+    margin-bottom: 30% !important;
+   }
+}
+
+@media only screen and (max-width: 508px) {
+  #buttons-direct{
+    margin-bottom: 45% !important;
+   }
+}
+
+@media only screen and (max-width: 415px) {
+  #buttons-direct{
+    margin-bottom: 65% !important;
+   }
+}
+
+@media only screen and (max-width: 380px) {
+  #buttons-direct{
+    margin-bottom: 85% !important;
+   }
+}
+
+@media only screen and (max-width: 362px) {
+  #buttons-direct{
+    margin-bottom: 95% !important;
+   }
+}
+
+@media only screen and (max-width: 350px) {
+  #buttons-direct{
+    margin-bottom: 115% !important;
+   }
+}
+
+@media only screen and (max-width: 325px) {
+  #buttons-direct{
+    margin-bottom: 135% !important;
+   }
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .contact-option{
+    margin-left: 4% !important;
+   }
+}
+
+@media only screen and (max-width: 613px) {
+  .contact-option, .contact-home-div{
+    margin-left: 9% !important;
+   }
+}
+
+@media only screen and (max-width: 613px) {
+  .contact-option {
+    margin-left: 12% !important;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-option {
+    margin-left: 15% !important;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-home-div{
+    margin-top: 9% !important;
+   }
+}
+.appt{
+  font-size: 170px;
+  color: #262e44;
+}
+
+.appts{
+  font-size: 100px;
+  color: #262e44;
+  text-align: left;
+  
+}
+
+@media only screen and (max-width: 767.5px) {
+  .appt{
+    display: none;
+   }
+}
+
+
+@media only screen and (min-width:  767.5px) {
+  .appts{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 575.5px) {
+  .about-big-div{
+    display: none;
+   }
+}
+
+
+@media only screen and (min-width:  575.5px) {
+  .about-small-div{
+    display: none;
+   }
 }
 
 .btn-direct:hover{

@@ -100,14 +100,15 @@ class Home extends Component {
       
                 
             
-                <div class="container">
+                <div class="container about-big-div">
                     <div class="row">
-                        <Col lg={3}>
+                        <Col sm={3}>
                         <Fade>
                              <i className="far fa-calendar-check appt"></i>
+                             <i className="far fa-calendar-check appts"></i>
                         </Fade>
                         </Col>
-                        <Col lg={9}>
+                        <Col sm={9}>
                         <Fade>
                             <h1 className="book-title"> Are you struggling with Parenting and want 1:1 Mentorship?</h1>
                             <h4 className="book-text">For only $30 you can have a 45 minute session!</h4>
@@ -115,6 +116,24 @@ class Home extends Component {
                             <a href="https://calendar.google.com/calendar/r" class="btn-book">Book Now!</a>
                         </Col>
                     </div>
+                </div>
+
+
+                <div class="container about-small-div">
+                    <div class="row">
+                        <Col lg={3}>
+                        <Fade>
+                            <h2 className="book-title"> <i className="far fa-calendar-check"></i> Are you struggling with Parenting and want 1:1 Mentorship?</h2>
+                        </Fade>
+                        </Col>
+                        <Col lg={9}>
+                        <Fade>
+                            <h4 className="book-text">For only $30 you can have a 45 minute session!</h4>
+                            </Fade>
+                            <a href="https://calendar.google.com/calendar/r" class="btn-book">Book Now!</a>
+                        </Col>
+                    </div>
+                            <br></br> <br></br>
                 </div>
                  <br></br>
                     
@@ -161,6 +180,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$10.97</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Made-Me-Horizon-Suncatchers-Assorted/dp/B00HUBBDIK/ref=sr_1_5?dchild=1&keywords=crafts&qid=1591311585&sr=8-5" class="btn-buy">Buy</a>
+                            <br></br><br></br>
                         </div>
                     <div class="col-md" onClick={()=> window.location.href='https://www.amazon.com/Infantino-Flip-4-Convertible-Carrier/dp/B07XMN3SK6/ref=sxin_7_ac_d_rm?ac_md=3-2-YmFieSBjYXJyaWVy-ac_d_rm&cv_ct_cx=baby&dchild=1&keywords=baby&pd_rd_i=B07XMN3SK6&pd_rd_r=589482fd-8dca-46d0-9339-98c082a65763&pd_rd_w=3CUB0&pd_rd_wg=KDqbz&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=NY4PEH7EX1K5Z0YENGDX&psc=1&qid=1591311089&sr=1-3-12d4272d-8adb-4121-8624-135149aa9081'}>
                     <Fade>
@@ -171,6 +191,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$29.99</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Infantino-Flip-4-Convertible-Carrier/dp/B07XMN3SK6/ref=sxin_7_ac_d_rm?ac_md=3-2-YmFieSBjYXJyaWVy-ac_d_rm&cv_ct_cx=baby&dchild=1&keywords=baby&pd_rd_i=B07XMN3SK6&pd_rd_r=589482fd-8dca-46d0-9339-98c082a65763&pd_rd_w=3CUB0&pd_rd_wg=KDqbz&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=NY4PEH7EX1K5Z0YENGDX&psc=1&qid=1591311089&sr=1-3-12d4272d-8adb-4121-8624-135149aa9081" class="btn-buy">Buy</a>
+                            <br></br><br></br>
                         </div>
                         <div class="col-md" onClick={()=> window.location.href='https://www.amazon.com/School-Zone-Preschool-Pre-Writing-Pre-Reading/dp/0887431453/ref=sr_1_1?dchild=1&keywords=School+Zone+-+Big+Preschool+Workbook+-+Ages+4+and+Up%2C+Colors%2C+Shapes%2C+Numbers+1-10%2C+Alphabet%2C+Pre-Writing%2C+Pre-Reading%2C+Phonics%2C+and+More+%28School+Zone+Big+Workbook+Series%29&qid=1591312156&sr=8-1'}>
                         <Fade>
@@ -181,6 +202,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$6.99</h5>
                             </Fade>
                             <a href="https://www.amazon.com/School-Zone-Preschool-Pre-Writing-Pre-Reading/dp/0887431453/ref=sr_1_1?dchild=1&keywords=School+Zone+-+Big+Preschool+Workbook+-+Ages+4+and+Up%2C+Colors%2C+Shapes%2C+Numbers+1-10%2C+Alphabet%2C+Pre-Writing%2C+Pre-Reading%2C+Phonics%2C+and+More+%28School+Zone+Big+Workbook+Series%29&qid=1591312156&sr=8-1" class="btn-buy">Buy</a>
+                            <br></br><br></br>
                          </div>
                         <div class="col-md" onClick={()=> window.location.href='https://www.amazon.com/Habits-Highly-Effective-Teens/dp/1476764662/ref=sr_1_2?dchild=1&keywords=The+7+Habits+of+Highly+Effective+Teens&qid=1591312133&sr=8-2'}>
                         <Fade>
@@ -191,6 +213,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$10.69</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Habits-Highly-Effective-Teens/dp/1476764662/ref=sr_1_2?dchild=1&keywords=The+7+Habits+of+Highly+Effective+Teens&qid=1591312133&sr=8-2" class="btn-buy">Buy</a>
+                            <br></br><br></br>
                         </div>
                     </div>
                 </div>
@@ -208,7 +231,7 @@ class Home extends Component {
                     <br></br>
                     <div>
                         <Fade>
-                    <h3 className="quote-img-text">“Encourage and support your kids because children are apt to live up to what you believe of them.” - PG Parenting</h3>
+                    <h3 className="quote-img-text">“Encourage and support your kids because children are apt to live up to what you believe of them.” <br/>- PG Parenting</h3>
                         <span><SocialIcon className="share-button" url="https://www.instagram.com/pgparenting/" style={{ height: 35, width: 35 }}/>
                             <SocialIcon className="share-button" url="https://www.facebook.com" style={{ height: 35, width: 35 }}/>
                             <SocialIcon className="share-button" url="https://www.youtube.com" style={{ height: 35, width: 35 }}/> </span>
