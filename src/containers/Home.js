@@ -49,6 +49,7 @@ class Home extends Component {
                 {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
                 <div>  
                   <img id="top-home-img" src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
+                  <img id="top-home-img-small" src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
                 
                   <FadeIn>  <div id="quote-over-images"><h3 className="quote-home-image"><img id="light-bulb" src={idea} /> Tip of the Week </h3>
                 <h3 className="quote-home-text">If your child refuses to do something, try turning it into a game. 
@@ -121,10 +122,26 @@ class Home extends Component {
 
                  <Fade bottom>
                     <div id="line-home-2">
-                        <div id="title-about"><h1 id="about-home">About Us</h1></div>
-                        
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+
+                        <h1 id="about-homes">About Us</h1>
+
+                        </div>
+                        <div class="col-sm">
+                        <h5 id="quote-about">We are all about “better parenting for a better world”</h5>
+                        </div>
+                        <div class="col-sm">
+                        <Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link>
+                            
+                        </div>
+                    </div>
+                </div>
+                        {/* <div id="title-about"><h1 id="about-home">About Us</h1></div> */}
+{/*                         
                         <div id="text-about"><h5 id="quote-about">We are all about “better parenting for a better world”</h5></div>
-                        <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div>
+                        <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div> */}
                     </div>
                     </Fade>
                     <br></br>
@@ -160,8 +177,8 @@ class Home extends Component {
                         <div className="course-card-welcome" >
                             <img className="shop-items-week" src="https://m.media-amazon.com/images/I/81HCcHPXZnL._AC_UY436_FMwebp_QL65_.jpg"/>
                             </div>
-                            <h4 className="home-shop-title">The 7 Habits of Highly Effective Teens</h4>
-                            <h5 className="home-shop-text">$1.18</h5>
+                            <h4 className="home-shop-title">Big Preschool Workbook - Ages 4</h4>
+                            <h5 className="home-shop-text">$6.99</h5>
                             </Fade>
                             <a href="https://www.amazon.com/School-Zone-Preschool-Pre-Writing-Pre-Reading/dp/0887431453/ref=sr_1_1?dchild=1&keywords=School+Zone+-+Big+Preschool+Workbook+-+Ages+4+and+Up%2C+Colors%2C+Shapes%2C+Numbers+1-10%2C+Alphabet%2C+Pre-Writing%2C+Pre-Reading%2C+Phonics%2C+and+More+%28School+Zone+Big+Workbook+Series%29&qid=1591312156&sr=8-1" class="btn-buy">Buy</a>
                          </div>
@@ -170,8 +187,8 @@ class Home extends Component {
                         <div className="course-card-welcome" >
                             <img className="shop-items-week" src="https://m.media-amazon.com/images/I/91tO0NfkvcL._AC_UY436_FMwebp_QL65_.jpg"/>
                             </div>
-                            <h4 className="home-shop-title">Big Preschool Workbook - Ages 4</h4>
-                            <h5 className="home-shop-text">$6.99</h5>
+                            <h4 className="home-shop-title">The 7 Habits of Highly Effective Teens</h4>
+                            <h5 className="home-shop-text">$10.69</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Habits-Highly-Effective-Teens/dp/1476764662/ref=sr_1_2?dchild=1&keywords=The+7+Habits+of+Highly+Effective+Teens&qid=1591312133&sr=8-2" class="btn-buy">Buy</a>
                         </div>
@@ -243,7 +260,7 @@ class Home extends Component {
                                 <div class="row contact-names">
                                         <div class="col-md">
                                             <div class="contact-home-div">
-                                                {/* <span id="email-home-contact">OR</span> */}
+                                                
                                                
                                                 <h5 id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></h5>
                                                 <br></br>

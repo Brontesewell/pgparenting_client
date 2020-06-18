@@ -341,7 +341,7 @@ h2 {
   } */
 
 
-  @media only screen and (max-width: 355px) {
+  @media only screen and (max-width: 358px) {
     .navbar-brand {
       margin-left: -40px;
       width: 75%;
@@ -781,8 +781,212 @@ letter-spacing: 1px
   }
 }
 
+@media only screen and (max-width: 1093px) {
+  .quote-home-image{
+    font-size: 38px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1093px) {
+    .quote-home-text{
+      font-size: 25px !important;
+      }
+  }
+
+ 
+
+  @media only screen and (max-width: 764px) {
+    .quote-home-image{
+      font-size: 32px !important;
+      }
+    }
+  
+    @media only screen and (max-width: 764px) {
+      .quote-home-text{
+        font-size: 22px !important;
+        }
+    }
+  
+    @media only screen and (max-width: 764px) {
+        #light-bulb{
+            width: 10% !important;
+         }
+    }
+
+    @media only screen and (max-width: 964px) {
+      #quote-over-images{
+        left: 300px !important;
+       }
+  }
+
+  @media only screen and (max-width: 635.5px) {
+    #quote-over-images{
+      width: 55% !important;
+      left: 250px !important;
+      padding-bottom: 1px !important;
+     }
+}
+
+@media only screen and (max-width: 635.5px) {
+  .quote-home-image{
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 635.5px) {
+    .quote-home-text{
+      font-size: 17px !important;
+      }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .quote-home-image{
+      font-size: 27px !important;
+
+      }
+    }
+  
+    @media only screen and (max-width: 576px) {
+      .quote-home-text{
+        font-size: 15px !important;
+        }
+    }
+  
+    @media only screen and (max-width: 560px) {
+      #quote-over-images{
+        left: 220px !important;
+        
+       }
+  }
 
 
+  @media only screen and (max-width: 515px) {
+    .quote-home-image{
+      font-size: 25px !important;
+
+      }
+    }
+  
+    @media only screen and (max-width: 515px) {
+      .quote-home-text{
+        font-size: 12px !important;
+        }
+    }
+
+    @media only screen and (max-width: 508px) {
+      #quote-over-images{
+        left: 200px !important;
+        
+       }
+  }
+
+  @media only screen and (max-width: 454px) {
+    #quote-over-images{
+      left: 180px !important;
+      
+     }
+}
+
+@media only screen and (max-width: 423px) {
+  .quote-home-image{
+    font-size: 20px !important;
+
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .quote-home-text{
+      font-size: 11px !important;
+      }
+  }
+
+  @media only screen and (max-width: 420px) {
+    #quote-over-images{
+      left: 160px !important;
+      
+     }
+}
+
+@media only screen and (max-width: 392px) {
+  .quote-home-image{
+    font-size: 15px !important;
+
+    }
+  }
+
+  @media only screen and (max-width: 392px) {
+    .quote-home-text{
+      font-size: 10px !important;
+      }
+  }
+
+  @media only screen and (max-width: 360px) {
+    #quote-over-images{
+      left: 140px !important;
+      
+     }
+}
+
+@media only screen and (max-width: 360px) {
+  .quote-home-image{
+    font-size: 13px !important;
+
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .quote-home-text{
+      font-size: 9px !important;
+      }
+  }
+
+  @media only screen and (max-width: 331px) {
+    .quote-home-image{
+      font-size: 12px !important;
+  
+      }
+    }
+  
+    @media only screen and (max-width: 331px) {
+      .quote-home-text{
+        font-size: 8.5px !important;
+        }
+    }
+
+    @media only screen and (max-width: 331px) {
+      #quote-over-images{
+        left: 130px !important;
+        
+       }
+  }
+
+@media only screen and (min-width: 635.5px) {
+  #top-home-img-small{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 635.5px) {
+  #top-home-img{
+    display: none;
+   }
+}
+  
+    /* #quote-over-images{
+      position: absolute;
+      left: 400px;
+      width: 45%;
+       bottom: 0%;
+     
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 25px;
+      background-color: rgba(250, 248, 248, 0.3);
+      border-radius: 3px;
+      padding: 15px;
+    } */
+  
 /* 
 .menu-item-course{
 	padding-left: 15%;
@@ -2167,7 +2371,7 @@ filter: brightness(59%);
   width: 100%;
   height: 270px;
   position: relative;
-  margin-bottom: 500px;
+  margin-bottom: 490px;
 }
 
 #tip-title {
@@ -2235,11 +2439,11 @@ filter: brightness(59%);
   height: 200px;
 }
 
-#about-home{
+#about-homes{
   color: white;
-  text-align: left;
+  text-align: center;
   font-weight: 300;
-  margin-bottom: -300px;
+  margin-top: 50px;
 }
 
 #title-about{
@@ -2262,24 +2466,24 @@ filter: brightness(59%);
 
 #button-about{
   margin-top: 80px;
-  width: 20%;
+  width: 190px;
   float: right;
   margin-right: 3%;
 }
 
+
 .btn-about{
   background-color: #3b4b75;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
-  padding: 16px 40px;
+  padding: 12px 40px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  margin-top: 47px;
 }
-.btn-about:focus {     
-  background-color:#2a4b91;    
+.btn-about:hover {     
+  background-color:rgb(81, 104, 163);    
 } 
 
 #text-about {
@@ -2749,9 +2953,10 @@ color: #8597C5;
 
 .footer-distributed{
   width: 100%;
-  height: 250px;
+  min-height: 250px;
   z-index: 1000;
   background-color: #FDEAE3;
+  padding-bottom: 10px;
 }
 
 .logo-footer{
@@ -2901,7 +3106,14 @@ color: #8597C5;
 #quote-about{
   color: #3b4b75;
   font-weight: 350;
-  font-size: 30px;
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 767.5px) {
+  #btn-about{
+    font-size: ;
+   }
 }
 
 .shopping{
