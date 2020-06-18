@@ -725,6 +725,11 @@ font-family: sans-serif;
  background-color: #8597C5;
 }
 
+.parent-lis  {
+  font-family: sans-serif;
+  font-weight: 300;
+ }
+
 .dropdown-item{
   color: #5a5a5c !important;
   cursor: pointer;
@@ -1556,6 +1561,7 @@ letter-spacing: 1px
   color: #6B6b69;
   margin-bottom: 4px;
   font-size: 20px;
+  font-family: sans-serif;
   font-weight: 400;
   float: left;
   margin-left: 20px;
