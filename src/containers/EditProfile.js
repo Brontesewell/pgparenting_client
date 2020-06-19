@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 import editProfile from '../actions/editProfile'
 import deleteUser from '../actions/deleteUser'
 import {Form, Col, FormGroup, FormControl} from 'react-bootstrap'

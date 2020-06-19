@@ -47,9 +47,9 @@ class Profile extends Component  {
                 
             <div className = "side-nav-profile">
               
-              <h4 onClick={ () => this.clickProfile()}>My Profile</h4>
-              <h4 onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
-              <h4 >Kids</h4>
+              <h4 style={{cursor: 'pointer'}} onClick={ () => this.clickProfile()}>My Profile</h4>
+              <h4 style={{cursor: 'pointer'}} onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
+              <h4 style={{cursor: 'pointer'}} >Kids</h4>
               <br></br>
               <br></br>
               <br></br>
