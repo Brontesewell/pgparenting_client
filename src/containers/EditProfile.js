@@ -35,19 +35,19 @@ class EditProfile extends Component {
                     <form className='edit-profile-div' onSubmit={(e)=> editProfile(e, history, this.state, currentUser.id)}>
                         <Form.Row>
                             <Form.Group as={Col} controlId="formGridFirstName">
-                                  <Form.Label>First Name</Form.Label>
+                                  <Form.Label class="email-edit">First Name</Form.Label>
                                   <Form.Control name="firstName" value={firstName} onChange={this.handleChange} type="text" placeholder="First Name" />
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="formGridLastName">
-                                  <Form.Label>Last Name</Form.Label>
+                                  <Form.Label class="email-edit">Last Name</Form.Label>
                                   <Form.Control name="lastName" value={lastName} onChange={this.handleChange} type="text" placeholder="Last Name" />
                                 </Form.Group>
                         </Form.Row>
                               
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridEmail">
-                                        <Form.Label>Email</Form.Label>
+                                        <Form.Label class="email-edit">Email</Form.Label>
                                         <Form.Control type='email' name="email" value={email} onChange={this.handleChange} placeholder="Email" />
                                     </Form.Group>
                                 </Form.Row> 
@@ -56,27 +56,18 @@ class EditProfile extends Component {
                                 <Form.Row>
                                   
                                     <Form.Group  as={Col} controlId="formBasicCheckbox">
-                                    <Form.Label>Email Preference</Form.Label>
+                                    <Form.Label class="email-edit">Email Preference</Form.Label>
                                         <Form.Check type="checkbox" label="PG Parenting Newsletter" name="subscribe" onChange={this.handleChange} value="true" />
                                     </Form.Group>
                                 </Form.Row> 
 
                                
-                        {/* <label htmlFor="firstName">First Name</label>
-                        <input name="firstName" value={firstName} onChange={this.handleChange}/>
-                        <label htmlFor="lastName">Last Name</label>
-                        <input name="lastName" value={lastName} onChange={this.handleChange}/>
-                       <label htmlFor="email">Email</label>
-                        <input type='email' name="email" value={email} onChange={this.handleChange}/>
-                        <h5>Email Preference</h5>
-                        <label>
-                        {/* <input type="checkbox" name="subscribe" class="filled-in" onChange={this.handleChange} value="true" checked={subscribe === 'true'}/> */}
-                         {/* <span>PG Parenting Newsletter</span>
-                        </label>  */}
+                       
                         
                         <button id="btn-edit-child" className="btn" type="submit" >Update</button>
                     </form>
-                    <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteUser(e, history, currentUser)}>Delete Your Account</button>
+                    <br/>
+                    <button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) => deleteUser(e, history, currentUser)}>Delete Your Account</button>
                 </div>
             </div>
         );
