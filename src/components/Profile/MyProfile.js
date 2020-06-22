@@ -54,7 +54,7 @@ class MyProfile extends Component  {
                      
                             <h3 id="my-children"> Children</h3>  
                             <ul>
-                            {this.props.currentUser.kids.map(kid => <li id="kid-profile-li">{kid.name}</li> )}
+                            {this.props.currentUser.kids.map(kid => <li onClick={()=> this.props.clickKidMyP(kid)} id="kid-profile-li">{kid.name}</li> )}
                             </ul>
                       
                

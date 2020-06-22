@@ -45,6 +45,15 @@ class Profile extends Component  {
         })
     }
 
+    clickKidMyP =(kid) =>{
+        this.setState({
+            quadrantPage: false,
+            profilePage: false,
+            kidPage: true,
+            selectedChild: kid
+        })
+    }
+
     render() {
  console.log(this.state.selectedChild)
     const {first_name, last_name, email} = this.props.currentUser
@@ -80,7 +89,7 @@ class Profile extends Component  {
             <div id = "boxes"> 
             {/* <div id = "leftbox"> 
             <MyProfile/> */}
-                {this.state.profilePage === true ? <MyProfile/> : null}
+                {this.state.profilePage === true ? <MyProfile clickKidMyP={this.clickKidMyP}/> : null}
                 {this.state.quadrantPage === true ? <FamilyQuad/> : null}
                 {this.state.kidPage === true ? <KidProfile selectedChild={this.state.selectedChild}/> : null}
             {/* </div> */} 
