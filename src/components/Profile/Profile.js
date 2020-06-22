@@ -5,34 +5,48 @@ import {Link} from 'react-router-dom'
 import Children from '../Children'
 import CourseCollection from '../CourseCollection'
 import Footer from '../../containers/Footer'
-import BehaviourQuadrant from '../../containers/Quadrants/BehaviourQuadrant'
+import BehaviourQuadrant from '..//Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
 import MyProfile from './MyProfile';
 import FamilyQuad from './FamilyQuads'
+import KidProfile from './KidProfile'
 
 class Profile extends Component  {
 
     state={
         profilePage: true,
         quadrantPage: false,
+        kidPage: false,
+        selectedChild: null
     }
 
     clickProfile = () => {
         this.setState({
             profilePage: true,
             quadrantPage: false,
+            kidPage: false,
         })
     }
 
     clickQuadrant =() =>{
         this.setState({
             quadrantPage: true,
-            profilePage: false
+            profilePage: false,
+            kidPage: false,
+        })
+    }
+
+    clickKid =(kid) =>{
+        this.setState({
+            quadrantPage: false,
+            profilePage: false,
+            kidPage: true,
+            selectedChild: kid
         })
     }
 
     render() {
- 
+ console.log(this.state.selectedChild)
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
@@ -47,12 +61,14 @@ class Profile extends Component  {
                 
             <div className = "side-nav-profile">
               
-              <h4 style={{cursor: 'pointer'}} onClick={ () => this.clickProfile()}>My Profile</h4>
-              <h4 style={{cursor: 'pointer'}} onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
-              <h4 style={{cursor: 'pointer'}} >Kids</h4>
+              <h4 className="profile-sidenav" style={{cursor: 'pointer'}} onClick={ () => this.clickProfile()}>My Profile</h4>
+              <h4 className="profile-sidenav" style={{cursor: 'pointer'}} onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
               <br></br>
               <br></br>
-              <br></br>
+       
+              <h4>Children:</h4>
+              {this.props.currentUser.kids.map(kid => <h4 className="profile-sidenav" onClick={()=> this.clickKid(kid)} style={{cursor: 'pointer'}} >{kid.name}</h4>)}
+             
               <br></br>
               <br></br>
               <a href="/add-child" class="btn-direct">Add Child</a>
@@ -66,6 +82,7 @@ class Profile extends Component  {
             <MyProfile/> */}
                 {this.state.profilePage === true ? <MyProfile/> : null}
                 {this.state.quadrantPage === true ? <FamilyQuad/> : null}
+                {this.state.kidPage === true ? <KidProfile selectedChild={this.state.selectedChild}/> : null}
             {/* </div> */} 
 
 

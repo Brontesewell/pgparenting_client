@@ -244,6 +244,7 @@ width: 50%;
 }
 #journal:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 
@@ -740,6 +741,7 @@ font-family: sans-serif;
  cursor: pointer;
  color: white;
  background-color: #8597C5;
+ width: 100%;
 }
 
 .parent-lis  {
@@ -1598,6 +1600,30 @@ letter-spacing: 1px
 }
 
 .sidenav-text:hover {
+  font-weight: 350;
+  color: #6B6b69;
+  text-decoration: none !important;
+}
+
+
+
+.profile-sidenav{
+  color: #6B6b69;
+  margin-bottom: 8px;
+  font-size: 21px;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+.profile-sidenav:hover::before {
+  font-weight: 350;
+  color: #6B6b69;
+  text-decoration: none !important;
+  content: "→"
+}
+
+.profile-sidenav:hover {
   font-weight: 350;
   color: #6B6b69;
   text-decoration: none !important;
@@ -2689,7 +2715,7 @@ padding-top: -30px;
 }
 
 #profiles{
-  min-height: 2600px;
+  min-height: 800px;
   background-color: #fff4f0;
 }
 
@@ -3026,6 +3052,8 @@ color: #8597C5;
   background-color: #8597C5;
   color: white;
   font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 300;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -3709,6 +3737,18 @@ color: #8597C5;
 }
 
 
+.quads-bg-img{
+  background: url('./quadbg.png') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.quads-imagez{
+  height: 260px;
+
+}
+
 .block {
   width: 50%;
   float: left;
@@ -3717,32 +3757,37 @@ color: #8597C5;
   
 }
 
-.one {
-  background: red;
-  border-radius: 3px;
-  margin-top: -6px;
-  border-right-style: solid;
+.one{
+ font-family: sans-serif;
+ font-weight: 400;
+ padding-top: 30px;
+ text-align: left;
+ margin-left: 120px;
 }
 
-.two {
-  background: orange;
-  border-radius: 3px;
-  margin-bottom: -13px;
-  border-right-style: solid;
+.two{
+  font-family: sans-serif;
+  font-weight: 400;
+  padding-top: 110px;
+  text-align: left;
+  margin-left: 120px;
 }
 
-.three {
-  background: yellow;
-  border-radius: 3px;
-  margin-top: -6px;
-  margin-top: -155px;
-  margin-left: 130px;
+.three{
+  font-family: sans-serif;
+  font-weight: 400;
+  padding-top: 30px;
+  text-align: left;
+  margin-left: -20px;
+  margin-left: -100px;
 }
 
-.four {
-  background: green;
-  border-radius: 1px;
-  margin-bottom: -13px;
+.four{
+  font-family: sans-serif;
+  font-weight: 400;
+  padding-top: 110px;
+  text-align: left;
+  margin-left: -100px;
 }
 
 #inside{

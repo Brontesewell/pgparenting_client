@@ -5,9 +5,8 @@ import {Link} from 'react-router-dom'
 import Children from '../Children'
 import CourseCollection from '../CourseCollection'
 import Footer from '../../containers/Footer'
-import BehaviourQuadrant from '../../containers/Quadrants/BehaviourQuadrant'
+import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
-
 class FamilyQuads extends Component  {
         
     state={
@@ -44,9 +43,10 @@ class FamilyQuads extends Component  {
     return (
         <div id = "leftbox"> 
         
-            <h3 id="my-children">Children Quadrant</h3> 
-                <div className="line-favs"></div>
-                        <Link to='/about_scoring'><button id="about-s-p" >Family Report Info</button></Link>
+            <h1 id="my-children">Children Quadrant</h1> 
+            <br></br>
+         
+               <Link to='/about_scoring'><button id="about-s-p" >Family Report Info  →</button></Link>
                
                 < BehaviourQuadrant currentUser={this.props.currentUser} behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
                

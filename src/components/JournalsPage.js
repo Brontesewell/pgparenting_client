@@ -23,9 +23,9 @@ class JournalsPage extends Component {
 
         return (
             <div>
-                <div className = 'row'>
-                    {<Navbar/>}
-                </div>
+               
+                    {/* {<Navbar/>} */}
+                
               <h1 id="title-journal">{this.props.selectedJournals.name}'s  Journals</h1>
               <div id="line-journal-title"></div>
 

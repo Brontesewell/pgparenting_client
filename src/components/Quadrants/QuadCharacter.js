@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Navbar from '../Navbar'
+import Navbar from '../../containers/Navbar'
 import {connect} from 'react-redux'
 
 
@@ -41,9 +41,32 @@ class QuadCharacter extends Component {
         return (
           <div>
 
+            <h4 className="quad-title">Character</h4>
+                <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
+                            <div class="row">
+                                <div class="col-sm quads-imagez two">
+                                <div > { this.state.character_2.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
 
+                                </div>
+                               
+                                <div class="col-sm quads-imagez four">
+                                <div > { this.state.character_4.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
+                                </div> 
+                                </div>
+
+                                <div class="row">
+                                <div class="col-sm quads-imagez one">
+                                <div > { this.state.character_1.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
+
+                                </div>
+                               
+                                <div class="col-sm quads-imagez three">
+                                <div > { this.state.character_3.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
+                                </div> 
+                        </div>
+                </div>
                 
-                <h4 className="quad-title">Character</h4>
+                {/* <h4 className="quad-title">Character</h4>
                 <div id="line-quad-bottom"></div>
                 <div id="outside">
                 <p> ↑ Good Achievement</p>
@@ -56,7 +79,7 @@ class QuadCharacter extends Component {
                 <div class="block three">3 { this.state.character_3.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
                 <p  id="good-progress">→ Good Progress </p>
                 <p id="bad-achievement">↓ Bad Achievement</p>
-                </div>
+                </div> */}
                 
                
             </div>

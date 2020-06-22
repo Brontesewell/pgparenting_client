@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import Children from '../Children'
 import CourseCollection from '../CourseCollection'
 import Footer from '../../containers/Footer'
-import BehaviourQuadrant from '../../containers/Quadrants/BehaviourQuadrant'
+import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
 import {Col} from 'react-bootstrap'
 
@@ -67,7 +67,7 @@ class MyProfile extends Component  {
                 
                 <br></br>
                 <br></br>
-                    {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )}
+                    {/* {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )} */}
                     <br></br>
                 <br></br>
                       
