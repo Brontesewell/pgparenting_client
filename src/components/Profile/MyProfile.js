@@ -41,16 +41,16 @@ class MyProfile extends Component  {
 
                     <div class="container">
                     <div class="row">
-                        <div class="col-md">
+                    <Col lg={7}>
                         <h3 id="my-children">Favourite Courses</h3>  
                     
-                <div className="">
-                {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
-                </div>
-          
+                        <div className="">
+                            {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
                         </div>
+                </Col>
+          
 
-                        <div class="col-md">
+                        <Col lg={5}>
                      
                             <h3 id="my-children"> Children</h3>  
                             <ul>
@@ -58,10 +58,10 @@ class MyProfile extends Component  {
                             </ul>
                       
                
-                             <br/>
+                            
                             <Link to='/add-child'><button id="add-child-btn" className="btn">Add Child</button></Link>
 
-                        </div>
+                        </Col>
                     </div>
                 </div>
                 

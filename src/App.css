@@ -2449,9 +2449,7 @@ filter: brightness(59%);
  color: #6B6b69
 }
 
-#delete-course {
-  color: white
-}
+
 
 #tip-left{
   margin-top: 20px;
@@ -2694,24 +2692,37 @@ padding-top: -30px;
   color: #2d395a;
   text-align: left;
   font-family: sans-serif;
-  font-weight: 350;
+  font-weight: 300;
   margin-top: 5px;
 }
 
 #kid-profile-li{
   list-style-type: circle;
   color: #2a4b91;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+#kid-profile-li:hover{
+  background-color: white;
+  font-weight: 600;
 }
 
 #my-children{
   color: #3b4b75;
-  font-weight: 300;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 #my-profile{
   color: #3b4b75;
   font-size: 35px;
+  font-family: sans-serif;
   font-weight: 300;
+  margin-bottom: 40px;
 }
 
 #profiles{
@@ -3001,21 +3012,57 @@ margin-bottom: 20px;
 
 #delete-fav {
   background-color: #8597C5;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  padding: 2px;
+  /* display: table-cell; vertical-align: bottom; */
+}
+
+#delete-fav:hover {
+  background-color: #3b4b75;
+}
+
+
+#course-collect-titles{
+color: white;
+font-family: sans-serif;
+font-weight: 400;
+vertical-align: top !important
+
+}
+
+#delete-course {
+  color: white;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+
+#delete-course:hover{
+  text-decoration: none;
 }
 
 #favs-box{
-  border-style: double;
-  border-color: #8597C5;
-  width: 22%;
+  width: 40%;
+  height: 165px;
   float: left;
   margin-left: 20px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
   color: #2a4b91;
+ border-style: solid;
+border-color: #a0a1a1;
+display: table; text-align: center;
+}
+
+#bg-course-collect{
+  /* background: rgba(0,0,0, 0.5);
+  height: 160px; */
+  display: table-cell; vertical-align: bottom;
 }
 
 
@@ -3026,6 +3073,10 @@ margin-bottom: 20px;
   width: 140px;
 }
 
+#edit-p:hover {
+  background-color: #3b4b75;
+}
+
 #add-child-btn{
   background-color: #8597C5;
   padding: 5px 20px;
@@ -3033,8 +3084,12 @@ margin-bottom: 20px;
   border: none;
   border-radius: 3px;
   color: white;
-
 }
+
+#add-child-btn:hover {
+  background-color: #3b4b75;
+}
+
 
 #asp-title{
 color: #8597C5;
@@ -3853,15 +3908,17 @@ margin-right: 15%;
 .quad-title{
   color: #3b4b75;
   padding-top: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
-/* 
-border-bottom-style: solid;
-border-bottom-color: #6B6b69;
-width: 430px;
-margin-left: -60px;
-top: 49%;
-position: fixed; */
+.names-quad{
+  color: #2B2A2A;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
 
 .background-catagory{
   background-color:  #fff4f0;

@@ -41,7 +41,7 @@ class QuadCharacter extends Component {
         return (
           <div>
 
-            <h4 className="quad-title">Character</h4>
+            <h4 className="quad-title">Character Quadrant</h4>
                 <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
                             <div class="row">
                                 <div class="col-sm quads-imagez two">

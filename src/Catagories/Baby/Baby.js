@@ -26,7 +26,7 @@ state = {
         return (
             <div>
              
-             <div><Navbar/></div>
+            {/* <Navbar/> */}
         <div id="background-toddler">
               <h1 className="Catagory">Baby (0 - 12 mo)</h1>
         <div className="line-catagory"></div>

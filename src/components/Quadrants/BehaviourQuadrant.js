@@ -46,7 +46,7 @@ console.log(this.state.sport_1)
         return (
             <div>
         {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}
-        <h4 className="quad-title">Behaviour</h4>
+        <h4 className="quad-title">Behaviour Quadrant</h4>
                 <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
                             <div class="row">
                                 <div class="col-sm quads-imagez two">
@@ -72,7 +72,7 @@ console.log(this.state.sport_1)
                 </div>
 <br></br>
 
-                <h4 className="quad-title">Academic</h4>
+                <h4 className="quad-title">Academic Quadrant</h4>
                 <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
                             <div class="row">
                                 <div class="col-sm quads-imagez two">

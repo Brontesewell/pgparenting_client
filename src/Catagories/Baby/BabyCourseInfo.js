@@ -18,9 +18,9 @@ class CourseInfo extends Component {
         const {history} = this.props
         return (
             <div>
-              <div className = 'row'>
-                    <Navbar />
-                </div>
+             
+                    {/* <Navbar /> */}
+                
               <div id="course-info">
                    <h1 id="course-title">{this.state.course.title}</h1>
                    <button id="course-favs-button" className="btn" onClick={(e) => this.props.addToCollection(e, this.state, history)}>Add To Favourites</button>

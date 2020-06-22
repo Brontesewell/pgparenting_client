@@ -41,7 +41,7 @@ console.log(this.state.sport_1)
         return (
           <div>
 
-            <h4 className="quad-title">Sport</h4>
+            <h4 className="quad-title">Sport Quadrant</h4>
                 <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
                             <div class="row">
                                 <div class="col-sm quads-imagez two">
