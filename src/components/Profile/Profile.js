@@ -59,34 +59,43 @@ class Profile extends Component  {
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
+        <Navbar/>
+        <div >
             
                {/* {<Navbar/>} */}
             
             <div id="profiles">
 
-                <h1 id="my-family-title">My Family</h1>
-                <div id="line-family"></div>
+                {/* <h1 id="my-family-title">My Family</h1> */}
+                {/* <div id="line-family"></div> */}
 
                 
             <div className = "side-nav-profile">
+
+            <h2 id="my-family-title">My Family</h2> 
+              <a href="/add-child" class="add-child-side"> <i class="fas fa-plus"></i>  Child </a>
+              <a href="/add-child" class="add-child-side"> <i class="fas fa-cog"></i> </a>
+              <a href="/add-child" class="add-child-side"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+              <br></br>
+              <br></br>
+            <div id="side-nav-line"></div>
               
               <h4 className="profile-sidenav" style={{cursor: 'pointer'}} onClick={ () => this.clickProfile()}>My Profile</h4>
               <h4 className="profile-sidenav" style={{cursor: 'pointer'}} onClick={()=> this.clickQuadrant()}>Family Growth Tracker</h4>
               <br></br>
               <br></br>
        
-              <h4>Children:</h4>
+              <h4 id="side-children-title">Children:</h4>
               {this.props.currentUser.kids.map(kid => <h4 className="profile-sidenav" onClick={()=> this.clickKid(kid)} style={{cursor: 'pointer'}} >{kid.name}</h4>)}
              
               <br></br>
               <br></br>
-              <a href="/add-child" class="btn-direct">Add Child</a>
               
             </div>
 
 
 
-            <div id = "boxes"> 
+            <div id="boxes"> 
             {/* <div id = "leftbox"> 
             <MyProfile/> */}
                 {this.state.profilePage === true ? <MyProfile clickKidMyP={this.clickKidMyP}/> : null}
@@ -113,6 +122,7 @@ class Profile extends Component  {
 
         </div>
         <ScrollUpButton/>
+        </div>
         </div>
     )
 }

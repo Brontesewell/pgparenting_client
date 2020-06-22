@@ -2640,13 +2640,16 @@ padding-top: -30px;
   background-color: #FDEAE3;
 }
 
+#boxes{
+  height: auto;
+}
+
 #leftbox { 
   float: right;  
   width:64.5%; 
-  
   border-style: solid;
-  border-radius: 5px;
-  border-color: #8597C5;
+  /* border-radius: 5px; */
+  border-color: rgb(112, 112, 114);
   margin-right: 5%;
   margin-top: 30px;
   background-color: #fff;
@@ -2657,14 +2660,31 @@ padding-top: -30px;
   width: 25%;
   float: left;
   text-align: left;
-
+  min-height: 890px;
   border-style: solid;
-  border-radius: 5px;
-  border-color: #8597C5;
+  border-color: rgb(112, 112, 114);
   margin-left: 5%;
   margin-top: 30px;
   background-color: white;
   padding: 10px;
+}
+
+.add-child-side{
+  background-color: #8597C5;
+  padding: 5px 20px;
+  font-size: 15px;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  border-radius: 3px;
+  color: white;
+  margin-left: 5px;
+}
+
+.add-child-side:hover{
+  color: white;
+  background-color: #516496;
+  text-decoration: none;
 }
 
 #line-family{
@@ -2678,8 +2698,23 @@ padding-top: -30px;
 #my-family-title{
   text-align: center;
   color: #3b4b75;
-  padding-top: 30px;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 350;
+}
+
+#side-nav-line{
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #808283;
+  margin-bottom: 40px;
+}
+
+#side-children-title{
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgb(80, 79, 79);
 }
 
 .p{
@@ -2726,8 +2761,8 @@ padding-top: -30px;
 }
 
 #profiles{
-  min-height: 800px;
-  background-color: #fff4f0;
+  min-height: 1000px;
+  background-color: #5f5e5d;
 }
 
 #child-name{
