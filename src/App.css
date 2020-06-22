@@ -2646,27 +2646,36 @@ padding-top: -30px;
 
 #leftbox { 
   float: right;  
-  width:64.5%; 
   border-style: solid;
+  border-width: thin;
   /* border-radius: 5px; */
-  border-color: rgb(112, 112, 114);
-  margin-right: 5%;
-  margin-top: 30px;
+  border-color: rgb(188, 188, 190);
   background-color: #fff;
   padding: 10px;
+  
+  width:70%;
+  /* width:65%;  */
+  /* margin-top: 30px; */
+  /* margin-right: 5%; */
+  padding-right: 5%;
+  padding-top: 50px;
 } 
 
 .side-nav-profile{
-  width: 25%;
   float: left;
   text-align: left;
   min-height: 890px;
   border-style: solid;
-  border-color: rgb(112, 112, 114);
-  margin-left: 5%;
-  margin-top: 30px;
+  border-width: thin;
+  border-color: rgb(182, 182, 185);
   background-color: white;
   padding: 10px;
+  
+  width: 30%;
+  /* margin-top: 30px; */
+  /* margin-left: 5%; */
+  padding-left: 50px;
+  padding-top: 40px;
 }
 
 .add-child-side{
@@ -2702,6 +2711,7 @@ padding-top: -30px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 350;
+  margin-left: -40px !important;
 }
 
 #side-nav-line{
@@ -2709,6 +2719,7 @@ padding-top: -30px;
   border-width: thin;
   border-color: #808283;
   margin-bottom: 40px;
+  margin-left: -40px !important;
 }
 
 #side-children-title{
