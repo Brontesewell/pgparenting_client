@@ -2646,10 +2646,11 @@ padding-top: -30px;
 
 #leftbox { 
   float: right;  
-  border-style: solid;
+  border-left-style: solid;
+  border-top-style: solid;
   border-width: thin;
   /* border-radius: 5px; */
-  border-color: rgb(188, 188, 190);
+  border-color: #939596;;
   background-color: #fff;
   padding: 10px;
   
@@ -2665,9 +2666,10 @@ padding-top: -30px;
   float: left;
   text-align: left;
   min-height: 890px;
-  border-style: solid;
+  border-left-style: solid;
+  border-top-style: solid;
   border-width: thin;
-  border-color: rgb(182, 182, 185);
+  border-color: #929394;
   background-color: white;
   padding: 10px;
   
@@ -2773,7 +2775,6 @@ padding-top: -30px;
 
 #profiles{
   min-height: 1000px;
-  background-color: #5f5e5d;
 }
 
 #child-name{
