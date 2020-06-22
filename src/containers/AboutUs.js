@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import Navbar from './Navbar'
 import Parent from '../Parent.jpg'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
+import Footer from './Footer'
 
 class AboutUs extends Component {
 
@@ -137,6 +138,7 @@ class AboutUs extends Component {
 
                 </div>
             </div>
+            <Footer/>
         </div>
         )
     }

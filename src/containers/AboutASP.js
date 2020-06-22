@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import Navbar from './Navbar'
 import { Link } from 'react-router-dom';
 import QuadFinales from '../QuadFinales.jpeg'
+import Footer from './Footer'
 
 class AboutASP extends Component {
 
@@ -85,6 +86,7 @@ class AboutASP extends Component {
                </div>
                <Link to="/profile"><button id="asp-button-back" className="btn">Back</button></Link>
                </div>
+               <Footer />
             </div>
         )
     }
