@@ -289,9 +289,9 @@ class Home extends Component {
                                         <div class="col-md">
                                             <div class="contact-home-div">
                                                 
-                                               
-                                                <h5 id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></h5>
-                                                <br></br>
+                                               <h5  id="email-home-contact" ><strong>Or Contact us Directly:</strong></h5>
+                                                
+                                                <h6 id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></h6>
                                                
                                                 <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
                                                     <label htmlFor="description" className="grey-text">Message</label>

@@ -447,9 +447,10 @@ letter-spacing: 1px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  font-family: sans-serif;
 }
 
-.btnleft:focus {     
+.btnleft:hover {     
   background-color:#3b4b75;    
 }
 
@@ -466,10 +467,11 @@ letter-spacing: 1px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  font-family: sans-serif;
 }
 
-.btnright:focus {     
-  background-color:#FDEAE3;    
+.btnright:hover {     
+  background-color:rgb(223, 195, 185);    
 }
 
 
@@ -487,6 +489,7 @@ letter-spacing: 1px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  font-family: sans-serif;
 }
 
 .btnleft-small:focus {     
@@ -507,6 +510,7 @@ letter-spacing: 1px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  font-family: sans-serif;
 }
 
 .btnright-small:focus {     
@@ -532,7 +536,8 @@ letter-spacing: 1px;
 
 .navbar-homepage{
   height: 85px;
-  background-color: rgb(248, 247, 247);
+  background-color: #bfc0c2;
+  /* background-color: rgb(248, 247, 247); */
   z-index: 500;
   width: 100%;
   -webkit-box-shadow: 4px 4px 4px 6px rgb(15, 15, 15);  
@@ -550,6 +555,7 @@ letter-spacing: 1px;
   -ms-transform: translate(-30%, -30%);
   color: white;
   font-size: 52px;
+  font-family: sans-serif;
 }
 
 .share-button{
@@ -564,6 +570,7 @@ letter-spacing: 1px;
   -ms-transform: translate(-30%, -30%);
   color: white;
   font-size: 40px;
+  font-family: sans-serif;
 }
 
 #welcome-user-nav {
@@ -1339,23 +1346,28 @@ letter-spacing: 1px
 .sub_cats {
   color: #6B6b69;
   float:left;
-  font-size: 40px;
-  margin-left: 7%;
+  font-size: 27px;
+  margin-left: 6.3%;
   margin-right: 60%;
+  font-family: sans-serif;
 }
 
 .Catagory{
   font-size: 30px;
-  color:#8597C5
+  color: #6B6b69;
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .line-catagory{
   border-bottom-style: solid;
   border-bottom-color: #6B6b69;
-  width: 250px;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-bottom: 20px;
+  border-width: thin;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 100px;
 }
 
 .line-about{
@@ -1377,26 +1389,60 @@ letter-spacing: 1px
   
 }
 
+.course-home-div{
+  content: '';
+    border-top: 10px solid #fff;
+    display: block;
+    width: 60%;
+    margin: 1px 10% 1px 10%;
+    /* padding-top: 10px; */
+    position: absolute;
+}
+
+
 
 .images{
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
   height: 147px;
   object-fit: cover;
+  filter: brightness(60%);
+}
+
+.images:hover{
+  filter: brightness(100%);
+  cursor: pointer;
 }
 
 #title-image-course {
-  color: #3b4b75;
+  /* color: #3b4b75; */
   font-weight: 350;
   margin-top: -1px;
   margin-bottom: 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+#title-image-course:hover{
+  display: none;
+  cursor: pointer;
 }
 
 .column {
   float: left;
   width: 23%;
-  padding: 5px;
-  margin-left: 20px;
+  /* padding: 5px; */
+  margin-left: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.top-left{
+  position: absolute;
+  bottom: 8px;
+  left: 50px;
 }
 
 #all-courses{
@@ -1499,6 +1545,7 @@ letter-spacing: 1px
 #email-home-contact{
   color: rgb(39, 44, 68);
   font-family: sans-serif;
+  margin-bottom: 15px;
 }
 
 .contact-options{
@@ -1907,11 +1954,12 @@ margin-bottom: 2px;
 
  #share-now{
   color: #3b4b75;;
-  font-weight: 350; 
   margin-bottom: 20px;
   padding-top: 60px;
   font-size: 30px;
   letter-spacing: 1px;
+  font-family: sans-serif;
+  font-weight: 300; 
  }
 
  #world-map{
@@ -1961,6 +2009,7 @@ margin-bottom: 2px;
    padding-top: 40px;
    font-size: 30px;
    letter-spacing: 1px;
+   font-family: sans-serif;
   }
 
 
@@ -1968,6 +2017,7 @@ margin-bottom: 2px;
   color: #516496;
   font-size: 22px;
   padding-top: 5px;
+  font-family: sans-serif;
 }
 
   #footer-title{
@@ -1976,6 +2026,7 @@ margin-bottom: 2px;
     padding-bottom: 20px;
     font-size: 27px;
     letter-spacing: 1px;
+    font-family: sans-serif;
   }
 
   .courses-welcome{
@@ -2001,6 +2052,7 @@ margin-bottom: 2px;
    margin-right: 5%;
    margin-bottom: 30px;
    letter-spacing: 1px;
+   font-family: sans-serif;
  }
 
  .h5-left-membership {
@@ -2127,7 +2179,8 @@ margin-bottom: 2px;
    font-size: 35px;
    padding-bottom: 40px;
    padding-top: 20px;
-   color: #282c34;
+   color: #3a4768;
+   font-family: sans-serif;
  }
 
  .box-small {
@@ -2208,7 +2261,8 @@ margin-bottom: 2px;
   margin-left: 15%;
   margin-right: 15%;
   font-size: 1.5vw;
-  font-weight: 550;
+  font-weight: 500;
+
 }
 
 .image-course-welcome{
@@ -2231,6 +2285,7 @@ filter: brightness(59%);
 .course-card-welcome{
   margin-bottom: 20px;
   cursor: pointer;
+  font-family: sans-serif;
 }
 
 .span-course-catagory{
@@ -2307,9 +2362,10 @@ filter: brightness(59%);
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  font-family: sans-serif;
 }
 
-.btn-welcome-bottom:focus {     
+.btn-welcome-bottom:hover {     
   background-color:#3b4b75;    
 }
 
@@ -2324,9 +2380,10 @@ filter: brightness(59%);
   cursor: pointer;
   border-radius: 3px;
   margin-bottom: 30px;
+  font-family: sans-serif;
 }
 
-.btn-welcome-bottom-small:focus {     
+.btn-welcome-bottom-small:hover {     
   background-color:#3b4b75;    
 }
 
@@ -3380,7 +3437,7 @@ color: #8597C5;
 #contact-footer{
   color: #516496;
   font-family: sans-serif;
-  font-weight: 300;
+  font-weight: 350;
   padding-bottom: 20px;
   font-size: 27px;
   letter-spacing: 1px;
@@ -3975,7 +4032,7 @@ margin-right: 15%;
 }
 
 #background-toddler {
-  background-color:  #fff4f0;
+  background-color:  #f1f0f3;
   margin-top: -0px;
   padding-top: 25px;
   height: 950px;
