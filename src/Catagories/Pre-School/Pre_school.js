@@ -29,14 +29,15 @@ state = {
                <div id="background-preschool">
               <h1 className="Catagory">Pre-School (3 - 5 yrs old)</h1>
         <div className="line-catagory"></div>
-        <div style={{marginBottom:'50px'}}>
+        {/* <div style={{marginBottom:'50px'}}>
           <button type="button" class="btn btn-dark">By Catagory</button>
           <button type="button" class="btn btn-dark ml-1">By Date</button>
-        </div>
+        </div> */}
 
        {this.props.catagories.filter(baby => baby.id === 3).map(b => <Container baby={createBabyHash(b)}/>)}
   
        </div>
+       <br></br>
        <div id="bottom-courses">
        <Link to='/toddler'><h5 id="back-page">← 1 - 2 yrs</h5></Link>
        <Link to='/primary_school'><h5 id="next-page">6 - 10 yrs → </h5></Link>

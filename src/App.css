@@ -1418,7 +1418,7 @@ letter-spacing: 1px
   font-size: 20px;
   font-family: sans-serif;
   color: rgb(255, 255, 255);
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -1444,7 +1444,8 @@ letter-spacing: 1px
 .top-left{
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 45%;
+  /* left: 40%; */
   transform: translate(-50%, -50%);
 }
 
@@ -1452,6 +1453,7 @@ letter-spacing: 1px
   float: center;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 50px !important;
 }
 
 /* Clear floats after image containers */
