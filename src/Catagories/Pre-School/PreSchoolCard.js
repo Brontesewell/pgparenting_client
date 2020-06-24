@@ -32,6 +32,7 @@ class Card extends Component {
     
     </div>
     <h1 className="sub_cats"> {this.props.sub.sub_title}</h1>
+ 
     {/* {this.props.sub.courses.map(course => < Images course={course}/>)} */}
      <div className='card-container' >
      {this.state.clickedcourse ?  
@@ -46,11 +47,11 @@ class Card extends Component {
       </Switch>
      : 
      
-     this.props.sub.courses.map(course => <div id="all-courses"> < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/> </div>)}
-       
-        </div>              
+     this.props.sub.courses.map(course => <div id="all-courses">  < Images sub={this.props.sub} course={course} handleCourseClick={this.handleCourseClick}/>   </div>)}
+         
+
         {/* <Route exact path="/course" render={(routerProps) => <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton}/>}/> */}
-            
+        </div>
             </div>
                 
         );

@@ -38,10 +38,10 @@ state = {
   
        </div>
        <br></br>
-       <div id="bottom-courses">
+       {/* <div id="bottom-courses">
        <Link to='/toddler'><h5 id="back-page">← 1 - 2 yrs</h5></Link>
        <Link to='/primary_school'><h5 id="next-page">6 - 10 yrs → </h5></Link>
-       </div>
+       </div> */}
             </div>
                 
         );
