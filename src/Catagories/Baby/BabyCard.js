@@ -28,12 +28,10 @@ class Card extends Component {
         return (
             <div>
               
-<div className="s_cat_div">
-    
-    </div>
     <h1 className="sub_cats"> {this.props.sub.sub_title}</h1>
     {/* {this.props.sub.courses.map(course => < Images course={course}/>)} */}
      <div className='card-container' >
+
      {this.state.clickedcourse ?  
      <Switch>
            <Redirect to={{
@@ -51,7 +49,8 @@ class Card extends Component {
         </div>              
         {/* <Route exact path="/course" render={(routerProps) => <CourseInfo clickedcourse={this.state.clickedcourse} handleBackButton={this.handleBackButton}/>}/> */}
             
-            </div>
+     </div>
+            
                 
         );
     }

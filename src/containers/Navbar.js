@@ -59,7 +59,7 @@ class NavBar extends Component {
       return (
         <div >
 
-<div className="navbar-homepage">
+<div className="navbar-homepage" >
         <img className ='logo-home' alt="Logo" src={Logo}/>
 
 
