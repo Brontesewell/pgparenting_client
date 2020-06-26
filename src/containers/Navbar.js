@@ -102,7 +102,6 @@ class NavBar extends Component {
                       </a>
                     </Sidebar>
 
-
  
                   
         
@@ -146,6 +145,7 @@ class NavBar extends Component {
         <h6 id="menu-item-p" >CO-PARENTING</h6>
         </div>
         </div>
+                    <div id="side-nav-line-nav"></div>
                     <nav className="home-navbar-side">
                       <Navbar bg="light" expand="lg" className="navbar-home">
                       <Navbar.Brand className="navbar-brand-small" href="/"><img className="logo-small" alt="Logo" src={Logo}/></Navbar.Brand>

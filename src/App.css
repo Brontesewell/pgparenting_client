@@ -536,7 +536,7 @@ letter-spacing: 1px;
 
 .navbar-homepage{
   height: 85px;
-  background-color: #d6d7d8;
+  background-color: #ffffff;
   /* background-color: rgb(248, 247, 247); */
   z-index: 500;
   width: 100%;
@@ -2845,6 +2845,13 @@ padding-top: -30px;
   width: 200%;
   margin-top: 20px;
   margin-left: -50px !important;
+}
+
+#side-nav-line-nav{
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #aeafaf;
+  width: 100%;
 }
 
 #side-nav-line-top{
