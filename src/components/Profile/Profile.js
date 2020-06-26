@@ -59,8 +59,8 @@ class Profile extends Component  {
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >
+        <div id="profile-page">
         <Navbar/>
-        <div >
             
                {/* {<Navbar/>} */}
             
@@ -73,11 +73,14 @@ class Profile extends Component  {
             <div className = "side-nav-profile">
 
             <h2 id="my-family-title">My Family</h2> 
+            <div id="side-nav-line-top"></div>
+            <div class="buttons-side-nav">
               <a href="/add-child" class="add-child-side"> <i class="fas fa-plus"></i>  Child </a>
               <a href="/add-child" class="add-child-side"> <i class="fas fa-cog"></i> </a>
               <a href="/add-child" class="add-child-side"> <i class="fas fa-sign-out-alt"></i> Logout</a>
-              <br></br>
-              <br></br>
+              </div>
+              
+              
             <div id="side-nav-line"></div>
               
               <h4 className="profile-sidenav" style={{cursor: 'pointer'}} onClick={ () => this.clickProfile()}>My Profile</h4>
@@ -122,9 +125,9 @@ class Profile extends Component  {
 
         </div>
         <ScrollUpButton/>
-        </div>
         {/* <div id="line-home"></div> */}
                 <Footer/>
+        </div>
         </div>
     )
 }

@@ -2753,18 +2753,14 @@ padding-top: -30px;
 
 #leftbox { 
   float: right;  
-  border-left-style: solid;
-  border-top-style: solid;
-  border-width: thin;
-  /* border-radius: 5px; */
-  border-color: #939596;;
+
   background-color: #fff;
   padding: 10px;
   
-  width:70%;
-  /* width:65%;  */
-  /* margin-top: 30px; */
-  /* margin-right: 5%; */
+  /* width:70%; */
+  width:70%; 
+  /* margin-top: 30px;
+  margin-right: 5%; */
   padding-right: 5%;
   padding-top: 50px;
 } 
@@ -2773,18 +2769,36 @@ padding-top: -30px;
   float: left;
   text-align: left;
   min-height: 890px;
-  border-left-style: solid;
-  border-top-style: solid;
-  border-width: thin;
-  border-color: #929394;
   background-color: white;
   padding: 10px;
-  
+  border-right: 1px solid #aeafaf;
   width: 30%;
-  /* margin-top: 30px; */
-  /* margin-left: 5%; */
+  /* margin-top: 30px;
+  margin-left: 5%; */
   padding-left: 50px;
-  padding-top: 40px;
+  padding-top: 20px;
+}
+
+#profiles{
+  min-height: 1000px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3px;
+  border-color: #aeafaf;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+#profile-page{
+  background-color: #f5f5f5;
+}
+
+
+.buttons-side-nav{
+  margin-left: -14.5%;
 }
 
 .add-child-side{
@@ -2817,18 +2831,29 @@ padding-top: -30px;
   text-align: center;
   color: #3b4b75;
   font-family: sans-serif;
-  padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 350;
+  font-weight: bolder !important;
+  font-size: 25px;
   margin-left: -40px !important;
 }
 
 #side-nav-line{
   border-bottom-style: solid;
   border-width: thin;
-  border-color: #808283;
+  border-color: #aeafaf;
   margin-bottom: 40px;
-  margin-left: -40px !important;
+  width: 200%;
+  margin-top: 20px;
+  margin-left: -50px !important;
+}
+
+#side-nav-line-top{
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #aeafaf;
+  margin-bottom: 20px;
+  width: 200%;
+  margin-left: -50px !important;
 }
 
 #side-children-title{
@@ -2880,9 +2905,6 @@ padding-top: -30px;
   margin-bottom: 40px;
 }
 
-#profiles{
-  min-height: 1000px;
-}
 
 #child-name{
   margin-right: 400px;
