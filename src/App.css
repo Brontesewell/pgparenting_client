@@ -3012,7 +3012,8 @@ margin-bottom: 20px;
 }
 
 .btn-buy{
-  background-color: #757b8a;
+  /* background-color: #757b8a; */
+  background-color: #8597C5;
   float: center;
   padding: 5px 25px;
   font-size: 20px;
@@ -3026,7 +3027,7 @@ margin-bottom: 20px;
 
 .btn-buy:hover{
   color: white;
-  background-color: #808283;
+  background-color: #516496;
   text-decoration: none;
 }
 
