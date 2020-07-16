@@ -365,6 +365,7 @@ h2 {
       width: 75%;
     }
   }
+  
 
   @media only screen and (max-width: 355px) {
     #wecome-navbar {
@@ -2307,25 +2308,18 @@ margin-bottom: 2px;
   min-height: 95px;
 }
 
-.span-course-welcome{
-  margin-left: 15%;
-  margin-right: 15%;
-  font-size: 1.5vw;
-  font-weight: 500;
-
-}
 
 .image-course-welcome{
-filter: brightness(59%);
+  filter: brightness(59%);
 }
 
 .course-welcome-div{
   content: '';
-    border-top: 1px solid #fff;
-    display: block;
-    width: 60%;
-    margin: 10px 20% 1px 20%;
-    padding-top: 10px;
+  border-top: 1px solid #fff;
+  display: block;
+  width: 60%;
+  margin: 10px 20% 1px 20%;
+  padding-top: 10px;
 }
 
 .course-card-welcome:hover{
@@ -2336,6 +2330,27 @@ filter: brightness(59%);
   margin-bottom: 20px;
   cursor: pointer;
   font-family: sans-serif;
+}
+
+.span-course-welcome{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.5vw;
+  font-weight: 500;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .span-course-welcome {
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .span-course-catagory {
+    font-size: 3.5vw !important;
+  }
 }
 
 .span-course-catagory{

@@ -230,7 +230,7 @@ class Welcome extends Component {
                         <h4 id="courses-title-welcome">Popular Avaliable Courses</h4>
                         </Fade>
                         <div class="row">
-                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-md">
                             <Fade>
                                 <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1576104852640-c5036ecb7065?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
@@ -242,7 +242,7 @@ class Welcome extends Component {
                                 </div>
                                 </Fade>
                             </div>
-                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-md">
                             <Fade>
                                 <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1544285703-276682d3196b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
@@ -254,7 +254,7 @@ class Welcome extends Component {
                                 </div>
                                 </Fade>
                             </div>
-                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-md">
                             <Fade>
                              <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1523151401668-fff9e38a48e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
@@ -268,7 +268,7 @@ class Welcome extends Component {
                             </div>
                         </div>
                         <div class="row">
-                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-md">
                             <Fade>
                             <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
@@ -280,7 +280,7 @@ class Welcome extends Component {
                                 </div>
                                 </Fade>
                             </div>
-                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-md">
                             <Fade>
                             <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
@@ -292,7 +292,7 @@ class Welcome extends Component {
                                 </div>
                                 </Fade>
                             </div>
-                            <div onClick={() => this.props.history.push('/signup-user')} class="col-lg">
+                            <div onClick={() => this.props.history.push('/signup-user')} class="col-md">
                             <Fade>
                             <div className="course-card-welcome">
                                 <img className="image-course-welcome" src="https://images.unsplash.com/photo-1513807016779-d51c0c026263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />

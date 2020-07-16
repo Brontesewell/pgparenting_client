@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import data from "../../data";
 import ShopCard from "./ShopCard"
 import {connect} from 'react-redux'
 import Navbar from '../Navbar'
 
+//Importing the data shop
+import data from "../../data";
 const shop = data.shop;
 
 class ShopList extends Component {
