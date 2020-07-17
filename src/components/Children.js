@@ -20,9 +20,10 @@ class Children extends Component {
         return (
             <div>
             <div id="child-div">
-            <h4 id="child-name">{this.props.kid.name}</h4>
-            <h6 className="child-gender-bday">Gender: {this.props.kid.gender}</h6>
-            <h6 className="child-gender-bday">Birthday: {this.props.kid.birthday}</h6>
+            <h4 classname="child-name-title">{this.props.kid.name}</h4>
+            <br></br>
+            <h4 className="child-gender-bday">Gender: {this.props.kid.gender}</h4>
+            <h4 className="child-gender-bday">Birthday: {this.props.kid.birthday}</h4>
            <div id="s-child">
                <h5 className="p-a-scores">Achievement Scores</h5>
                <h6>Behaviour Score:  {this.props.kid.behaviour_score}/5</h6>

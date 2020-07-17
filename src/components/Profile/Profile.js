@@ -60,7 +60,7 @@ class Profile extends Component  {
     return (
         <div >
         <div id="profile-page">
-        <Navbar/>
+        {/* <Navbar/> */}
             
                {/* {<Navbar/>} */}
             
