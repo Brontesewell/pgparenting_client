@@ -25,8 +25,20 @@ class KidProfile extends Component  {
        <h1>{this.props.selectedChild.name}</h1>
 
        <div id="child-div">
-            <h6 className="child-gender-bday">Gender: {this.props.selectedChild.gender}</h6>
-            <h6 className="child-gender-bday">Birthday: {this.props.selectedChild.birthday}</h6>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <h6 className="child-gender-bday">Gender: {this.props.selectedChild.gender}</h6>
+                            <h6 className="child-gender-bday">Birthday: {this.props.selectedChild.birthday}</h6>
+
+                        </div>
+                        <div class="col-md">
+                            <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.selectedChild)}><button id="edit-child-button" className="btn">Edit</button></Link>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="kid-scores-div">
            <div id="s-child">
                <h5 className="p-a-scores">Achievement Scores</h5>
                <h6>Behaviour Score:  {this.props.selectedChild.behaviour_score}/5</h6>
@@ -42,10 +54,12 @@ class KidProfile extends Component  {
             <h6>Sport Progress:  {this.props.selectedChild.sport_progress}/5</h6>
            <h6>Academic Progress:  {this.props.selectedChild.academic_progress}/5</h6>
            <h6>Character Progress:  {this.props.selectedChild.character_progress}/5</h6>
+
             
             <h6 id="total">Total Progress: {this.props.selectedChild.academic_progress + this.props.selectedChild.character_progress + this.props.selectedChild.sport_progress + this.props.selectedChild.behaviour_progress}/20</h6>
                </div>
-            <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.selectedChild)}><button id="edit-child-button" className="btn">Edit</button></Link>
+
+               </div>
             
             
             {this.props.selectedJournals ?

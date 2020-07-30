@@ -187,6 +187,13 @@ margin-top: 100px;
   margin-bottom: 10px;
   border-bottom-style: solid;
   border-width: thin;
+  margin-top: 30px;
+}
+
+.kid-scores-div{
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 #s-child{
@@ -1771,10 +1778,11 @@ font-family: sans-serif;
 
 #edit-child-button {
   background-color: #8597C5;
-  float: center;
-  margin-bottom: 20px;
-  margin-top: 18px;
+  float:right;
+  color: white;
 }
+
+
 .child-name-title {
   font-family: sans-serif;
   font-weight: 400;
@@ -1798,6 +1806,7 @@ font-family: sans-serif;
   width:48.5%; 
 height: 70px
 }
+
 
 #child-edit-b{
   float:right;  
