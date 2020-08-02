@@ -4,12 +4,12 @@ import Navbar from './Navbar'
 import {connect} from 'react-redux'
 import addKid from '../actions/addKid'
 import {Form, Col, FormGroup, FormControl} from 'react-bootstrap'
-import DateRangePicker from 'react-bootstrap-daterangepicker';
+// import DateRangePicker from 'react-bootstrap-daterangepicker';
 // you will need the css that comes with bootstrap@3. if you are using
 // a tool like webpack, you can do the following:
 import 'bootstrap/dist/css/bootstrap.css';
 // you will also need the css that comes with bootstrap-daterangepicker
-import 'bootstrap-daterangepicker/daterangepicker.css';
+// import 'bootstrap-daterangepicker/daterangepicker.css';
 import { MDBDatePickerV5 } from 'mdbreact';
 class AddKid extends Component {
 
