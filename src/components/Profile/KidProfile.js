@@ -21,28 +21,56 @@ class KidProfile extends Component  {
     render() {
         const Behaviour_S = [{
                "type": "Behaviour",
-               "level": (this.props.selectedChild.behaviour_score/ 5 * 100)
+               "level": (this.props.selectedChild.behaviour_score/ 5 * 100),
+               "color": {
+                "bar": "#ed8a9d",
+                "title": {
+                  "background": "#c21738",
+                  "text": "white"
+                }
+              }
              }]
 
         const Sport_S = [{
                "type": "Sport",
-               "level": (this.props.selectedChild.sport_score/ 5 * 100)
+               "level": (this.props.selectedChild.sport_score/ 5 * 100),
+               "color": {
+                "bar": "#ed8a9d",
+                "title": {
+                  "background": "#c21738",
+                  "text": "white"
+                }
+              }
              }]
         const Academic_S = [{
                "type": "Academic",
-               "level": (this.props.selectedChild.academic_progress/ 5 * 100)
+               "level": (this.props.selectedChild.academic_progress/ 5 * 100),
+               "color": {
+                "bar": "#ed8a9d",
+                "title": {
+                  "background": "#c21738",
+                  "text": "white"
+                }
+              }
              }]
         const Character_S = [{
                "type": "Character",
-               "level": (this.props.selectedChild.character_score/ 5 * 100)
+               "level": (this.props.selectedChild.character_score/ 5 * 100),
+               "color": {
+                "bar": "#ed8a9d",
+                "title": {
+                  "background": "#c21738",
+                  "text": "white"
+                }
+              }
              }]
         const Total_S = [{
                 "type": "Total",
                 "level": Math.round(((this.props.selectedChild.behaviour_score + this.props.selectedChild.sport_score + this.props.selectedChild.academic_score + this.props.selectedChild.character_score)/ 20 * 100)),
                 "color": {
-                    "bar": "#3498db",
+                    "bar": "#8597C5",
                     "title": {
-                      "background": "#2980b9",
+                      "background": "#3b4b75",
                       "text": "white"
                     }
                   }
@@ -51,28 +79,56 @@ class KidProfile extends Component  {
 
            const Behaviour_P = [{
             "type": "Behaviour",
-            "level": (this.props.selectedChild.behaviour_progress/ 5 * 100)
+            "level": (this.props.selectedChild.behaviour_progress/ 5 * 100),
+            "color": {
+                "bar": "#ed8a9d",
+                "title": {
+                  "background": "#c21738",
+                  "text": "white"
+                }
+              }
           }]
 
             const Sport_P = [{
                     "type": "Sport",
-                    "level": (this.props.selectedChild.sport_progress/ 5 * 100)
+                    "level": (this.props.selectedChild.sport_progress/ 5 * 100),
+                    "color": {
+                        "bar": "#ed8a9d",
+                        "title": {
+                          "background": "#c21738",
+                          "text": "white"
+                        }
+                      }
                 }]
             const Academic_P = [{
                     "type": "Academic",
-                    "level": (this.props.selectedChild.academic_progress/ 5 * 100)
+                    "level": (this.props.selectedChild.academic_progress/ 5 * 100),
+                    "color": {
+                        "bar": "#ed8a9d",
+                        "title": {
+                          "background": "#c21738",
+                          "text": "white"
+                        }
+                      }
                 }]
             const Character_P = [{
                     "type": "Character",
-                    "level": (this.props.selectedChild.character_progress/ 5 * 100)
+                    "level": (this.props.selectedChild.character_progress/ 5 * 100),
+                    "color": {
+                        "bar": "#ed8a9d",
+                        "title": {
+                          "background": "#c21738",
+                          "text": "white"
+                        }
+                      }
                 }]
             const Total_P = [{
                     "type": "Total",
                     "level": Math.round(((this.props.selectedChild.behaviour_progress + this.props.selectedChild.sport_progress + this.props.selectedChild.academic_progress + this.props.selectedChild.character_progress)/ 20 * 100)),
                     "color": {
-                        "bar": "#3498db",
+                        "bar": "#8597C5",
                         "title": {
-                          "background": "#2980b9",
+                          "background": "#3b4b75",
                           "text": "white"
                         }
                       }
@@ -80,7 +136,7 @@ class KidProfile extends Component  {
                 }
                 ]
 
-
+// console.log(document.querySelector('.skillbar'))
 
     return (
         <div id = "leftbox">  
@@ -88,11 +144,27 @@ class KidProfile extends Component  {
        <h1>{this.props.selectedChild.name}</h1>
 
        <div id="child-div">
-            <div class="container">
+            <div class="container line-journals">
                     <div class="row">
-                        <div class="col-md">
+                        <div class="col-md child-general-info" >
                             <h6 className="child-gender-bday">Gender: {this.props.selectedChild.gender}</h6>
                             <h6 className="child-gender-bday">Birthday: {this.props.selectedChild.birthday}</h6>
+                            {this.props.selectedJournals ?
+                            <Switch>
+                                <Redirect to={{
+                                    pathname: `/journal/${this.props.selectedJournals.id}`,
+                                    }} />
+                                    <Route path={`/journal/${this.props.selectedJournals.id}`} >
+                                        <JournalsPage />
+                                    </Route>
+
+                            </Switch>
+                            : 
+                            <div>
+                            <br></br>
+                            <h5 id="journal" onClick={() => this.handleJournalClick(this.props.selectedChild)} >{this.props.selectedChild.name}'s Journals →</h5>
+                            </div>
+                            }
 
                         </div>
                         <div class="col-md">
@@ -129,34 +201,10 @@ class KidProfile extends Component  {
             <h6 id="total">Total Progress: {this.props.selectedChild.academic_progress + this.props.selectedChild.character_progress + this.props.selectedChild.sport_progress + this.props.selectedChild.behaviour_progress}/20</h6>
             <SkillBar skills={Total_P} height={15}></SkillBar>
                </div>
-
                </div>
-
-            <br></br>
-            
-            {this.props.selectedJournals ?
-     <Switch>
-           <Redirect to={{
-               pathname: `/journal/${this.props.selectedJournals.id}`,
-            }} />
-            <Route path={`/journal/${this.props.selectedJournals.id}`} >
-                <JournalsPage />
-            </Route>
-
-      </Switch>
-     : 
-     
-     <h5 id="journal" onClick={() => this.handleJournalClick(this.props.selectedChild)} >{this.props.selectedChild.name}'s Journals →</h5>
-     
-    }
-       
-           
-               
-
-    
+        
+            <h5 className="quadrant-child-title">Quadrants</h5>
             </div>
-            <br/>
-            <h4 id="child-name">Quadrants</h4>
         </div>
     )
 }

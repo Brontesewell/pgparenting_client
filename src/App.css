@@ -185,9 +185,17 @@ margin-top: 100px;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.child-general-info{
+  padding: 0px !important
+}
+
+.line-journals{
   border-bottom-style: solid;
   border-width: thin;
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .kid-scores-div{
@@ -199,21 +207,29 @@ margin-top: 100px;
 #s-child{
 float: left;
 width: 50%;
-/* margin-bottom: 20px; */
+margin-bottom: 40px;
 }
 
 #p-child{
   float: right;
   margin-left: 20px;
   width: 40%;
+  margin-bottom: 40px;
 }
 
 .p-a-scores{
+  margin-bottom: 20px;
  color: #3b4b75;
 }
 
 #total{
   font-weight: bolder;
+}
+
+.quadrant-child-title{
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  color: #3b4b75;
 }
 
 .rankings-score{
@@ -248,6 +264,7 @@ width: 50%;
 
 #journal{
   color: #3b4b75;
+  font-family: sans-serif;
 }
 #journal:hover{
   text-decoration: underline;
@@ -1804,17 +1821,16 @@ font-family: sans-serif;
   border-width: thin;
   border-color: #8597C5;
   width:48.5%; 
-height: 70px
+height: 70px;
 }
 
-.skillbar-title{
-  display: none !important;
-}
+/* .skillbar-title{
+  width: 50% !important
+} */
 
-.skillbar-bar {
-  width: calc((100%) * 0.2);
+/* .skillbar-bar {
   left: 0px !important;
-}
+} */
 
 #child-edit-b{
   float:right;  
