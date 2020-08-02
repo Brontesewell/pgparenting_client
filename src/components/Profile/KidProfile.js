@@ -38,9 +38,49 @@ class KidProfile extends Component  {
              }]
         const Total_S = [{
                 "type": "Total",
-                "level": ((this.props.selectedChild.behaviour_score + this.props.selectedChild.sport_score + this.props.selectedChild.academic_score + this.props.selectedChild.character_score)/ 20 * 100)
+                "level": Math.round(((this.props.selectedChild.behaviour_score + this.props.selectedChild.sport_score + this.props.selectedChild.academic_score + this.props.selectedChild.character_score)/ 20 * 100)),
+                "color": {
+                    "bar": "#3498db",
+                    "title": {
+                      "background": "#2980b9",
+                      "text": "white"
+                    }
+                  }
               }
            ]
+
+           const Behaviour_P = [{
+            "type": "Behaviour",
+            "level": (this.props.selectedChild.behaviour_progress/ 5 * 100)
+          }]
+
+            const Sport_P = [{
+                    "type": "Sport",
+                    "level": (this.props.selectedChild.sport_progress/ 5 * 100)
+                }]
+            const Academic_P = [{
+                    "type": "Academic",
+                    "level": (this.props.selectedChild.academic_progress/ 5 * 100)
+                }]
+            const Character_P = [{
+                    "type": "Character",
+                    "level": (this.props.selectedChild.character_progress/ 5 * 100)
+                }]
+            const Total_P = [{
+                    "type": "Total",
+                    "level": Math.round(((this.props.selectedChild.behaviour_progress + this.props.selectedChild.sport_progress + this.props.selectedChild.academic_progress + this.props.selectedChild.character_progress)/ 20 * 100)),
+                    "color": {
+                        "bar": "#3498db",
+                        "title": {
+                          "background": "#2980b9",
+                          "text": "white"
+                        }
+                      }
+                
+                }
+                ]
+
+
 
     return (
         <div id = "leftbox">  
@@ -67,27 +107,32 @@ class KidProfile extends Component  {
                <h6>Behaviour Score:  {this.props.selectedChild.behaviour_score}/5</h6>
                <SkillBar skills={Behaviour_S} height={15}></SkillBar>
                <h6>Sport Score:  {this.props.selectedChild.sport_score}/5</h6>
-               <SkillBar skills={Behaviour_S} height={15}></SkillBar>
+               <SkillBar skills={Sport_S} height={15}></SkillBar>
                <h6>Academic Score:  {this.props.selectedChild.academic_score}/5</h6>
+               <SkillBar skills={Academic_S} height={15}></SkillBar>
                <h6>Character Score:  {this.props.selectedChild.character_score}/5</h6>
+               <SkillBar skills={Character_S} height={15}></SkillBar>
                 <h6 id="total">Total Score: {this.props.selectedChild.behaviour_score + this.props.selectedChild.sport_score + this.props.selectedChild.academic_score + this.props.selectedChild.character_score}/20</h6>
+                <SkillBar skills={Total_S} height={15}></SkillBar>
                </div>
             
             <div id="p-child">
            <h5  className="p-a-scores">Progress</h5>
            <h6>Behaviour Progress:  {this.props.selectedChild.behaviour_progress}/5</h6>
-
+           <SkillBar skills={Behaviour_P} height={15}></SkillBar>
             <h6>Sport Progress:  {this.props.selectedChild.sport_progress}/5</h6>
+            <SkillBar skills={Sport_P} height={15}></SkillBar>
            <h6>Academic Progress:  {this.props.selectedChild.academic_progress}/5</h6>
+           <SkillBar skills={Academic_P} height={15}></SkillBar>
            <h6>Character Progress:  {this.props.selectedChild.character_progress}/5</h6>
-
-            
+           <SkillBar skills={Character_P} height={15}></SkillBar>
             <h6 id="total">Total Progress: {this.props.selectedChild.academic_progress + this.props.selectedChild.character_progress + this.props.selectedChild.sport_progress + this.props.selectedChild.behaviour_progress}/20</h6>
+            <SkillBar skills={Total_P} height={15}></SkillBar>
                </div>
 
                </div>
 
-            
+            <br></br>
             
             {this.props.selectedJournals ?
      <Switch>

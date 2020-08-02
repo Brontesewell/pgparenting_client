@@ -1807,7 +1807,14 @@ font-family: sans-serif;
 height: 70px
 }
 
+.skillbar-title{
+  display: none !important;
+}
 
+.skillbar-bar {
+  width: calc((100%) * 0.2);
+  left: 0px !important;
+}
 
 #child-edit-b{
   float:right;  
