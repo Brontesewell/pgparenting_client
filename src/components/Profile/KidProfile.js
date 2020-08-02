@@ -136,8 +136,6 @@ class KidProfile extends Component  {
                 }
                 ]
 
-// console.log(document.querySelector('.skillbar'))
-
     return (
         <div id = "leftbox">  
        
@@ -165,6 +163,8 @@ class KidProfile extends Component  {
                             <h5 id="journal" onClick={() => this.handleJournalClick(this.props.selectedChild)} >{this.props.selectedChild.name}'s Journals →</h5>
                             </div>
                             }
+                            <h5 className="prev-history">Previous History →</h5>
+                            <h5 className="quadrant-child-title">Family Quadrants →</h5>
 
                         </div>
                         <div class="col-md">
@@ -203,7 +203,6 @@ class KidProfile extends Component  {
                </div>
                </div>
         
-            <h5 className="quadrant-child-title">Quadrants</h5>
             </div>
         </div>
     )

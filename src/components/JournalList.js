@@ -6,17 +6,21 @@ import deleteJournal from '../actions/deleteJournal'
 
 
 class JournalList extends Component {
+  state = {
+    new_date: this.props.journal.date_now
+  }
 
+ 
     
     render() {
-      
+      console.log(this.props.journal.date_now)
 
         return (
             <div>
                 
               <div id="journal-buble">
               <h1 id="journal-text">{this.props.journal.text}</h1>
-                <h5 id="created-j"><i>Created at 27/03/2020</i></h5>
+                <h5 id="created-j"><i>{'On ' + this.props.journal.date_now.substring(0, 10) + ' at ' + this.props.journal.date_now.substring(11, 16) + " o'clock"}</i></h5>
                 {/* <h5 id="created-j"><i>Created at {this.props.journal.date_now}</i></h5> */}
 
                 {/* <br/><button className="waves-effect waves btn pink accent-3" type="submit" onClick={(e) =>deleteJournal(e, journal, history)}>Delete Your Journal</button> */}

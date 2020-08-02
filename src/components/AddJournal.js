@@ -9,7 +9,7 @@ require('react-datetime');
 class AddJournal extends Component {
 
     state = {
-        date_now: "",
+        date_now: new Date().toLocaleString(),
         text: "",
         kid_id: this.props.kid.id
     }
@@ -29,8 +29,8 @@ class AddJournal extends Component {
     //    }
 
     render() {
-        // console.log(this.state.kid_id)
-
+        // console.log(new Date().toLocaleString())
+// console.log(this.state.date_now)
      const {date_now, text, kid_id,} = this.state   
      const {history} = this.props
         return (

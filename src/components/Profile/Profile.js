@@ -126,7 +126,7 @@ class Profile extends Component  {
         </div>
         <ScrollUpButton/>
         {/* <div id="line-home"></div> */}
-                <Footer/>
+                {/* <Footer/> */}
         </div>
         </div>
     )

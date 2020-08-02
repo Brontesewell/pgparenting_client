@@ -232,6 +232,21 @@ margin-bottom: 40px;
   color: #3b4b75;
 }
 
+.quadrant-child-title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.prev-history{
+  font-family: sans-serif;
+  color: #3b4b75;
+}
+
+.prev-history:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .rankings-score{
   text-align: left;
   margin-left: 39%;
