@@ -13,7 +13,7 @@ class JournalList extends Component {
  
     
     render() {
-      console.log(this.props.journal.date_now)
+      // console.log(this.props.journal.date_now)
 
         return (
             <div>

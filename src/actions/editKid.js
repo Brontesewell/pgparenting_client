@@ -26,7 +26,7 @@ const editKid = (e, state, id, history) => {
         })
         .then(resp => resp.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             dispatch({type: 'SET_SELECTED_KID', kid: data})
             dispatch({type: 'EDIT_KID', kid: data})
             history.push('/profile')

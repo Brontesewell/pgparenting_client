@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../Logo.jpg'
 import ParentingNav from '../components/ParentingNav'
 import Sidebar from "react-sidebar";
+import signOut from '../actions/signOut'
 const mql = window.matchMedia(`(min-width: 800px)`);
 
 
@@ -51,7 +52,7 @@ class NavBar extends Component {
 
     handleSignOut = e => {
         localStorage.clear()
-        this.props.clearCurrentUser()
+        this.props.signOut(e)
     }
 
     render() {
@@ -83,7 +84,7 @@ class NavBar extends Component {
                       <Link to='/contact_us' className="sidenav-text">CONTACT US</Link>
                       <br></br>
                       <br></br>
-                      <Link to = '/' className="sidenav-text" onClick={this.handleSignOut}>SIGN OUT</Link>
+                      <Link to = '/' className="sidenav-text" onClick={(e) => this.handleSignOut(e)}>SIGN OUT</Link>
                       <br></br>
                       <br></br>
                       <br></br>
@@ -198,8 +199,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        clearCurrentUser: () => dispatch({ type: "CLEAR_CURRENT_USER" })
+        signOut: () => dispatch({ type: "SIGN_OUT" })
     }
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

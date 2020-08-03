@@ -26,6 +26,7 @@ import AddKid from './containers/AddKid'
 import AboutASP from './containers/AboutASP'
 import JournalsPage from './components/JournalsPage'
 import Email from './containers/EmailSubscribe/Admin'
+import Bigerror from './containers/Error'
 
 import Baby from './Catagories/Baby/Baby'
 import BabyCourseInfo from './Catagories/Baby/BabyCourseInfo'
@@ -67,7 +68,7 @@ class App extends React.Component {
         <Router>
            
               <Switch>
-          {/* {this.props.currentUser !== {} ? <> */}
+          {JSON.stringify(this.props.currentUser) !== '{}'? (<>
                 <Route exact path='/home' component={Home}/>
                 <Route exact path='/contact_us' component={ContactUsHome} />
                 <Route exact path='/about-us' component={AboutUs} />
@@ -104,16 +105,28 @@ class App extends React.Component {
                 <Route exact path='/journal' component={JournalsPage} />
                 <Route exact path='/journal/:id' component={JournalsPage} />
                 <Route exact path='/about_scoring' component={AboutASP} />
-    <Route exact path='/admin-info' component={Email} /> ) 
-    {/* </>:<> */}
-
-            <Route exact path='/' component ={Welcome}/>
-            <Route exact path='/signup-user' component={SignUpUser}/>
-            <Route exact path='/signin-user' component={SignIn} />
-            <Route exact path='/contact-us' component={ContactUs} /> 
-            {/* </> */}
-          {/* } */}
+                <Route exact path='/admin-info' component={Email} /> 
+                {/* <Route exact path='/error' component={Bigerror} />  */}
+                </>): <>
+                   <Route exact path='/' component ={Welcome}/>
+                   <Route exact path='/signup-user' component={SignUpUser}/>
+                   <Route exact path='/signin-user' component={SignIn} />
+                   <Route exact path='/contact-us' component={ContactUs} /> 
+                   <Route component={Bigerror} /> 
+                   </>
+                }
               </Switch>
+
+              {/* <Switch>
+                {JSON.stringify(this.props.currentUser) === '{}'? (<>
+
+                <Route exact path='/' component ={Welcome}/>
+                <Route exact path='/signup-user' component={SignUpUser}/>
+                <Route exact path='/signin-user' component={SignIn} />
+                <Route exact path='/contact-us' component={ContactUs} /> 
+
+                </>): <h1>404 Error</h1>}
+          </Switch> */}
                 
                 {/* <Route exact path='/quadrant' component={BehaviourQuadrant} /> */}
                 {/* <Route exact path='/parenting-courses' component={ParentingCourses}/>

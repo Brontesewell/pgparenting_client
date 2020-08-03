@@ -37,7 +37,7 @@ class EditKid extends Component {
 
     render() {
         
-        console.log(this.props.selectedKid)
+        // console.log(this.props.selectedKid)
 
         const {name, birthday, gender, behaviour_progress, behaviour_score, sport_progress, sport_score, academic_progress, academic_score, character_progress, character_score, user_id} = this.state
         const {editKid, deleteKid, history, selectedKid} = this.props

@@ -42,7 +42,7 @@ class BehaviourQuadrant extends Component {
     
     render() {
 
-console.log(this.state.sport_1)
+// console.log(this.state.sport_1)
         return (
             <div>
         {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}

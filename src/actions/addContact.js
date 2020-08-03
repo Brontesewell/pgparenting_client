@@ -22,7 +22,7 @@ const addContact = (e, state) => {
         })
         .then(resp => resp.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             dispatch({ type: "ADD_CONTACT", contact_info: data })
             
             

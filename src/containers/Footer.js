@@ -26,10 +26,10 @@ class Footer extends Component {
 
 
     render() {
-        console.log(this.props.editProfile)
+        // console.log(this.props.editProfile)
         const {subscribe} = this.state
         const {editProfile, history, currentUser} = this.props
-        console.log(currentUser.subscribe)
+        // console.log(currentUser.subscribe)
         return (
             <div id="footer">
 <footer class="footer-distributed">

@@ -45,7 +45,7 @@ class Home extends Component {
                 
                     <Navbar/>
                     
-               
+               <div class="homepage">
                 {/* <img id="about-home" src="https://images.unsplash.com/photo-1527358555642-1e21af4f39e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" /> */}
                 <div>  
                   <img id="top-home-img" src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
@@ -64,7 +64,7 @@ class Home extends Component {
                         <h4 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h4>
                     </ScrollableAnchor>
                     
-                     <br></br>
+                    
                     <div class="container">
                     <div class="row">
                         <div class="col-md">
@@ -111,7 +111,7 @@ class Home extends Component {
                         <Col sm={9}>
                         <Fade>
                             <h1 className="book-title"> Are you struggling with Parenting and want 1:1 Mentorship?</h1>
-                            <h4 className="book-text">For only $30 you can have a 45 minute session!</h4>
+                            <h4 className="book-text">For only <strong style={{fontFamily: 'sans-serif'}}>$30</strong> you can have a 45 minute session!</h4>
                             </Fade>
                             <a href="https://calendar.google.com/calendar/r" class="btn-book">Book Now!</a>
                         </Col>
@@ -141,7 +141,7 @@ class Home extends Component {
 
                  <Fade bottom>
                     <div id="line-home-2">
-                    <div class="container">
+                    <div class="container" style={{fontFamily: 'sans-serif'}}>
                     <div class="row">
                         <div class="col-sm">
 
@@ -149,7 +149,7 @@ class Home extends Component {
 
                         </div>
                         <div class="col-sm">
-                        <h5 id="quote-about">We are all about “better parenting for a better world”</h5>
+                        <h5 id="quote-about" >We are all about “better parenting for a better world”</h5>
                         </div>
                         <div class="col-sm">
                         <Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link>
@@ -163,10 +163,9 @@ class Home extends Component {
                         <div id="button-about"><Link to='/about-us'><button className="btn-about">Learn More <i class="arrow right"/> </button></Link></div> */}
                     </div>
                     </Fade>
-                    <br></br>
-                    <br></br>
+                   
                     
-                    <div>
+                    <div style={{backgroundColor: '#f0f0f0', paddingTop: '20px'}}>
                     <h4 id="from-the-blog"><strong id="o">•</strong>Top items this week<strong id="o">•</strong></h4>
                    
                         <div class="container">
@@ -180,7 +179,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$10.97</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Made-Me-Horizon-Suncatchers-Assorted/dp/B00HUBBDIK/ref=sr_1_5?dchild=1&keywords=crafts&qid=1591311585&sr=8-5" class="btn-buy">Buy</a>
-                            <br></br><br></br>
+                            
                         </div>
                     <div class="col-md" onClick={()=> window.location.href='https://www.amazon.com/Infantino-Flip-4-Convertible-Carrier/dp/B07XMN3SK6/ref=sxin_7_ac_d_rm?ac_md=3-2-YmFieSBjYXJyaWVy-ac_d_rm&cv_ct_cx=baby&dchild=1&keywords=baby&pd_rd_i=B07XMN3SK6&pd_rd_r=589482fd-8dca-46d0-9339-98c082a65763&pd_rd_w=3CUB0&pd_rd_wg=KDqbz&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=NY4PEH7EX1K5Z0YENGDX&psc=1&qid=1591311089&sr=1-3-12d4272d-8adb-4121-8624-135149aa9081'}>
                     <Fade>
@@ -191,7 +190,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$29.99</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Infantino-Flip-4-Convertible-Carrier/dp/B07XMN3SK6/ref=sxin_7_ac_d_rm?ac_md=3-2-YmFieSBjYXJyaWVy-ac_d_rm&cv_ct_cx=baby&dchild=1&keywords=baby&pd_rd_i=B07XMN3SK6&pd_rd_r=589482fd-8dca-46d0-9339-98c082a65763&pd_rd_w=3CUB0&pd_rd_wg=KDqbz&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=NY4PEH7EX1K5Z0YENGDX&psc=1&qid=1591311089&sr=1-3-12d4272d-8adb-4121-8624-135149aa9081" class="btn-buy">Buy</a>
-                            <br></br><br></br>
+                            
                         </div>
                         <div class="col-md" onClick={()=> window.location.href='https://www.amazon.com/School-Zone-Preschool-Pre-Writing-Pre-Reading/dp/0887431453/ref=sr_1_1?dchild=1&keywords=School+Zone+-+Big+Preschool+Workbook+-+Ages+4+and+Up%2C+Colors%2C+Shapes%2C+Numbers+1-10%2C+Alphabet%2C+Pre-Writing%2C+Pre-Reading%2C+Phonics%2C+and+More+%28School+Zone+Big+Workbook+Series%29&qid=1591312156&sr=8-1'}>
                         <Fade>
@@ -202,7 +201,7 @@ class Home extends Component {
                             <h5 className="home-shop-text">$6.99</h5>
                             </Fade>
                             <a href="https://www.amazon.com/School-Zone-Preschool-Pre-Writing-Pre-Reading/dp/0887431453/ref=sr_1_1?dchild=1&keywords=School+Zone+-+Big+Preschool+Workbook+-+Ages+4+and+Up%2C+Colors%2C+Shapes%2C+Numbers+1-10%2C+Alphabet%2C+Pre-Writing%2C+Pre-Reading%2C+Phonics%2C+and+More+%28School+Zone+Big+Workbook+Series%29&qid=1591312156&sr=8-1" class="btn-buy">Buy</a>
-                            <br></br><br></br>
+                          
                          </div>
                         <div class="col-md" onClick={()=> window.location.href='https://www.amazon.com/Habits-Highly-Effective-Teens/dp/1476764662/ref=sr_1_2?dchild=1&keywords=The+7+Habits+of+Highly+Effective+Teens&qid=1591312133&sr=8-2'}>
                         <Fade>
@@ -213,37 +212,24 @@ class Home extends Component {
                             <h5 className="home-shop-text">$10.69</h5>
                             </Fade>
                             <a href="https://www.amazon.com/Habits-Highly-Effective-Teens/dp/1476764662/ref=sr_1_2?dchild=1&keywords=The+7+Habits+of+Highly+Effective+Teens&qid=1591312133&sr=8-2" class="btn-buy">Buy</a>
-                            <br></br><br></br>
+                       
                         </div>
+                
                     </div>
-                </div>
-                <br></br>
+                    <div style={{backgroundColor: '#f0f0f0', height: '170px', paddingTop: '20px'}}>
                         <a href="/shop" class="btn-shops">View More  →</a>
+                </div></div>
                     </div>
 
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                  
+                
                     <div>
                         <Fade>
                     <h3 className="quote-img-text">“Encourage and support your kids because children are apt to live up to what you believe of them.” <br/>- PG Parenting</h3>
-                        <span><SocialIcon className="share-button" url="https://www.instagram.com/pgparenting/" style={{ height: 35, width: 35 }}/>
-                            <SocialIcon className="share-button" url="https://www.facebook.com" style={{ height: 35, width: 35 }}/>
-                            <SocialIcon className="share-button" url="https://www.youtube.com" style={{ height: 35, width: 35 }}/> </span>
-                            
+                           
                     </Fade>
                 </div>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    
 
 
                     <div id="buttons-direct">
@@ -262,19 +248,12 @@ class Home extends Component {
                     <a href="#" class="btn-direct1">Co-Parenting</a>
                     </div>
 
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                   
+                 
                   
                   
         
                 
-                    
+                    <div className="contact-homepage">
                                 {/* <h1 id="contact-home">Contact Us</h1> */}
                                 <h4 id="from-the-blog"><strong id="o">•</strong>Contact Us<strong id="o">•</strong></h4>
                                
@@ -303,12 +282,12 @@ class Home extends Component {
                                         
                                     </div>
                                 </div>
-                                
-                                <br></br>
+                                </div>
+                              
                                 
 
                    
-                   
+                                </div>
 
                     <ScrollUpButton/>
 

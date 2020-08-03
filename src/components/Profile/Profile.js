@@ -55,7 +55,7 @@ class Profile extends Component  {
     }
 
     render() {
- console.log(this.state.selectedChild)
+//  console.log(this.state.selectedChild)
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div >

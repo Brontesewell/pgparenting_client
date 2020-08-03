@@ -20,7 +20,7 @@ const editProfile = (e, history, state, id) => {
         })
         .then(resp => resp.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             dispatch({type: 'SET_CURRENT_USER', user: data })
             history.push('/profile')
             

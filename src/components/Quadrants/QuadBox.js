@@ -37,7 +37,7 @@ class QuadBox extends Component {
     
     render() {
     
-console.log(this.state.sport_1)
+// console.log(this.state.sport_1)
         return (
           <div>
 

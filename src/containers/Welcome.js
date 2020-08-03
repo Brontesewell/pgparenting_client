@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
 import WelcomeNav from "./WelcomeNav"
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Logo from '../Logo.jpg'
 import WorldMap from '../World-Map-PNG-Picture.png'
+
 import {
     EmailShareButton,
     FacebookShareButton,
@@ -41,6 +43,7 @@ class Welcome extends Component {
 
 
     render() {
+        console.log(this.props.currentUser)
         const shareUrl = `https://www.pgparenting.com${this.props.location.pathname}`;
         return (
             <div>
@@ -324,4 +327,13 @@ class Welcome extends Component {
     }
 }
 
-export default Welcome;
+
+
+const mapStateToProps = state => {
+    return {
+        currentUser: state.currentUser,
+    }
+}
+
+export default connect(mapStateToProps)(Welcome);
+// export default Welcome;

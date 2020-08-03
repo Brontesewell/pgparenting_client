@@ -24,6 +24,8 @@ const rootReducer = (state = initialState, action) => {
             return {...state, users: action.users }
         // case 'ADD_USER':
         //     return {...state, users:[...state.users, action.user]}
+        case 'SIGN_OUT':
+            return {...state, currentUser: {}}
 
         case 'CLEAR_CURRENT_USER':
             return {...state, currentUser: {} }
