@@ -116,24 +116,12 @@ class App extends React.Component {
                    <Route component={Bigerror} /> 
                    </>
                 }
-                
+
+
+
               </Switch>
 
-              {/* <Switch>
-                {JSON.stringify(this.props.currentUser) === '{}'? (<>
-
-                <Route exact path='/' component ={Welcome}/>
-                <Route exact path='/signup-user' component={SignUpUser}/>
-                <Route exact path='/signin-user' component={SignIn} />
-                <Route exact path='/contact-us' component={ContactUs} /> 
-
-                </>): <h1>404 Error</h1>}
-          </Switch> */}
-                
-                {/* <Route exact path='/quadrant' component={BehaviourQuadrant} /> */}
-                {/* <Route exact path='/parenting-courses' component={ParentingCourses}/>
-                <Route exact path='/parenting-tips' component={ParentingTips}/> */}
-            
+      
         
 
         </Router>
