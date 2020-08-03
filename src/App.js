@@ -116,6 +116,7 @@ class App extends React.Component {
                    <Route component={Bigerror} /> 
                    </>
                 }
+                
               </Switch>
 
               {/* <Switch>
