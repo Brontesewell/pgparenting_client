@@ -59,12 +59,12 @@ class Home extends Component {
                 </FadeIn>
                 </div>
 
-
+                <div class="blogshome">
                     <ScrollableAnchor id={'section2'}>
                         <h4 id="from-the-blog"><strong id="o">•</strong>From the Blog<strong id="o">•</strong></h4>
                     </ScrollableAnchor>
                     
-                     
+                     <br></br>
                     <div class="container">
                     <div class="row">
                         <div class="col-md">
@@ -96,7 +96,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                
+                </div>       
       
                 
             

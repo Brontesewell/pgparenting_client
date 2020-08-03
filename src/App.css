@@ -1417,7 +1417,28 @@ font-family: sans-serif;
   margin-left: 48.1%;
   margin-right: 50%;
   margin-bottom: 60px;
+}
 
+.line-contact{
+  border-bottom-style: solid;
+  border-bottom-color: #757b8a;
+  border-width: thin;
+  margin-top: -35px;
+  width: 50px;
+  margin-left: 45%;
+  margin-right: 50%;
+  margin-bottom: 30px;
+}
+
+.line-shop{
+  border-bottom-style: solid;
+  border-bottom-color: #757b8a;
+  border-width: thin;
+  margin-top: -15px;
+  width: 50px;
+  margin-left: 48.1%;
+  margin-right: 50%;
+  margin-bottom: 60px;
 }
 
 .image-boxes{
@@ -1460,7 +1481,9 @@ font-family: sans-serif;
   
 }
 
-
+.blogshome{
+  background-color: #f0f0f0;
+}
 .column:hover .images{
   filter: brightness(100%);
   cursor: pointer;
@@ -1875,6 +1898,7 @@ height: 70px
   color: #8597C5;
   font-weight: 900;
   padding-bottom: 20px;
+  font-family: sans-serif;
   
 }
 
@@ -1887,6 +1911,7 @@ height: 70px
 #shop-div{
   float: center;
   margin-left: 7%;
+  font-family: sans-serif;
 }
 
 #imgshop {
@@ -2554,7 +2579,7 @@ margin-bottom: 2px;
   margin-bottom: 40px;
   word-spacing: 3px;
   color: #8597C5;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-left: 7.4%;
   text-align: left;
   font-family: sans-serif;
@@ -3689,10 +3714,10 @@ color: #8597C5;
 }
 
 #about-us-div{
-  background-color: rgb(129, 128, 127);
+  background-color: #f5f5f5;
   padding-top: 50px;
   padding-bottom: 30px;
-
+  font-family: sans-serif;
 }
 
 
@@ -3721,9 +3746,8 @@ color: #8597C5;
 }
 
 .shopping{
-  margin-top: -18px;
-  background-color: #fff4f0;
-  height: 1310px;
+  background-color: #f5f5f5;
+  height: 2010px;
 }
 
 #about-us-text{
@@ -3738,11 +3762,13 @@ color: #8597C5;
 .about-text {
   color: #3b4b75;
   text-align: justify;
-  font-size: 18px
+  font-size: 18px;
+  font-weight: 300;
 }
 .about-text-co-founder{
   color: #3b4b75;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .about-text-title{
@@ -3753,6 +3779,7 @@ color: #8597C5;
 
 #about-names{
   color: #8597C5;
+  font-family: sans-serif;
   font-weight: 900;
   padding-bottom: 40px;
   margin-top: -1px;
@@ -3867,8 +3894,10 @@ color: #8597C5;
   color: #fff;
   background-color: #8597C5;
   border-style: solid;
+  cursor: pointer;
   border-color: #8597C5;
   border-radius: 2px;
+  text-decoration: none;
 }
 
 
@@ -4239,12 +4268,13 @@ margin-right: 15%;
 
 .family-name{
 text-align: center;
-color: #fff;
-padding-top: 160px;
+color:#fafbfc;
+padding-top: 170px;
 font-weight: bolder;
 margin-bottom: -150px;
 position: relative;
 font-size: 40px;
+text-shadow: 1px 1px 2px rgb(165, 157, 157), 0 0 1em rgb(56, 56, 114), 0 0 0.2em rgb(75, 75, 128);
 }
 
 
@@ -4270,6 +4300,7 @@ font-size: 40px;
   padding: 5px;
   padding-right: 30px;
   padding-left: 30px;
+  padding-top: 30px;
 }
 
 
@@ -4287,12 +4318,18 @@ font-size: 40px;
   text-align: justify;
 }
 
+.about-sewells-text{
+  text-align: justify;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
 #about-my-family{
   object-fit: cover;
+  object-position: 50% 40%;
   width: 100%;
-  height: 280px;
+  height: 300px;
   margin-bottom: 30px;
-  float: bottom;
   /* filter: brightness(80%); */
 }
 

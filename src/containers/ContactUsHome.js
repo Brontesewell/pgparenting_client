@@ -35,16 +35,17 @@ class ContactUs extends Component {
                     <div className="contact-us-div">
                     <MDBContainer >
                     <MDBCol md="12">
-                        <h1 id="contact-us-title-home">Contact Us</h1>
+                        <br></br><br></br><br></br><br></br>
+                    <h6 id="about-names">CONTACT US</h6>
+                    <div className="line-contact"></div>
 
-
-                    <span for="lname">Email is being sent from: <strong>{email}</strong></span>
+                    <span style={{fontFamily: 'sans-serif'}} for="lname">Email is being sent from: <strong>{email}</strong></span>
                     
                     <br></br>
                     <br></br>
                     <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
-                    <label htmlFor="description" className="grey-text">Description</label>
-                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
+                    {/* <label htmlFor="description" className="grey-text">Description</label> */}
+                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Message: Write something.." />
 
 
                     <button id="btn-add-contact" className="btn" type="submit" >Send</button>

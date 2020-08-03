@@ -21,6 +21,7 @@ class ContactUs extends Component {
                     <div className="contact-us-div">
                    
                             <h2 id="contact-us-title">Contact Us</h2>
+                         
 
                             <h5 className="contact-options"><span id="contact-options-title">Email: </span>support@pgparenting.com</h5>
                             <h5 className="contact-options"><span id="contact-options-title">Phone: </span> +1 828 6366</h5>
