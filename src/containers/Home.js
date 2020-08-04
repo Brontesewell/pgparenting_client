@@ -278,48 +278,19 @@ class Home extends Component {
                                                 </form>
                                             </div>
                                         </div></div>
-                                        <div class="col-md">
-                                        <h4 id="from-the-contact"><strong id="o">•</strong>Our Recomended Books<strong id="o">•</strong></h4>
-                                 
-                                        <Carousel>
-                                        <Carousel.Item>
-                                            <img
-                                            className="d-block w-100"
-                                            src="holder.js/800x400?text=First slide&bg=373940"
-                                            alt="First slide"
-                                            />
-                                            <Carousel.Caption>
-                                            <h3>First slide label</h3>
-                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                            </Carousel.Caption>
-                                        </Carousel.Item>
-                                        <Carousel.Item>
-                                            <img
-                                            className="d-block w-100"
-                                            src="holder.js/800x400?text=Second slide&bg=282c34"
-                                            alt="Third slide"
-                                            />
+                                        <div class="col-md" style={{marginLeft: '8%'}}>
+                                        <h4 id="from-the-contacts"><strong id="oo">•</strong>Our Recomended Books<strong id="oo">•</strong></h4>
+                                 <div class="flex-container-books">
+                                     <img style={{width: '25%', marginLeft: '30px', marginBottom: '10px'}} src="https://redtri.com/wp-content/uploads/2016/08/collapseofparenting.jpg"/>
+                                     <img style={{width: '25%', marginLeft: '30px', marginBottom: '10px'}} src="https://g.christianbook.com/g/slideshow/2/219643/main/219643_1_ftc.jpg"/>
+                                     <img style={{width: '25%', marginLeft: '30px', marginBottom: '10px'}} src="https://d28hgpri8am2if.cloudfront.net/book_images/cvr9780743251167_9780743251167_hr.jpg"/>
+                                     <img style={{width: '25%', marginLeft: '30px', marginBottom: '10px'}} src="https://images-na.ssl-images-amazon.com/images/I/51l88-QxVKL._SX348_BO1,204,203,200_.jpg"/>
+                                     <img style={{width: '25%', marginLeft: '30px', marginBottom: '10px'}} src="https://m.media-amazon.com/images/I/51UPM8u2GGL.jpg"/>
+                                     <img style={{width: '25%', marginLeft: '30px', marginBottom: '10px'}} src="https://m.media-amazon.com/images/I/41ipBiSaFVL.jpg"/>
 
-                                            <Carousel.Caption>
-                                            <h3>Second slide label</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </Carousel.Caption>
-                                        </Carousel.Item>
-                                        <Carousel.Item>
-                                            <img
-                                            className="d-block w-100"
-                                            src="holder.js/800x400?text=Third slide&bg=20232a"
-                                            alt="Third slide"
-                                            />
-
-                                            <Carousel.Caption>
-                                            <h3>Third slide label</h3>
-                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </Carousel.Caption>
-                                        </Carousel.Item>
-                                        </Carousel>
+                                       
                                         </div>
-                                        
+                                        </div> 
                                     </div>
                                 </div>
                                 </div>
