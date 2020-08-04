@@ -1664,7 +1664,8 @@ font-family: sans-serif;
   width: 70%;
   text-align: left;
   color: #2d395a;
-  padding-left: 20px;
+  padding-left: 53px;
+  margin-top: 30px;
 }
 
 #contact-home{
@@ -2603,6 +2604,18 @@ margin-bottom: 2px;
   font-family: sans-serif;
   font-weight: 300 !important;
 }
+
+#from-the-contact{
+  margin-bottom: 40px;
+  word-spacing: 3px;
+  color: #8597C5;
+  padding-top: 50px;
+  padding-left: 45px;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 300 !important;
+}
+
 
 #o {
   color: #6B6b69;
@@ -3878,9 +3891,10 @@ color: #8597C5;
 .contact-homepage{
   padding-top: 30px;
   margin-top: 220px;
-  background-color: #f0f0f0;
   padding-bottom: 100px;
+  background-color: #f0f0f0;
 }
+
 
 #button-image-home{
   color: #ccc;

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import ScrollableAnchor from 'react-scrollable-anchor'
-import {Col} from 'react-bootstrap'
+import {Col, Carousel} from 'react-bootstrap'
 import WelcomeNav from './WelcomeNav'
 import idea from '../idea1.png'
 import FadeIn from 'react-fade-in';
@@ -255,17 +255,16 @@ class Home extends Component {
                 
                     <div className="contact-homepage">
                                 {/* <h1 id="contact-home">Contact Us</h1> */}
-                                <h4 id="from-the-blog"><strong id="o">•</strong>Contact Us<strong id="o">•</strong></h4>
                                
                                
                                 <div class="container">
-                                <div class="row contact-names">
+                                <div class="row">
                                     <div class="col-md">
+                                    <div class="contact-left">
+                                         <h4 id="from-the-contact"><strong id="o">•</strong>Contact Us<strong id="o">•</strong></h4>
                                             <h5 className="contact-option"><strong>Email:</strong> support@pgparenting.com</h5>
                                             <h5 className="contact-option"><strong>Location:</strong> San Francisco, California</h5>
                                              <h5 className="contact-option"><strong>Phone:</strong> +1 828 6366</h5>
-                                        </div>
-                                        <div class="col-md">
                                             <div class="contact-home-div">
                                                 
                                                <h5  id="email-home-contact" ><strong>Or Contact us Directly:</strong></h5>
@@ -273,11 +272,52 @@ class Home extends Component {
                                                 <h6 id="email-home-contact" for="lname"> Email is being sent from: <strong>{email}</strong></h6>
                                                
                                                 <form onSubmit={(e) => this.props.addContact(e, this.state, history)}>
-                                                    <label htmlFor="description" className="grey-text">Message</label>
-                                                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Write something.." />
+                                                    {/* <label htmlFor="description" className="grey-text">Message</label> */}
+                                                    <textarea name="description" value={description} onChange={this.handleChange} placeholder="Message: Write something.." />
                                                     <button id="btn-add-contact" className="btn" type="submit" >Send</button>
                                                 </form>
                                             </div>
+                                        </div></div>
+                                        <div class="col-md">
+                                        <h4 id="from-the-contact"><strong id="o">•</strong>Our Recomended Books<strong id="o">•</strong></h4>
+                                 
+                                        <Carousel>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="holder.js/800x400?text=First slide&bg=373940"
+                                            alt="First slide"
+                                            />
+                                            <Carousel.Caption>
+                                            <h3>First slide label</h3>
+                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                                            alt="Third slide"
+                                            />
+
+                                            <Carousel.Caption>
+                                            <h3>Second slide label</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block w-100"
+                                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                                            alt="Third slide"
+                                            />
+
+                                            <Carousel.Caption>
+                                            <h3>Third slide label</h3>
+                                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        </Carousel>
                                         </div>
                                         
                                     </div>
