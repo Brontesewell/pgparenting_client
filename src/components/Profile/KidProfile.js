@@ -138,15 +138,31 @@ class KidProfile extends Component  {
 
     return (
         <div id = "leftbox">  
-       
-       <h1>{this.props.selectedChild.name}</h1>
 
-       <div id="child-div">
-            <div class="container line-journals">
+                      <div class="profile-divs">
+                            <h3 id="my-profile">{this.props.selectedChild.name}</h3>
+                            <br/>
+                                <div class="container">
+                                    <div class="row">
+                                    <Col lg={8}>
+                                            <h6 id="email-p"><strong>Gender: {this.props.selectedChild.gender}</strong></h6>
+                                            <h6 id="email-p"><strong>Birthday: {this.props.selectedChild.birthday}</strong></h6>
+                                        </Col>
+
+                                        <Col lg={4} >
+                                        <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.selectedChild)}> <button id="edit-p" className="btn">Edit Profile</button></Link>
+                                        <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.selectedChild)}> <button id="edit-p" className="btn">Delete Account</button></Link>
+                                        </Col>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="container">
                     <div class="row">
-                        <div class="col-md child-general-info" >
-                            <h6 className="child-gender-bday">Gender: {this.props.selectedChild.gender}</h6>
-                            <h6 className="child-gender-bday">Birthday: {this.props.selectedChild.birthday}</h6>
+                        <div class="col-md journals-profiles" >
                             {this.props.selectedJournals ?
                             <Switch>
                                 <Redirect to={{
@@ -158,23 +174,24 @@ class KidProfile extends Component  {
 
                             </Switch>
                             : 
-                            <div>
-                            <br></br>
-                            <h5 id="journal" onClick={() => this.handleJournalClick(this.props.selectedChild)} >{this.props.selectedChild.name}'s Journals →</h5>
-                            </div>
+                            <h6 id="journal" onClick={() => this.handleJournalClick(this.props.selectedChild)} >{this.props.selectedChild.name}'s Journals →</h6>
                             }
-                            <h5 className="prev-history">Previous History →</h5>
-                            <h5 className="quadrant-child-title">Family Quadrants →</h5>
 
                         </div>
-                        <div class="col-md">
-                            <Link to='/edit-kid' onClick={() => this.props.selectedKid(this.props.selectedChild)}><button id="edit-child-button" className="btn">Edit</button></Link>
+                        <div class="col-md quadrants-profiles" >
+                          <h6 className="quadrant-child-title">Family Quadrants →</h6>
                         </div>
-                    </div>
-            </div>
+                        <div class="col-md history-profiles" >
+                          <h6 className="prev-history">Previous History →</h6>
+                        </div>
+                        </div>
+                        </div>
+                            
+                        
 
-            <div class="kid-scores-div">
-           <div id="s-child">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md course-collection-profile" >
                <h5 className="p-a-scores">Achievement Scores</h5>
                <h6>Behaviour Score:  {this.props.selectedChild.behaviour_score}/5</h6>
                <SkillBar skills={Behaviour_S} height={15}></SkillBar>
@@ -188,7 +205,7 @@ class KidProfile extends Component  {
                 <SkillBar skills={Total_S} height={15}></SkillBar>
                </div>
             
-            <div id="p-child">
+               <div class="col-md children-profile">
            <h5  className="p-a-scores">Progress</h5>
            <h6>Behaviour Progress:  {this.props.selectedChild.behaviour_progress}/5</h6>
            <SkillBar skills={Behaviour_P} height={15}></SkillBar>
@@ -202,8 +219,8 @@ class KidProfile extends Component  {
             <SkillBar skills={Total_P} height={15}></SkillBar>
                </div>
                </div>
-        
-            </div>
+               </div>
+           
         </div>
     )
 }
