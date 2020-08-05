@@ -18,39 +18,39 @@ class MyProfile extends Component  {
     return (
         <div> 
         <div id = "leftbox"> 
- 
+            <div class="profile-divs">
             <h3 id="my-profile">My Profile</h3>
             <br/>
                 <div class="container">
                     <div class="row">
-                    <Col lg={9}>
+                    <Col lg={8}>
                             <h6 id="email-p"><strong>Name: </strong>{first_name + ' ' + last_name}</h6>
                             <h6 id="email-p"><strong>Email: </strong>{email}</h6>
                         </Col>
 
-                        <Col lg={3}>
+                        <Col lg={4} >
                             <Link to='/edit-profile'> <button id="edit-p" className="btn">Edit Profile</button></Link>
                             <Link to='/edit-profile'> <button id="edit-p" className="btn">Delete Account</button></Link>
                         </Col>
                     </div>
                 </div>
+            </div>
             
-                <br/>
-                <br />
+                
 
 
                     <div class="container">
                     <div class="row">
-                    <Col lg={7}>
+                    <Col lg={6} className="course-collection-profile">
+                        <div>
                         <h3 id="my-children">Favourite Courses</h3>  
                     
-                        <div className="">
                             {this.props.currentUser.courses.map(course => <CourseCollection course={course}/> )}
                         </div>
-                </Col>
+                    </Col>
           
 
-                        <Col lg={5}>
+                        <Col lg={5} className="children-profile">
                      
                             <h3 id="my-children"> Children</h3>  
                             <ul>
