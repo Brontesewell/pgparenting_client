@@ -40,10 +40,10 @@ class QuadBox extends Component {
 // console.log(this.state.sport_1)
         return (
           <div>
-
+<div class="quad-divs">
             <h4 className="quad-title">Sport Quadrant</h4>
-                <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
-                            <div class="row">
+                <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '80% 80%', marginLeft:'10%', marginRight:'10%'}}>
+                           <div class="row">
                                 <div class="col-sm quads-imagez two">
                                 <div > { this.state.sport_2.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
 
@@ -65,7 +65,7 @@ class QuadBox extends Component {
                                 </div> 
                         </div>
                 </div>
-             
+             </div>
                 {/* <h4 className="quad-title">Sport</h4>
                 <div id="line-quad-bottom"></div>
                 <div id="outside">

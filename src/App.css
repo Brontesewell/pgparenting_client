@@ -3411,13 +3411,12 @@ vertical-align: top !important
   border-style: solid;
   border-width: thin;
   border-color: #ccc;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 2%;
   border-radius: 5px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 3%;
-  margin-top: 5%;
-  height: 50px;
-  /* padding-bottom: 20px; */
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .history-profiles{
@@ -4239,32 +4238,29 @@ color: #8597C5;
 .one{
  font-family: sans-serif;
  font-weight: 400;
- padding-top: 30px;
  text-align: left;
- margin-left: 120px;
+ margin-left: 70px;
 }
 
 .two{
   font-family: sans-serif;
   font-weight: 400;
-  padding-top: 110px;
+  padding-top: 90px;
   text-align: left;
-  margin-left: 120px;
+  margin-left: 70px;
 }
 
 .three{
   font-family: sans-serif;
   font-weight: 400;
-  padding-top: 30px;
   text-align: left;
-  margin-left: -20px;
   margin-left: -100px;
 }
 
 .four{
   font-family: sans-serif;
   font-weight: 400;
-  padding-top: 110px;
+  padding-top: 90px;
   text-align: left;
   margin-left: -100px;
 }
