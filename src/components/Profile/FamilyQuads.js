@@ -42,11 +42,13 @@ class FamilyQuads extends Component  {
     const {first_name, last_name, email} = this.props.currentUser
     return (
         <div id = "leftbox"> 
-        
-            <h1 id="my-children">Children Quadrant</h1> 
+         <div class="profile-divs">
+            <h1 id="my-profile">Children Quadrant</h1> 
             <br></br>
          
                <Link to='/about_scoring'><button id="about-s-p" >Family Report Info  →</button></Link>
+               
+            </div>
                
                 < BehaviourQuadrant currentUser={this.props.currentUser} behaviour_1={this.state.behaviour_1} behaviour_2={this.state.behaviour_2} behaviour_3={this.state.behaviour_3} behaviour_4={this.state.behaviour_4}/>
                

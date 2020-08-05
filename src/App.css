@@ -3406,6 +3406,20 @@ vertical-align: top !important
   padding-top: 20px;
 }
 
+.quad-divs{
+  background-color: #f3f3f4;
+  border-style: solid;
+  border-width: thin;
+  border-color: #ccc;
+  border-radius: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  height: 50px;
+  /* padding-bottom: 20px; */
+}
+
 .history-profiles{
   background-color: #f3f3f4;
   border-style: solid;
@@ -4317,10 +4331,9 @@ margin-right: 15%;
 
 .quad-title{
   color: #3b4b75;
-  padding-top: 40px;
   font-family: sans-serif;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .names-quad{

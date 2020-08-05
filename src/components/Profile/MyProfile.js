@@ -9,12 +9,12 @@ import BehaviourQuadrant from '../Quadrants/BehaviourQuadrant'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
 import {Col} from 'react-bootstrap'
 
-
 class MyProfile extends Component  {
     
 
     render() {
     const {first_name, last_name, email} = this.props.currentUser
+
     return (
         <div> 
         <div id = "leftbox"> 
@@ -65,19 +65,6 @@ class MyProfile extends Component  {
                     </div>
                 </div>
                 
-                <br></br>
-                <br></br>
-                    {/* {this.props.currentUser.kids.map(kid => <div className="children-div"><Children kid={kid}/></div> )} */}
-                    <br></br>
-                <br></br>
-                      
-                        
-               
-
-
-          
-       
-
                 </div>
       
         </div>

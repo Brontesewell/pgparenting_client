@@ -46,8 +46,10 @@ class BehaviourQuadrant extends Component {
         return (
             <div>
         {/* <div class="block two">{ Object.keys(this.props.behaviour_2).map((keyName, i) => console.log("hello"))}</div> */}
+        <div class="quad-divs">
         <h4 className="quad-title">Behaviour Quadrant</h4>
-                <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '100% 100%'}}>
+        </div>
+                <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '80% 80%', marginLeft:'10%', marginRight:'10%'}}>
                             <div class="row">
                                 <div class="col-sm quads-imagez two">
                                 <div > { this.props.behaviour_2.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
