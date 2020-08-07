@@ -40,7 +40,7 @@ class QuadBox extends Component {
 // console.log(this.state.sport_1)
         return (
           <div>
-<div class="quad-divs">
+        <div class="quad-divs">
             <h4 className="quad-title">Sport Quadrant</h4>
                 <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '80% 80%', marginLeft:'10%', marginRight:'10%'}}>
                            <div class="row">

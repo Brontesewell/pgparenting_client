@@ -60,24 +60,24 @@ class BehaviourQuadrant extends Component {
                                 </div> 
                                 </div>
 
-                                <div class="row">
-                                <div class="col-sm quads-imagez one">
+                                <div class="row quad-row">
+                                <div class="col-sm quads-images one">
                                 <div > { this.props.behaviour_1.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
 
                                 </div>
                                
-                                <div class="col-sm quads-imagez three">
+                                <div class="col-sm quads-images three">
                                 <div > { this.props.behaviour_3.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
                                 </div> 
                         </div>
                 </div>
         </div>
-<br></br>
+
             <div class="quad-divs">
                 <h4 className="quad-title">Academic Quadrant</h4>
-                <div className="container"  style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '80% 80%', marginLeft:'10%', marginRight:'10%'}}>
+                <div className="container" style ={ { backgroundImage: 'url(' + require('../../quadbg.png') + ')',  backgroundRepeat: "no-repeat", backgroundSize: '80% 80%', marginLeft:'10%', marginRight:'10%'}}>
                             <div class="row">
-                                <div class="col-sm quads-imagez two">
+                                <div class="col-sm quads-imagez two ">
                                 <div > { this.state.academic_2.map(kid => <h6 className="names-quad">{kid.name}</h6>)}</div>
 
                                 </div>

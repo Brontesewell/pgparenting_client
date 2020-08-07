@@ -44,7 +44,7 @@ class FamilyQuads extends Component  {
         <div id = "leftbox"> 
          <div class="profile-divs">
             <h1 id="my-profile">Children Quadrant</h1> 
-            <br></br>
+           
          
                <Link to='/about_scoring'><button id="about-s-p" >Family Report Info  →</button></Link>
                
