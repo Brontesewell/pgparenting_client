@@ -19,7 +19,7 @@
     "jquery": "^3.5.1",
     "materialize-css": "^1.0.0",
     "mdbreact": "^4.27.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "muicss": "^0.10.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
